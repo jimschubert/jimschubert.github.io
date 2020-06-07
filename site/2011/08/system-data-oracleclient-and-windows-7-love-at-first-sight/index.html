@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    
+
+
+    <head>
+    <link href="https://gmpg.org/xfn/11" rel="profile">
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="Cache-Control" content="public" />
+<!-- Enable responsiveness on mobile devices -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="generator" content="Hugo 0.72.0" />
+
+    
+    
+    
+
+<title>System.Data.OracleClient and Windows 7… love at first sight! • I Prefer Jim</title>
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="System.Data.OracleClient and Windows 7… love at first sight!"/>
+<meta name="twitter:description" content="
+I spent nearly two days trying to resolve this issue. My new desktop at work is running Windows 7 (64-bit) and some of our applications are still using System.Data.OracleClient as an adapter instead of Oracle’s own ODP.NET. Microsoft’s driver interops with Oracle’s own client installed on the developer machine (oci.dll). We need to continue running our web applications under 32-bit IIS, which is where the problem lies.
+FYI… According to Microsoft:
+
+The types in System.Data.OracleClient are deprecated. The types are supported in version 4 of the .NET Framework but will be removed in a future release. Microsoft recommends that you use a third-party Oracle provider.
+
+Back to the comment about IIS. Apparently, IIS 7 in Windows 7 is 64-bit only. Yes, you can set an application pool to 32-bit. That would be perfectly fine, except that Oracle’s client native methods don’t like running through WoW64. So, you have to install both the 64-bit client and the 32-bit client. After all, 32-bit adapter code can’t call a 64-bit client. If you fire up procmon, though, you’ll see that calling the 32-bit Oracle client still queries 64-bit settings (and fails if they don’t exist). WoW64!, indeed.
+Continue reading to see my resolution…
+Note: this forces Oracle 11.2.0.1 to use 32-bit only in a 64-bit environment."/>
+
+<meta property="og:title" content="System.Data.OracleClient and Windows 7… love at first sight!" />
+<meta property="og:description" content="
+I spent nearly two days trying to resolve this issue. My new desktop at work is running Windows 7 (64-bit) and some of our applications are still using System.Data.OracleClient as an adapter instead of Oracle’s own ODP.NET. Microsoft’s driver interops with Oracle’s own client installed on the developer machine (oci.dll). We need to continue running our web applications under 32-bit IIS, which is where the problem lies.
+FYI… According to Microsoft:
+
+The types in System.Data.OracleClient are deprecated. The types are supported in version 4 of the .NET Framework but will be removed in a future release. Microsoft recommends that you use a third-party Oracle provider.
+
+Back to the comment about IIS. Apparently, IIS 7 in Windows 7 is 64-bit only. Yes, you can set an application pool to 32-bit. That would be perfectly fine, except that Oracle’s client native methods don’t like running through WoW64. So, you have to install both the 64-bit client and the 32-bit client. After all, 32-bit adapter code can’t call a 64-bit client. If you fire up procmon, though, you’ll see that calling the 32-bit Oracle client still queries 64-bit settings (and fails if they don’t exist). WoW64!, indeed.
+Continue reading to see my resolution…
+Note: this forces Oracle 11.2.0.1 to use 32-bit only in a 64-bit environment." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.ipreferjim.com/site/2011/08/system-data-oracleclient-and-windows-7-love-at-first-sight/" />
+<meta property="article:published_time" content="2011-08-14T03:52:56+00:00" />
+<meta property="article:modified_time" content="2011-08-14T03:52:56+00:00" /><meta property="og:site_name" content="I Prefer Jim" />
+
+
+    
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/site/scss/hyde-hyde.1d734ca591261200417c9d5de423a667cc5271b6576cc2ea477fce0dd8c628d0.css" integrity="sha256-HXNMpZEmEgBBfJ1d5COmZ8xScbZXbMLqR3/ODdjGKNA=">
+
+
+<link rel="stylesheet" href="/site/scss/print.2744dcbf8a0b2e74f8a50e4b34e5f441be7cf93cc7de27029121c6a09f9e77bc.css" integrity="sha256-J0Tcv4oLLnT4pQ5LNOX0Qb58&#43;TzH3icCkSHGoJ&#43;ed7w=" media="print">
+
+
+
+
+<link rel="stylesheet" href="/site/scss/hugo-toc.11a9185f83b7761946f8d16ae214f4d959edaf003337338e55935920cc7852d7.css" integrity="sha256-EakYX4O3dhlG&#43;NFq4hT02VntrwAzNzOOVZNZIMx4Utc=">
+
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- Icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+    <link rel="shortcut icon" href="/favicon.png">
+    
+    
+
+</head>
+
+
+    <body class=" ">
+    
+<div class="sidebar">
+  <div class="container ">
+    <div class="sidebar-about">
+      <span class="site__title">
+        <a href="https://www.ipreferjim.com/site/">I Prefer Jim</a>
+      </span>
+      
+      
+        <div class="author-image">
+          <img src="https://www.gravatar.com/avatar/466dc28e15028c7353552022d2de1f9e?s=240&d=mp" class="img--circle img--headshot element--center" alt="gravatar">
+        </div>
+      
+      <p class="site__description">
+        
+      </p>
+    </div>
+    <div class="collapsible-menu">
+      <input type="checkbox" id="menuToggle">
+      <label for="menuToggle">I Prefer Jim</label>
+      <div class="menu-content">
+        <div>
+	<ul class="sidebar-nav">
+		 
+		 
+			 
+				<li>
+					<a href="/site/posts/">
+						<span>Posts</span>
+					</a>
+				</li>
+			 
+		 
+			 
+				<li>
+					<a href="/site/tags/">
+						<span>Tags</span>
+					</a>
+				</li>
+			 
+		 
+			 
+				<li>
+					<a href="/site/categories/">
+						<span>Categories</span>
+					</a>
+				</li>
+			 
+		 
+			 
+				<li>
+					<a href="/site/books/">
+						<span>Books</span>
+					</a>
+				</li>
+			 
+		
+	</ul>
+</div>
+
+        <section class="social">
+	
+	<a href="https://twitter.com/jimschubert" rel="me"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a>
+	
+	
+	
+	<a href="https://github.com/jimschubert" rel="me"><i class="fab fa-github fa-lg" aria-hidden="true"></i></a>
+	
+	
+	
+	
+	
+	
+	
+	<a href="https://linkedin.com/in/jamesschubert" rel="me"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a>
+	
+	
+	<a href="https://stackoverflow.com/users/151445" rel="me"><i class="fab fa-stack-overflow fa-lg" aria-hidden="true"></i></a>
+	
+	
+	
+	
+	
+	
+	
+	
+</section>
+
+      </div>
+    </div>
+    
+<div class="copyright">
+  &copy; 2020 Jim Schubert
+  
+    <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>
+  
+</div>
+
+
+<div class="builtwith">
+Built with <a href="https://gohugo.io">Hugo</a> ❤️ <a href="https://github.com/htr3n/hyde-hyde">hyde-hyde</a>.
+</div>
+
+
+  </div>
+</div>
+
+        <div class="content container">
+            
+    
+<article>
+  <header>
+    <h1>System.Data.OracleClient and Windows 7… love at first sight!</h1>
+    
+    
+<div class="post__meta">
+    
+    
+      <i class="fas fa-calendar-alt"></i> Aug 14, 2011
+    
+    
+    
+      
+      
+          in
+          
+          
+              <a class="badge badge-category" href="/site/categories/blog">BLOG</a>
+              
+          
+      
+    
+    
+    
+      
+      
+          <br/>
+           <i class="fas fa-tags"></i>
+          
+          <a class="badge badge-tag" href="/site/tags/errors">errors</a>
+           
+      
+          <a class="badge badge-tag" href="/site/tags/oracle">oracle</a>
+           
+      
+          <a class="badge badge-tag" href="/site/tags/tricks">tricks</a>
+          
+      
+    
+    
+    <br/>
+    <i class="fas fa-clock"></i> 2 min read
+</div>
+
+
+  </header>
+  
+  
+  
+  
+  <div class="post">
+    <p><strong></sarcasm></strong></p>
+<p>I spent nearly two days trying to resolve this issue. My new desktop at work is running Windows 7 (64-bit) and some of our applications are still using System.Data.OracleClient as an adapter instead of Oracle’s own ODP.NET. Microsoft’s driver interops with Oracle’s own client installed on the developer machine (oci.dll). We need to continue running our web applications under 32-bit IIS, which is where the problem lies.</p>
+<p>FYI… <a href="http://msdn.microsoft.com/en-us/library/77d8yct7.aspx" title="Oracle and ADO.NET" target="_blank">According to Microsoft</a>:</p>
+<blockquote>
+<p>The types in System.Data.OracleClient are deprecated. The types are supported in version 4 of the .NET Framework but will be removed in a future release. Microsoft recommends that you use a third-party Oracle provider.</p>
+</blockquote>
+<p>Back to the comment about IIS. Apparently, IIS 7 in Windows 7 is 64-bit only. Yes, you can set an application pool to 32-bit. That would be perfectly fine, except that Oracle’s client native methods don’t like running through WoW64. So, you have to install both the 64-bit client and the 32-bit client. After all, 32-bit adapter code can’t call a 64-bit client. If you fire up procmon, though, you’ll see that calling the 32-bit Oracle client still queries 64-bit settings (and fails if they don’t exist). WoW64!, indeed.</p>
+<p>Continue reading to see my resolution…</p>
+<p><em>Note: this forces Oracle 11.2.0.1 to use 32-bit only in a 64-bit environment.</em></p>
+<p>The first mistake I made was to install the Oracle 10g client on Windows 7. This WILL NOT work. If you install it, you will have to perform some cleanup afterward.</p>
+<ol>
+<li>Go to Oracle’s site and <a href="http://www.oracle.com/technetwork/database/enterprise-edition/downloads/112010-win64soft-094461.html" title="Oracle 11g client download" target="_blank">download the 11g 32-bit and 64-bit clients</a>.</li>
+<li><a href="http://www.attunity.com/forums/microsoft-ssis-oracle-connector/ora-12154-tns-could-not-resolve-1369.html#post2054" title="Dummy Registry entry" target="_blank">Go here</a> and follow the “Dummy registry entry” steps.</li>
+<li>Open regedit and verify that <em>HKLM\SOFTWARE\Wow6432Node\ORACLE\inst_loc</em> points to the proper location (probably C:\oracle\Inventory)</li>
+<li>Point the registry entry at <em>HKLM\SOFTWARE\Wow6432Node\ORACLE\VOBHOME2.0</em> to the 32-bit Oracle folder</li>
+<li>Create an ORACLE_HOME environment variable and point it to the 32-bit folder.</li>
+</ol>
+<p>Now you should be all set after a restart.</p>
+<p>If you tried installing the Oracle 10g client, you’ll have to perform some cleanup. First, make sure Oracle 10g is completely uninstalled, dereferenced from your PATH variable, and the directory is removed. Then, <a href="http://www.ipreferjim.com/?p=246" title="Oracle.DataAccess issues" target="_blank">find the assemblies referenced in the GAC</a>:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">gacutil /l <span class="p">|</span> find /i <span class="s2">&#34;Oracle&#34;</span> &gt; c:<span class="se">\[</span>some directory<span class="o">]</span><span class="se">\o</span>racle.txt
+</code></pre></div><p>Find the lines referring to Oracle.DataAccess version 10.2 and remove them from the GAC. As an example (this won’t work unless you have the same version installed):</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">gacutil /u <span class="s2">&#34;Oracle.DataAccess, Version=10.2.0.100, Culture=neutral, PublicKeyToken=89b483f429c47342&#34;</span>
+</code></pre></div><p>When I did this, I had three assemblies to remove:</p>
+<ul>
+<li>Oracle.DataAccess</li>
+<li>Policy.10.1.Oracle.DataAccess</li>
+<li>Policy.9.2.Oracle.DataAccess</li>
+</ul>
+<p>Again, you’ll probably need to restart (hey, it’s Windows).</p>
+  </div>
+  
+
+<div class="navigation navigation-single">
+    
+    <a href="/site/2011/08/fixed-issues-with-rss-feed/" class="navigation-prev">
+      <i aria-hidden="true" class="fa fa-chevron-left"></i>
+      <span class="navigation-tittle">Fixed issues with RSS feed.</span>
+    </a>
+    
+    
+    <a href="/site/2011/08/running-additional-google-chrome-profiles-in-linux/" class="navigation-next">
+      <span class="navigation-tittle">Running additional Google Chrome profiles in Linux</span>
+      <i aria-hidden="true" class="fa fa-chevron-right"></i>
+    </a>
+    
+</div>
+
+
+  
+
+
+<div class="post__related">
+    
+    <h2>Related Articles</h2>
+    <ul class="related-posts">
+        
+<li>
+  <span class="list__title--small">
+    <a href="/site/2010/04/oracle-exception-could-not-load-file-or-assembly-oracle-dataaccess-version2-111-7-20/" >Oracle Exception: Could not load file or assembly ‘Oracle.DataAccess, Version=2.111.7.20…</a>
+      
+      <time class="pull-right hidden-tablet">Apr 9, 2010</time>
+      
+  </span>
+</li>
+
+<li>
+  <span class="list__title--small">
+    <a href="/site/2010/03/fluent-nhibernate-error-unable-to-cast-object-of-type-oracle-dataaccess-client-oracleconnection-to-type-system-data-common-dbconnection/" >Fluent NHibernate error: Unable to cast object of type ‘Oracle.DataAccess.Client.OracleConnection’ to type ‘System.Data.Common.DbConnection’.</a>
+      
+      <time class="pull-right hidden-tablet">Mar 20, 2010</time>
+      
+  </span>
+</li>
+
+<li>
+  <span class="list__title--small">
+    <a href="/site/2011/07/linux-tip-alias-cd-in-bash-shell/" >Linux tip: Alias ‘cd’ in bash shell</a>
+      
+      <time class="pull-right hidden-tablet">Jul 24, 2011</time>
+      
+  </span>
+</li>
+
+<li>
+  <span class="list__title--small">
+    <a href="/site/2011/07/hostgator-ssh-warns-too-many-authentication-failures/" >Hostgator: ssh warns ‘too many authentication failures’</a>
+      
+      <time class="pull-right hidden-tablet">Jul 17, 2011</time>
+      
+  </span>
+</li>
+
+<li>
+  <span class="list__title--small">
+    <a href="/site/2011/06/cant-login-to-mysql-as-root/" >Can’t login to MySQL as root :(</a>
+      
+      <time class="pull-right hidden-tablet">Jun 12, 2011</time>
+      
+  </span>
+</li>
+
+
+    </ul>
+</div>
+
+
+
+  
+    
+
+
+</article>
+
+
+        </div>
+        
+    
+
+<script defer src="https://use.fontawesome.com/releases/v5.11.2/js/all.js" integrity="sha384-b3ua1l97aVGAPEIe48b4TC60WUQbQaGi2jqAWM90y0OZXZeyaTCWtBTKtjW2GXG1" crossorigin="anonymous"></script>
+
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+        
+    <script type="text/javascript">
+        
+        hljs.initHighlightingOnLoad();
+    </script>
+    
+
+
+
+
+
+    
+
+
+
+    </body>
+</html>

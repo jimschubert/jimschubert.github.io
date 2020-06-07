@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>oracle on I Prefer Jim</title>
+    <link>https://www.ipreferjim.com/site/tags/oracle/</link>
+    <description>Recent content in oracle on I Prefer Jim</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 14 Aug 2011 03:52:56 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.ipreferjim.com/site/tags/oracle/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>System.Data.OracleClient and Windows 7… love at first sight!</title>
+      <link>https://www.ipreferjim.com/site/2011/08/system-data-oracleclient-and-windows-7-love-at-first-sight/</link>
+      <pubDate>Sun, 14 Aug 2011 03:52:56 +0000</pubDate>
+      
+      <guid>https://www.ipreferjim.com/site/2011/08/system-data-oracleclient-and-windows-7-love-at-first-sight/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;&lt;/sarcasm&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;I spent nearly two days trying to resolve this issue. My new desktop at work is running Windows 7 (64-bit) and some of our applications are still using System.Data.OracleClient as an adapter instead of Oracle’s own ODP.NET. Microsoft’s driver interops with Oracle’s own client installed on the developer machine (oci.dll). We need to continue running our web applications under 32-bit IIS, which is where the problem lies.&lt;/p&gt;
+&lt;p&gt;FYI… &lt;a href=&#34;http://msdn.microsoft.com/en-us/library/77d8yct7.aspx&#34; title=&#34;Oracle and ADO.NET&#34; target=&#34;_blank&#34;&gt;According to Microsoft&lt;/a&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The types in System.Data.OracleClient are deprecated. The types are supported in version 4 of the .NET Framework but will be removed in a future release. Microsoft recommends that you use a third-party Oracle provider.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Back to the comment about IIS. Apparently, IIS 7 in Windows 7 is 64-bit only. Yes, you can set an application pool to 32-bit. That would be perfectly fine, except that Oracle’s client native methods don’t like running through WoW64. So, you have to install both the 64-bit client and the 32-bit client. After all, 32-bit adapter code can’t call a 64-bit client. If you fire up procmon, though, you’ll see that calling the 32-bit Oracle client still queries 64-bit settings (and fails if they don’t exist). WoW64!, indeed.&lt;/p&gt;
+&lt;p&gt;Continue reading to see my resolution…&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Note: this forces Oracle 11.2.0.1 to use 32-bit only in a 64-bit environment.&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Oracle Exception: Could not load file or assembly ‘Oracle.DataAccess, Version=2.111.7.20…</title>
+      <link>https://www.ipreferjim.com/site/2010/04/oracle-exception-could-not-load-file-or-assembly-oracle-dataaccess-version2-111-7-20/</link>
+      <pubDate>Fri, 09 Apr 2010 19:34:24 +0000</pubDate>
+      
+      <guid>https://www.ipreferjim.com/site/2010/04/oracle-exception-could-not-load-file-or-assembly-oracle-dataaccess-version2-111-7-20/</guid>
+      <description>Last week, I was having performance issues with my workstation. I was told to remove unused files and applications. I had previously installed ODAC 11g for the Oracle Data Providers.</description>
+    </item>
+    
+    <item>
+      <title>Fluent NHibernate error: Unable to cast object of type ‘Oracle.DataAccess.Client.OracleConnection’ to type ‘System.Data.Common.DbConnection’.</title>
+      <link>https://www.ipreferjim.com/site/2010/03/fluent-nhibernate-error-unable-to-cast-object-of-type-oracle-dataaccess-client-oracleconnection-to-type-system-data-common-dbconnection/</link>
+      <pubDate>Sat, 20 Mar 2010 16:41:35 +0000</pubDate>
+      
+      <guid>https://www.ipreferjim.com/site/2010/03/fluent-nhibernate-error-unable-to-cast-object-of-type-oracle-dataaccess-client-oracleconnection-to-type-system-data-common-dbconnection/</guid>
+      <description>After developing an application in Fluent NHibernate, I’ve received the following Error and Stack Trace:
+Unable to cast object of type &#39;Oracle.</description>
+    </item>
+    
+  </channel>
+</rss>

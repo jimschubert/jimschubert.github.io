@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>jQuery on I Prefer Jim</title>
+    <link>https://www.ipreferjim.com/site/tags/jquery/</link>
+    <description>Recent content in jQuery on I Prefer Jim</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 14 Oct 2012 01:57:52 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.ipreferjim.com/site/tags/jquery/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Getting started with jQuery plugins</title>
+      <link>https://www.ipreferjim.com/site/2012/10/getting-started-with-jquery-plugins/</link>
+      <pubDate>Sun, 14 Oct 2012 01:57:52 +0000</pubDate>
+      
+      <guid>https://www.ipreferjim.com/site/2012/10/getting-started-with-jquery-plugins/</guid>
+      <description>jQuery plugins aren’t that difficult to write, but some folks seem to have a hard time understanding how to get started, so I thought I would write a quick blog post about that.</description>
+    </item>
+    
+    <item>
+      <title>Posting complex models to ASP.NET MVC</title>
+      <link>https://www.ipreferjim.com/site/2011/08/posting-complex-models-to-asp-net-mvc/</link>
+      <pubDate>Tue, 16 Aug 2011 12:43:24 +0000</pubDate>
+      
+      <guid>https://www.ipreferjim.com/site/2011/08/posting-complex-models-to-asp-net-mvc/</guid>
+      <description>Nick Riggs wrote a nice little jQuery plugin called postify that I have found extremely handy on many occasions. The code builds posted data into a format which is more understandable to the default ModelBinder in ASP.</description>
+    </item>
+    
+    <item>
+      <title>jquery.empuzzle @github</title>
+      <link>https://www.ipreferjim.com/site/2011/08/jquery-empuzzle-github/</link>
+      <pubDate>Mon, 08 Aug 2011 02:37:28 +0000</pubDate>
+      
+      <guid>https://www.ipreferjim.com/site/2011/08/jquery-empuzzle-github/</guid>
+      <description>For the past few days, I’ve been writing this plugin called jquery.empuzzle. It was inspired by ‘Jigsy’ at cityposh.com.
+It is a basic N-puzzle</description>
+    </item>
+    
+    <item>
+      <title>Loading newer versions of jQuery and jQuery UI (noConflict)</title>
+      <link>https://www.ipreferjim.com/site/2011/06/loading-newer-versions-of-jquery-and-jquery-ui-noconflict/</link>
+      <pubDate>Sat, 18 Jun 2011 00:22:00 +0000</pubDate>
+      
+      <guid>https://www.ipreferjim.com/site/2011/06/loading-newer-versions-of-jquery-and-jquery-ui-noconflict/</guid>
+      <description>&lt;p&gt;Here’s an interesting problem:&lt;/p&gt;
+&lt;p&gt;You have an ASP.NET Web Forms application which references jQuery 1.3.x and would require a lot of testing to upgrade to a newer version of jQuery. You’re adding functionality to this application, and you really want to use jQuery 1.5 or jQuery 1.6 going forward with new development. &lt;strong&gt;But…&lt;/strong&gt;, jQuery 1.3.x is referenced in the master page. Also, you want to load jQuery UI 1.8.x targeting the newer version of jQuery.&lt;/p&gt;
+&lt;p&gt;…&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>jQuery Pocket Reference by David Flanagan</title>
+      <link>https://www.ipreferjim.com/site/2011/02/jquery-pocket-reference-by-david-flanagan/</link>
+      <pubDate>Tue, 08 Feb 2011 05:51:34 +0000</pubDate>
+      
+      <guid>https://www.ipreferjim.com/site/2011/02/jquery-pocket-reference-by-david-flanagan/</guid>
+      <description>jQuery Pocket Reference by David Flanagan
+I’ve enjoyed previous books by David Flanagan and decided to read jQuery Pocket Reference. I thought I would quickly skim through the chapters because I considered myself fairly proficient in jQuery.</description>
+    </item>
+    
+    <item>
+      <title>Fairly Accurate JavaScript Browser Detection</title>
+      <link>https://www.ipreferjim.com/site/2010/06/fairly-accurate-javascript-browser-detection/</link>
+      <pubDate>Sat, 12 Jun 2010 13:53:19 +0000</pubDate>
+      
+      <guid>https://www.ipreferjim.com/site/2010/06/fairly-accurate-javascript-browser-detection/</guid>
+      <description>I use jQuery for almost everything I do in JavaScript. The only real problem is that jQuery’s browser name and version detection doesn’t provide exactly what I want.</description>
+    </item>
+    
+    <item>
+      <title>jQuery check/uncheck all Checkboxes in ASP.NET</title>
+      <link>https://www.ipreferjim.com/site/2009/12/jquery-checkuncheck-all-checkboxes-in-asp-net/</link>
+      <pubDate>Thu, 17 Dec 2009 16:18:00 +0000</pubDate>
+      
+      <guid>https://www.ipreferjim.com/site/2009/12/jquery-checkuncheck-all-checkboxes-in-asp-net/</guid>
+      <description>For some odd reason, ASP.NET GridView wraps html elements in a span element. When you apply a CssClass to the asp:CheckBox for instance, you will have a span with that class and inside you’ll have an input with type=checkbox.</description>
+    </item>
+    
+  </channel>
+</rss>

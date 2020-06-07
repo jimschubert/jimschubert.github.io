@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    
+
+
+    <head>
+    <link href="https://gmpg.org/xfn/11" rel="profile">
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="Cache-Control" content="public" />
+<!-- Enable responsiveness on mobile devices -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="generator" content="Hugo 0.72.0" />
+
+    
+    
+    
+
+<title>String Concatenation in .NET – what really goes on? • I Prefer Jim</title>
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="String Concatenation in .NET – what really goes on?"/>
+<meta name="twitter:description" content="There are a number of ways to concatenate a string in C# and other .NET languages. Is there a *best* way?"/>
+
+<meta property="og:title" content="String Concatenation in .NET – what really goes on?" />
+<meta property="og:description" content="There are a number of ways to concatenate a string in C# and other .NET languages. Is there a *best* way?" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.ipreferjim.com/site/2010/03/string-concatenation-in-net-what-really-goes-on/" />
+<meta property="article:published_time" content="2010-03-21T23:04:48+00:00" />
+<meta property="article:modified_time" content="2010-03-21T23:04:48+00:00" /><meta property="og:site_name" content="I Prefer Jim" />
+
+
+    
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/site/scss/hyde-hyde.1d734ca591261200417c9d5de423a667cc5271b6576cc2ea477fce0dd8c628d0.css" integrity="sha256-HXNMpZEmEgBBfJ1d5COmZ8xScbZXbMLqR3/ODdjGKNA=">
+
+
+<link rel="stylesheet" href="/site/scss/print.2744dcbf8a0b2e74f8a50e4b34e5f441be7cf93cc7de27029121c6a09f9e77bc.css" integrity="sha256-J0Tcv4oLLnT4pQ5LNOX0Qb58&#43;TzH3icCkSHGoJ&#43;ed7w=" media="print">
+
+
+
+
+<link rel="stylesheet" href="/site/scss/hugo-toc.11a9185f83b7761946f8d16ae214f4d959edaf003337338e55935920cc7852d7.css" integrity="sha256-EakYX4O3dhlG&#43;NFq4hT02VntrwAzNzOOVZNZIMx4Utc=">
+
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- Icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+    <link rel="shortcut icon" href="/favicon.png">
+    
+    
+
+</head>
+
+
+    <body class=" ">
+    
+<div class="sidebar">
+  <div class="container ">
+    <div class="sidebar-about">
+      <span class="site__title">
+        <a href="https://www.ipreferjim.com/site/">I Prefer Jim</a>
+      </span>
+      
+      
+        <div class="author-image">
+          <img src="https://www.gravatar.com/avatar/466dc28e15028c7353552022d2de1f9e?s=240&d=mp" class="img--circle img--headshot element--center" alt="gravatar">
+        </div>
+      
+      <p class="site__description">
+        
+      </p>
+    </div>
+    <div class="collapsible-menu">
+      <input type="checkbox" id="menuToggle">
+      <label for="menuToggle">I Prefer Jim</label>
+      <div class="menu-content">
+        <div>
+	<ul class="sidebar-nav">
+		 
+		 
+			 
+				<li>
+					<a href="/site/posts/">
+						<span>Posts</span>
+					</a>
+				</li>
+			 
+		 
+			 
+				<li>
+					<a href="/site/tags/">
+						<span>Tags</span>
+					</a>
+				</li>
+			 
+		 
+			 
+				<li>
+					<a href="/site/categories/">
+						<span>Categories</span>
+					</a>
+				</li>
+			 
+		 
+			 
+				<li>
+					<a href="/site/books/">
+						<span>Books</span>
+					</a>
+				</li>
+			 
+		
+	</ul>
+</div>
+
+        <section class="social">
+	
+	<a href="https://twitter.com/jimschubert" rel="me"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a>
+	
+	
+	
+	<a href="https://github.com/jimschubert" rel="me"><i class="fab fa-github fa-lg" aria-hidden="true"></i></a>
+	
+	
+	
+	
+	
+	
+	
+	<a href="https://linkedin.com/in/jamesschubert" rel="me"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a>
+	
+	
+	<a href="https://stackoverflow.com/users/151445" rel="me"><i class="fab fa-stack-overflow fa-lg" aria-hidden="true"></i></a>
+	
+	
+	
+	
+	
+	
+	
+	
+</section>
+
+      </div>
+    </div>
+    
+<div class="copyright">
+  &copy; 2020 Jim Schubert
+  
+    <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>
+  
+</div>
+
+
+<div class="builtwith">
+Built with <a href="https://gohugo.io">Hugo</a> ❤️ <a href="https://github.com/htr3n/hyde-hyde">hyde-hyde</a>.
+</div>
+
+
+  </div>
+</div>
+
+        <div class="content container">
+            
+    
+<article>
+  <header>
+    <h1>String Concatenation in .NET – what really goes on?</h1>
+    
+    
+<div class="post__meta">
+    
+    
+      <i class="fas fa-calendar-alt"></i> Mar 21, 2010
+    
+    
+    
+      
+      
+          in
+          
+          
+              <a class="badge badge-category" href="/site/categories/blog">BLOG</a>
+              
+          
+      
+    
+    
+    
+      
+      
+          <br/>
+           <i class="fas fa-tags"></i>
+          
+          <a class="badge badge-tag" href="/site/tags/advanced">advanced</a>
+           
+      
+          <a class="badge badge-tag" href="/site/tags/c">c#</a>
+           
+      
+          <a class="badge badge-tag" href="/site/tags/exploring">exploring</a>
+           
+      
+          <a class="badge badge-tag" href="/site/tags/il">il</a>
+          
+      
+    
+    
+    <br/>
+    <i class="fas fa-clock"></i> 6 min read
+</div>
+
+
+  </header>
+  
+  
+  
+  
+  <div class="post">
+    <p>There are a number of ways to concatenate a string in C# and other .NET languages. Is there a *best* way?</p>
+<p>Let’s look at how the C# compiler translates our code into IL to see the differences.</p>
+<p>Here is a simple little console application to concatenate a string via String.Concat, String.Format, System.String’s (+) operator, System.String’s Join, and StringBuilder’s Append method.</p>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">class</span> <span class="nc">Program</span>
+    <span class="p">{</span>
+        <span class="k">static</span> <span class="k">void</span> <span class="n">Main</span><span class="p">(</span><span class="kt">string</span><span class="p">[]</span> <span class="n">args</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="kt">string</span> <span class="n">first</span> <span class="p">=</span> <span class="s">&#34;The cake&#34;</span><span class="p">;</span>
+            <span class="kt">string</span> <span class="n">second</span> <span class="p">=</span> <span class="s">&#34; is a&#34;</span><span class="p">;</span>
+            <span class="kt">string</span> <span class="n">third</span> <span class="p">=</span> <span class="s">&#34; lie.&#34;</span><span class="p">;</span>
+
+            <span class="kt">string</span> <span class="n">fromConcat</span> <span class="p">=</span> <span class="n">Concat</span><span class="p">(</span><span class="n">first</span><span class="p">,</span> <span class="n">second</span><span class="p">,</span> <span class="n">third</span><span class="p">);</span>
+            <span class="kt">string</span> <span class="n">fromFormat</span> <span class="p">=</span> <span class="n">Format</span><span class="p">(</span><span class="n">first</span><span class="p">,</span> <span class="n">second</span><span class="p">,</span> <span class="n">third</span><span class="p">);</span>
+            <span class="kt">string</span> <span class="n">fromPluses</span> <span class="p">=</span> <span class="n">Pluses</span><span class="p">(</span><span class="n">first</span><span class="p">,</span> <span class="n">second</span><span class="p">,</span> <span class="n">third</span><span class="p">);</span>
+            <span class="kt">string</span> <span class="n">fromBuilder</span> <span class="p">=</span> <span class="n">Builder</span><span class="p">(</span><span class="n">first</span><span class="p">,</span> <span class="n">second</span><span class="p">,</span> <span class="n">third</span><span class="p">);</span>
+            <span class="kt">string</span> <span class="n">fromJoiner</span> <span class="p">=</span> <span class="n">Joiner</span><span class="p">(</span><span class="n">first</span><span class="p">,</span> <span class="n">second</span><span class="p">,</span> <span class="n">third</span><span class="p">);</span>
+
+            <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">fromConcat</span><span class="p">);</span>
+            <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">fromFormat</span><span class="p">);</span>
+            <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">fromPluses</span><span class="p">);</span>
+            <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">fromBuilder</span><span class="p">);</span>
+            <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">fromJoiner</span><span class="p">);</span>
+
+            <span class="n">Console</span><span class="p">.</span><span class="n">ReadLine</span><span class="p">();</span>
+        <span class="p">}</span>
+
+        <span class="k">static</span> <span class="kt">string</span> <span class="n">Concat</span><span class="p">(</span><span class="k">params</span> <span class="kt">string</span><span class="p">[]</span> <span class="n">strings</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="k">return</span> <span class="n">String</span><span class="p">.</span><span class="n">Concat</span><span class="p">(</span><span class="n">strings</span><span class="p">);</span>
+        <span class="p">}</span>
+
+        <span class="k">static</span> <span class="kt">string</span> <span class="n">Format</span><span class="p">(</span><span class="k">params</span> <span class="kt">string</span><span class="p">[]</span> <span class="n">strings</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="k">return</span> <span class="kt">string</span><span class="p">.</span><span class="n">Format</span><span class="p">(</span><span class="s">&#34;{0}{1}{2}&#34;</span><span class="p">,</span> <span class="n">strings</span><span class="p">);</span>
+        <span class="p">}</span>
+
+        <span class="k">static</span> <span class="kt">string</span> <span class="n">Pluses</span><span class="p">(</span><span class="k">params</span> <span class="kt">string</span><span class="p">[]</span> <span class="n">strings</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="k">return</span> <span class="n">strings</span><span class="p">[</span><span class="m">0</span><span class="p">]</span> <span class="p">+</span> <span class="n">strings</span><span class="p">[</span><span class="m">1</span><span class="p">]</span> <span class="p">+</span> <span class="n">strings</span><span class="p">[</span><span class="m">2</span><span class="p">];</span>
+        <span class="p">}</span>
+
+        <span class="k">static</span> <span class="kt">string</span> <span class="n">Builder</span><span class="p">(</span><span class="k">params</span> <span class="kt">string</span><span class="p">[]</span> <span class="n">strings</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="n">StringBuilder</span> <span class="n">sb</span> <span class="p">=</span> <span class="k">new</span> <span class="n">StringBuilder</span><span class="p">();</span>
+            <span class="n">sb</span><span class="p">.</span><span class="n">Append</span><span class="p">(</span><span class="n">strings</span><span class="p">[</span><span class="m">0</span><span class="p">]);</span>
+            <span class="n">sb</span><span class="p">.</span><span class="n">Append</span><span class="p">(</span><span class="n">strings</span><span class="p">[</span><span class="m">1</span><span class="p">]);</span>
+            <span class="n">sb</span><span class="p">.</span><span class="n">Append</span><span class="p">(</span><span class="n">strings</span><span class="p">[</span><span class="m">2</span><span class="p">]);</span>
+            <span class="k">return</span> <span class="n">sb</span><span class="p">.</span><span class="n">ToString</span><span class="p">();</span>
+        <span class="p">}</span>
+
+        <span class="k">static</span> <span class="kt">string</span> <span class="n">Joiner</span><span class="p">(</span><span class="k">params</span> <span class="kt">string</span><span class="p">[]</span> <span class="n">strings</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="k">return</span> <span class="kt">string</span><span class="p">.</span><span class="n">Join</span><span class="p">(</span><span class="s">&#34;&#34;</span><span class="p">,</span> <span class="n">strings</span><span class="p">);</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+</code></pre></div><p>Which of these do you think will require the most intermediary code? I’d say it’s StringBuilder, since we have to instantiate an object and call a method on that object a number of times. I’d like to go over these individually. The code in Main() works the same for all methods: a new string array is created and passed to the method which returns a string into a new variable. Here are the methods:</p>
+<p><strong>Concat</strong></p>
+<pre><code>.method private hidebysig static string 
+          Concat(string[] strings) cil managed
+  {
+    .param [1]
+    .custom instance void [mscorlib]System.ParamArrayAttribute::.ctor() = ( 01 00 00 00 ) // Code size       12 (0xc)
+    .maxstack  1
+    .locals init ([0] string CS$1$0000)
+    IL_0000:  nop
+    IL_0001:  ldarg.0
+    IL_0002:  call       string [mscorlib]System.String::Concat(string[])
+    IL_0007:  stloc.0
+    IL_0008:  br.s       IL_000a
+    IL_000a:  ldloc.0
+    IL_000b:  ret
+  } // end of method Program::Concat
+</code></pre><p>The C# compiler converts String.Concat into the smallest amount of code, and (I assume), the best as far as performance. It couldn’t get any simpler than this method: it loads the arguments, passes them to the method, stores that result in memory and returns.</p>
+<p><strong>Format</strong></p>
+<pre><code>.method private hidebysig static string 
+          Format(string[] strings) cil managed
+  {
+    .param [1]
+    .custom instance void [mscorlib]System.ParamArrayAttribute::.ctor() = ( 01 00 00 00 ) // Code size       17 (0x11)
+    .maxstack  2
+    .locals init ([0] string CS$1$0000)
+    IL_0000:  nop
+    IL_0001:  ldstr      &quot;{0}{1}{2}&quot;
+    IL_0006:  ldarg.0
+    IL_0007:  call       string [mscorlib]System.String::Format(string,  object[])
+    IL_000c:  stloc.0
+    IL_000d:  br.s       IL_000f
+    IL_000f:  ldloc.0
+    IL_0010:  ret
+  } // end of method Program::Format
+</code></pre><p>String.Format (my favorite of all the methods), comes in at a code size of 17 lines. The additional space is required for the string’s template, which of course isn’t necessary with String.Concat, but allows you to perform a number of useful operations on a string. For instance, String.Concat will only string the strings together. If you want to add a space between them, you’d have to create either one string to represent a space and concat that along (which gives you the same amount of code as String.Format anyway), or you could do something like:</p>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="kt">string</span> <span class="n">overDoingIt</span> <span class="p">=</span> <span class="n">String</span><span class="p">.</span><span class="n">Concat</span><span class="p">(</span><span class="kt">string</span><span class="p">[</span><span class="m">0</span><span class="p">],</span> <span class="s">&#34; probably&#34;</span><span class="p">,</span> <span class="kt">string</span><span class="p">[</span><span class="m">1</span><span class="p">],</span> <span class="s">&#34; big fat&#34;</span><span class="p">,</span> <span class="kt">string</span><span class="p">[</span><span class="m">2</span><span class="p">]);</span>
+</code></pre></div><p>Not to mention, String.Format allows you to easily apply formatting rules without individually creating new objects. Granted, it would be converted into IL as something using a number formatter, but it makes our jobs as developers much easier.</p>
+<p><strong>Pluses</strong></p>
+<pre><code>.method private hidebysig static string 
+          Pluses(string[] strings) cil managed
+  {
+    .param [1]
+    .custom instance void [mscorlib]System.ParamArrayAttribute::.ctor() = ( 01 00 00 00 ) // Code size       20 (0x14)
+    .maxstack  4
+    .locals init ([0] string CS$1$0000)
+    IL_0000:  nop
+    IL_0001:  ldarg.0
+    IL_0002:  ldc.i4.0
+    IL_0003:  ldelem.ref
+    IL_0004:  ldarg.0
+    IL_0005:  ldc.i4.1
+    IL_0006:  ldelem.ref
+    IL_0007:  ldarg.0
+    IL_0008:  ldc.i4.2
+    IL_0009:  ldelem.ref
+    IL_000a:  call       string [mscorlib]System.String::Concat(string, string, string)
+    IL_000f:  stloc.0
+    IL_0010:  br.s       IL_0012
+    IL_0012:  ldloc.0
+    IL_0013:  ret
+  } // end of method Program::Pluses
+</code></pre><p>I see the (+) operator used a lot for string concatenation. There have been a number of articles that claim this performance is worse than that of String.Concat. Not even bothering with the actual performance aspect of it, you can see that this requires nearly twice as much intermediate language code to be generated than String.Concat.</p>
+<p>If you’re writing an application that requires thousands of string concatenation operations, I’d suggest using String.Concat. Even if you have to hard-code single characters as constants and occasionally pass a new string into the mix, it should still offer a great deal less generated code (and presumably better performance) than the (+) operator.</p>
+<p><strong>Builder</strong></p>
+<div class="highlight"><pre class="chroma"><code class="language-plain" data-lang="plain">.method private hidebysig static string 
+          Builder(string[] strings) cil managed
+  {
+    .param [1]
+    .custom instance void [mscorlib]System.ParamArrayAttribute::.ctor() = ( 01 00 00 00 )    // Code size       48 (0x30)
+    .maxstack  3
+<span class="hl">    .locals init ([0] class [mscorlib]System.Text.StringBuilder sb, [1] string CS$1$0000)
+</span>    IL_0000:  nop
+    IL_0001:  newobj     instance void [mscorlib]System.Text.StringBuilder::.ctor()
+    IL_0006:  stloc.0
+    IL_0007:  ldloc.0
+    IL_0008:  ldarg.0
+    IL_0009:  ldc.i4.0
+    IL_000a:  ldelem.ref
+<span class="hl">    IL_000b:  callvirt   instance class [mscorlib]System.Text.StringBuilder [mscorlib]System.Text.StringBuilder::Append(string)
+</span>    IL_0010:  pop
+    IL_0011:  ldloc.0
+    IL_0012:  ldarg.0
+    IL_0013:  ldc.i4.1
+    IL_0014:  ldelem.ref
+<span class="hl">    IL_0015:  callvirt   instance class [mscorlib]System.Text.StringBuilder [mscorlib]System.Text.StringBuilder::Append(string)
+</span>    IL_001a:  pop
+    IL_001b:  ldloc.0
+    IL_001c:  ldarg.0
+    IL_001d:  ldc.i4.2
+    IL_001e:  ldelem.ref
+<span class="hl">    IL_001f:  callvirt   instance class [mscorlib]System.Text.StringBuilder [mscorlib]System.Text.StringBuilder::Append(string)
+</span>    IL_0024:  pop
+    IL_0025:  ldloc.0
+<span class="hl">    IL_0026:  callvirt   instance string [mscorlib]System.Object::ToString()
+</span>    IL_002b:  stloc.1
+    IL_002c:  br.s       IL_002e
+    IL_002e:  ldloc.1
+    IL_002f:  ret
+  } // end of method Program::Builder
+</code></pre></div><p>I see this used a lot in ASP.NET for injecting startup JavaScript scripts (even for 5 lines of code!). Aside from the obvious problems with that, I’d like to mention that in .NET 3.0 and higher, Page.ClientScript.RegisterStartupScript now has an overload which adds script tags. That means you don’t have to worry about the curly braces that would otherwise mess up your String.Format.</p>
+<p>Anyway, what’s going on here is: in lines 15, 21, and 27, we’re calling the method Append on our instance of StringBuilder (instantiated as ‘sb’ in line 7). The strings are popped off the stack and passed into the method. At the end, we still have to call ToString() on our object. This is obviously way more work than is necessary. Granted, there are times when StringBuilder comes in handy, but simple concatenation really shouldn’t use it.</p>
+<p><strong>Joiner</strong></p>
+<pre><code>.method private hidebysig static string 
+          Joiner(string[] strings) cil managed
+  {
+    .param [1]
+    .custom instance void [mscorlib]System.ParamArrayAttribute::.ctor() = ( 01 00 00 00 )  // Code size       17 (0x11)
+    .maxstack  2
+    .locals init ([0] string CS$1$0000)
+    IL_0000:  nop
+    IL_0001:  ldstr      &quot;&quot;
+    IL_0006:  ldarg.0
+    IL_0007:  call       string [mscorlib]System.String::Join(string, string[])
+    IL_000c:  stloc.0
+    IL_000d:  br.s       IL_000f
+    IL_000f:  ldloc.0
+    IL_0010:  ret
+  } // end of method Program::Joiner
+</code></pre><p>String.Join is interesting in that it’s sort of between String.Concat and String.Format. I usually overlook String.Join because, like I said, I prefer String.Format. But, look at how the Joiner method requires the same amount of IL code to be generated as String.Format. There really isn’t any additional formatting required here, so String.Join is probably the second best solution.</p>
+<p>Assume for a second that we didn’t have any spacing in our strings, and instead had “The”, “cake”, “is”, “a”, “lie”. Instead of passing these to String.Concat with a space such as:</p>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="kt">string</span> <span class="n">space</span> <span class="p">=</span> <span class="s">&#34; &#34;</span><span class="p">;</span>
+<span class="c1">// typing the following line gets boring very quickly:
+</span><span class="c1"></span><span class="k">return</span> <span class="n">String</span><span class="p">.</span><span class="n">Concat</span><span class="p">(</span><span class="kt">string</span><span class="p">[</span><span class="m">0</span><span class="p">],</span> <span class="n">space</span><span class="p">,</span> <span class="kt">string</span><span class="p">[</span><span class="m">1</span><span class="p">],</span> <span class="n">space</span><span class="p">,</span> <span class="kt">string</span><span class="p">[</span><span class="m">2</span><span class="p">],</span> <span class="n">space</span> <span class="c1">// etc...
+</span></code></pre></div><p>we could use String.Join:</p>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">return</span> <span class="n">String</span><span class="p">.</span><span class="n">Join</span><span class="p">(</span><span class="s">&#34; &#34;</span><span class="p">,</span> <span class="n">strings</span><span class="p">));</span>
+</code></pre></div><p><strong>Conclusion</strong></p>
+<p>Here is a quick summary of the findings of this little exploration:</p>
+<ul>
+<li>String.Concat– Good for joining strings without any additional processing</li>
+<li>String.Join– Good for joining strings with a specified delimeter</li>
+<li>String.Format– Same amount of code for String.Join, but allows for additional formatting of strings</li>
+<li>String (+) operator– Unnecessary amount of overhead when used to simply combine supplied strings</li>
+<li>StringBuilder– Overly bloated method for simple concatenation.</li>
+</ul>
+
+  </div>
+  
+
+<div class="navigation navigation-single">
+    
+    <a href="/site/2010/03/programming-to-interfaces-or-objects/" class="navigation-prev">
+      <i aria-hidden="true" class="fa fa-chevron-left"></i>
+      <span class="navigation-tittle">Programming to Interfaces or Objects?</span>
+    </a>
+    
+    
+    <a href="/site/2010/04/oracle-exception-could-not-load-file-or-assembly-oracle-dataaccess-version2-111-7-20/" class="navigation-next">
+      <span class="navigation-tittle">Oracle Exception: Could not load file or assembly ‘Oracle.DataAccess, Version=2.111.7.20…</span>
+      <i aria-hidden="true" class="fa fa-chevron-right"></i>
+    </a>
+    
+</div>
+
+
+  
+
+
+<div class="post__related">
+    
+    <h2>Related Articles</h2>
+    <ul class="related-posts">
+        
+<li>
+  <span class="list__title--small">
+    <a href="/site/2010/03/programming-to-interfaces-or-objects/" >Programming to Interfaces or Objects?</a>
+      
+      <time class="pull-right hidden-tablet">Mar 21, 2010</time>
+      
+  </span>
+</li>
+
+<li>
+  <span class="list__title--small">
+    <a href="/site/2010/02/explaining-advanced-features-of-c-3-0/" >Explaining advanced features of C# 3.0</a>
+      
+      <time class="pull-right hidden-tablet">Feb 15, 2010</time>
+      
+  </span>
+</li>
+
+<li>
+  <span class="list__title--small">
+    <a href="/site/2010/03/log4net-configuration-in-net-3-5/" >log4net configuration in .NET 3.5</a>
+      
+      <time class="pull-right hidden-tablet">Mar 1, 2010</time>
+      
+  </span>
+</li>
+
+<li>
+  <span class="list__title--small">
+    <a href="/site/2010/02/posting-data-to-a-remove-server-via-net/" >Basics: Posting data to a remote server via .NET</a>
+      
+      <time class="pull-right hidden-tablet">Feb 20, 2010</time>
+      
+  </span>
+</li>
+
+<li>
+  <span class="list__title--small">
+    <a href="/site/2010/02/quickly-create-a-dictionary-using-linq-to-objects/" >Quickly create a Dictionary using Linq to Objects</a>
+      
+      <time class="pull-right hidden-tablet">Feb 10, 2010</time>
+      
+  </span>
+</li>
+
+
+    </ul>
+</div>
+
+
+
+  
+    
+
+
+</article>
+
+
+        </div>
+        
+    
+
+<script defer src="https://use.fontawesome.com/releases/v5.11.2/js/all.js" integrity="sha384-b3ua1l97aVGAPEIe48b4TC60WUQbQaGi2jqAWM90y0OZXZeyaTCWtBTKtjW2GXG1" crossorigin="anonymous"></script>
+
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+        
+    <script type="text/javascript">
+        
+        hljs.initHighlightingOnLoad();
+    </script>
+    
+
+
+
+
+
+    
+
+
+
+    </body>
+</html>
