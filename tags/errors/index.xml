@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Errors on I Prefer Jim</title>
+    <link>https://www.ipreferjim.com/site/tags/errors/</link>
+    <description>Recent content in Errors on I Prefer Jim</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 06 Sep 2014 15:58:21 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.ipreferjim.com/site/tags/errors/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Data at the root level is invalid. Line 1, position 1.</title>
+      <link>https://www.ipreferjim.com/site/2014/09/data-at-the-root-level-is-invalid-line-1-position-1/</link>
+      <pubDate>Sat, 06 Sep 2014 15:58:21 +0000</pubDate>
+      
+      <guid>https://www.ipreferjim.com/site/2014/09/data-at-the-root-level-is-invalid-line-1-position-1/</guid>
+      <description>Recently, I encountered a really weird problem with an XML document. I was trying to load a document from a string:</description>
+    </item>
+    
+    <item>
+      <title>System76 notebooks… are they worth the money?</title>
+      <link>https://www.ipreferjim.com/site/2014/08/system76-notebooks-are-they-worth-the-money/</link>
+      <pubDate>Sun, 10 Aug 2014 15:39:06 +0000</pubDate>
+      
+      <guid>https://www.ipreferjim.com/site/2014/08/system76-notebooks-are-they-worth-the-money/</guid>
+      <description>On June 19 2012, I purchased a 15″ Pangolin Performance with the following configuration:
+ Ubuntu 12.04 LTS 64 bit 15.</description>
+    </item>
+    
+    <item>
+      <title>HostGator’s upgrade to PHP 5.4</title>
+      <link>https://www.ipreferjim.com/site/2014/04/hostgators-upgrade-to-php-5-4/</link>
+      <pubDate>Wed, 23 Apr 2014 15:15:44 +0000</pubDate>
+      
+      <guid>https://www.ipreferjim.com/site/2014/04/hostgators-upgrade-to-php-5-4/</guid>
+      <description>Recently, HostGator sent around some emails saying they were forcing a PHP upgrade to 5.4 in the coming weeks. The steps provided by HostGator are basically:</description>
+    </item>
+    
+    <item>
+      <title>Install Balsamiq, Ubuntu 14.04</title>
+      <link>https://www.ipreferjim.com/site/2014/04/install-balsamiq-ubuntu-14-04/</link>
+      <pubDate>Sun, 06 Apr 2014 15:21:58 +0000</pubDate>
+      
+      <guid>https://www.ipreferjim.com/site/2014/04/install-balsamiq-ubuntu-14-04/</guid>
+      <description>Balsamiq for Desktop requires Adobe AIR, which is no longer supported.
+Here are the steps I took to get AIR and Balsamiq to install.</description>
+    </item>
+    
+    <item>
+      <title>Android Studio and Library Projects</title>
+      <link>https://www.ipreferjim.com/site/2013/06/android-studio-and-library-projects/</link>
+      <pubDate>Mon, 10 Jun 2013 05:03:17 +0000</pubDate>
+      
+      <guid>https://www.ipreferjim.com/site/2013/06/android-studio-and-library-projects/</guid>
+      <description>This is basically a quick brain-dump post. I have previously attempted to get into Android application development, but with only 8-10 hours of “free” time per month, it was difficult to get traction with an app before the goog machine overhauled everything.</description>
+    </item>
+    
+    <item>
+      <title>“Unable to update the dependencies of the project”</title>
+      <link>https://www.ipreferjim.com/site/2013/01/unable-to-update-the-dependencies-of-the-project/</link>
+      <pubDate>Fri, 04 Jan 2013 16:40:43 +0000</pubDate>
+      
+      <guid>https://www.ipreferjim.com/site/2013/01/unable-to-update-the-dependencies-of-the-project/</guid>
+      <description>I’ve recently had to switch from Visual Studio 2012 back to Visual Studio 2010 to do maintenance on another project. This project is currently stuck in Visual Studio 2010 until I have time to convert the old setup projects to WiX.</description>
+    </item>
+    
+    <item>
+      <title>git push: fatal: unable to read SHA1</title>
+      <link>https://www.ipreferjim.com/site/2012/02/git-push-fatal-unable-to-read-sha1/</link>
+      <pubDate>Tue, 21 Feb 2012 01:46:00 +0000</pubDate>
+      
+      <guid>https://www.ipreferjim.com/site/2012/02/git-push-fatal-unable-to-read-sha1/</guid>
+      <description>Today, I was faced with an interesting error in a git repository. I am backing up a lot of old projects from during and after college into a private git repo.</description>
+    </item>
+    
+    <item>
+      <title>System.Data.OracleClient and Windows 7… love at first sight!</title>
+      <link>https://www.ipreferjim.com/site/2011/08/system-data-oracleclient-and-windows-7-love-at-first-sight/</link>
+      <pubDate>Sun, 14 Aug 2011 03:52:56 +0000</pubDate>
+      
+      <guid>https://www.ipreferjim.com/site/2011/08/system-data-oracleclient-and-windows-7-love-at-first-sight/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;&lt;/sarcasm&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;I spent nearly two days trying to resolve this issue. My new desktop at work is running Windows 7 (64-bit) and some of our applications are still using System.Data.OracleClient as an adapter instead of Oracle’s own ODP.NET. Microsoft’s driver interops with Oracle’s own client installed on the developer machine (oci.dll). We need to continue running our web applications under 32-bit IIS, which is where the problem lies.&lt;/p&gt;
+&lt;p&gt;FYI… &lt;a href=&#34;http://msdn.microsoft.com/en-us/library/77d8yct7.aspx&#34; title=&#34;Oracle and ADO.NET&#34; target=&#34;_blank&#34;&gt;According to Microsoft&lt;/a&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The types in System.Data.OracleClient are deprecated. The types are supported in version 4 of the .NET Framework but will be removed in a future release. Microsoft recommends that you use a third-party Oracle provider.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Back to the comment about IIS. Apparently, IIS 7 in Windows 7 is 64-bit only. Yes, you can set an application pool to 32-bit. That would be perfectly fine, except that Oracle’s client native methods don’t like running through WoW64. So, you have to install both the 64-bit client and the 32-bit client. After all, 32-bit adapter code can’t call a 64-bit client. If you fire up procmon, though, you’ll see that calling the 32-bit Oracle client still queries 64-bit settings (and fails if they don’t exist). WoW64!, indeed.&lt;/p&gt;
+&lt;p&gt;Continue reading to see my resolution…&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Note: this forces Oracle 11.2.0.1 to use 32-bit only in a 64-bit environment.&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Hostgator: ssh warns ‘too many authentication failures’</title>
+      <link>https://www.ipreferjim.com/site/2011/07/hostgator-ssh-warns-too-many-authentication-failures/</link>
+      <pubDate>Sun, 17 Jul 2011 18:21:00 +0000</pubDate>
+      
+      <guid>https://www.ipreferjim.com/site/2011/07/hostgator-ssh-warns-too-many-authentication-failures/</guid>
+      <description>I requested for HostGator to provide ssh access. Since then, I haven’t used it. I attempted to ssh into the server today and received the message ‘too many authentication failures’.</description>
+    </item>
+    
+    <item>
+      <title>Can’t login to MySQL as root :(</title>
+      <link>https://www.ipreferjim.com/site/2011/06/cant-login-to-mysql-as-root/</link>
+      <pubDate>Sun, 12 Jun 2011 15:29:31 +0000</pubDate>
+      
+      <guid>https://www.ipreferjim.com/site/2011/06/cant-login-to-mysql-as-root/</guid>
+      <description>I was having issues logging into MySQL as root the other day. It took a while to figure things out. Ultimately, I had to follow the steps on two separate posts: http://rimuhosting.</description>
+    </item>
+    
+    <item>
+      <title>Learning WCF: IIS 7 won’t start service from web project</title>
+      <link>https://www.ipreferjim.com/site/2010/06/learning-wcf-iis-7-wont-start-service-from-web-project/</link>
+      <pubDate>Sun, 27 Jun 2010 04:01:16 +0000</pubDate>
+      
+      <guid>https://www.ipreferjim.com/site/2010/06/learning-wcf-iis-7-wont-start-service-from-web-project/</guid>
+      <description>I’m following along with code in Learning WCF, attempting to quickly become an expert at building WCF Services from scratch. In Chapter 1, there is a project called IISHostedService.</description>
+    </item>
+    
+    <item>
+      <title>Oracle Exception: Could not load file or assembly ‘Oracle.DataAccess, Version=2.111.7.20…</title>
+      <link>https://www.ipreferjim.com/site/2010/04/oracle-exception-could-not-load-file-or-assembly-oracle-dataaccess-version2-111-7-20/</link>
+      <pubDate>Fri, 09 Apr 2010 19:34:24 +0000</pubDate>
+      
+      <guid>https://www.ipreferjim.com/site/2010/04/oracle-exception-could-not-load-file-or-assembly-oracle-dataaccess-version2-111-7-20/</guid>
+      <description>Last week, I was having performance issues with my workstation. I was told to remove unused files and applications. I had previously installed ODAC 11g for the Oracle Data Providers.</description>
+    </item>
+    
+    <item>
+      <title>Fluent NHibernate error: Unable to cast object of type ‘Oracle.DataAccess.Client.OracleConnection’ to type ‘System.Data.Common.DbConnection’.</title>
+      <link>https://www.ipreferjim.com/site/2010/03/fluent-nhibernate-error-unable-to-cast-object-of-type-oracle-dataaccess-client-oracleconnection-to-type-system-data-common-dbconnection/</link>
+      <pubDate>Sat, 20 Mar 2010 16:41:35 +0000</pubDate>
+      
+      <guid>https://www.ipreferjim.com/site/2010/03/fluent-nhibernate-error-unable-to-cast-object-of-type-oracle-dataaccess-client-oracleconnection-to-type-system-data-common-dbconnection/</guid>
+      <description>After developing an application in Fluent NHibernate, I’ve received the following Error and Stack Trace:
+Unable to cast object of type &#39;Oracle.</description>
+    </item>
+    
+    <item>
+      <title>ArgumentOutOfRangeException : Index was out of range. Fluent NHibernate commit</title>
+      <link>https://www.ipreferjim.com/site/2010/03/argumentoutofrangeexception-index-was-out-of-range-fluent-nhibernate-commit/</link>
+      <pubDate>Wed, 03 Mar 2010 17:54:29 +0000</pubDate>
+      
+      <guid>https://www.ipreferjim.com/site/2010/03/argumentoutofrangeexception-index-was-out-of-range-fluent-nhibernate-commit/</guid>
+      <description>I came across the error
+ArgumentOutOfRangeException : Index was out of range while trying to perform a commit on a single entity with 4 nested entities and 3 properties.</description>
+    </item>
+    
+    <item>
+      <title>Google Maps v3 marker.set_map deprecated</title>
+      <link>https://www.ipreferjim.com/site/2010/02/google-maps-v3-marker-set_map-deprecated/</link>
+      <pubDate>Mon, 01 Mar 2010 02:34:09 +0000</pubDate>
+      
+      <guid>https://www.ipreferjim.com/site/2010/02/google-maps-v3-marker-set_map-deprecated/</guid>
+      <description>After the 8.8 earthquake outside of Chile this past weekend, I posted my Quake Tracker to twitter/facebook so people could easily visualize where the quake occurred.</description>
+    </item>
+    
+    <item>
+      <title>Microsoft SQL Server’s Database Publishing Wizard BatchParser error</title>
+      <link>https://www.ipreferjim.com/site/2009/11/microsoft-sql-servers-database-publishing-wizard-batchparser-error/</link>
+      <pubDate>Thu, 05 Nov 2009 01:58:00 +0000</pubDate>
+      
+      <guid>https://www.ipreferjim.com/site/2009/11/microsoft-sql-servers-database-publishing-wizard-batchparser-error/</guid>
+      <description>http://download.microsoft.com/download/4/4/D/44DBDE61-B385-4FC2-A67D-48053B8F9FAD/SQLServer2005_XMO_x64.msi
+Could not load file or assembly ‘Microsoft.SqlServer.BatchParser, Version=9.0.242.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91’ or one of its dependencies. The system cannot find the file specified.</description>
+    </item>
+    
+    <item>
+      <title>Converting from VS2003 to VS2008</title>
+      <link>https://www.ipreferjim.com/site/2009/11/converting-from-vs2003-to-vs2008/</link>
+      <pubDate>Tue, 03 Nov 2009 15:56:00 +0000</pubDate>
+      
+      <guid>https://www.ipreferjim.com/site/2009/11/converting-from-vs2003-to-vs2008/</guid>
+      <description>http://datacogs.com/datablogs/archive/2005/01/28/209.aspx
+Recently, I converted a project from VS2003 to VS2008. The conversion deleted a file which wasn’t needed in VS2008. When I tried to “rollback” the source from source control to run in VS2003, it wouldn’t run.</description>
+    </item>
+    
+    <item>
+      <title>Storing Generics in ASP.NET Profile object</title>
+      <link>https://www.ipreferjim.com/site/2009/04/storing-generics-in-asp-net-profile-object/</link>
+      <pubDate>Sat, 25 Apr 2009 19:34:00 +0000</pubDate>
+      
+      <guid>https://www.ipreferjim.com/site/2009/04/storing-generics-in-asp-net-profile-object/</guid>
+      <description>Sometimes, I’ll come across a problem that I research for an hour or two. When I find the solution, I think “Wow, that should have been the first thing I tried!</description>
+    </item>
+    
+    <item>
+      <title>Silverlight 2.0, broken XAML Intellisense fix</title>
+      <link>https://www.ipreferjim.com/site/2009/01/silverlight-2-0-broken-xaml-intellisense-fix/</link>
+      <pubDate>Thu, 01 Jan 2009 19:13:00 +0000</pubDate>
+      
+      <guid>https://www.ipreferjim.com/site/2009/01/silverlight-2-0-broken-xaml-intellisense-fix/</guid>
+      <description>I installed all the necessary files for Silverlight today. When I created a project, the xaml document didn’t have intellisense and opened as a text instead of XML-based document.</description>
+    </item>
+    
+    <item>
+      <title>Visual Studio 2010: Logging in</title>
+      <link>https://www.ipreferjim.com/site/2008/12/visual-studio-2010-logging-in/</link>
+      <pubDate>Sun, 28 Dec 2008 19:24:00 +0000</pubDate>
+      
+      <guid>https://www.ipreferjim.com/site/2008/12/visual-studio-2010-logging-in/</guid>
+      <description>I downloaded Visual Studio 2010 CTP a week ago. I fiddled around with it for about 30 minutes, trying to login to the accounts provided by the preview.</description>
+    </item>
+    
+    <item>
+      <title>Visual Studio error, debugger can’t start</title>
+      <link>https://www.ipreferjim.com/site/2008/12/visual-studio-error-debugger-cant-start/</link>
+      <pubDate>Mon, 22 Dec 2008 05:33:00 +0000</pubDate>
+      
+      <guid>https://www.ipreferjim.com/site/2008/12/visual-studio-error-debugger-cant-start/</guid>
+      <description>“The components for the 64-bit debugger are not registered. Please repair your Visual Studio 2008 Remote Debugger installation via ‘Add or Remove Programs’ in Control Panel”</description>
+    </item>
+    
+    <item>
+      <title>Windows Installer Dilemma</title>
+      <link>https://www.ipreferjim.com/site/2008/12/windows-installer-dilemma/</link>
+      <pubDate>Sun, 14 Dec 2008 15:15:00 +0000</pubDate>
+      
+      <guid>https://www.ipreferjim.com/site/2008/12/windows-installer-dilemma/</guid>
+      <description>My current task is to create an installer. The dilemma: Visual Studio doesn’t provide a very robust Setup and Deployment project.</description>
+    </item>
+    
+  </channel>
+</rss>

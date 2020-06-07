@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    
+
+
+    <head>
+    <link href="https://gmpg.org/xfn/11" rel="profile">
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="Cache-Control" content="public" />
+<!-- Enable responsiveness on mobile devices -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="generator" content="Hugo 0.72.0" />
+
+    
+    
+    
+
+<title>[javascript] Be sure to read documentation carefully… • I Prefer Jim</title>
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="[javascript] Be sure to read documentation carefully…"/>
+<meta name="twitter:description" content="I have a love-hate relationship with JavaScript. I love the language, but I hate the idiosyncrasies. And like many others, I use MDN pretty regularly to verify function signatures, browser support, or to find example code or shims."/>
+
+<meta property="og:title" content="[javascript] Be sure to read documentation carefully…" />
+<meta property="og:description" content="I have a love-hate relationship with JavaScript. I love the language, but I hate the idiosyncrasies. And like many others, I use MDN pretty regularly to verify function signatures, browser support, or to find example code or shims." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.ipreferjim.com/site/2015/05/javascript-be-sure-to-read-documentation-carefully/" />
+<meta property="article:published_time" content="2015-05-10T02:28:38+00:00" />
+<meta property="article:modified_time" content="2015-05-10T02:28:38+00:00" /><meta property="og:site_name" content="I Prefer Jim" />
+
+
+    
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/site/scss/hyde-hyde.1d734ca591261200417c9d5de423a667cc5271b6576cc2ea477fce0dd8c628d0.css">
+
+
+<link rel="stylesheet" href="/site/scss/print.2744dcbf8a0b2e74f8a50e4b34e5f441be7cf93cc7de27029121c6a09f9e77bc.css" media="print">
+
+
+
+
+<link rel="stylesheet" href="/site/scss/hugo-toc.11a9185f83b7761946f8d16ae214f4d959edaf003337338e55935920cc7852d7.css">
+
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- Icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+    <link rel="shortcut icon" href="/favicon.png">
+    
+    
+
+</head>
+
+
+    <body class=" ">
+    
+<div class="sidebar">
+  <div class="container ">
+    <div class="sidebar-about">
+      <span class="site__title">
+        <a href="https://www.ipreferjim.com/site/">I Prefer Jim</a>
+      </span>
+      
+      
+        <div class="author-image">
+          <img src="https://www.gravatar.com/avatar/466dc28e15028c7353552022d2de1f9e?s=240&d=mp" class="img--circle img--headshot element--center" alt="gravatar">
+        </div>
+      
+      <p class="site__description">
+        
+      </p>
+    </div>
+    <div class="collapsible-menu">
+      <input type="checkbox" id="menuToggle">
+      <label for="menuToggle">I Prefer Jim</label>
+      <div class="menu-content">
+        <div>
+	<ul class="sidebar-nav">
+		 
+		 
+			 
+				<li>
+					<a href="/site/posts/">
+						<span>Posts</span>
+					</a>
+				</li>
+			 
+		 
+			 
+				<li>
+					<a href="/site/tags/">
+						<span>Tags</span>
+					</a>
+				</li>
+			 
+		 
+			 
+				<li>
+					<a href="/site/categories/">
+						<span>Categories</span>
+					</a>
+				</li>
+			 
+		 
+			 
+				<li>
+					<a href="/site/books/">
+						<span>Books</span>
+					</a>
+				</li>
+			 
+		
+	</ul>
+</div>
+
+        <section class="social">
+	
+	<a href="https://twitter.com/jimschubert" rel="me"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a>
+	
+	
+	
+	<a href="https://github.com/jimschubert" rel="me"><i class="fab fa-github fa-lg" aria-hidden="true"></i></a>
+	
+	
+	
+	
+	
+	
+	
+	<a href="https://linkedin.com/in/jamesschubert" rel="me"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a>
+	
+	
+	<a href="https://stackoverflow.com/users/151445" rel="me"><i class="fab fa-stack-overflow fa-lg" aria-hidden="true"></i></a>
+	
+	
+	
+	
+	
+	
+	
+	
+</section>
+
+      </div>
+    </div>
+    
+<div class="copyright">
+  &copy; 2020 Jim Schubert
+  
+    <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>
+  
+</div>
+
+
+<div class="builtwith">
+Built with <a href="https://gohugo.io">Hugo</a> ❤️ <a href="https://github.com/htr3n/hyde-hyde">hyde-hyde</a>.
+</div>
+
+
+  </div>
+</div>
+
+        <div class="content container">
+            
+    
+<article>
+  <header>
+    <h1>[javascript] Be sure to read documentation carefully…</h1>
+    
+    
+<div class="post__meta">
+    
+    
+      <i class="fas fa-calendar-alt"></i> May 10, 2015
+    
+    
+    
+      
+      
+          in
+          
+          
+              <a class="badge badge-category" href="/site/categories/blog">BLOG</a>
+              
+          
+      
+    
+    
+    
+      
+      
+          <br/>
+           <i class="fas fa-tags"></i>
+          
+          <a class="badge badge-tag" href="/site/tags/advanced">advanced</a>
+           
+      
+          <a class="badge badge-tag" href="/site/tags/javascript">javascript</a>
+          
+      
+    
+    
+    <br/>
+    <i class="fas fa-clock"></i> 3 min read
+</div>
+
+
+  </header>
+  
+  
+  
+  
+  <div class="post">
+    <p>I have a love-hate relationship with JavaScript. I love the language, but I hate the idiosyncrasies. And like many others, I use MDN pretty regularly to verify function signatures, browser support, or to find example code or shims.</p>
+<p>The recently posted article on MDN, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript" target="_blank" title="A re-introduction to JavaScript on MDN">“A re-introduction to JavaScript”</a>, demonstrates something I wish JavaScript developers would stop demonstrating: cleverness. The article links to one of <a href="http://javascript.crockford.com/javascript.html" target="_blank">Crockford’s posts</a> about JavaScript being the most misunderstood language. Sure, there are quirks, but they’re defined quirks in most cases.</p>
+<p>I showed a coworker an example of an oddity in JavaScript the other day.</p>
+<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">x</span> <span class="o">=</span> <span class="s2">&#34;016&#34;</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">y</span> <span class="o">=</span> <span class="mi">0</span><span class="o">|</span><span class="nx">x</span><span class="p">;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">y</span><span class="p">);</span>
+<span class="c1">// 16
+</span><span class="c1"></span>
+<span class="kd">var</span> <span class="nx">x</span> <span class="o">=</span> <span class="s2">&#34;0o16&#34;</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">y</span> <span class="o">=</span> <span class="mi">0</span><span class="o">|</span><span class="nx">x</span><span class="p">;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">y</span><span class="p">);</span>
+<span class="c1">// 14
+</span><span class="c1"></span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="mi">016</span><span class="p">);</span>
+<span class="c1">// 14
+</span><span class="c1"></span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="mo">0o16</span><span class="p">);</span>
+<span class="c1">// 14
+</span></code></pre></div><p>This example works differently in ECMAScript 3 and ECMAScript 5, as beautifully explained by <a href="http://stackoverflow.com/questions/2547836/why-doesnt-an-octal-literal-as-a-string-cast-to-a-number" target="_blank">CMS on StackOverflow</a>.</p>
+<p>Those are ‘gotchas’ of the language that you just have to know. Yes, it sucks. The big problem is when people share code that attempts to be ‘faster’ or ‘more efficient’. Not only do JavaScript developers have to weed out unexpected behavior from the language, but they also have to be diligent to not assume every other JavaScript developer is sharing bug-free code.</p>
+<p>This is what you’d see if you were skimming through the recent re-introduction article:</p>
+<p><a href="https://www.ipreferjim.com/wp-content/uploads/2015/05/A_re-introduction_to_JavaScript__JS_tutorial__-_JavaScript___MDN.png"><img src="https://www.ipreferjim.com/wp-content/uploads/2015/05/A_re-introduction_to_JavaScript__JS_tutorial__-_JavaScript___MDN.png" alt="A_re-introduction_to_JavaScript__JS_tutorial__-_JavaScript___MDN" width="1256" height="936" class="aligncenter size-full wp-image-1289" srcset="https://www.ipreferjim.com/wp-content/uploads/2015/05/A_re-introduction_to_JavaScript__JS_tutorial__-_JavaScript___MDN.png 1256w, https://www.ipreferjim.com/wp-content/uploads/2015/05/A_re-introduction_to_JavaScript__JS_tutorial__-_JavaScript___MDN-300x224.png 300w, https://www.ipreferjim.com/wp-content/uploads/2015/05/A_re-introduction_to_JavaScript__JS_tutorial__-_JavaScript___MDN-1024x763.png 1024w" sizes="(max-width: 1256px) 100vw, 1256px" /></a></p>
+<p>If you’re in a hurry, you’ll probably not see the important bit of text immediately following the examples:</p>
+<blockquote>
+<p>Here we are setting up two variables. The assignment in the middle part of the for loop is also tested for truthfulness — if it succeeds, the loop continues. Since i is incremented each time, items from the array will be assigned to item in sequential order. The loop stops when a “falsy” item is found (such as undefined).</p>
+<p>Note that this trick should only be used for arrays which you know do not contain “falsy” values (arrays of objects or DOM nodes for example). If you are iterating over numeric data that might include a 0 or string data that might include the empty string you should use the i, len idiom instead.</p>
+</blockquote>
+<p>If you’re like me and skimming the article for anything interesting, you’ll have probably also missed the text but immediately caught the possible bugginess of the “nicer idiom”. A less experienced skimmer will see the “nicer idiom”, think it’s clever, and use it somewhere it shouldn’t be used. That’s just how the JavaScript community works, even when code on a trusted website like MDN doesn’t work in a given situation.</p>
+<p>For a clear example of the problem, consider this code that uses the “nicer idiom” in the wrong way:</p>
+<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="c1">// Correction on Mozilla&#39;s &#39;re-introduction&#39;
+</span><span class="c1">// https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript
+</span><span class="c1"></span><span class="kd">var</span> <span class="nx">arr</span> <span class="o">=</span> <span class="p">[],</span>
+    <span class="nx">terminate</span> <span class="o">=</span> <span class="mi">20</span><span class="p">,</span>
+    <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+
+<span class="k">while</span><span class="p">(</span><span class="nx">i</span> <span class="o">&lt;=</span> <span class="nx">terminate</span><span class="p">){</span>
+    <span class="nx">arr</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">=</span> <span class="nx">i</span><span class="o">++</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="k">delete</span> <span class="nx">arr</span><span class="p">[</span><span class="mi">5</span><span class="p">];</span>
+
+<span class="c1">// NOTE: arr[0] is 0, which is falsey. This won&#39;t print!!!
+</span><span class="c1">// change idx=1 and this terminates at index 5.
+</span><span class="c1"></span><span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">idx</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="nx">item</span><span class="p">;</span> <span class="nx">item</span> <span class="o">=</span> <span class="nx">arr</span><span class="p">[</span><span class="nx">idx</span><span class="o">++</span><span class="p">];)</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">item</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="cm">/*
+</span><span class="cm">// proper iteration
+</span><span class="cm">for (var i = 0; i &lt; arr.length; i++) {
+</span><span class="cm">    var item = arr[i];   
+</span><span class="cm">    console.log(item);
+</span><span class="cm">}
+</span><span class="cm">*/</span>
+</code></pre></div><p><a href="https://jsfiddle.net/jimschubert/h69Lycfo/" target="_blank"><small><em>Play with this in jsfiddle</em></small></a></p>
+<p>The issue here is that the array <strong>must not</strong> contain falsy values. This includes undefined values in sparse arrays, null, zero, <code>&quot;0&quot;</code>, <code>&quot;0.0&quot;</code>, <code>&quot;&quot;</code>, <code>NaN</code>, <code>document.all</code>, or any other values that coerce to false. The proper way to iterate over an array is to explicitly visit every index unless you have a clearly defined and documented reason not to continue through the array.</p>
+<p>The lesson to learn here is twofold: actually <em>read</em> documentation and articles, and don’t just assume JavaScript code is usable code.</p>
+
+  </div>
+  
+
+<div class="navigation navigation-single">
+    
+    <a href="/site/2015/04/review-core-java-for-the-impatient/" class="navigation-prev">
+      <i aria-hidden="true" class="fa fa-chevron-left"></i>
+      <span class="navigation-tittle">Review: Core Java for the Impatient</span>
+    </a>
+    
+    
+    <a href="/site/2015/06/packtpub-com-free-learning/" class="navigation-next">
+      <span class="navigation-tittle">Packtpub.com Free Learning</span>
+      <i aria-hidden="true" class="fa fa-chevron-right"></i>
+    </a>
+    
+</div>
+
+
+  
+
+
+<div class="post__related">
+    
+    <h2>Related Articles</h2>
+    <ul class="related-posts">
+        
+<li>
+  <span class="list__title--small">
+    <a href="/site/2015/01/io-js-1-0-1-unstable-is-out-es6/" >io.js 1.0.1 (unstable) is out. ES6!</a>
+      
+      <time class="pull-right hidden-tablet">Jan 15, 2015</time>
+      
+  </span>
+</li>
+
+<li>
+  <span class="list__title--small">
+    <a href="/site/2014/11/decorating-directives-with-isolate-scope-in-angular-1-3/" >Decorating directives with isolate scope in Angular 1.3</a>
+      
+      <time class="pull-right hidden-tablet">Nov 20, 2014</time>
+      
+  </span>
+</li>
+
+<li>
+  <span class="list__title--small">
+    <a href="/site/2013/03/commonjs-modules-nodes-require-and-private-members/" >CommonJS Modules, node’s require() and private members</a>
+      
+      <time class="pull-right hidden-tablet">Mar 2, 2013</time>
+      
+  </span>
+</li>
+
+<li>
+  <span class="list__title--small">
+    <a href="/site/2011/08/js-closures-versus-functional-scoping/" >[js] Closures versus Functional Scoping</a>
+      
+      <time class="pull-right hidden-tablet">Aug 27, 2011</time>
+      
+  </span>
+</li>
+
+<li>
+  <span class="list__title--small">
+    <a href="/site/2011/06/loading-newer-versions-of-jquery-and-jquery-ui-noconflict/" >Loading newer versions of jQuery and jQuery UI (noConflict)</a>
+      
+      <time class="pull-right hidden-tablet">Jun 18, 2011</time>
+      
+  </span>
+</li>
+
+
+    </ul>
+</div>
+
+
+
+  
+    
+
+
+</article>
+
+
+        </div>
+        
+    
+
+<script defer src="https://use.fontawesome.com/releases/v5.11.2/js/all.js" integrity="sha384-b3ua1l97aVGAPEIe48b4TC60WUQbQaGi2jqAWM90y0OZXZeyaTCWtBTKtjW2GXG1" crossorigin="anonymous"></script>
+
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+        
+    <script type="text/javascript">
+        
+        hljs.initHighlightingOnLoad();
+    </script>
+    
+
+
+
+
+
+    
+
+
+
+    </body>
+</html>

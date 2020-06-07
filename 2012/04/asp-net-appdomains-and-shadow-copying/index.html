@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    
+
+
+    <head>
+    <link href="https://gmpg.org/xfn/11" rel="profile">
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="Cache-Control" content="public" />
+<!-- Enable responsiveness on mobile devices -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="generator" content="Hugo 0.72.0" />
+
+    
+    
+    
+
+<title>ASP.NET, AppDomains, and shadow-copying • I Prefer Jim</title>
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="ASP.NET, AppDomains, and shadow-copying"/>
+<meta name="twitter:description" content="I answered a question on StackOverflow nearly two years ago, and I’m surprised at how few votes it has received, despite comments such as:
+
+&#43;1 for teaching me something new today thanks. -kobe
+
+Being one of my favorite answers, I thought I should discuss it on my blog a little more in-depth than just posting the SO answer. I’d like to briefly discuss what ASP.NET really is (in the context of IIS), why AppDomains are needed, and lastly what shadow-copying does for an application. There is no code associated with this post, and it is driven more by contemplation than by a specific resolution to a problem. So, I apologize in advance if it seems disjointed at times."/>
+
+<meta property="og:title" content="ASP.NET, AppDomains, and shadow-copying" />
+<meta property="og:description" content="I answered a question on StackOverflow nearly two years ago, and I’m surprised at how few votes it has received, despite comments such as:
+
+&#43;1 for teaching me something new today thanks. -kobe
+
+Being one of my favorite answers, I thought I should discuss it on my blog a little more in-depth than just posting the SO answer. I’d like to briefly discuss what ASP.NET really is (in the context of IIS), why AppDomains are needed, and lastly what shadow-copying does for an application. There is no code associated with this post, and it is driven more by contemplation than by a specific resolution to a problem. So, I apologize in advance if it seems disjointed at times." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.ipreferjim.com/site/2012/04/asp-net-appdomains-and-shadow-copying/" />
+<meta property="article:published_time" content="2012-04-29T22:05:28+00:00" />
+<meta property="article:modified_time" content="2012-04-29T22:05:28+00:00" /><meta property="og:site_name" content="I Prefer Jim" />
+
+
+    
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/site/scss/hyde-hyde.1d734ca591261200417c9d5de423a667cc5271b6576cc2ea477fce0dd8c628d0.css">
+
+
+<link rel="stylesheet" href="/site/scss/print.2744dcbf8a0b2e74f8a50e4b34e5f441be7cf93cc7de27029121c6a09f9e77bc.css" media="print">
+
+
+
+
+<link rel="stylesheet" href="/site/scss/hugo-toc.11a9185f83b7761946f8d16ae214f4d959edaf003337338e55935920cc7852d7.css">
+
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- Icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+    <link rel="shortcut icon" href="/favicon.png">
+    
+    
+
+</head>
+
+
+    <body class=" ">
+    
+<div class="sidebar">
+  <div class="container ">
+    <div class="sidebar-about">
+      <span class="site__title">
+        <a href="https://www.ipreferjim.com/site/">I Prefer Jim</a>
+      </span>
+      
+      
+        <div class="author-image">
+          <img src="https://www.gravatar.com/avatar/466dc28e15028c7353552022d2de1f9e?s=240&d=mp" class="img--circle img--headshot element--center" alt="gravatar">
+        </div>
+      
+      <p class="site__description">
+        
+      </p>
+    </div>
+    <div class="collapsible-menu">
+      <input type="checkbox" id="menuToggle">
+      <label for="menuToggle">I Prefer Jim</label>
+      <div class="menu-content">
+        <div>
+	<ul class="sidebar-nav">
+		 
+		 
+			 
+				<li>
+					<a href="/site/posts/">
+						<span>Posts</span>
+					</a>
+				</li>
+			 
+		 
+			 
+				<li>
+					<a href="/site/tags/">
+						<span>Tags</span>
+					</a>
+				</li>
+			 
+		 
+			 
+				<li>
+					<a href="/site/categories/">
+						<span>Categories</span>
+					</a>
+				</li>
+			 
+		 
+			 
+				<li>
+					<a href="/site/books/">
+						<span>Books</span>
+					</a>
+				</li>
+			 
+		
+	</ul>
+</div>
+
+        <section class="social">
+	
+	<a href="https://twitter.com/jimschubert" rel="me"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a>
+	
+	
+	
+	<a href="https://github.com/jimschubert" rel="me"><i class="fab fa-github fa-lg" aria-hidden="true"></i></a>
+	
+	
+	
+	
+	
+	
+	
+	<a href="https://linkedin.com/in/jamesschubert" rel="me"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a>
+	
+	
+	<a href="https://stackoverflow.com/users/151445" rel="me"><i class="fab fa-stack-overflow fa-lg" aria-hidden="true"></i></a>
+	
+	
+	
+	
+	
+	
+	
+	
+</section>
+
+      </div>
+    </div>
+    
+<div class="copyright">
+  &copy; 2020 Jim Schubert
+  
+    <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>
+  
+</div>
+
+
+<div class="builtwith">
+Built with <a href="https://gohugo.io">Hugo</a> ❤️ <a href="https://github.com/htr3n/hyde-hyde">hyde-hyde</a>.
+</div>
+
+
+  </div>
+</div>
+
+        <div class="content container">
+            
+    
+<article>
+  <header>
+    <h1>ASP.NET, AppDomains, and shadow-copying</h1>
+    
+    
+<div class="post__meta">
+    
+    
+      <i class="fas fa-calendar-alt"></i> Apr 29, 2012
+    
+    
+    
+      
+      
+          in
+          
+          
+              <a class="badge badge-category" href="/site/categories/blog">BLOG</a>
+              
+          
+      
+    
+    
+    
+      
+      
+          <br/>
+           <i class="fas fa-tags"></i>
+          
+          <a class="badge badge-tag" href="/site/tags/advanced">advanced</a>
+           
+      
+          <a class="badge badge-tag" href="/site/tags/asp.net">asp.net</a>
+           
+      
+          <a class="badge badge-tag" href="/site/tags/c">c#</a>
+          
+      
+    
+    
+    <br/>
+    <i class="fas fa-clock"></i> 9 min read
+</div>
+
+
+  </header>
+  
+  
+  
+  
+  <div class="post">
+    <p>I answered a <a href="http://stackoverflow.com/a/4394472/151445" title="Does my ASP.NET application stop executing if I overwrite the DLLs?" target="_blank">question on StackOverflow</a> nearly two years ago, and I’m surprised at how few votes it has received, despite comments such as:</p>
+<blockquote>
+<p>+1 for teaching me something new today thanks. -kobe</p>
+</blockquote>
+<p>Being one of my favorite answers, I thought I should discuss it on my blog a little more in-depth than just <a href="http://www.ipreferjim.com/2011/07/what-happens-when-i-overwrite-a-dll-asp-net/" title="Previous post" target="_blank">posting the SO answer</a>. I’d like to briefly discuss what ASP.NET really is (in the context of IIS), why AppDomains are needed, and lastly what shadow-copying does for an application. There is no code associated with this post, and it is driven more by contemplation than by a specific resolution to a problem. So, I apologize in advance if it seems disjointed at times.</p>
+<h2 id="what-is-an-aspnet-application">What is an ASP.NET application?</h2>
+<p>When I first started using the .NET Framework, I was somewhat confused about how applications actually ran considering an assembly is a <a href="http://en.wikipedia.org/wiki/Portable_Executable#.NET.2C_metadata.2C_and_the_PE_format" title="Portable Executable on Wikipedia" target="_blank">PE format</a> with some CLR headers and CLR data. What this means (and it makes a lot of sense) is that the CLR is really just a COM application hosting a runtime environment (the CLR).</p>
+<p>I usually consider programming languages like C# to be compiled into a binary, but the CLR really only operates on IL. This means C# et al. are simply abstractions to execute “just-in time”-compiled code in a compartmentalized sandbox within an instance of the CLR. The compartmentalization is further secured using AppDomains to prevent (or attempt to prevent) applications from destroying data in other AppDomains. It makes sense, but I’ve never really seen it put so simply before. Even though I knew this to be the case and understood how it all worked, my thoughts of the CLR were also compartmentalized. When I stepped back and looked at it, I thought to myself, “Wait, what? That’s it?” Why I thought the CLR was some sort of voodoo is beyond me.</p>
+<p>An ASP.NET application is .NET code written against a framework (ASP.NET), executing in a runtime (CLR), which is in turn hosted in a (COM) process (IIS). <em>That’s all there is to it, there’s no magic.</em> It’s been a few years since I learned this, but I seem to still encounter developers with the same years of experience or more who don’t see how these pieces are integrated. It really only takes a little exploration on your system to get a better picture of the whole environment.</p>
+<h2 id="iis">IIS</h2>
+<p>If you take a look at an IIS assembly in <a href="http://www.safer-networking.org/en/filealyzer/index.html" title="FileAlyzer by Safer Networking" target="_blank">FileAlyzer</a>, you might see <a href="http://msdn.microsoft.com/en-us/library/99sz37yh.aspx" title="CorBindToRuntimeEx" target="_blank">CorBindToRuntimeEx</a> or <a href="http://msdn.microsoft.com/en-us/library/dd537633.aspx" title="CLRCreateInstance" target="_blank">CLRCreateInstance</a> listed as PE Imports. This is because IIS manages the creation of multiple CLR instances and multiple AppDomains per instance. ASP.NET is implemented as an <a href="http://msdn.microsoft.com/en-us/library/ms524610.aspx" title="ISAPI Filter Overview on MSDN" target="_blank">ISAPI extension</a> within IIS.</p>
+<p>In fact, <strong>%WinDir%\Microsoft.NET\Framework[Version]\aspnet_regiis.exe</strong> imports <em>RegisterAspNetEx</em> from webengine.dll. Running</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">dumpbin /imports webengine.dll
+</code></pre></div><p>will output all header information, in which you will see mscoree.dll is delay-loaded and provides the CLR creation methods (from .NET 2.0):</p>
+<pre><code>mscoree.dll
+              00000001 Characteristics
+              6A301BB8 Address of HMODULE
+              6A2FE1C4 Import Address Table
+              6A2FB5D4 Import Name Table
+              00000000 Bound Import Name Table
+              00000000 Unload Import Name Table
+                     0 time date stamp
+
+          6A2FAC25               0 CorBindToRuntimeEx
+          6A2B292E               0 CorBindToRuntimeHost
+          6A2B21C6               0 ClrCreateManagedInstance
+</code></pre><p>Here we’ve found CorBindToRuntimeEx! This library is part of the COM application responsible for running the CLR instances that host ASP.NET AppDomains inside IIS. Cool, huh? That’s the magic.</p>
+<p>IIS is the hosting environment responsible for running the ASP.NET ISAPI filter. Once ASP.NET is registered with IIS, webengine.dll handles the creation of CLR instances within Application Pools. Inside those Application Pools, one or more AppDomains may exist.</p>
+<p>There is a lot that has to go on under the hood in an ASP.NET application, but I’d like to discuss the management of application resources– specifically <em>shadow copying</em>.</p>
+<h2 id="shadow-copying">Shadow Copying</h2>
+<p><strong>Shadow copying</strong> is a technique used by ASP.NET to allow resources to remain available continuously without interfering with the execution of code in an AppDomain. Conceptually, it is a very simple idea. Unfortunately, most developers don’t even know it is happening under the covers and I’ve seen production site get bitten by it in some weird configuration and file modification scenarios.</p>
+<p>When shadow copying is enabled, ASP.NET copies certain resources (all assemblies) from the application directory into a temporary folder and those are the resources which remain in use during the life of an AppDomain. This cache is the same one used for downloaded assemblies and is cleaned by the CLR when the assemblies are no longer in use (akin to Garbage Collection of runtime resources). By default, the location for these cached assemblies will be something like</p>
+<pre><code>C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\demo1\9b9144a7\8665ac07
+</code></pre><p>As you can see, the directories are hashed in what (I assume) is similar to the hashing algorithm used for the GAC. If you like, you can set the <a href="http://msdn.microsoft.com/en-us/library/system.appdomainsetup.cachepath.aspx" title="AppDomainSetup.CachePath" target="_blank">AppDomainSetup.CachePath</a> property to shadow copy assemblies to a different location. You must also set the AppDomainSetup.ApplicationName property, otherwise CachePath will be ignored. One downside to this is that you’d have to create a new AppDomain to initialize these values and the management of assembly resolution may become cumbersome. You may also attempt setting the cache path as described <a href="http://stackoverflow.com/a/2847495/151445" title="AssemblyResolve event is not firing during compilation of a dynamic assembly for an aspx page on StackOverflow" target="_blank">here</a>:</p>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">protected</span> <span class="k">const</span> <span class="kt">string</span> <span class="n">ApplicationAssembliesFolder</span> <span class="p">=</span> <span class="s">&#34;~/Assemblies&#34;</span><span class="p">;</span>
+
+    <span class="k">protected</span> <span class="k">void</span> <span class="n">Application_Start</span><span class="p">(</span><span class="kt">object</span> <span class="n">sender</span><span class="p">,</span> <span class="n">EventArgs</span> <span class="n">e</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="kt">var</span> <span class="n">assembliesPath</span> <span class="p">=</span> <span class="n">Server</span><span class="p">.</span><span class="n">MapPath</span><span class="p">(</span><span class="n">ApplicationAssembliesFolder</span><span class="p">);</span>
+
+        <span class="n">AppDomain</span><span class="p">.</span><span class="n">CurrentDomain</span><span class="p">.</span><span class="n">SetShadowCopyPath</span><span class="p">(</span>
+            <span class="n">AppDomain</span><span class="p">.</span><span class="n">CurrentDomain</span><span class="p">.</span><span class="n">SetupInformation</span><span class="p">.</span><span class="n">ShadowCopyDirectories</span> <span class="p">+</span> 
+            <span class="n">Path</span><span class="p">.</span><span class="n">PathSeparator</span> <span class="p">+</span> <span class="n">assembliesPath</span><span class="p">);</span>
+
+        <span class="n">Assembly</span><span class="p">.</span><span class="n">LoadFrom</span><span class="p">(</span>
+            <span class="n">Path</span><span class="p">.</span><span class="n">Combine</span><span class="p">(</span><span class="n">assembliesPath</span><span class="p">,</span> <span class="s">&#34;Example.dll&#34;</span><span class="p">));</span>
+    <span class="p">}</span>
+</code></pre></div><p>When changing the default location of shadow copied assemblies, be aware that ASP.NET no longer handles the clean up of the assemblies– it is up to the application to maintain these assemblies.</p>
+<h3 id="the-shadow-copying-process">The shadow copying process</h3>
+<p>The shadow copying process is kicked off any time an AppDomain recycle occurs. Tess Ferrandez (who has a killer blog, you should check it out) lists some reasons why the AppDomain may be recycled in her post, <a href="http://blogs.msdn.com/b/tess/archive/2006/08/02/asp-net-case-study-lost-session-variables-and-appdomain-recycles.aspx" title="Tess Ferrandez's post" target="_blank">ASP.NET Case Study: Lost session variables and appdomain recycles</a>:</p>
+<ul>
+<li>
+<p>Machine.Config, Web.Config or Global.asax are modified</p>
+</li>
+<li>
+<p>The bin directory or its contents is modified</p>
+</li>
+<li>
+<p>The number of re-compilations (aspx, ascx or asax) exceeds the limit specified by the &lt;compilation</p>
+<p>numRecompilesBeforeAppRestart=/&gt; setting in machine.config or web.config (by default this is set to 15)</p>
+</li>
+<li>
+<p>The physical path of the virtual directory is modified</p>
+</li>
+<li>
+<p>The CAS policy is modified</p>
+</li>
+<li>
+<p>The web service is restarted</p>
+</li>
+<li>
+<p>(2.0 only) Application Sub-Directories are deleted (see Todd’s blog <a href="http://blogs.msdn.com/toddca/archive/2006/07/17/668412.aspx" title="http://blogs.msdn.com/toddca/archive/2006/07/17/668412.aspx" target="_blank"><a href="http://blogs.msdn.com/toddca/archive/2006/07/17/668412.aspx">http://blogs.msdn.com/toddca/archive/2006/07/17/668412.aspx</a></a> for more info)</p>
+</li>
+</ul>
+<p>My rule of thumb is to assume that anytime something happens which could change the execution of an application, the AppDomain will be recycled.</p>
+<p>When an AppDomain is recycled, resources are shadow copied to a new location and any connections to the old AppDomain are ‘drained’, meaning they are allowed to finish on the old AppDomain but subsequent requests are handled by the new AppDomain. This allows the framework to create a fairly seamless experience, but is also part of the reason why many developers don’t know about shadow copying.</p>
+<h3 id="how-shadow-copied-files-are-updated">How shadow copied files are updated</h3>
+<p>When using .NET 4, shadow copying assemblies in an application for which assemblies rarely ever change has improved. In previous versions of ASP.NET, there was often a noticeable delay in application startup time while assemblies were being shadow copied. Now, the framework checks the file date/time of an application’s assemblies and compares that with the file date/time of any shadow copied assemblies. If they are the same, the shadow copying process does not occur. This causes the shadow copying process to kick off only if an assembly has been physically modified.</p>
+<p>Now, if these things are happening a lot and you either have <em>many</em> assemblies or your assemblies <em>change often</em>, .NET 4 is actually adding one extra step to the shadow copying process (checking file times). You can disable this extra step by adding the following configuration to your web.config:</p>
+<div class="highlight"><pre class="chroma"><code class="language-xml" data-lang="xml"><span class="nt">&lt;configuration&gt;</span>
+   <span class="nt">&lt;runtime&gt;</span>
+      <span class="nt">&lt;shadowCopyVerifyByTimestamp</span> <span class="na">enabled=</span><span class="s">&#34;false&#34;</span> <span class="nt">/&gt;</span>
+   <span class="nt">&lt;/runtime&gt;</span>
+<span class="nt">&lt;/configuration&gt;</span>
+</code></pre></div><p>The process itself includes the application location, a temporary location, and the shadow cache location. The process would look something like this for each assembly:</p>
+<ol>
+<li>Copy assembly from application location to temporary location</li>
+<li>Open assembly</li>
+<li>Verify assembly name</li>
+<li>Validate strong name</li>
+<li>Compare update to current cached assembly</li>
+<li>Copy to shadow copy location (if newer)</li>
+<li>Remove assembly from temporary location</li>
+</ol>
+<p>That is a pretty hefty process if your application contains a lot of assemblies. You can surely see why the file time comparison introduced in .NET 4 is beneficial. This is also why applications with many, many resources take longer to “start up”. The framework isn’t executing the code directly from the application directory.</p>
+<h3 id="disabling-shadow-copying">Disabling shadow copying</h3>
+<p>Shadow copying is important if you are modifying assemblies directly in a live application. If you are working with a load balancer in which you’re able to drain connections from a server and stop IIS for deployment, you may benefit from disabling shadow copying altogether.</p>
+<div class="highlight"><pre class="chroma"><code class="language-xml" data-lang="xml"><span class="nt">&lt;hostingEnvironment</span> <span class="na">shadowCopyBinAssemblies=</span><span class="s">&#34;false&#34;</span> <span class="nt">/&gt;</span>
+</code></pre></div><h3 id="alternative-configuration-wait-change-notification">Alternative configuration: Wait-Change Notification</h3>
+<p>One modification I would suggest if you are swapping out assemblies regularly is to set the <em>maxWaitChangeNotification</em> and <em>waitChangeNotification</em> attributes on the <strong>httpRuntime</strong> element. Both of these attributes take an Int32 value that, when combined, determine when the AppDomain recycling occurs because of a file change.</p>
+<p>The <em>waitChangeNotification</em> attribute will modify how long the framework waits between file changes. In other words, if File A finishes copying and <em>waitChangeNotification</em> is set to 2 seconds, the framework will wait 2 seconds for another file modification to occur before spawning a new AppDomain. If File B is modified within that time, it will again wait 2 seconds for another file to be modified.</p>
+<p>If <em>maxWaitChangeNotification</em> is also set, the framework no longer chains the wait time. There is an absolute time from when the first file modification starts. For instance, if <em>maxWaitChangeNotification</em> is set to 5 seconds, it doesn’t matter if a file is in the process of being modified, a new AppDomain will be spawned based on the File A modification (operation 1). The File B modification will begin the wait even of operation 2, after which another AppDomain will be spawned. I’ve created the image below as an attempt to clarify what these settings do. These file copy operations represent changes to the application directory. The “AppDomain restart” indicators are the points at which shadow copying begins. Files that are being written are locked and not copied to the temporary location.</p>
+<p><img src="https://docs.google.com/drawings/pub?id=1O0vztnL_TeXROG5EeyI4EsGtB1gxDkoVtRVjNoZZ6ko&amp;w=704&amp;h=260" alt=""></p>
+<h3 id="further-reading">Further Reading</h3>
+<ul>
+<li><a href="http://msdn.microsoft.com/en-us/library/dd380850.aspx" title="Hosting Overview on MSDN" target="_blank">Hosting Overview</a></li>
+<li><a href="http://msdn.microsoft.com/en-us/magazine/cc163655.aspx" title="CLR Inside Out: Improving Application Startup Time on MSDN Magazine" target="_blank">CLR Inside Out: Improving Application Startup Time</a></li>
+<li><a href="http://www.codeproject.com/Articles/1432/What-is-an-ISAPI-Extension" title="What is an ISAPI Extension? on CodeProject" target="_blank">What is an ISAPI extension?</a></li>
+<li><a href="http://blog.kleegroup.com/teknics/?p=58" title="Inside IIS – Enregistrement d’ASP.Net dans IIS" target="_blank">Inside IIS – Enregistrement d’ASP.Net dans IIS</a></li>
+<li><a href="http://msdn.microsoft.com/en-us/magazine/cc163567.aspx" title="CLR Hosting APIs on MSDN Magazine" target="_blank">CLR Hosting APIs</a></li>
+<li><a href="http://stackoverflow.com/questions/10065070/modules-assemblies-headers-in-clr" title="Modules, Assemblies, Headers in CLR on StackOverflow" target="_blank">Modules, Assemblies, Headers in CLR</a></li>
+<li><a href="http://msdn.microsoft.com/en-us/library/ms404279.aspx" title="Shadow Copying Assemblies on MSDN" target="_blank">Shadow Copying Assemblies</a></li>
+</ul>
+  </div>
+  
+
+<div class="navigation navigation-single">
+    
+    <a href="/site/2012/04/allowing-only-a-single-instance-of-a-net-application/" class="navigation-prev">
+      <i aria-hidden="true" class="fa fa-chevron-left"></i>
+      <span class="navigation-tittle">Allowing only a single instance of a .NET application</span>
+    </a>
+    
+    
+    <a href="/site/2012/04/node-js-simple-logging-in-tweeter-js/" class="navigation-next">
+      <span class="navigation-tittle">[node.js] Simple Logging in tweeter.js</span>
+      <i aria-hidden="true" class="fa fa-chevron-right"></i>
+    </a>
+    
+</div>
+
+
+  
+
+
+<div class="post__related">
+    
+    <h2>Related Articles</h2>
+    <ul class="related-posts">
+        
+<li>
+  <span class="list__title--small">
+    <a href="/site/2011/08/dataannotations-mvc3-unobtrusive-validations/" >DataAnnotations, MVC 3, and Unobtrusive Validations</a>
+      
+      <time class="pull-right hidden-tablet">Aug 15, 2011</time>
+      
+  </span>
+</li>
+
+<li>
+  <span class="list__title--small">
+    <a href="/site/2011/07/what-happens-when-i-overwrite-a-dll-asp-net/" >What happens when I overwrite a DLL (asp.net)?</a>
+      
+      <time class="pull-right hidden-tablet">Jul 9, 2011</time>
+      
+  </span>
+</li>
+
+<li>
+  <span class="list__title--small">
+    <a href="/site/2010/06/using-dataannotation-attributes-to-validate-membership-password/" >Using DataAnnotation attributes to validate Membership password</a>
+      
+      <time class="pull-right hidden-tablet">Jun 11, 2010</time>
+      
+  </span>
+</li>
+
+<li>
+  <span class="list__title--small">
+    <a href="/site/2010/05/finding-a-users-local-time-from-utc-offset/" >Finding a user’s local time from UTC offset</a>
+      
+      <time class="pull-right hidden-tablet">May 4, 2010</time>
+      
+  </span>
+</li>
+
+<li>
+  <span class="list__title--small">
+    <a href="/site/2012/04/allowing-only-a-single-instance-of-a-net-application/" >Allowing only a single instance of a .NET application</a>
+      
+      <time class="pull-right hidden-tablet">Apr 23, 2012</time>
+      
+  </span>
+</li>
+
+
+    </ul>
+</div>
+
+
+
+  
+    
+
+
+</article>
+
+
+        </div>
+        
+    
+
+<script defer src="https://use.fontawesome.com/releases/v5.11.2/js/all.js" integrity="sha384-b3ua1l97aVGAPEIe48b4TC60WUQbQaGi2jqAWM90y0OZXZeyaTCWtBTKtjW2GXG1" crossorigin="anonymous"></script>
+
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+        
+    <script type="text/javascript">
+        
+        hljs.initHighlightingOnLoad();
+    </script>
+    
+
+
+
+
+
+    
+
+
+
+    </body>
+</html>

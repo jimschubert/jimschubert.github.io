@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    
+
+
+    <head>
+    <link href="https://gmpg.org/xfn/11" rel="profile">
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="Cache-Control" content="public" />
+<!-- Enable responsiveness on mobile devices -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="generator" content="Hugo 0.72.0" />
+
+    
+    
+    
+
+<title>Mastering Node: Addons and FunctionTemplate (uuid.node) • I Prefer Jim</title>
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Mastering Node: Addons and FunctionTemplate (uuid.node)"/>
+<meta name="twitter:description" content="Last night, I pushed an addition to my fork of Mastering Node. I decided to add a bit to the Addons chapter. The first example in this chapter only shows how to add a function to a natively-compiled module (i.e. an addon). This example shows you how to start a module which can be used in the following way:
+var Uuid = require(&#39;./uuid.node&#39;).Uuid;
+var uuid = new Uuid();
+var myId = uuid.generate();
+The project files referenced in the following text can be downloaded from the repo: jimschubert/masteringnode
+
+FunctionTemplate
+In v8, a FunctionTemplate is used to create the equivalent to:
+var template = function() { 
+The function at this point is an object and not an instance of the function.
+As an example, we will use the linux package uuid to generate a uuid. We will define the header for this addon as:"/>
+
+<meta property="og:title" content="Mastering Node: Addons and FunctionTemplate (uuid.node)" />
+<meta property="og:description" content="Last night, I pushed an addition to my fork of Mastering Node. I decided to add a bit to the Addons chapter. The first example in this chapter only shows how to add a function to a natively-compiled module (i.e. an addon). This example shows you how to start a module which can be used in the following way:
+var Uuid = require(&#39;./uuid.node&#39;).Uuid;
+var uuid = new Uuid();
+var myId = uuid.generate();
+The project files referenced in the following text can be downloaded from the repo: jimschubert/masteringnode
+
+FunctionTemplate
+In v8, a FunctionTemplate is used to create the equivalent to:
+var template = function() { 
+The function at this point is an object and not an instance of the function.
+As an example, we will use the linux package uuid to generate a uuid. We will define the header for this addon as:" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.ipreferjim.com/site/2012/02/mastering-node-addons-and-functiontemplate-uuid-node/" />
+<meta property="article:published_time" content="2012-02-07T02:41:18+00:00" />
+<meta property="article:modified_time" content="2012-02-07T02:41:18+00:00" /><meta property="og:site_name" content="I Prefer Jim" />
+
+
+    
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/site/scss/hyde-hyde.1d734ca591261200417c9d5de423a667cc5271b6576cc2ea477fce0dd8c628d0.css">
+
+
+<link rel="stylesheet" href="/site/scss/print.2744dcbf8a0b2e74f8a50e4b34e5f441be7cf93cc7de27029121c6a09f9e77bc.css" media="print">
+
+
+
+
+<link rel="stylesheet" href="/site/scss/hugo-toc.11a9185f83b7761946f8d16ae214f4d959edaf003337338e55935920cc7852d7.css">
+
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- Icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+    <link rel="shortcut icon" href="/favicon.png">
+    
+    
+
+</head>
+
+
+    <body class=" ">
+    
+<div class="sidebar">
+  <div class="container ">
+    <div class="sidebar-about">
+      <span class="site__title">
+        <a href="https://www.ipreferjim.com/site/">I Prefer Jim</a>
+      </span>
+      
+      
+        <div class="author-image">
+          <img src="https://www.gravatar.com/avatar/466dc28e15028c7353552022d2de1f9e?s=240&d=mp" class="img--circle img--headshot element--center" alt="gravatar">
+        </div>
+      
+      <p class="site__description">
+        
+      </p>
+    </div>
+    <div class="collapsible-menu">
+      <input type="checkbox" id="menuToggle">
+      <label for="menuToggle">I Prefer Jim</label>
+      <div class="menu-content">
+        <div>
+	<ul class="sidebar-nav">
+		 
+		 
+			 
+				<li>
+					<a href="/site/posts/">
+						<span>Posts</span>
+					</a>
+				</li>
+			 
+		 
+			 
+				<li>
+					<a href="/site/tags/">
+						<span>Tags</span>
+					</a>
+				</li>
+			 
+		 
+			 
+				<li>
+					<a href="/site/categories/">
+						<span>Categories</span>
+					</a>
+				</li>
+			 
+		 
+			 
+				<li>
+					<a href="/site/books/">
+						<span>Books</span>
+					</a>
+				</li>
+			 
+		
+	</ul>
+</div>
+
+        <section class="social">
+	
+	<a href="https://twitter.com/jimschubert" rel="me"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a>
+	
+	
+	
+	<a href="https://github.com/jimschubert" rel="me"><i class="fab fa-github fa-lg" aria-hidden="true"></i></a>
+	
+	
+	
+	
+	
+	
+	
+	<a href="https://linkedin.com/in/jamesschubert" rel="me"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a>
+	
+	
+	<a href="https://stackoverflow.com/users/151445" rel="me"><i class="fab fa-stack-overflow fa-lg" aria-hidden="true"></i></a>
+	
+	
+	
+	
+	
+	
+	
+	
+</section>
+
+      </div>
+    </div>
+    
+<div class="copyright">
+  &copy; 2020 Jim Schubert
+  
+    <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>
+  
+</div>
+
+
+<div class="builtwith">
+Built with <a href="https://gohugo.io">Hugo</a> ❤️ <a href="https://github.com/htr3n/hyde-hyde">hyde-hyde</a>.
+</div>
+
+
+  </div>
+</div>
+
+        <div class="content container">
+            
+    
+<article>
+  <header>
+    <h1>Mastering Node: Addons and FunctionTemplate (uuid.node)</h1>
+    
+    
+<div class="post__meta">
+    
+    
+      <i class="fas fa-calendar-alt"></i> Feb 7, 2012
+    
+    
+    
+      
+      
+          in
+          
+          
+              <a class="badge badge-category" href="/site/categories/blog">BLOG</a>
+              
+          
+      
+    
+    
+    
+      
+      
+          <br/>
+           <i class="fas fa-tags"></i>
+          
+          <a class="badge badge-tag" href="/site/tags/advanced">advanced</a>
+           
+      
+          <a class="badge badge-tag" href="/site/tags/ebooks">ebooks</a>
+           
+      
+          <a class="badge badge-tag" href="/site/tags/github">github</a>
+           
+      
+          <a class="badge badge-tag" href="/site/tags/nodejs">nodejs</a>
+          
+      
+    
+    
+    <br/>
+    <i class="fas fa-clock"></i> 6 min read
+</div>
+
+
+  </header>
+  
+  
+  
+  
+  <div class="post">
+    <p>Last night, I pushed an addition to my fork of Mastering Node. I decided to add a bit to the <em>Addons</em> chapter. The first example in this chapter only shows how to add a function to a natively-compiled module (i.e. an addon). This example shows you how to start a module which can be used in the following way:</p>
+<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">Uuid</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;./uuid.node&#39;</span><span class="p">).</span><span class="nx">Uuid</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">uuid</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Uuid</span><span class="p">();</span>
+<span class="kd">var</span> <span class="nx">myId</span> <span class="o">=</span> <span class="nx">uuid</span><span class="p">.</span><span class="nx">generate</span><span class="p">();</span>
+</code></pre></div><p>The project files referenced in the following text can be downloaded from the repo: <a href="https://github.com/jimschubert/masteringnode" title="jimschubert/masteringnode" target="_blank">jimschubert/masteringnode</a></p>
+<hr>
+<h2 id="functionTemplate">FunctionTemplate</h2>
+<p>In v8, a FunctionTemplate is used to create the equivalent to:</p>
+<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">template</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span> 
+</code></pre></div><p>The function at this point is an object and not an <em>instance</em> of the function.</p>
+<p>As an example, we will use the linux package <em>uuid</em> to generate a uuid. We will define the header for this addon as:</p>
+<div class="highlight"><pre class="chroma"><code class="language-cpp" data-lang="cpp"><span class="c1">// addons/uuid/v0.1/uuid.h
+</span><span class="c1"></span><span class="cp">#ifndef __node_uuid_h__
+</span><span class="cp">#define __node_uuid_h__
+</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;string&gt;</span><span class="cp">
+</span><span class="cp">#include</span> <span class="cpf">&lt;v8.h&gt;</span><span class="cp">
+</span><span class="cp">#include</span> <span class="cpf">&lt;node.h&gt;</span><span class="cp">
+</span><span class="cp">#include</span> <span class="cpf">&#34;uuid/uuid.h&#34;</span><span class="cp">
+</span><span class="cp"></span>
+<span class="k">using</span> <span class="k">namespace</span> <span class="n">v8</span><span class="p">;</span>
+<span class="k">using</span> <span class="k">namespace</span> <span class="n">node</span><span class="p">;</span>
+
+<span class="k">class</span> <span class="nc">Uuid</span> <span class="o">:</span> <span class="k">public</span> <span class="n">node</span><span class="o">::</span><span class="n">ObjectWrap</span> <span class="p">{</span>
+    <span class="k">public</span><span class="o">:</span>
+        <span class="n">Uuid</span><span class="p">()</span> <span class="p">{</span> <span class="p">}</span>
+        <span class="k">static</span> <span class="n">Persistent</span><span class="o">&lt;</span><span class="n">FunctionTemplate</span><span class="o">&gt;</span> <span class="n">constructor</span><span class="p">;</span>
+        <span class="k">static</span> <span class="kt">void</span> <span class="nf">Init</span><span class="p">(</span><span class="n">Handle</span><span class="o">&lt;</span><span class="n">Object</span><span class="o">&gt;</span> <span class="n">target</span><span class="p">);</span>
+        <span class="k">static</span> <span class="n">Handle</span><span class="o">&lt;</span><span class="n">Value</span><span class="o">&gt;</span> <span class="n">New</span><span class="p">(</span><span class="k">const</span> <span class="n">Arguments</span> <span class="o">&amp;</span><span class="n">args</span><span class="p">);</span>
+        <span class="k">static</span> <span class="n">Handle</span><span class="o">&lt;</span><span class="n">Value</span><span class="o">&gt;</span> <span class="n">Generate</span><span class="p">(</span><span class="k">const</span> <span class="n">Arguments</span> <span class="o">&amp;</span><span class="n">args</span><span class="p">);</span>
+        <span class="k">static</span> <span class="n">Handle</span><span class="o">&lt;</span><span class="n">Value</span><span class="o">&gt;</span> <span class="n">GenerateRandom</span><span class="p">(</span><span class="k">const</span> <span class="n">Arguments</span> <span class="o">&amp;</span><span class="n">args</span><span class="p">);</span>
+        <span class="k">static</span> <span class="n">Handle</span><span class="o">&lt;</span><span class="n">Value</span><span class="o">&gt;</span> <span class="n">GenerateTime</span><span class="p">(</span><span class="k">const</span> <span class="n">Arguments</span> <span class="o">&amp;</span><span class="n">args</span><span class="p">);</span>
+    <span class="k">private</span><span class="o">:</span>   
+        <span class="o">~</span><span class="n">Uuid</span><span class="p">();</span>
+        <span class="k">static</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">GetString</span><span class="p">(</span><span class="n">uuid_t</span> <span class="n">id</span><span class="p">);</span>
+<span class="p">};</span>
+
+<span class="cp">#endif </span><span class="c1">// __node_uuid_h__
+</span></code></pre></div><p>This addon will showcase three methods, <code>Generate</code>, <code>GenerateRandom</code>, and <code>GenerateTime</code>. It will also include a trivial private <code>GetString</code> method to demonstrate how to <em>Unwrap</em> a <code>node::ObjectWrap</code> object and interact with C++ code that is not specific to node or v8.</p>
+<p>A lot of the public function definitions should look similar to the <em>Echo</em> example. One notable difference is that instead of using a macro and hiding the <code>FunctionTemplate</code> method, we are defining <code>static Persistent&lt;FunctionTemplate&gt; constructor;</code>. The <code>Persistent&lt;T&gt;</code> type is used “when you need to keep a reference to an object for more than one function call, or when handle lifetimes do not correspond to C++ scopes.” <a href="http://code.google.com/apis/v8/embed.html">source</a>. Since we’d expect our object’s constructor to last longer than a single function, we declare it separately and as a persistent handle. Another point to notice is that all of the method we’re pulling from <em>uuid.h</em> have the signature <code>static Handle&lt;Value&gt; Method(const Arguments &amp;args)</code> even though we will plan to call it as <code>uuid.generate()</code>. This is because we will be accessing the <em>scope</em> of the call via <code>args.This()</code>.</p>
+<p>Although more methods are implemented in <em>uuid.cc</em>, we will look at three:</p>
+<div class="highlight"><pre class="chroma"><code class="language-cpp" data-lang="cpp"><span class="n">Uuid</span><span class="o">::</span><span class="n">Init</span><span class="p">(</span><span class="n">Handle</span><span class="o">&lt;</span><span class="n">Object</span><span class="o">&gt;</span> <span class="n">target</span><span class="p">)</span>
+<span class="n">Handle</span><span class="o">&lt;</span><span class="n">Value</span><span class="o">&gt;</span> <span class="n">Uuid</span><span class="o">::</span><span class="n">New</span><span class="p">(</span><span class="k">const</span> <span class="n">Arguments</span> <span class="o">&amp;</span><span class="n">args</span><span class="p">)</span>
+<span class="n">Handle</span><span class="o">&lt;</span><span class="n">Value</span><span class="o">&gt;</span> <span class="n">Uuid</span><span class="o">::</span><span class="n">Generate</span><span class="p">(</span><span class="k">const</span> <span class="n">Arguments</span> <span class="o">&amp;</span><span class="n">args</span><span class="p">)</span>
+</code></pre></div><p>Just as before, node expects to find a signature of <code>extern &quot;C&quot; void init(Handle&lt;Object&gt; target)</code> in order to initialize the addon. Inside this method, we may set parameters such as the version number from the previous example. We may also pass-through initialization to any modules within our node addon. In this example, our addon will be <em>uuid.node</em> and contain a single module, <em>Uuid</em>. There is no reason we can’t later add <em>Uuid2</em> which, instead of returning a normalized string value might return a <code>Buffer</code> object. To initialize the Uuid module, we pass the <code>target</code> object along to <code>Uuid::Init</code> and add the module definition to <code>target</code>:</p>
+<div class="highlight"><pre class="chroma"><code class="language-cpp" data-lang="cpp"><span class="c1">// addons/uuid/v0.1/uuid.cc
+</span><span class="c1"></span><span class="kt">void</span> <span class="n">Uuid</span><span class="o">::</span><span class="n">Init</span><span class="p">(</span><span class="n">Handle</span><span class="o">&lt;</span><span class="n">Object</span><span class="o">&gt;</span> <span class="n">target</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">HandleScope</span> <span class="n">scope</span><span class="p">;</span>
+
+    <span class="c1">// Setup the constructor
+</span><span class="c1"></span>    <span class="n">constructor</span> <span class="o">=</span> <span class="n">Persistent</span><span class="o">&lt;</span><span class="n">FunctionTemplate</span><span class="o">&gt;::</span><span class="n">New</span><span class="p">(</span><span class="n">FunctionTemplate</span><span class="o">::</span><span class="n">New</span><span class="p">(</span><span class="n">Uuid</span><span class="o">::</span><span class="n">New</span><span class="p">));</span>
+    <span class="n">constructor</span><span class="o">-&gt;</span><span class="n">InstanceTemplate</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">SetInternalFieldCount</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span> <span class="c1">// for constructors
+</span><span class="c1"></span>    <span class="n">constructor</span><span class="o">-&gt;</span><span class="n">SetClassName</span><span class="p">(</span><span class="n">String</span><span class="o">::</span><span class="n">NewSymbol</span><span class="p">(</span><span class="s">&#34;Uuid&#34;</span><span class="p">));</span>
+
+    <span class="c1">// Setup the prototype
+</span><span class="c1"></span>    <span class="n">NODE_SET_PROTOTYPE_METHOD</span><span class="p">(</span><span class="n">constructor</span><span class="p">,</span> <span class="s">&#34;generate&#34;</span><span class="p">,</span> <span class="n">Generate</span><span class="p">);</span>
+    <span class="n">NODE_SET_PROTOTYPE_METHOD</span><span class="p">(</span><span class="n">constructor</span><span class="p">,</span> <span class="s">&#34;generateRandom&#34;</span><span class="p">,</span> <span class="n">GenerateRandom</span><span class="p">);</span>
+    <span class="n">NODE_SET_PROTOTYPE_METHOD</span><span class="p">(</span><span class="n">constructor</span><span class="p">,</span> <span class="s">&#34;generateTime&#34;</span><span class="p">,</span> <span class="n">GenerateTime</span><span class="p">);</span>
+
+    <span class="n">target</span><span class="o">-&gt;</span><span class="n">Set</span><span class="p">(</span><span class="n">String</span><span class="o">::</span><span class="n">NewSymbol</span><span class="p">(</span><span class="s">&#34;Uuid&#34;</span><span class="p">),</span> <span class="n">constructor</span><span class="o">-&gt;</span><span class="n">GetFunction</span><span class="p">());</span>
+<span class="p">}</span>
+</code></pre></div><p>In this scope, we are instantiating the <code>constructor</code> using <code>Uuid::New</code> as a new <code>FunctionTemplate</code>. We then call <code>InstanceTemplate()</code> and on that object we call <code>SetInternalFieldCount(1)</code>. This tells v8 that this object holds a reference to one object.</p>
+<p>Next, we setup the prototype using another macro provided by node. These calls say, for instance, “Add a method called <em>generate</em> to the constructor function which executes the native method <em>Generate</em>“.</p>
+<p>Lastly, we have to create a “Uuid” module on the object returned by the call to <code>require()</code>. Here, <code>Uuid</code> will point to a function (<code>constructor</code>) which returns a function that internally executes <code>Uuid::New</code>. In other words, we have created something akin to:</p>
+<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">Uuid</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span> <span class="p">};</span>
+<span class="nx">Uuid</span><span class="p">.</span><span class="nx">constructor</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+        <span class="c1">// Uuid::New executes here.
+</span><span class="c1"></span>    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div><p>Although the above is not exactly what we have done, it may provide a better view for some to understand <code>FunctionTemplate</code> references and why we assign one to the constructor object in such a way.</p>
+<p>The <code>Uuid::New</code> method is defined as:</p>
+<div class="highlight"><pre class="chroma"><code class="language-cpp" data-lang="cpp"><span class="c1">// addons/uuid/v0.1/uuid.cc
+</span><span class="c1"></span><span class="n">Handle</span><span class="o">&lt;</span><span class="n">Value</span><span class="o">&gt;</span> <span class="n">Uuid</span><span class="o">::</span><span class="n">New</span><span class="p">(</span><span class="k">const</span> <span class="n">Arguments</span> <span class="o">&amp;</span><span class="n">amp</span><span class="p">;</span><span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">HandleScope</span> <span class="n">scope</span><span class="p">;</span>
+    <span class="c1">// no args are checked
+</span><span class="c1"></span>    <span class="n">Uuid</span> <span class="o">*</span><span class="n">uuid</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Uuid</span><span class="p">();</span>
+    <span class="n">uuid</span><span class="o">-&gt;</span><span class="n">Wrap</span><span class="p">(</span><span class="n">args</span><span class="p">.</span><span class="n">This</span><span class="p">());</span>
+    <span class="k">return</span> <span class="n">args</span><span class="p">.</span><span class="n">This</span><span class="p">();</span>
+<span class="p">}</span>
+</code></pre></div><p>As you would expect, calling the constructor function multiple times will create newly-scoped <code>Uuid</code> objects on the heap. In this method, we <a href="https://github.com/joyent/node/blob/v0.4.8/src/node_object_wrap.h#L59">wrap</a> the parameter (scoped object) by setting a reference to <code>Uuid</code> in the args as a contextual scope (i.e. <code>this</code>) and then returns <code>this</code>.</p>
+<p>Within the <code>Generate</code> method, we will want to unwrap the contextual <code>Uuid</code> object and call the private method <code>GetString</code>.</p>
+<div class="highlight"><pre class="chroma"><code class="language-cpp" data-lang="cpp"><span class="c1">// addons/uuid/v0.1/uuid.cc
+</span><span class="c1"></span><span class="n">Handle</span><span class="o">&lt;</span><span class="n">Value</span><span class="o">&gt;</span> <span class="n">Uuid</span><span class="o">::</span><span class="n">Generate</span><span class="p">(</span><span class="k">const</span> <span class="n">Arguments</span> <span class="o">&amp;</span><span class="n">amp</span><span class="p">;</span><span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">HandleScope</span> <span class="n">scope</span><span class="p">;</span>
+    <span class="n">uuid_t</span> <span class="n">id</span><span class="p">;</span>
+    <span class="n">uuid_generate</span><span class="p">(</span><span class="n">id</span><span class="p">);</span>
+
+    <span class="n">Uuid</span> <span class="o">*</span><span class="n">uuid</span> <span class="o">=</span> <span class="n">ObjectWrap</span><span class="o">::</span><span class="n">Unwrap</span><span class="o">&lt;</span><span class="n">Uuid</span><span class="o">&gt;</span><span class="p">(</span><span class="n">args</span><span class="p">.</span><span class="n">This</span><span class="p">());</span>
+    <span class="k">return</span> <span class="n">scope</span><span class="p">.</span><span class="n">Close</span><span class="p">(</span><span class="n">String</span><span class="o">::</span><span class="n">New</span><span class="p">(</span><span class="n">uuid</span><span class="o">-&gt;</span><span class="n">GetString</span><span class="p">(</span><span class="n">id</span><span class="p">).</span><span class="n">c_str</span><span class="p">()));</span>
+<span class="p">}</span>
+</code></pre></div><p>As with any JavaScript function call, we have to ensure <a href="https://developer.mozilla.org/en/JavaScript/Reference/Functions_and_function_scope">functional scope</a>. Scoped methods should create a <a href="http://code.google.com/apis/v8/embed.html">HandleScope</a> object at the start and call <code>scope.Close()</code> at the end. <code>HandleScope</code> will get rid of temporary handles when the scope is closed.</p>
+<p>Within each of the _Generate*_ methods, we will create a <code>uuid_t</code> type and call the corresponding method defined in _/usr/includes/uuid/uuid.h_ (location may vary per system). To demonstrate accessing the pointer to our original <code>Uuid</code> object, we unwrap the contextual scope of this function using <code>ObjectWrap::Unwrap&lt;Uuid&gt;(args.This())</code>. From this pointer, we can access any private methods such as <code>GetString</code>. Be careful with your returned values, though. <code>String::New</code> in the v8 library does not take <code>std::string</code> in any of its signatures. Simply enough, <code>std::string</code> provides a <code>c_str()</code> method to return a <code>const char*</code> which <code>String::New</code> does accept.</p>
+<h3 id="uuid" class="node_demo">uuid.node demo</h3>
+<p>Navigate to <em>addons/uuid/v0.1/</em> and execute:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ node-waf configure build
+</code></pre></div><p>If there are build errors and the <em>func.cc</em> example from before built successfully, check that you have the <em>uuid-dev</em> package installed and rerun the above command. Then, navigate to <em>build/default</em> and try out the Uuid addon:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ node
+&gt; var <span class="nv">Uuid</span> <span class="o">=</span> require<span class="o">(</span><span class="s1">&#39;./uuid.node&#39;</span><span class="o">)</span>.Uuid<span class="p">;</span>
+&gt; var <span class="nv">uuid</span> <span class="o">=</span> new Uuid<span class="o">()</span><span class="p">;</span>
+&gt; uuid.generate<span class="o">()</span><span class="p">;</span>
+<span class="s1">&#39;83475e0c-212b-402c-bdc7-b81ebb7b34f8&#39;</span>
+&gt; uuid.generateRandom<span class="o">()</span><span class="p">;</span>
+<span class="s1">&#39;4d597bda-8f5f-4c3c-b2fa-1cd6cd4a6903&#39;</span>
+&gt; uuid.generateTime<span class="o">()</span><span class="p">;</span>
+<span class="s1">&#39;25a0dd30-5076-11e1-96be-0022fb93b24c&#39;</span>
+&gt; var <span class="nv">util</span> <span class="o">=</span> require<span class="o">(</span><span class="s1">&#39;util&#39;</span><span class="o">)</span><span class="p">;</span>
+&gt; util.inspect<span class="o">(</span>uuid<span class="o">)</span><span class="p">;</span>
+<span class="s1">&#39;{}&#39;</span>
+&gt; util.inspect<span class="o">(</span>Uuid<span class="o">)</span><span class="p">;</span>
+<span class="s1">&#39;[Function: Uuid]&#39;</span>
+&gt; 
+</code></pre></div><p>The above output may surprise you. Firstly, where is the <code>version</code> option?! It’s at the required module level: <code>require('./uuid.node').version;</code>. Secondly, if we can access <code>uuid.generate()</code> and others, why don’t they display when inspecting the object? That’s because we defined those methods on the prototype:</p>
+<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="o">&gt;</span> <span class="nx">uuid</span><span class="p">.</span><span class="nx">__proto__</span>
+<span class="p">{</span> <span class="nx">generate</span><span class="o">:</span> <span class="p">[</span><span class="nb">Function</span><span class="o">:</span> <span class="nx">generate</span><span class="p">],</span>
+  <span class="nx">generateRandom</span><span class="o">:</span> <span class="p">[</span><span class="nb">Function</span><span class="o">:</span> <span class="nx">generateRandom</span><span class="p">],</span>
+  <span class="nx">generateTime</span><span class="o">:</span> <span class="p">[</span><span class="nb">Function</span><span class="o">:</span> <span class="nx">generateTime</span><span class="p">]</span> <span class="p">}</span>
+<span class="o">&gt;</span>
+</code></pre></div><p>Thirdly, you may have noticed that I didn’t say anything about <code>constructor-&gt;SetClassName(String::NewSymbol(&quot;Uuid&quot;));</code> in <code>Uuid::Init</code>. You may have also wondered where <code>SetClassName</code> actually sets a class name, considering JavaScript is a prototypal language. That string value is what is displayed when you call inspect and get the value <code>'[Function: Uuid]'</code>. Just as you would expect, <code>Uuid</code> is the constructor and it is named <code>Uuid</code>.</p>
+<p>Now, if you’ve played around with this a bit, you may have noticed that <code>uuid.__proto__</code> gives us our three functions but <code>uuid.prototype</code> is empty. Why is that? That’s because <code>uuid.__proto__</code> really is <code>uuid.constructor.prototype</code>, which is also really <code>Uuid.prototype</code>. This is the essence of prototypal inheritance. If this concept is foreign or difficult to grasp, be sure to check out the excellent explanation on <a href="http://bonsaiden.github.com/JavaScript-Garden/#object.prototype">JavaScript Garden</a>.</p>
+<p>Logically, the next step would be to understand how to declare a prototype of our own.</p>
+  </div>
+  
+
+<div class="navigation navigation-single">
+    
+    <a href="/site/2012/02/words-pl-slogan-word-generator/" class="navigation-prev">
+      <i aria-hidden="true" class="fa fa-chevron-left"></i>
+      <span class="navigation-tittle">words.pl: slogan word generator</span>
+    </a>
+    
+    
+    <a href="/site/2012/02/my-review-of-mccullough-and-berglund-on-mastering-advanced-git/" class="navigation-next">
+      <span class="navigation-tittle">My Review of McCullough and Berglund on Mastering Advanced Git</span>
+      <i aria-hidden="true" class="fa fa-chevron-right"></i>
+    </a>
+    
+</div>
+
+
+  
+
+
+<div class="post__related">
+    
+    <h2>Related Articles</h2>
+    <ul class="related-posts">
+        
+<li>
+  <span class="list__title--small">
+    <a href="/site/2012/01/dotfiles-backup-using-github/" >dotfiles backup using GitHub</a>
+      
+      <time class="pull-right hidden-tablet">Jan 19, 2012</time>
+      
+  </span>
+</li>
+
+<li>
+  <span class="list__title--small">
+    <a href="/site/2011/12/install-nodejs-under-chromeos-cr-48/" >Install nodejs under ChromeOS (CR-48)</a>
+      
+      <time class="pull-right hidden-tablet">Dec 23, 2011</time>
+      
+  </span>
+</li>
+
+<li>
+  <span class="list__title--small">
+    <a href="/site/2011/04/node-js-mastering-node-excerpt-addons/" >[node.js] Mastering Node excerpt: Addons</a>
+      
+      <time class="pull-right hidden-tablet">Apr 9, 2011</time>
+      
+  </span>
+</li>
+
+<li>
+  <span class="list__title--small">
+    <a href="/site/2011/03/mastering-node/" >Mastering Node</a>
+      
+      <time class="pull-right hidden-tablet">Mar 17, 2011</time>
+      
+  </span>
+</li>
+
+<li>
+  <span class="list__title--small">
+    <a href="/site/2012/02/words-pl-slogan-word-generator/" >words.pl: slogan word generator</a>
+      
+      <time class="pull-right hidden-tablet">Feb 4, 2012</time>
+      
+  </span>
+</li>
+
+
+    </ul>
+</div>
+
+
+
+  
+    
+
+
+</article>
+
+
+        </div>
+        
+    
+
+<script defer src="https://use.fontawesome.com/releases/v5.11.2/js/all.js" integrity="sha384-b3ua1l97aVGAPEIe48b4TC60WUQbQaGi2jqAWM90y0OZXZeyaTCWtBTKtjW2GXG1" crossorigin="anonymous"></script>
+
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+        
+    <script type="text/javascript">
+        
+        hljs.initHighlightingOnLoad();
+    </script>
+    
+
+
+
+
+
+    
+
+
+
+    </body>
+</html>

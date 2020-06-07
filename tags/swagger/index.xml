@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>swagger on I Prefer Jim</title>
+    <link>https://www.ipreferjim.com/site/tags/swagger/</link>
+    <description>Recent content in swagger on I Prefer Jim</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 23 May 2016 00:04:24 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.ipreferjim.com/site/tags/swagger/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Ignoring files with Swagger Codegen</title>
+      <link>https://www.ipreferjim.com/site/2016/05/ignoring-files-with-swagger-codegen/</link>
+      <pubDate>Mon, 23 May 2016 00:04:24 +0000</pubDate>
+      
+      <guid>https://www.ipreferjim.com/site/2016/05/ignoring-files-with-swagger-codegen/</guid>
+      <description>I’m proud to announce that I’m now a member of the Swagger Codegen Core team.
+I’ve previously refactored the C# client, the maven plugin, added an ASP.</description>
+    </item>
+    
+  </channel>
+</rss>

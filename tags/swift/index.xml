@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Swift on I Prefer Jim</title>
+    <link>https://www.ipreferjim.com/site/tags/swift/</link>
+    <description>Recent content in Swift on I Prefer Jim</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 21 Mar 2015 19:32:05 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.ipreferjim.com/site/tags/swift/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Review: Swift for the Really Impatient</title>
+      <link>https://www.ipreferjim.com/site/2015/03/review-swift-for-the-really-impatient/</link>
+      <pubDate>Sat, 21 Mar 2015 19:32:05 +0000</pubDate>
+      
+      <guid>https://www.ipreferjim.com/site/2015/03/review-swift-for-the-really-impatient/</guid>
+      <description>I’ve recently finished reading Swift for the Really Impatient. It was a really good book; I’d give it 4 out of 5 stars.</description>
+    </item>
+    
+  </channel>
+</rss>
