@@ -2,186 +2,186 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Javascript on I Prefer Jim</title>
-    <link>http://www.ipreferjim.com/site/tags/javascript/</link>
+    <link>https://www.ipreferjim.com/site/tags/javascript/</link>
     <description>Recent content in Javascript on I Prefer Jim</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Wed, 16 Dec 2015 17:30:40 +0000</lastBuildDate>
     
-	<atom:link href="http://www.ipreferjim.com/site/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.ipreferjim.com/site/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>ES6 Template Strings without Indent via tags</title>
-      <link>http://www.ipreferjim.com/site/2015/12/es6-template-strings-without-indent-via-tags/</link>
+      <link>https://www.ipreferjim.com/site/2015/12/es6-template-strings-without-indent-via-tags/</link>
       <pubDate>Wed, 16 Dec 2015 17:30:40 +0000</pubDate>
       
-      <guid>http://www.ipreferjim.com/site/2015/12/es6-template-strings-without-indent-via-tags/</guid>
+      <guid>https://www.ipreferjim.com/site/2015/12/es6-template-strings-without-indent-via-tags/</guid>
       <description>ES6 is pretty cool. One new feature is template strings which allow for multiline interpolated strings.
 For example, from MDN:</description>
     </item>
     
     <item>
       <title>[javascript] Be sure to read documentation carefully…</title>
-      <link>http://www.ipreferjim.com/site/2015/05/javascript-be-sure-to-read-documentation-carefully/</link>
+      <link>https://www.ipreferjim.com/site/2015/05/javascript-be-sure-to-read-documentation-carefully/</link>
       <pubDate>Sun, 10 May 2015 02:28:38 +0000</pubDate>
       
-      <guid>http://www.ipreferjim.com/site/2015/05/javascript-be-sure-to-read-documentation-carefully/</guid>
+      <guid>https://www.ipreferjim.com/site/2015/05/javascript-be-sure-to-read-documentation-carefully/</guid>
       <description>I have a love-hate relationship with JavaScript. I love the language, but I hate the idiosyncrasies. And like many others, I use MDN pretty regularly to verify function signatures, browser support, or to find example code or shims.</description>
     </item>
     
     <item>
       <title>Create configurable Angular services using providers</title>
-      <link>http://www.ipreferjim.com/site/2015/03/create-configurable-angular-services-using-providers/</link>
+      <link>https://www.ipreferjim.com/site/2015/03/create-configurable-angular-services-using-providers/</link>
       <pubDate>Sun, 15 Mar 2015 03:01:00 +0000</pubDate>
       
-      <guid>http://www.ipreferjim.com/site/2015/03/create-configurable-angular-services-using-providers/</guid>
+      <guid>https://www.ipreferjim.com/site/2015/03/create-configurable-angular-services-using-providers/</guid>
       <description>With Angular 2 on its way, it seems like a lot of developers are now afraid of Angular 1.x. I have nothing bad to say about Angular.</description>
     </item>
     
     <item>
       <title>io.js 1.0.1 (unstable) is out. ES6!</title>
-      <link>http://www.ipreferjim.com/site/2015/01/io-js-1-0-1-unstable-is-out-es6/</link>
+      <link>https://www.ipreferjim.com/site/2015/01/io-js-1-0-1-unstable-is-out-es6/</link>
       <pubDate>Thu, 15 Jan 2015 02:51:41 +0000</pubDate>
       
-      <guid>http://www.ipreferjim.com/site/2015/01/io-js-1-0-1-unstable-is-out-es6/</guid>
+      <guid>https://www.ipreferjim.com/site/2015/01/io-js-1-0-1-unstable-is-out-es6/</guid>
       <description>A team of developers, including some core node.js developers, forked node.js a while ago into a project called io.js. They’ve just released version 1.</description>
     </item>
     
     <item>
       <title>Decorating directives with isolate scope in Angular 1.3</title>
-      <link>http://www.ipreferjim.com/site/2014/11/decorating-directives-with-isolate-scope-in-angular-1-3/</link>
+      <link>https://www.ipreferjim.com/site/2014/11/decorating-directives-with-isolate-scope-in-angular-1-3/</link>
       <pubDate>Thu, 20 Nov 2014 18:29:28 +0000</pubDate>
       
-      <guid>http://www.ipreferjim.com/site/2014/11/decorating-directives-with-isolate-scope-in-angular-1-3/</guid>
+      <guid>https://www.ipreferjim.com/site/2014/11/decorating-directives-with-isolate-scope-in-angular-1-3/</guid>
       <description>A question from reddit excited my interest. Angular 1.3 apparently has broken the ability to decorate isolate scopes.
 I tried version of Angular between the 1.</description>
     </item>
     
     <item>
       <title>Your first app: Node.js (update)</title>
-      <link>http://www.ipreferjim.com/site/2014/08/your-first-app-node-js-update/</link>
+      <link>https://www.ipreferjim.com/site/2014/08/your-first-app-node-js-update/</link>
       <pubDate>Sun, 31 Aug 2014 18:24:10 +0000</pubDate>
       
-      <guid>http://www.ipreferjim.com/site/2014/08/your-first-app-node-js-update/</guid>
+      <guid>https://www.ipreferjim.com/site/2014/08/your-first-app-node-js-update/</guid>
       <description>I am currently writing a book called Your first app: Node.js. I am self-publishing this book through leanpub.com. You can check it out here.</description>
     </item>
     
     <item>
       <title>Release: New Tab Redirect 3.0</title>
-      <link>http://www.ipreferjim.com/site/2014/03/release-new-tab-redirect-3-0/</link>
+      <link>https://www.ipreferjim.com/site/2014/03/release-new-tab-redirect-3-0/</link>
       <pubDate>Sat, 08 Mar 2014 02:41:53 +0000</pubDate>
       
-      <guid>http://www.ipreferjim.com/site/2014/03/release-new-tab-redirect-3-0/</guid>
+      <guid>https://www.ipreferjim.com/site/2014/03/release-new-tab-redirect-3-0/</guid>
       <description>On Wednesday, I began the rollout of New Tab Redirect 3.0 with some bug fixes and a huge new feature: a built in ‘Apps’ page.</description>
     </item>
     
     <item>
       <title>What is node.js?</title>
-      <link>http://www.ipreferjim.com/site/2013/08/what-is-node-js/</link>
+      <link>https://www.ipreferjim.com/site/2013/08/what-is-node-js/</link>
       <pubDate>Fri, 02 Aug 2013 18:29:00 +0000</pubDate>
       
-      <guid>http://www.ipreferjim.com/site/2013/08/what-is-node-js/</guid>
+      <guid>https://www.ipreferjim.com/site/2013/08/what-is-node-js/</guid>
       <description>I’ve recently decided to write a book about node.js. I don’t feel like a lot of books out there (on any technology) cover real-world scenarios.</description>
     </item>
     
     <item>
       <title>Karma error: RangeError: Maximum call stack size exceeded</title>
-      <link>http://www.ipreferjim.com/site/2013/06/karma-error-rangeerror-maximum-call-stack-size-exceeded/</link>
+      <link>https://www.ipreferjim.com/site/2013/06/karma-error-rangeerror-maximum-call-stack-size-exceeded/</link>
       <pubDate>Sun, 30 Jun 2013 02:08:26 +0000</pubDate>
       
-      <guid>http://www.ipreferjim.com/site/2013/06/karma-error-rangeerror-maximum-call-stack-size-exceeded/</guid>
+      <guid>https://www.ipreferjim.com/site/2013/06/karma-error-rangeerror-maximum-call-stack-size-exceeded/</guid>
       <description>I’ve been working on a bootstrap application for express.js, angular.js, and bootstrap. The idea being that I can provide a boilerplate for quick prototyping of applications.</description>
     </item>
     
     <item>
       <title>Why I don’t recommend the Step module [node.js, npm]</title>
-      <link>http://www.ipreferjim.com/site/2013/03/why-i-dont-recommend-the-step-module/</link>
+      <link>https://www.ipreferjim.com/site/2013/03/why-i-dont-recommend-the-step-module/</link>
       <pubDate>Sun, 17 Mar 2013 07:27:50 +0000</pubDate>
       
-      <guid>http://www.ipreferjim.com/site/2013/03/why-i-dont-recommend-the-step-module/</guid>
+      <guid>https://www.ipreferjim.com/site/2013/03/why-i-dont-recommend-the-step-module/</guid>
       <description>I prefer asyc to step. The async module has a cleaner interface, more options, and utilities. It’s a little beefier in size, but those things are beside the point.</description>
     </item>
     
     <item>
       <title>CommonJS Modules, node’s require() and private members</title>
-      <link>http://www.ipreferjim.com/site/2013/03/commonjs-modules-nodes-require-and-private-members/</link>
+      <link>https://www.ipreferjim.com/site/2013/03/commonjs-modules-nodes-require-and-private-members/</link>
       <pubDate>Sat, 02 Mar 2013 23:47:07 +0000</pubDate>
       
-      <guid>http://www.ipreferjim.com/site/2013/03/commonjs-modules-nodes-require-and-private-members/</guid>
+      <guid>https://www.ipreferjim.com/site/2013/03/commonjs-modules-nodes-require-and-private-members/</guid>
       <description>CommonJS Modules, node’s require() and private members Interestingly, node.js module documentation doesn’t even mention CommonJS or the specification proposal it implements.</description>
     </item>
     
     <item>
       <title>[Android] on{X} – automate your life</title>
-      <link>http://www.ipreferjim.com/site/2012/10/android-onx-automate-your-life/</link>
+      <link>https://www.ipreferjim.com/site/2012/10/android-onx-automate-your-life/</link>
       <pubDate>Mon, 22 Oct 2012 22:59:07 +0000</pubDate>
       
-      <guid>http://www.ipreferjim.com/site/2012/10/android-onx-automate-your-life/</guid>
+      <guid>https://www.ipreferjim.com/site/2012/10/android-onx-automate-your-life/</guid>
       <description>Lately, I’ve been obsessing over Microsoft. A couple of months ago, I would have told you that Windows 8 was a terrible move on Microsoft’s part.</description>
     </item>
     
     <item>
       <title>Getting started with jQuery plugins</title>
-      <link>http://www.ipreferjim.com/site/2012/10/getting-started-with-jquery-plugins/</link>
+      <link>https://www.ipreferjim.com/site/2012/10/getting-started-with-jquery-plugins/</link>
       <pubDate>Sun, 14 Oct 2012 01:57:52 +0000</pubDate>
       
-      <guid>http://www.ipreferjim.com/site/2012/10/getting-started-with-jquery-plugins/</guid>
+      <guid>https://www.ipreferjim.com/site/2012/10/getting-started-with-jquery-plugins/</guid>
       <description>jQuery plugins aren’t that difficult to write, but some folks seem to have a hard time understanding how to get started, so I thought I would write a quick blog post about that.</description>
     </item>
     
     <item>
       <title>Drawing a custom HTML5 shape</title>
-      <link>http://www.ipreferjim.com/site/2012/10/drawing-a-custom-html5-shape/</link>
+      <link>https://www.ipreferjim.com/site/2012/10/drawing-a-custom-html5-shape/</link>
       <pubDate>Thu, 04 Oct 2012 16:48:28 +0000</pubDate>
       
-      <guid>http://www.ipreferjim.com/site/2012/10/drawing-a-custom-html5-shape/</guid>
+      <guid>https://www.ipreferjim.com/site/2012/10/drawing-a-custom-html5-shape/</guid>
       <description>HTML5 is fun. I’ve meant to post about it more than I have in the past (which is 0 posts). I recently got the urge, so I want to show how to draw a heart and a star on HTML5 canvas.</description>
     </item>
     
     <item>
       <title>[node.js] Simple Logging in tweeter.js</title>
-      <link>http://www.ipreferjim.com/site/2012/04/node-js-simple-logging-in-tweeter-js/</link>
+      <link>https://www.ipreferjim.com/site/2012/04/node-js-simple-logging-in-tweeter-js/</link>
       <pubDate>Mon, 30 Apr 2012 22:28:21 +0000</pubDate>
       
-      <guid>http://www.ipreferjim.com/site/2012/04/node-js-simple-logging-in-tweeter-js/</guid>
+      <guid>https://www.ipreferjim.com/site/2012/04/node-js-simple-logging-in-tweeter-js/</guid>
       <description>tweeter.js is a simple OAuth implementation I started working on for a node.js application I had envisioned. The library works, as in it runs through the whole OAuth dance and allows the client to make API calls.</description>
     </item>
     
     <item>
       <title>My Review of JavaScript: The Definitive Guide, 6th Edition</title>
-      <link>http://www.ipreferjim.com/site/2011/11/my-review-of-javascript-the-definitive-guide-6th-edition/</link>
+      <link>https://www.ipreferjim.com/site/2011/11/my-review-of-javascript-the-definitive-guide-6th-edition/</link>
       <pubDate>Tue, 08 Nov 2011 23:26:47 +0000</pubDate>
       
-      <guid>http://www.ipreferjim.com/site/2011/11/my-review-of-javascript-the-definitive-guide-6th-edition/</guid>
+      <guid>https://www.ipreferjim.com/site/2011/11/my-review-of-javascript-the-definitive-guide-6th-edition/</guid>
       <description>Originally submitted at O&amp;#8217;Reilly &amp;lt;div&amp;gt; &amp;lt;img src=&amp;quot;https://images.powerreviews.com/images_products/04/72/13514433_100.jpg&amp;quot; class=&amp;quot;photo&amp;quot; align=&amp;quot;left&amp;quot; style=&amp;quot;margin: 0 0.5em 0 0&amp;quot; /&amp;gt;&amp;lt;/p&amp;gt; &amp;lt;p style=&amp;quot;margin-top:0&amp;quot;&amp;gt; Activate Your Web Pages &amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;p&amp;gt; &amp;lt;a href=&amp;quot;http://shop.</description>
     </item>
     
     <item>
       <title>jQuery plugin: fixed table header</title>
-      <link>http://www.ipreferjim.com/site/2011/10/jquery-plugin-fixed-table-header/</link>
+      <link>https://www.ipreferjim.com/site/2011/10/jquery-plugin-fixed-table-header/</link>
       <pubDate>Mon, 31 Oct 2011 12:27:57 +0000</pubDate>
       
-      <guid>http://www.ipreferjim.com/site/2011/10/jquery-plugin-fixed-table-header/</guid>
+      <guid>https://www.ipreferjim.com/site/2011/10/jquery-plugin-fixed-table-header/</guid>
       <description>Here’s a plugin that I wrote a while ago for fixing a table’s header row on scroll.
 This code is also available as a gist.</description>
     </item>
     
     <item>
       <title>Makefile setup for minifying .js files in an expressjs application</title>
-      <link>http://www.ipreferjim.com/site/2011/09/makefile-setup-for-minifying-js-files-in-an-expressjs-application/</link>
+      <link>https://www.ipreferjim.com/site/2011/09/makefile-setup-for-minifying-js-files-in-an-expressjs-application/</link>
       <pubDate>Thu, 29 Sep 2011 02:17:44 +0000</pubDate>
       
-      <guid>http://www.ipreferjim.com/site/2011/09/makefile-setup-for-minifying-js-files-in-an-expressjs-application/</guid>
+      <guid>https://www.ipreferjim.com/site/2011/09/makefile-setup-for-minifying-js-files-in-an-expressjs-application/</guid>
       <description>There’s not really any reason to uglify or minify your JavaScript files on a per-request basis or on a pre-cache basis.</description>
     </item>
     
     <item>
       <title>Editing JavaScript in vim</title>
-      <link>http://www.ipreferjim.com/site/2011/09/editing-javascript-in-vim/</link>
+      <link>https://www.ipreferjim.com/site/2011/09/editing-javascript-in-vim/</link>
       <pubDate>Mon, 05 Sep 2011 04:02:50 +0000</pubDate>
       
-      <guid>http://www.ipreferjim.com/site/2011/09/editing-javascript-in-vim/</guid>
+      <guid>https://www.ipreferjim.com/site/2011/09/editing-javascript-in-vim/</guid>
       <description>I primarily use vim as my editor of choice for JavaScript.
 I have a fairly simple .vimrc:
 syntax on &amp;#34; enabled syntax highlighting :set number &amp;#34; line numbers :set ai &amp;#34; autoindent :set tabstop=4 &amp;#34; sets tabs to 4 characters :set shiftwidth=4 :set expandtab :set softtabstop=4 &amp;#34; makes the spaces feel like real tabs &amp;#34; CSS (tabs = 2, lines = 79) autocmd FileType css set omnifunc=csscomplete#CompleteCSS autocmd FileType css set sw=2 autocmd FileType css set ts=2 autocmd FileType css set sts=2 &amp;#34; JavaScript (tabs = 4, lines = 79) autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS autocmd FileType javascript set sw=4 autocmd FileType javascript set ts=4 autocmd FileType javascript set sts=4 &amp;#34; autocmd FileType javascript set tw=79 autocmd FileType jade set omnifunc=jadecomplete#CompleteJade autocmd FileType jade set sw=2 autocmd FileType jade set ts=2 autocmd FileType jade set sts=2 &amp;#34; Highlight current line only in insert mode autocmd InsertLeave * set nocursorline autocmd InsertEnter * set cursorline &amp;#34; Makefiles require TAB instead of whitespace autocmd FileType make setlocal noexpandtab &amp;#34; Highlight cursor highlight CursorLine ctermbg=8 cterm=NONE I also use the JavaScript syntax/indents found here:</description>
@@ -189,49 +189,49 @@ syntax on &amp;#34; enabled syntax highlighting :set number &amp;#34; line numbe
     
     <item>
       <title>[js] Closures versus Functional Scoping</title>
-      <link>http://www.ipreferjim.com/site/2011/08/js-closures-versus-functional-scoping/</link>
+      <link>https://www.ipreferjim.com/site/2011/08/js-closures-versus-functional-scoping/</link>
       <pubDate>Sat, 27 Aug 2011 03:47:40 +0000</pubDate>
       
-      <guid>http://www.ipreferjim.com/site/2011/08/js-closures-versus-functional-scoping/</guid>
+      <guid>https://www.ipreferjim.com/site/2011/08/js-closures-versus-functional-scoping/</guid>
       <description>I was recently asked a very simple JavaScript question: what is a closure?
 Of course, I answered it (correctly, might I add) as “it means capturing a variable inside a function”.</description>
     </item>
     
     <item>
       <title>[node.js] Getting started with nodeunit</title>
-      <link>http://www.ipreferjim.com/site/2011/08/node-js-getting-started-with-nodeunit/</link>
+      <link>https://www.ipreferjim.com/site/2011/08/node-js-getting-started-with-nodeunit/</link>
       <pubDate>Wed, 17 Aug 2011 22:08:44 +0000</pubDate>
       
-      <guid>http://www.ipreferjim.com/site/2011/08/node-js-getting-started-with-nodeunit/</guid>
+      <guid>https://www.ipreferjim.com/site/2011/08/node-js-getting-started-with-nodeunit/</guid>
       <description>The following code is part of the testing chapter I previously worked on in my fork of Mastering Node.
 Throughout this post, you’ll see references to files from a relative directory.</description>
     </item>
     
     <item>
       <title>Posting complex models to ASP.NET MVC</title>
-      <link>http://www.ipreferjim.com/site/2011/08/posting-complex-models-to-asp-net-mvc/</link>
+      <link>https://www.ipreferjim.com/site/2011/08/posting-complex-models-to-asp-net-mvc/</link>
       <pubDate>Tue, 16 Aug 2011 12:43:24 +0000</pubDate>
       
-      <guid>http://www.ipreferjim.com/site/2011/08/posting-complex-models-to-asp-net-mvc/</guid>
+      <guid>https://www.ipreferjim.com/site/2011/08/posting-complex-models-to-asp-net-mvc/</guid>
       <description>Nick Riggs wrote a nice little jQuery plugin called postify that I have found extremely handy on many occasions. The code builds posted data into a format which is more understandable to the default ModelBinder in ASP.</description>
     </item>
     
     <item>
       <title>jquery.empuzzle @github</title>
-      <link>http://www.ipreferjim.com/site/2011/08/jquery-empuzzle-github/</link>
+      <link>https://www.ipreferjim.com/site/2011/08/jquery-empuzzle-github/</link>
       <pubDate>Mon, 08 Aug 2011 02:37:28 +0000</pubDate>
       
-      <guid>http://www.ipreferjim.com/site/2011/08/jquery-empuzzle-github/</guid>
+      <guid>https://www.ipreferjim.com/site/2011/08/jquery-empuzzle-github/</guid>
       <description>For the past few days, I’ve been writing this plugin called jquery.empuzzle. It was inspired by ‘Jigsy’ at cityposh.com.
 It is a basic N-puzzle</description>
     </item>
     
     <item>
       <title>Loading newer versions of jQuery and jQuery UI (noConflict)</title>
-      <link>http://www.ipreferjim.com/site/2011/06/loading-newer-versions-of-jquery-and-jquery-ui-noconflict/</link>
+      <link>https://www.ipreferjim.com/site/2011/06/loading-newer-versions-of-jquery-and-jquery-ui-noconflict/</link>
       <pubDate>Sat, 18 Jun 2011 00:22:00 +0000</pubDate>
       
-      <guid>http://www.ipreferjim.com/site/2011/06/loading-newer-versions-of-jquery-and-jquery-ui-noconflict/</guid>
+      <guid>https://www.ipreferjim.com/site/2011/06/loading-newer-versions-of-jquery-and-jquery-ui-noconflict/</guid>
       <description>&lt;p&gt;Here’s an interesting problem:&lt;/p&gt;
 &lt;p&gt;You have an ASP.NET Web Forms application which references jQuery 1.3.x and would require a lot of testing to upgrade to a newer version of jQuery. You’re adding functionality to this application, and you really want to use jQuery 1.5 or jQuery 1.6 going forward with new development. &lt;strong&gt;But…&lt;/strong&gt;, jQuery 1.3.x is referenced in the master page. Also, you want to load jQuery UI 1.8.x targeting the newer version of jQuery.&lt;/p&gt;
 &lt;p&gt;…&lt;/p&gt;</description>
@@ -239,20 +239,20 @@ It is a basic N-puzzle</description>
     
     <item>
       <title>Quake tracker is now officially open-source</title>
-      <link>http://www.ipreferjim.com/site/2011/06/quake-tracker-is-now-officially-open-source/</link>
+      <link>https://www.ipreferjim.com/site/2011/06/quake-tracker-is-now-officially-open-source/</link>
       <pubDate>Tue, 07 Jun 2011 02:38:16 +0000</pubDate>
       
-      <guid>http://www.ipreferjim.com/site/2011/06/quake-tracker-is-now-officially-open-source/</guid>
+      <guid>https://www.ipreferjim.com/site/2011/06/quake-tracker-is-now-officially-open-source/</guid>
       <description>Go here, fork it.
 https://github.com/jimschubert/quaketracker</description>
     </item>
     
     <item>
       <title>[node.js] Mastering Node excerpt: Addons</title>
-      <link>http://www.ipreferjim.com/site/2011/04/node-js-mastering-node-excerpt-addons/</link>
+      <link>https://www.ipreferjim.com/site/2011/04/node-js-mastering-node-excerpt-addons/</link>
       <pubDate>Sat, 09 Apr 2011 05:24:29 +0000</pubDate>
       
-      <guid>http://www.ipreferjim.com/site/2011/04/node-js-mastering-node-excerpt-addons/</guid>
+      <guid>https://www.ipreferjim.com/site/2011/04/node-js-mastering-node-excerpt-addons/</guid>
       <description>&lt;h2 id=&#34;addons&#34;&gt;Addons&lt;/h2&gt;
 &lt;p&gt;The node documentation for addons is self-admittedly pretty weak as of v0.4.0.&lt;/p&gt;
 &lt;p&gt;This chapter doesn’t aim to be a replacement for the official documentation. Instead, we’d hope this can expand on some of the basics a little more than a simple “Hello, World!” and drive you as a developer more on the path toward mastering node through its source code.&lt;/p&gt;
@@ -282,10 +282,10 @@ https://github.com/jimschubert/quaketracker</description>
     
     <item>
       <title>Mastering Node</title>
-      <link>http://www.ipreferjim.com/site/2011/03/mastering-node/</link>
+      <link>https://www.ipreferjim.com/site/2011/03/mastering-node/</link>
       <pubDate>Thu, 17 Mar 2011 03:27:54 +0000</pubDate>
       
-      <guid>http://www.ipreferjim.com/site/2011/03/mastering-node/</guid>
+      <guid>https://www.ipreferjim.com/site/2011/03/mastering-node/</guid>
       <description>I’ve forked a project at github called “Mastering Node”.
 https://github.com/jimschubert/masteringnode
 I’ve wanted to familiarize myself with node.js for some time, and this seems to be the best way.</description>
@@ -293,85 +293,85 @@ I’ve wanted to familiarize myself with node.js for some time, and this seems t
     
     <item>
       <title>jQuery Pocket Reference by David Flanagan</title>
-      <link>http://www.ipreferjim.com/site/2011/02/jquery-pocket-reference-by-david-flanagan/</link>
+      <link>https://www.ipreferjim.com/site/2011/02/jquery-pocket-reference-by-david-flanagan/</link>
       <pubDate>Tue, 08 Feb 2011 05:51:34 +0000</pubDate>
       
-      <guid>http://www.ipreferjim.com/site/2011/02/jquery-pocket-reference-by-david-flanagan/</guid>
+      <guid>https://www.ipreferjim.com/site/2011/02/jquery-pocket-reference-by-david-flanagan/</guid>
       <description>jQuery Pocket Reference by David Flanagan
 I’ve enjoyed previous books by David Flanagan and decided to read jQuery Pocket Reference. I thought I would quickly skim through the chapters because I considered myself fairly proficient in jQuery.</description>
     </item>
     
     <item>
       <title>Select Actions Update (Google Chrome Extension)</title>
-      <link>http://www.ipreferjim.com/site/2010/11/select-actions-update-google-chrome-extension/</link>
+      <link>https://www.ipreferjim.com/site/2010/11/select-actions-update-google-chrome-extension/</link>
       <pubDate>Sat, 13 Nov 2010 19:56:14 +0000</pubDate>
       
-      <guid>http://www.ipreferjim.com/site/2010/11/select-actions-update-google-chrome-extension/</guid>
+      <guid>https://www.ipreferjim.com/site/2010/11/select-actions-update-google-chrome-extension/</guid>
       <description>Last night, I published a major update to the Select Actions Google Chrome Extension. This update removes some “scary” permissions which claimed the extension had access to all websites.</description>
     </item>
     
     <item>
       <title>What is JavaScript?</title>
-      <link>http://www.ipreferjim.com/site/2010/09/what-is-javascript/</link>
+      <link>https://www.ipreferjim.com/site/2010/09/what-is-javascript/</link>
       <pubDate>Tue, 28 Sep 2010 02:47:43 +0000</pubDate>
       
-      <guid>http://www.ipreferjim.com/site/2010/09/what-is-javascript/</guid>
+      <guid>https://www.ipreferjim.com/site/2010/09/what-is-javascript/</guid>
       <description>I haven’t updated my site in a while because my wife and I have been very busy moving from the DC-Metro area to Seattle, WA.</description>
     </item>
     
     <item>
       <title>Fairly Accurate JavaScript Browser Detection</title>
-      <link>http://www.ipreferjim.com/site/2010/06/fairly-accurate-javascript-browser-detection/</link>
+      <link>https://www.ipreferjim.com/site/2010/06/fairly-accurate-javascript-browser-detection/</link>
       <pubDate>Sat, 12 Jun 2010 13:53:19 +0000</pubDate>
       
-      <guid>http://www.ipreferjim.com/site/2010/06/fairly-accurate-javascript-browser-detection/</guid>
+      <guid>https://www.ipreferjim.com/site/2010/06/fairly-accurate-javascript-browser-detection/</guid>
       <description>I use jQuery for almost everything I do in JavaScript. The only real problem is that jQuery’s browser name and version detection doesn’t provide exactly what I want.</description>
     </item>
     
     <item>
       <title>JavaScript color picker</title>
-      <link>http://www.ipreferjim.com/site/2010/05/javascript-color-picker/</link>
+      <link>https://www.ipreferjim.com/site/2010/05/javascript-color-picker/</link>
       <pubDate>Mon, 31 May 2010 18:00:43 +0000</pubDate>
       
-      <guid>http://www.ipreferjim.com/site/2010/05/javascript-color-picker/</guid>
+      <guid>https://www.ipreferjim.com/site/2010/05/javascript-color-picker/</guid>
       <description>I’m anxiously awaiting the implementation in Google Chrome for HTML5’s color chooser:
 &amp;lt;input type=&amp;quot;color&amp;quot; /&amp;amp;gt In the meantime, I found a nice little javascript color chooser at http://jscolor.</description>
     </item>
     
     <item>
       <title>Google Chrome Extension: New Tab Redirect! STEP BY STEP</title>
-      <link>http://www.ipreferjim.com/site/2010/02/google-chrome-extension-new-tab-redirect-step-by-step/</link>
+      <link>https://www.ipreferjim.com/site/2010/02/google-chrome-extension-new-tab-redirect-step-by-step/</link>
       <pubDate>Sat, 13 Feb 2010 22:45:00 +0000</pubDate>
       
-      <guid>http://www.ipreferjim.com/site/2010/02/google-chrome-extension-new-tab-redirect-step-by-step/</guid>
+      <guid>https://www.ipreferjim.com/site/2010/02/google-chrome-extension-new-tab-redirect-step-by-step/</guid>
       <description>If you’ve reached this this page in an attempt to find instructions for uninstalling the extension here they are:
  Navigate to chrome://extensions Click ‘Uninstall’ below ‘New Tab Redirect!</description>
     </item>
     
     <item>
       <title>Google Chrome Extension: New Tab Redirect!</title>
-      <link>http://www.ipreferjim.com/site/2009/12/google-chrome-extension-new-tab-redirect/</link>
+      <link>https://www.ipreferjim.com/site/2009/12/google-chrome-extension-new-tab-redirect/</link>
       <pubDate>Sun, 20 Dec 2009 22:08:00 +0000</pubDate>
       
-      <guid>http://www.ipreferjim.com/site/2009/12/google-chrome-extension-new-tab-redirect/</guid>
+      <guid>https://www.ipreferjim.com/site/2009/12/google-chrome-extension-new-tab-redirect/</guid>
       <description>Thanks to the blizzard this weekend, I’ve been alone and stuck inside long enough to write an extension for Google Chrome.</description>
     </item>
     
     <item>
       <title>jQuery check/uncheck all Checkboxes in ASP.NET</title>
-      <link>http://www.ipreferjim.com/site/2009/12/jquery-checkuncheck-all-checkboxes-in-asp-net/</link>
+      <link>https://www.ipreferjim.com/site/2009/12/jquery-checkuncheck-all-checkboxes-in-asp-net/</link>
       <pubDate>Thu, 17 Dec 2009 16:18:00 +0000</pubDate>
       
-      <guid>http://www.ipreferjim.com/site/2009/12/jquery-checkuncheck-all-checkboxes-in-asp-net/</guid>
+      <guid>https://www.ipreferjim.com/site/2009/12/jquery-checkuncheck-all-checkboxes-in-asp-net/</guid>
       <description>For some odd reason, ASP.NET GridView wraps html elements in a span element. When you apply a CssClass to the asp:CheckBox for instance, you will have a span with that class and inside you’ll have an input with type=checkbox.</description>
     </item>
     
     <item>
       <title>Quake Tracker using Google Maps API v3 and XML/Atom feed</title>
-      <link>http://www.ipreferjim.com/site/2009/06/quake-tracker-using-google-maps-api-v3-and-xmlatom-feed/</link>
+      <link>https://www.ipreferjim.com/site/2009/06/quake-tracker-using-google-maps-api-v3-and-xmlatom-feed/</link>
       <pubDate>Wed, 17 Jun 2009 22:38:00 +0000</pubDate>
       
-      <guid>http://www.ipreferjim.com/site/2009/06/quake-tracker-using-google-maps-api-v3-and-xmlatom-feed/</guid>
+      <guid>https://www.ipreferjim.com/site/2009/06/quake-tracker-using-google-maps-api-v3-and-xmlatom-feed/</guid>
       <description>http://www.ipreferjim.com/maps/quakes.html
 For this, I used the following:
  Google Maps API v3 (http://code.google.com/apis/maps/documentation/v3/) jQuery v1.3.2 (http://jquery.com/)  First, you will need to include the google maps api in your header:</description>
@@ -379,10 +379,10 @@ For this, I used the following:
     
     <item>
       <title>JavaScript &amp; CSS Modal Loading DIV</title>
-      <link>http://www.ipreferjim.com/site/2009/06/javascript-css-modal-loading-div/</link>
+      <link>https://www.ipreferjim.com/site/2009/06/javascript-css-modal-loading-div/</link>
       <pubDate>Wed, 17 Jun 2009 01:21:00 +0000</pubDate>
       
-      <guid>http://www.ipreferjim.com/site/2009/06/javascript-css-modal-loading-div/</guid>
+      <guid>https://www.ipreferjim.com/site/2009/06/javascript-css-modal-loading-div/</guid>
       <description>Things I’ve used in this:
  Prototype Javascript (http://prototypejs.org/) Loading image (http://www.ajaxload.info/) Script &amp;amp; CSS  What I do here is build a DIV element and show it on the page while Prototype’s Ajax Request object is loading.</description>
     </item>

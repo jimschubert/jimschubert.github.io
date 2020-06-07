@@ -27,7 +27,7 @@
 <meta property="og:title" content="Drawing a custom HTML5 shape" />
 <meta property="og:description" content="HTML5 is fun. I’ve meant to post about it more than I have in the past (which is 0 posts). I recently got the urge, so I want to show how to draw a heart and a star on HTML5 canvas." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://www.ipreferjim.com/site/2012/10/drawing-a-custom-html5-shape/" />
+<meta property="og:url" content="https://www.ipreferjim.com/site/2012/10/drawing-a-custom-html5-shape/" />
 <meta property="article:published_time" content="2012-10-04T16:48:28+00:00" />
 <meta property="article:modified_time" content="2012-10-04T16:48:28+00:00" /><meta property="og:site_name" content="I Prefer Jim" />
 
@@ -76,7 +76,7 @@
   <div class="container ">
     <div class="sidebar-about">
       <span class="site__title">
-        <a href="http://www.ipreferjim.com/site/">I Prefer Jim</a>
+        <a href="https://www.ipreferjim.com/site/">I Prefer Jim</a>
       </span>
       
       
@@ -240,7 +240,7 @@ Built with <a href="https://gohugo.io">Hugo</a> ❤️ <a href="https://github.c
 	<span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div><p>Unfortunately, you’re presented with a message that says <em>getContext</em> doesn’t exist on Node.</p>
-<p><a href="http://www.ipreferjim.com/site/wp-content/uploads/2012/10/Selection_010.png"><img src="https://www.ipreferjim.com/site/wp-content/uploads/2012/10/Selection_010.png" alt="typescript Node select message" title="typescript Node select message" width="612" height="128" class="aligncenter size-full wp-image-965" srcset="https://www.ipreferjim.com/site/wp-content/uploads/2012/10/Selection_010.png 612w, https://www.ipreferjim.com/site/wp-content/uploads/2012/10/Selection_010-300x62.png 300w" sizes="(max-width: 612px) 100vw, 612px" /></a></p>
+<p><a href="https://www.ipreferjim.com/site/wp-content/uploads/2012/10/Selection_010.png"><img src="https://www.ipreferjim.com/site/wp-content/uploads/2012/10/Selection_010.png" alt="typescript Node select message" title="typescript Node select message" width="612" height="128" class="aligncenter size-full wp-image-965" srcset="https://www.ipreferjim.com/site/wp-content/uploads/2012/10/Selection_010.png 612w, https://www.ipreferjim.com/site/wp-content/uploads/2012/10/Selection_010-300x62.png 300w" sizes="(max-width: 612px) 100vw, 612px" /></a></p>
 <p>To remove this message, you need to do something I personally don’t like doing (although it’s completely legal in JavaScript)– access the function by key.</p>
 <div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="k">if</span><span class="p">(</span><span class="nx">$tag</span><span class="p">)</span> <span class="p">{</span>
 	<span class="kd">var</span> <span class="nx">canvas</span> <span class="o">=</span> <span class="nx">$tag</span><span class="p">(</span><span class="s1">&#39;canvas&#39;</span><span class="p">)</span> <span class="o">?</span> <span class="nx">$tag</span><span class="p">(</span><span class="s1">&#39;canvas&#39;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span> <span class="o">:</span> <span class="kc">null</span><span class="p">;</span>

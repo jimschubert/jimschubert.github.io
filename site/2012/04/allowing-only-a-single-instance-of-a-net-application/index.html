@@ -27,7 +27,7 @@
 <meta property="og:title" content="Allowing only a single instance of a .NET application" />
 <meta property="og:description" content="In the past, whenever I constrained an application to having only a single instance running at any given time, I naively walked a list of running processes to find a process with the same name as the currently-running process." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://www.ipreferjim.com/site/2012/04/allowing-only-a-single-instance-of-a-net-application/" />
+<meta property="og:url" content="https://www.ipreferjim.com/site/2012/04/allowing-only-a-single-instance-of-a-net-application/" />
 <meta property="article:published_time" content="2012-04-23T23:13:32+00:00" />
 <meta property="article:modified_time" content="2012-04-23T23:13:32+00:00" /><meta property="og:site_name" content="I Prefer Jim" />
 
@@ -76,7 +76,7 @@
   <div class="container ">
     <div class="sidebar-about">
       <span class="site__title">
-        <a href="http://www.ipreferjim.com/site/">I Prefer Jim</a>
+        <a href="https://www.ipreferjim.com/site/">I Prefer Jim</a>
       </span>
       
       
@@ -253,7 +253,7 @@ Built with <a href="https://gohugo.io">Hugo</a> ❤️ <a href="https://github.c
             <span class="p">}</span>
         <span class="p">}</span>
     <span class="p">}</span>
-</code></pre></div><p><a href="http://www.ipreferjim.com/site/wp-content/uploads/2012/04/SingleInstance.png"><img src="https://www.ipreferjim.com/site/wp-content/uploads/2012/04/SingleInstance-300x103.png" alt="" title="SingleInstance" width="300" height="103" class="aligncenter size-medium wp-image-841" srcset="https://www.ipreferjim.com/site/wp-content/uploads/2012/04/SingleInstance-300x103.png 300w, https://www.ipreferjim.com/site/wp-content/uploads/2012/04/SingleInstance.png 657w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+</code></pre></div><p><a href="https://www.ipreferjim.com/site/wp-content/uploads/2012/04/SingleInstance.png"><img src="https://www.ipreferjim.com/site/wp-content/uploads/2012/04/SingleInstance-300x103.png" alt="" title="SingleInstance" width="300" height="103" class="aligncenter size-medium wp-image-841" srcset="https://www.ipreferjim.com/site/wp-content/uploads/2012/04/SingleInstance-300x103.png 300w, https://www.ipreferjim.com/site/wp-content/uploads/2012/04/SingleInstance.png 657w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
 <p>A semaphore is designed to limit access to a given resource. If you read the <a href="http://en.wikipedia.org/wiki/Semaphore_(programming)" title="Semaphore on Wikipedia" target="_blank">Wikipedia – Semaphore</a> article, you’ll see that a semaphore is described as a librarian handing out passes to study rooms. The librarian doesn’t care who is in which room, only whether there are rooms available. There could be 10 rooms, there could be 100. In this single application example, we have 1 available resource which is the application identified by a constant Guid – “af49d266-e4f4-4a63-b73c-f62c1144b584”. Because the operating system will use this string to uniquely identify our application, I’ve chosen a Guid over something simple like “MySemaphore” because the chances of a Guid being duplicated are theoretically nil.</p>
 <p>Using this Semaphore constructor:</p>
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public</span> <span class="n">Semaphore</span><span class="p">(</span>
@@ -295,7 +295,7 @@ Built with <a href="https://gohugo.io">Hugo</a> ❤️ <a href="https://github.c
             <span class="p">}</span>
         <span class="p">}</span>
     <span class="p">}</span>
-</code></pre></div><p><a href="http://www.ipreferjim.com/site/wp-content/uploads/2012/04/SingleInstance-queued.png"><img src="https://www.ipreferjim.com/site/wp-content/uploads/2012/04/SingleInstance-queued-300x115.png" alt="" title="SingleInstance-queued" width="300" height="115" class="aligncenter size-medium wp-image-848" srcset="https://www.ipreferjim.com/site/wp-content/uploads/2012/04/SingleInstance-queued-300x115.png 300w, https://www.ipreferjim.com/site/wp-content/uploads/2012/04/SingleInstance-queued.png 668w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+</code></pre></div><p><a href="https://www.ipreferjim.com/site/wp-content/uploads/2012/04/SingleInstance-queued.png"><img src="https://www.ipreferjim.com/site/wp-content/uploads/2012/04/SingleInstance-queued-300x115.png" alt="" title="SingleInstance-queued" width="300" height="115" class="aligncenter size-medium wp-image-848" srcset="https://www.ipreferjim.com/site/wp-content/uploads/2012/04/SingleInstance-queued-300x115.png 300w, https://www.ipreferjim.com/site/wp-content/uploads/2012/04/SingleInstance-queued.png 668w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
 <p>Wait a second. Didn’t I say that wrapping the Semaphore object in a using block would call Close()? Why did I have to explicitly call semaphore.Release()?</p>
 <p>The answer to this is Garbage Collection. Sure, Close() will be called (and thus, Release() is called and signals all waiting threads that the resource is available) when the using block exits, but this will only happen when the object is disposed. If you plan to queue up applications (or windows, dialogs, or any other resource), note this signaling behavior.</p>
 <h2 id="code">Code</h2>

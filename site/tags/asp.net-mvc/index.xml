@@ -2,68 +2,68 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ASP.NET MVC on I Prefer Jim</title>
-    <link>http://www.ipreferjim.com/site/tags/asp.net-mvc/</link>
+    <link>https://www.ipreferjim.com/site/tags/asp.net-mvc/</link>
     <description>Recent content in ASP.NET MVC on I Prefer Jim</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Mon, 23 Nov 2015 18:57:11 +0000</lastBuildDate>
     
-	<atom:link href="http://www.ipreferjim.com/site/tags/asp.net-mvc/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.ipreferjim.com/site/tags/asp.net-mvc/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Gulp dotnet tasks</title>
-      <link>http://www.ipreferjim.com/site/2015/11/gulp-dotnet-tasks/</link>
+      <link>https://www.ipreferjim.com/site/2015/11/gulp-dotnet-tasks/</link>
       <pubDate>Mon, 23 Nov 2015 18:57:11 +0000</pubDate>
       
-      <guid>http://www.ipreferjim.com/site/2015/11/gulp-dotnet-tasks/</guid>
+      <guid>https://www.ipreferjim.com/site/2015/11/gulp-dotnet-tasks/</guid>
       <description>Not sure if this will help anyway, but running dnu and dnx tasks (soon to be aggregated under a single ‘dotnet’) is really easy.</description>
     </item>
     
     <item>
       <title>Review: Microsoft .NET – Architecting Applications for the Enterprise, 2nd Edition</title>
-      <link>http://www.ipreferjim.com/site/2015/03/review-microsoft-net-architecting-applications-for-the-enterprise-2nd-edition/</link>
+      <link>https://www.ipreferjim.com/site/2015/03/review-microsoft-net-architecting-applications-for-the-enterprise-2nd-edition/</link>
       <pubDate>Fri, 13 Mar 2015 16:53:05 +0000</pubDate>
       
-      <guid>http://www.ipreferjim.com/site/2015/03/review-microsoft-net-architecting-applications-for-the-enterprise-2nd-edition/</guid>
+      <guid>https://www.ipreferjim.com/site/2015/03/review-microsoft-net-architecting-applications-for-the-enterprise-2nd-edition/</guid>
       <description>I’ve recently finished reading Microsoft .NET – Architecting Applications for the Enterprise, 2nd Edition by Dino Esposito and Andrea Saltarello. This book caught my attention for two reasons.</description>
     </item>
     
     <item>
       <title>Software Abstractions take Skill.</title>
-      <link>http://www.ipreferjim.com/site/2014/12/software-abstractions-take-skill/</link>
+      <link>https://www.ipreferjim.com/site/2014/12/software-abstractions-take-skill/</link>
       <pubDate>Tue, 09 Dec 2014 04:53:16 +0000</pubDate>
       
-      <guid>http://www.ipreferjim.com/site/2014/12/software-abstractions-take-skill/</guid>
+      <guid>https://www.ipreferjim.com/site/2014/12/software-abstractions-take-skill/</guid>
       <description>I recently read Adaptive Code via C# and posted a review on Amazon:
  This book is a new favorite of mine.</description>
     </item>
     
     <item>
       <title>DataAnnotations, MVC 3, and Unobtrusive Validations</title>
-      <link>http://www.ipreferjim.com/site/2011/08/dataannotations-mvc3-unobtrusive-validations/</link>
+      <link>https://www.ipreferjim.com/site/2011/08/dataannotations-mvc3-unobtrusive-validations/</link>
       <pubDate>Mon, 15 Aug 2011 01:00:14 +0000</pubDate>
       
-      <guid>http://www.ipreferjim.com/site/2011/08/dataannotations-mvc3-unobtrusive-validations/</guid>
+      <guid>https://www.ipreferjim.com/site/2011/08/dataannotations-mvc3-unobtrusive-validations/</guid>
       <description>&lt;p&gt;DataAnnotations are a pretty cool introduction to .NET 3.5+. It is very useful in ASP.NET MVC 3, and I’ve written a somewhat &lt;a href=&#34;http://www.ipreferjim.com/2010/05/system-componentmodel-dataannotations-for-asp-net-web-forms/&#34; title=&#34;System.ComponentModel.DataAnnotations for ASP.NET Web Forms&#34; target=&#34;_blank&#34;&gt;naive attempt&lt;/a&gt; to use this functionality in ASP.NET Web Forms which some people have found very useful.&lt;/p&gt;
 &lt;p&gt;I’d like to dig a little more in depth…&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>System.ComponentModel.DataAnnotations for ASP.NET Web Forms</title>
-      <link>http://www.ipreferjim.com/site/2010/05/system-componentmodel-dataannotations-for-asp-net-web-forms/</link>
+      <link>https://www.ipreferjim.com/site/2010/05/system-componentmodel-dataannotations-for-asp-net-web-forms/</link>
       <pubDate>Thu, 27 May 2010 01:50:19 +0000</pubDate>
       
-      <guid>http://www.ipreferjim.com/site/2010/05/system-componentmodel-dataannotations-for-asp-net-web-forms/</guid>
+      <guid>https://www.ipreferjim.com/site/2010/05/system-componentmodel-dataannotations-for-asp-net-web-forms/</guid>
       <description>Although I’m primarily an ASP.NET Web Forms developer, I regularly dabble in new and interesting technologies. I’ve toyed with other Microsoft technologies such as ASP.</description>
     </item>
     
     <item>
       <title>Keeping busy with ASP.NET MVC</title>
-      <link>http://www.ipreferjim.com/site/2009/08/keeping-busy-with-asp-net-mvc/</link>
+      <link>https://www.ipreferjim.com/site/2009/08/keeping-busy-with-asp-net-mvc/</link>
       <pubDate>Wed, 05 Aug 2009 05:21:00 +0000</pubDate>
       
-      <guid>http://www.ipreferjim.com/site/2009/08/keeping-busy-with-asp-net-mvc/</guid>
+      <guid>https://www.ipreferjim.com/site/2009/08/keeping-busy-with-asp-net-mvc/</guid>
       <description>I’m looking for a job in “the worst recession since the great depression” blah blah blah. It really sucks.
 To keep busy, I’ve been doing some ‘freelance’ work.</description>
     </item>

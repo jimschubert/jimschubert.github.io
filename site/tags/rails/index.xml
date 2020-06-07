@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Rails on I Prefer Jim</title>
-    <link>http://www.ipreferjim.com/site/tags/rails/</link>
+    <link>https://www.ipreferjim.com/site/tags/rails/</link>
     <description>Recent content in Rails on I Prefer Jim</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sun, 06 Feb 2011 18:01:38 +0000</lastBuildDate>
     
-	<atom:link href="http://www.ipreferjim.com/site/tags/rails/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.ipreferjim.com/site/tags/rails/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Rails 3 &#43; RSpec &#43; Rake tasks are missing</title>
-      <link>http://www.ipreferjim.com/site/2011/02/rails-3-rspec-rake-tasks-are-missing/</link>
+      <link>https://www.ipreferjim.com/site/2011/02/rails-3-rspec-rake-tasks-are-missing/</link>
       <pubDate>Sun, 06 Feb 2011 18:01:38 +0000</pubDate>
       
-      <guid>http://www.ipreferjim.com/site/2011/02/rails-3-rspec-rake-tasks-are-missing/</guid>
+      <guid>https://www.ipreferjim.com/site/2011/02/rails-3-rspec-rake-tasks-are-missing/</guid>
       <description>Recently, I installed Rails 3 using rvm. I wanted to follow quickly through Rails 3 in Action so I could see the differences between Rails 2.</description>
     </item>
     

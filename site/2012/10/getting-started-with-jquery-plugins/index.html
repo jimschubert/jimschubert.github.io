@@ -27,7 +27,7 @@
 <meta property="og:title" content="Getting started with jQuery plugins" />
 <meta property="og:description" content="jQuery plugins aren’t that difficult to write, but some folks seem to have a hard time understanding how to get started, so I thought I would write a quick blog post about that." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://www.ipreferjim.com/site/2012/10/getting-started-with-jquery-plugins/" />
+<meta property="og:url" content="https://www.ipreferjim.com/site/2012/10/getting-started-with-jquery-plugins/" />
 <meta property="article:published_time" content="2012-10-14T01:57:52+00:00" />
 <meta property="article:modified_time" content="2012-10-14T01:57:52+00:00" /><meta property="og:site_name" content="I Prefer Jim" />
 
@@ -76,7 +76,7 @@
   <div class="container ">
     <div class="sidebar-about">
       <span class="site__title">
-        <a href="http://www.ipreferjim.com/site/">I Prefer Jim</a>
+        <a href="https://www.ipreferjim.com/site/">I Prefer Jim</a>
       </span>
       
       
@@ -263,7 +263,7 @@ Built with <a href="https://gohugo.io">Hugo</a> ❤️ <a href="https://github.c
 <span class="c1">// same as: $(&#39;.test-elements&#39;).example();
 </span></code></pre></div><p>Now, you’ll want to iterate over each object found by the query selector and perform whatever functionality your plugin will provide. Let’s define some functionality so we can have a (somewhat) useful plugin. We’ll keep with the ‘example’ theme and write a plugin which stylizes a <code> tag and adds a small box in the top-left corner which says ‘Example’. (I got this idea from Twitter’s Bootstrap framework, <a href="http://twitter.github.com/bootstrap/base-css.html" title="Twitter Bootstrap on Github" target="_blank">see here</a>). We’ll also ‘highlight’ a few keywords within our example.</p>
 <p>Here’s what we want our final product to look like (after some hideous styling, of course):</p>
-<p><a href="http://www.ipreferjim.com/site/wp-content/uploads/2012/10/Selection_011.png"><img src="https://www.ipreferjim.com/site/wp-content/uploads/2012/10/Selection_011.png" alt="" title="Selection_011" width="430" height="114" class="aligncenter size-full wp-image-974" srcset="https://www.ipreferjim.com/site/wp-content/uploads/2012/10/Selection_011.png 430w, https://www.ipreferjim.com/site/wp-content/uploads/2012/10/Selection_011-300x79.png 300w" sizes="(max-width: 430px) 100vw, 430px" /></a></p>
+<p><a href="https://www.ipreferjim.com/site/wp-content/uploads/2012/10/Selection_011.png"><img src="https://www.ipreferjim.com/site/wp-content/uploads/2012/10/Selection_011.png" alt="" title="Selection_011" width="430" height="114" class="aligncenter size-full wp-image-974" srcset="https://www.ipreferjim.com/site/wp-content/uploads/2012/10/Selection_011.png 430w, https://www.ipreferjim.com/site/wp-content/uploads/2012/10/Selection_011-300x79.png 300w" sizes="(max-width: 430px) 100vw, 430px" /></a></p>
 <p>For the goal screenshot, I’ve used <a href="http://code.google.com/p/google-code-prettify/" title="Google Code prettify" target="_blank">Google’s prettify</a> plugin, which is licensed under <a href="http://www.apache.org/licenses/LICENSE-2.0" title="Apache 2.0 License" target="_blank">Apache 2.0</a>. I don’t use this in the final product.</p>
 <p>There will be a few things we’ll need to do in this plugin:</p>
 <ol>

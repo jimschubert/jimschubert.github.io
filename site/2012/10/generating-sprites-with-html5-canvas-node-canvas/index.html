@@ -27,7 +27,7 @@
 <meta property="og:title" content="Generating sprites with HTML5 canvas (node-canvas)" />
 <meta property="og:description" content="About a week ago, I posted about drawing simple shapes in HTML5. HTML5’s Canvas isn’t only useful on the client side." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://www.ipreferjim.com/site/2012/10/generating-sprites-with-html5-canvas-node-canvas/" />
+<meta property="og:url" content="https://www.ipreferjim.com/site/2012/10/generating-sprites-with-html5-canvas-node-canvas/" />
 <meta property="article:published_time" content="2012-10-14T22:31:01+00:00" />
 <meta property="article:modified_time" content="2012-10-14T22:31:01+00:00" /><meta property="og:site_name" content="I Prefer Jim" />
 
@@ -76,7 +76,7 @@
   <div class="container ">
     <div class="sidebar-about">
       <span class="site__title">
-        <a href="http://www.ipreferjim.com/site/">I Prefer Jim</a>
+        <a href="https://www.ipreferjim.com/site/">I Prefer Jim</a>
       </span>
       
       
@@ -237,7 +237,7 @@ Built with <a href="https://gohugo.io">Hugo</a> ❤️ <a href="https://github.c
   <div class="post">
     <p>About a week ago, I posted about <a href="http://www.ipreferjim.com/2012/10/drawing-a-custom-html5-shape/" title="Drawing a custom HTML5 shape" target="_blank">drawing simple shapes in HTML5</a>. HTML5’s Canvas isn’t only useful on the client side.</p>
 <p>About a year ago, I <a href="https://github.com/jimschubert/quaketracker" title="Quaketracker code on Github" target="_blank">rewrote</a> my <a href="http://ipreferjim.com/maps/" title="Quaketracker" target="_blank">Quaketracker</a> mashup which pulls rss content from USGS and displays markers on a Google Map. For part of this rewrite, I wanted to use custom markers to indicate the magnitude of the earthquake, both numerically and colorfully. That task was more involved than I realized it would be. There doesn’t seem to be any easy way to generate such a sprite in The Gimp or other graphics software, so I set out to generate a sprite of magnitudes 0.0 through 9.9 with a color range from yellow to orange using node-canvas. This actually made the task very simple.<figure id="attachment_982" style="width: 35px" class="wp-caption alignright"></p>
-<p><a href="http://www.ipreferjim.com/site/wp-content/uploads/2012/10/base.png"><img src="https://www.ipreferjim.com/site/wp-content/uploads/2012/10/base.png" alt="base.png" title="base.png" width="35" height="35" class="size-full wp-image-982" /></a><figcaption class="wp-caption-text">marker</figcaption></figure></p>
+<p><a href="https://www.ipreferjim.com/site/wp-content/uploads/2012/10/base.png"><img src="https://www.ipreferjim.com/site/wp-content/uploads/2012/10/base.png" alt="base.png" title="base.png" width="35" height="35" class="size-full wp-image-982" /></a><figcaption class="wp-caption-text">marker</figcaption></figure></p>
 <p>Before writing the script, I had to decide on an image. I created a pretty simple quote-bubble-like marker with a white background and a black outline. The image is 35×35 square with some transparency padding the actual marker image. This allows me to calculate the layout pretty easily. The white background on black outline gives me a very specific color to replace with the desired color of intensity.</p>
 <p><a href="github.com/learnboost/node-canvas" title="node-canvas on github" target="_blank">node-canvas</a> is a custom implementation of Canvas for node.js. When I originally wrote this script, I had a few issues compiling node-canvas. When I tweaked the script today, I had no issues. However, it seems like some things are not well-documented or incomplete (PixelArray).</p>
 <h2 id="scripting-it-in-nodejs">Scripting it in node.js</h2>

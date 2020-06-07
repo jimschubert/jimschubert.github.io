@@ -27,7 +27,7 @@
 <meta property="og:title" content="Manually debugging Angular scope" />
 <meta property="og:description" content="While a utility like Angular Batarang is invaluable, you’ll sometimes want to quickly and effectively inspect what exists on a given scope." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://www.ipreferjim.com/site/2014/11/manually-debugging-angular-scope/" />
+<meta property="og:url" content="https://www.ipreferjim.com/site/2014/11/manually-debugging-angular-scope/" />
 <meta property="article:published_time" content="2014-11-17T04:49:58+00:00" />
 <meta property="article:modified_time" content="2014-11-17T04:49:58+00:00" /><meta property="og:site_name" content="I Prefer Jim" />
 
@@ -76,7 +76,7 @@
   <div class="container ">
     <div class="sidebar-about">
       <span class="site__title">
-        <a href="http://www.ipreferjim.com/site/">I Prefer Jim</a>
+        <a href="https://www.ipreferjim.com/site/">I Prefer Jim</a>
       </span>
       
       
@@ -237,7 +237,7 @@ Built with <a href="https://gohugo.io">Hugo</a> ❤️ <a href="https://github.c
 <div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="nx">angular</span><span class="p">.</span><span class="nx">element</span><span class="p">(</span><span class="nx">$0</span><span class="p">).</span><span class="nx">scope</span><span class="p">();</span>
 </code></pre></div><p>This will dump the scope to the console. You can assign this to a variable or navigate the parent/child scopes from here. This works because most browsers’ developer consoles support some extras in their <a href="https://developer.chrome.com/devtools/docs/commandline-api" title="Google Chrome's developer command line API" target="_blank">Command Line API</a>. The <code>$0</code> refers to the most recently selected DOM element (try <code>$0</code> through <code>$4</code>!).</p>
 <p>You can test this out on the <a href="http://angular.github.io/angular-phonecat/step-12/app/#/phones" title="AngualrJS Phonecat" target="_blank">AngularJS Phone Catalog Tutorial</a>. Here’s what you should see:</p>
-<p><a href="http://www.ipreferjim.com/site/wp-content/uploads/2014/11/Google_Phone_Gallery.png"><img src="https://www.ipreferjim.com/site/wp-content/uploads/2014/11/Google_Phone_Gallery-1024x771.png" alt="Android element debugging." width="474" height="356" class="aligncenter size-large wp-image-1190" srcset="https://www.ipreferjim.com/site/wp-content/uploads/2014/11/Google_Phone_Gallery-1024x771.png 1024w, https://www.ipreferjim.com/site/wp-content/uploads/2014/11/Google_Phone_Gallery-300x226.png 300w" sizes="(max-width: 474px) 100vw, 474px" /></a></p>
+<p><a href="https://www.ipreferjim.com/site/wp-content/uploads/2014/11/Google_Phone_Gallery.png"><img src="https://www.ipreferjim.com/site/wp-content/uploads/2014/11/Google_Phone_Gallery-1024x771.png" alt="Android element debugging." width="474" height="356" class="aligncenter size-large wp-image-1190" srcset="https://www.ipreferjim.com/site/wp-content/uploads/2014/11/Google_Phone_Gallery-1024x771.png 1024w, https://www.ipreferjim.com/site/wp-content/uploads/2014/11/Google_Phone_Gallery-300x226.png 300w" sizes="(max-width: 474px) 100vw, 474px" /></a></p>
 
   </div>
   

@@ -2,40 +2,40 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Algorithms on I Prefer Jim</title>
-    <link>http://www.ipreferjim.com/site/tags/algorithms/</link>
+    <link>https://www.ipreferjim.com/site/tags/algorithms/</link>
     <description>Recent content in Algorithms on I Prefer Jim</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Thu, 19 Mar 2009 13:17:00 +0000</lastBuildDate>
     
-	<atom:link href="http://www.ipreferjim.com/site/tags/algorithms/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.ipreferjim.com/site/tags/algorithms/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>C&#43;&#43; Templated QuickSort Algorithm</title>
-      <link>http://www.ipreferjim.com/site/2009/03/c-templated-quicksort-algorithm/</link>
+      <link>https://www.ipreferjim.com/site/2009/03/c-templated-quicksort-algorithm/</link>
       <pubDate>Thu, 19 Mar 2009 13:17:00 +0000</pubDate>
       
-      <guid>http://www.ipreferjim.com/site/2009/03/c-templated-quicksort-algorithm/</guid>
+      <guid>https://www.ipreferjim.com/site/2009/03/c-templated-quicksort-algorithm/</guid>
       <description>It has been over a month since I posted. I’ve been really busy with all of my classes.
 So, instead of going too in depth with anything, I’m just going to share some code we’ve written.</description>
     </item>
     
     <item>
       <title>C# Insertion Sorting algorithm</title>
-      <link>http://www.ipreferjim.com/site/2009/02/c-insertion-sorting-algorithm/</link>
+      <link>https://www.ipreferjim.com/site/2009/02/c-insertion-sorting-algorithm/</link>
       <pubDate>Mon, 02 Feb 2009 22:12:00 +0000</pubDate>
       
-      <guid>http://www.ipreferjim.com/site/2009/02/c-insertion-sorting-algorithm/</guid>
+      <guid>https://www.ipreferjim.com/site/2009/02/c-insertion-sorting-algorithm/</guid>
       <description>Here is a console application to test an Insertion Sorting algorithm adapted from chapter 2 of MIT’s Introduction to Algorithms. I thought this might come in handy for any beginners, as well as a fun way to test your computer’s performance.</description>
     </item>
     
     <item>
       <title>C# Insertion Sorting alrgorithm.</title>
-      <link>http://www.ipreferjim.com/site/2008/02/c-insertion-sorting-alrgorithm/</link>
+      <link>https://www.ipreferjim.com/site/2008/02/c-insertion-sorting-alrgorithm/</link>
       <pubDate>Thu, 14 Feb 2008 02:39:12 +0000</pubDate>
       
-      <guid>http://www.ipreferjim.com/site/2008/02/c-insertion-sorting-alrgorithm/</guid>
+      <guid>https://www.ipreferjim.com/site/2008/02/c-insertion-sorting-alrgorithm/</guid>
       <description>using System; using System.Collections.Generic; using System.Linq; using System.Text; namespace InsertionSorting { class Program { static void Main(string[] args) { // int[] A = {5, 2, 4, 6, 1, 3};  int initializer = 100000; int[] A = new int[initializer]; for (int my = 0; my &amp;lt; A.</description>
     </item>
     

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Java on I Prefer Jim</title>
-    <link>http://www.ipreferjim.com/site/tags/java/</link>
+    <link>https://www.ipreferjim.com/site/tags/java/</link>
     <description>Recent content in Java on I Prefer Jim</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Tue, 06 Jun 2017 14:50:51 +0000</lastBuildDate>
     
-	<atom:link href="http://www.ipreferjim.com/site/tags/java/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.ipreferjim.com/site/tags/java/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>iggy: ignore file processor for jvm</title>
-      <link>http://www.ipreferjim.com/site/2017/06/iggy-ignore-file-processor-for-jvm/</link>
+      <link>https://www.ipreferjim.com/site/2017/06/iggy-ignore-file-processor-for-jvm/</link>
       <pubDate>Tue, 06 Jun 2017 14:50:51 +0000</pubDate>
       
-      <guid>http://www.ipreferjim.com/site/2017/06/iggy-ignore-file-processor-for-jvm/</guid>
+      <guid>https://www.ipreferjim.com/site/2017/06/iggy-ignore-file-processor-for-jvm/</guid>
       <description>As a core team member for Swagger Codegen, one of the major features I’ve added in the last year was support for .</description>
     </item>
     

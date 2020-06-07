@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Expression on I Prefer Jim</title>
-    <link>http://www.ipreferjim.com/site/tags/expression/</link>
+    <link>https://www.ipreferjim.com/site/tags/expression/</link>
     <description>Recent content in Expression on I Prefer Jim</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Mon, 03 May 2010 22:30:50 +0000</lastBuildDate>
     
-	<atom:link href="http://www.ipreferjim.com/site/tags/expression/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.ipreferjim.com/site/tags/expression/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>NHibernate.Criterion Extensions workaround</title>
-      <link>http://www.ipreferjim.com/site/2010/05/nhibernate-criterion-extensions-workaround/</link>
+      <link>https://www.ipreferjim.com/site/2010/05/nhibernate-criterion-extensions-workaround/</link>
       <pubDate>Mon, 03 May 2010 22:30:50 +0000</pubDate>
       
-      <guid>http://www.ipreferjim.com/site/2010/05/nhibernate-criterion-extensions-workaround/</guid>
+      <guid>https://www.ipreferjim.com/site/2010/05/nhibernate-criterion-extensions-workaround/</guid>
       <description>I’ve been working with Fluent NHibernate for the past month or so, and I realized while writing an NHibernate query that the NHibernate Criterion’s Restrictions class isn’t very refactor-friendly.</description>
     </item>
     

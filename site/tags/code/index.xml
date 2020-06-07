@@ -2,103 +2,103 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Code on I Prefer Jim</title>
-    <link>http://www.ipreferjim.com/site/tags/code/</link>
+    <link>https://www.ipreferjim.com/site/tags/code/</link>
     <description>Recent content in Code on I Prefer Jim</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Tue, 06 Jun 2017 14:50:51 +0000</lastBuildDate>
     
-	<atom:link href="http://www.ipreferjim.com/site/tags/code/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.ipreferjim.com/site/tags/code/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>iggy: ignore file processor for jvm</title>
-      <link>http://www.ipreferjim.com/site/2017/06/iggy-ignore-file-processor-for-jvm/</link>
+      <link>https://www.ipreferjim.com/site/2017/06/iggy-ignore-file-processor-for-jvm/</link>
       <pubDate>Tue, 06 Jun 2017 14:50:51 +0000</pubDate>
       
-      <guid>http://www.ipreferjim.com/site/2017/06/iggy-ignore-file-processor-for-jvm/</guid>
+      <guid>https://www.ipreferjim.com/site/2017/06/iggy-ignore-file-processor-for-jvm/</guid>
       <description>As a core team member for Swagger Codegen, one of the major features I’ve added in the last year was support for .</description>
     </item>
     
     <item>
       <title>Ignoring files with Swagger Codegen</title>
-      <link>http://www.ipreferjim.com/site/2016/05/ignoring-files-with-swagger-codegen/</link>
+      <link>https://www.ipreferjim.com/site/2016/05/ignoring-files-with-swagger-codegen/</link>
       <pubDate>Mon, 23 May 2016 00:04:24 +0000</pubDate>
       
-      <guid>http://www.ipreferjim.com/site/2016/05/ignoring-files-with-swagger-codegen/</guid>
+      <guid>https://www.ipreferjim.com/site/2016/05/ignoring-files-with-swagger-codegen/</guid>
       <description>I’m proud to announce that I’m now a member of the Swagger Codegen Core team.
 I’ve previously refactored the C# client, the maven plugin, added an ASP.</description>
     </item>
     
     <item>
       <title>Create configurable Angular services using providers</title>
-      <link>http://www.ipreferjim.com/site/2015/03/create-configurable-angular-services-using-providers/</link>
+      <link>https://www.ipreferjim.com/site/2015/03/create-configurable-angular-services-using-providers/</link>
       <pubDate>Sun, 15 Mar 2015 03:01:00 +0000</pubDate>
       
-      <guid>http://www.ipreferjim.com/site/2015/03/create-configurable-angular-services-using-providers/</guid>
+      <guid>https://www.ipreferjim.com/site/2015/03/create-configurable-angular-services-using-providers/</guid>
       <description>With Angular 2 on its way, it seems like a lot of developers are now afraid of Angular 1.x. I have nothing bad to say about Angular.</description>
     </item>
     
     <item>
       <title>Tips for debugging a WiX MSI</title>
-      <link>http://www.ipreferjim.com/site/2015/03/tips-for-debugging-a-wix-msi/</link>
+      <link>https://www.ipreferjim.com/site/2015/03/tips-for-debugging-a-wix-msi/</link>
       <pubDate>Thu, 12 Mar 2015 01:26:32 +0000</pubDate>
       
-      <guid>http://www.ipreferjim.com/site/2015/03/tips-for-debugging-a-wix-msi/</guid>
+      <guid>https://www.ipreferjim.com/site/2015/03/tips-for-debugging-a-wix-msi/</guid>
       <description>WiX is an excellent technology that simplifies the creation of MSI files using an XML abstraction on top of the Windows Installer APIs.</description>
     </item>
     
     <item>
       <title>Your IDE’s font matters: Fantasque Sans Mono</title>
-      <link>http://www.ipreferjim.com/site/2015/03/your-ides-font-matters-fantasque-sans-mono/</link>
+      <link>https://www.ipreferjim.com/site/2015/03/your-ides-font-matters-fantasque-sans-mono/</link>
       <pubDate>Sun, 08 Mar 2015 18:12:19 +0000</pubDate>
       
-      <guid>http://www.ipreferjim.com/site/2015/03/your-ides-font-matters-fantasque-sans-mono/</guid>
+      <guid>https://www.ipreferjim.com/site/2015/03/your-ides-font-matters-fantasque-sans-mono/</guid>
       <description>A good development environment is crucial to your productivity, there’s no question about it. The phrase ‘good development environment’ is subjective.</description>
     </item>
     
     <item>
       <title>SOLID Principles Presentation</title>
-      <link>http://www.ipreferjim.com/site/2014/11/solid-principles-presentation/</link>
+      <link>https://www.ipreferjim.com/site/2014/11/solid-principles-presentation/</link>
       <pubDate>Wed, 12 Nov 2014 23:00:28 +0000</pubDate>
       
-      <guid>http://www.ipreferjim.com/site/2014/11/solid-principles-presentation/</guid>
+      <guid>https://www.ipreferjim.com/site/2014/11/solid-principles-presentation/</guid>
       <description></description>
     </item>
     
     <item>
       <title>System.ComponentModel.DataAnnotations for ASP.NET Web Forms</title>
-      <link>http://www.ipreferjim.com/site/2010/05/system-componentmodel-dataannotations-for-asp-net-web-forms/</link>
+      <link>https://www.ipreferjim.com/site/2010/05/system-componentmodel-dataannotations-for-asp-net-web-forms/</link>
       <pubDate>Thu, 27 May 2010 01:50:19 +0000</pubDate>
       
-      <guid>http://www.ipreferjim.com/site/2010/05/system-componentmodel-dataannotations-for-asp-net-web-forms/</guid>
+      <guid>https://www.ipreferjim.com/site/2010/05/system-componentmodel-dataannotations-for-asp-net-web-forms/</guid>
       <description>Although I’m primarily an ASP.NET Web Forms developer, I regularly dabble in new and interesting technologies. I’ve toyed with other Microsoft technologies such as ASP.</description>
     </item>
     
     <item>
       <title>Finding a user’s local time from UTC offset</title>
-      <link>http://www.ipreferjim.com/site/2010/05/finding-a-users-local-time-from-utc-offset/</link>
+      <link>https://www.ipreferjim.com/site/2010/05/finding-a-users-local-time-from-utc-offset/</link>
       <pubDate>Tue, 04 May 2010 19:47:43 +0000</pubDate>
       
-      <guid>http://www.ipreferjim.com/site/2010/05/finding-a-users-local-time-from-utc-offset/</guid>
+      <guid>https://www.ipreferjim.com/site/2010/05/finding-a-users-local-time-from-utc-offset/</guid>
       <description>I answered a question over at StackOverflow, and I really liked the answer, so I thought I would share this nifty extension method:</description>
     </item>
     
     <item>
       <title>NHibernate.Criterion Extensions workaround</title>
-      <link>http://www.ipreferjim.com/site/2010/05/nhibernate-criterion-extensions-workaround/</link>
+      <link>https://www.ipreferjim.com/site/2010/05/nhibernate-criterion-extensions-workaround/</link>
       <pubDate>Mon, 03 May 2010 22:30:50 +0000</pubDate>
       
-      <guid>http://www.ipreferjim.com/site/2010/05/nhibernate-criterion-extensions-workaround/</guid>
+      <guid>https://www.ipreferjim.com/site/2010/05/nhibernate-criterion-extensions-workaround/</guid>
       <description>I’ve been working with Fluent NHibernate for the past month or so, and I realized while writing an NHibernate query that the NHibernate Criterion’s Restrictions class isn’t very refactor-friendly.</description>
     </item>
     
     <item>
       <title>Advanced Programming</title>
-      <link>http://www.ipreferjim.com/site/2009/05/advanced-programming/</link>
+      <link>https://www.ipreferjim.com/site/2009/05/advanced-programming/</link>
       <pubDate>Mon, 18 May 2009 01:57:11 +0000</pubDate>
       
-      <guid>http://www.ipreferjim.com/site/2009/05/advanced-programming/</guid>
+      <guid>https://www.ipreferjim.com/site/2009/05/advanced-programming/</guid>
       <description>Semester: Spring 09
   Instructor: Babb
   Class: INFO 450
@@ -108,10 +108,10 @@ I’ve previously refactored the C# client, the maven plugin, added an ASP.</des
     
     <item>
       <title>Database Systems</title>
-      <link>http://www.ipreferjim.com/site/2008/12/database-systems/</link>
+      <link>https://www.ipreferjim.com/site/2008/12/database-systems/</link>
       <pubDate>Tue, 23 Dec 2008 01:54:57 +0000</pubDate>
       
-      <guid>http://www.ipreferjim.com/site/2008/12/database-systems/</guid>
+      <guid>https://www.ipreferjim.com/site/2008/12/database-systems/</guid>
       <description>Semester: Fall 08
   Instructor: Samoilenko
   Class: INFO 364
@@ -121,10 +121,10 @@ I’ve previously refactored the C# client, the maven plugin, added an ASP.</des
     
     <item>
       <title>Computer Hardware &amp; Software</title>
-      <link>http://www.ipreferjim.com/site/2008/07/computer-hardware-software/</link>
+      <link>https://www.ipreferjim.com/site/2008/07/computer-hardware-software/</link>
       <pubDate>Sat, 26 Jul 2008 01:54:13 +0000</pubDate>
       
-      <guid>http://www.ipreferjim.com/site/2008/07/computer-hardware-software/</guid>
+      <guid>https://www.ipreferjim.com/site/2008/07/computer-hardware-software/</guid>
       <description>Semester: Summer 08
   Instructor: Coss/Saunders
   Class: INFO 300
@@ -133,10 +133,10 @@ I’ve previously refactored the C# client, the maven plugin, added an ASP.</des
     
     <item>
       <title>Systems Analysis &amp; Design</title>
-      <link>http://www.ipreferjim.com/site/2008/04/systems-analysis-design/</link>
+      <link>https://www.ipreferjim.com/site/2008/04/systems-analysis-design/</link>
       <pubDate>Sun, 13 Apr 2008 01:52:13 +0000</pubDate>
       
-      <guid>http://www.ipreferjim.com/site/2008/04/systems-analysis-design/</guid>
+      <guid>https://www.ipreferjim.com/site/2008/04/systems-analysis-design/</guid>
       <description>Semester: Summer 2008
   Instructor: Wynne
   Class: INFO 361
@@ -145,10 +145,10 @@ I’ve previously refactored the C# client, the maven plugin, added an ASP.</des
     
     <item>
       <title>Intermediate Programming</title>
-      <link>http://www.ipreferjim.com/site/2008/04/intermediate-programming/</link>
+      <link>https://www.ipreferjim.com/site/2008/04/intermediate-programming/</link>
       <pubDate>Sat, 12 Apr 2008 01:55:42 +0000</pubDate>
       
-      <guid>http://www.ipreferjim.com/site/2008/04/intermediate-programming/</guid>
+      <guid>https://www.ipreferjim.com/site/2008/04/intermediate-programming/</guid>
       <description>Semester: Spring 08
   Instructor: Babb
   Class: INFO 350

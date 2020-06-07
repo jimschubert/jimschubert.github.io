@@ -2,50 +2,50 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Fluent NHibernate on I Prefer Jim</title>
-    <link>http://www.ipreferjim.com/site/tags/fluent-nhibernate/</link>
+    <link>https://www.ipreferjim.com/site/tags/fluent-nhibernate/</link>
     <description>Recent content in Fluent NHibernate on I Prefer Jim</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Mon, 03 May 2010 22:30:50 +0000</lastBuildDate>
     
-	<atom:link href="http://www.ipreferjim.com/site/tags/fluent-nhibernate/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.ipreferjim.com/site/tags/fluent-nhibernate/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>NHibernate.Criterion Extensions workaround</title>
-      <link>http://www.ipreferjim.com/site/2010/05/nhibernate-criterion-extensions-workaround/</link>
+      <link>https://www.ipreferjim.com/site/2010/05/nhibernate-criterion-extensions-workaround/</link>
       <pubDate>Mon, 03 May 2010 22:30:50 +0000</pubDate>
       
-      <guid>http://www.ipreferjim.com/site/2010/05/nhibernate-criterion-extensions-workaround/</guid>
+      <guid>https://www.ipreferjim.com/site/2010/05/nhibernate-criterion-extensions-workaround/</guid>
       <description>I’ve been working with Fluent NHibernate for the past month or so, and I realized while writing an NHibernate query that the NHibernate Criterion’s Restrictions class isn’t very refactor-friendly.</description>
     </item>
     
     <item>
       <title>Fluent NHibernate error: Unable to cast object of type ‘Oracle.DataAccess.Client.OracleConnection’ to type ‘System.Data.Common.DbConnection’.</title>
-      <link>http://www.ipreferjim.com/site/2010/03/fluent-nhibernate-error-unable-to-cast-object-of-type-oracle-dataaccess-client-oracleconnection-to-type-system-data-common-dbconnection/</link>
+      <link>https://www.ipreferjim.com/site/2010/03/fluent-nhibernate-error-unable-to-cast-object-of-type-oracle-dataaccess-client-oracleconnection-to-type-system-data-common-dbconnection/</link>
       <pubDate>Sat, 20 Mar 2010 16:41:35 +0000</pubDate>
       
-      <guid>http://www.ipreferjim.com/site/2010/03/fluent-nhibernate-error-unable-to-cast-object-of-type-oracle-dataaccess-client-oracleconnection-to-type-system-data-common-dbconnection/</guid>
+      <guid>https://www.ipreferjim.com/site/2010/03/fluent-nhibernate-error-unable-to-cast-object-of-type-oracle-dataaccess-client-oracleconnection-to-type-system-data-common-dbconnection/</guid>
       <description>After developing an application in Fluent NHibernate, I’ve received the following Error and Stack Trace:
 Unable to cast object of type &#39;Oracle.</description>
     </item>
     
     <item>
       <title>ArgumentOutOfRangeException : Index was out of range. Fluent NHibernate commit</title>
-      <link>http://www.ipreferjim.com/site/2010/03/argumentoutofrangeexception-index-was-out-of-range-fluent-nhibernate-commit/</link>
+      <link>https://www.ipreferjim.com/site/2010/03/argumentoutofrangeexception-index-was-out-of-range-fluent-nhibernate-commit/</link>
       <pubDate>Wed, 03 Mar 2010 17:54:29 +0000</pubDate>
       
-      <guid>http://www.ipreferjim.com/site/2010/03/argumentoutofrangeexception-index-was-out-of-range-fluent-nhibernate-commit/</guid>
+      <guid>https://www.ipreferjim.com/site/2010/03/argumentoutofrangeexception-index-was-out-of-range-fluent-nhibernate-commit/</guid>
       <description>I came across the error
 ArgumentOutOfRangeException : Index was out of range while trying to perform a commit on a single entity with 4 nested entities and 3 properties.</description>
     </item>
     
     <item>
       <title>log4net configuration in .NET 3.5</title>
-      <link>http://www.ipreferjim.com/site/2010/03/log4net-configuration-in-net-3-5/</link>
+      <link>https://www.ipreferjim.com/site/2010/03/log4net-configuration-in-net-3-5/</link>
       <pubDate>Mon, 01 Mar 2010 23:17:33 +0000</pubDate>
       
-      <guid>http://www.ipreferjim.com/site/2010/03/log4net-configuration-in-net-3-5/</guid>
+      <guid>https://www.ipreferjim.com/site/2010/03/log4net-configuration-in-net-3-5/</guid>
       <description>Step 1 Add Reference
 Right click on the “References” folder and choose add reference. Browse to the location of log4net and add it to the project.</description>
     </item>

@@ -2,104 +2,104 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tricks on I Prefer Jim</title>
-    <link>http://www.ipreferjim.com/site/tags/tricks/</link>
+    <link>https://www.ipreferjim.com/site/tags/tricks/</link>
     <description>Recent content in Tricks on I Prefer Jim</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sun, 08 Mar 2015 18:12:19 +0000</lastBuildDate>
     
-	<atom:link href="http://www.ipreferjim.com/site/tags/tricks/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.ipreferjim.com/site/tags/tricks/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Your IDE’s font matters: Fantasque Sans Mono</title>
-      <link>http://www.ipreferjim.com/site/2015/03/your-ides-font-matters-fantasque-sans-mono/</link>
+      <link>https://www.ipreferjim.com/site/2015/03/your-ides-font-matters-fantasque-sans-mono/</link>
       <pubDate>Sun, 08 Mar 2015 18:12:19 +0000</pubDate>
       
-      <guid>http://www.ipreferjim.com/site/2015/03/your-ides-font-matters-fantasque-sans-mono/</guid>
+      <guid>https://www.ipreferjim.com/site/2015/03/your-ides-font-matters-fantasque-sans-mono/</guid>
       <description>A good development environment is crucial to your productivity, there’s no question about it. The phrase ‘good development environment’ is subjective.</description>
     </item>
     
     <item>
       <title>Hard link in OS X</title>
-      <link>http://www.ipreferjim.com/site/2014/08/hard-link-in-os-x/</link>
+      <link>https://www.ipreferjim.com/site/2014/08/hard-link-in-os-x/</link>
       <pubDate>Thu, 14 Aug 2014 01:51:57 +0000</pubDate>
       
-      <guid>http://www.ipreferjim.com/site/2014/08/hard-link-in-os-x/</guid>
+      <guid>https://www.ipreferjim.com/site/2014/08/hard-link-in-os-x/</guid>
       <description>Under linux, I used mount --bind olddir newdir to link a source code directory from a git repository in my Dropbox folder to another public git repository.</description>
     </item>
     
     <item>
       <title>Reformat README.md (or other text files) to fixed width</title>
-      <link>http://www.ipreferjim.com/site/2014/06/reformat-readme-md-or-other-text-files-to-fixed-width/</link>
+      <link>https://www.ipreferjim.com/site/2014/06/reformat-readme-md-or-other-text-files-to-fixed-width/</link>
       <pubDate>Sun, 15 Jun 2014 15:38:52 +0000</pubDate>
       
-      <guid>http://www.ipreferjim.com/site/2014/06/reformat-readme-md-or-other-text-files-to-fixed-width/</guid>
+      <guid>https://www.ipreferjim.com/site/2014/06/reformat-readme-md-or-other-text-files-to-fixed-width/</guid>
       <description> Fixed width README.md? Sure.&amp;#10;&amp;#10;fold README.md -w 80 -s  README.md  &amp;mdash; Jim Schubert (@jimschubert) June 15, 2014 </description>
     </item>
     
     <item>
       <title>Disable scrollbar overlays in Ubuntu 13.10</title>
-      <link>http://www.ipreferjim.com/site/2013/11/disable-scrollbar-overlays-in-ubuntu-13-10/</link>
+      <link>https://www.ipreferjim.com/site/2013/11/disable-scrollbar-overlays-in-ubuntu-13-10/</link>
       <pubDate>Sat, 23 Nov 2013 21:45:01 +0000</pubDate>
       
-      <guid>http://www.ipreferjim.com/site/2013/11/disable-scrollbar-overlays-in-ubuntu-13-10/</guid>
+      <guid>https://www.ipreferjim.com/site/2013/11/disable-scrollbar-overlays-in-ubuntu-13-10/</guid>
       <description>Working with Tizen IDE, I noticed the overlay doesn’t actually display for the scrollbar in Ubuntu 13.10. This isn’t so bad for vertical scrolling because I use the touchpad to scroll.</description>
     </item>
     
     <item>
       <title>Android Studio and Library Projects</title>
-      <link>http://www.ipreferjim.com/site/2013/06/android-studio-and-library-projects/</link>
+      <link>https://www.ipreferjim.com/site/2013/06/android-studio-and-library-projects/</link>
       <pubDate>Mon, 10 Jun 2013 05:03:17 +0000</pubDate>
       
-      <guid>http://www.ipreferjim.com/site/2013/06/android-studio-and-library-projects/</guid>
+      <guid>https://www.ipreferjim.com/site/2013/06/android-studio-and-library-projects/</guid>
       <description>This is basically a quick brain-dump post. I have previously attempted to get into Android application development, but with only 8-10 hours of “free” time per month, it was difficult to get traction with an app before the goog machine overhauled everything.</description>
     </item>
     
     <item>
       <title>bash function: md.view</title>
-      <link>http://www.ipreferjim.com/site/2012/09/bash-function-md-view/</link>
+      <link>https://www.ipreferjim.com/site/2012/09/bash-function-md-view/</link>
       <pubDate>Sat, 15 Sep 2012 17:00:23 +0000</pubDate>
       
-      <guid>http://www.ipreferjim.com/site/2012/09/bash-function-md-view/</guid>
+      <guid>https://www.ipreferjim.com/site/2012/09/bash-function-md-view/</guid>
       <description>One of my favorite bash functions is md.view, which is available in my dotfiles repository.
 # test markdown files, probably a better way to test for programs.</description>
     </item>
     
     <item>
       <title>dotfiles backup using GitHub</title>
-      <link>http://www.ipreferjim.com/site/2012/01/dotfiles-backup-using-github/</link>
+      <link>https://www.ipreferjim.com/site/2012/01/dotfiles-backup-using-github/</link>
       <pubDate>Thu, 19 Jan 2012 01:58:12 +0000</pubDate>
       
-      <guid>http://www.ipreferjim.com/site/2012/01/dotfiles-backup-using-github/</guid>
+      <guid>https://www.ipreferjim.com/site/2012/01/dotfiles-backup-using-github/</guid>
       <description>I was recently looking for a solution to backup my configuration files (bash, vim, etc) using GitHub. After some looking around, I’ve compiled a pretty nice project for myself.</description>
     </item>
     
     <item>
       <title>Posting complex models to ASP.NET MVC</title>
-      <link>http://www.ipreferjim.com/site/2011/08/posting-complex-models-to-asp-net-mvc/</link>
+      <link>https://www.ipreferjim.com/site/2011/08/posting-complex-models-to-asp-net-mvc/</link>
       <pubDate>Tue, 16 Aug 2011 12:43:24 +0000</pubDate>
       
-      <guid>http://www.ipreferjim.com/site/2011/08/posting-complex-models-to-asp-net-mvc/</guid>
+      <guid>https://www.ipreferjim.com/site/2011/08/posting-complex-models-to-asp-net-mvc/</guid>
       <description>Nick Riggs wrote a nice little jQuery plugin called postify that I have found extremely handy on many occasions. The code builds posted data into a format which is more understandable to the default ModelBinder in ASP.</description>
     </item>
     
     <item>
       <title>Running additional Google Chrome profiles in Linux</title>
-      <link>http://www.ipreferjim.com/site/2011/08/running-additional-google-chrome-profiles-in-linux/</link>
+      <link>https://www.ipreferjim.com/site/2011/08/running-additional-google-chrome-profiles-in-linux/</link>
       <pubDate>Sun, 14 Aug 2011 17:21:58 +0000</pubDate>
       
-      <guid>http://www.ipreferjim.com/site/2011/08/running-additional-google-chrome-profiles-in-linux/</guid>
+      <guid>https://www.ipreferjim.com/site/2011/08/running-additional-google-chrome-profiles-in-linux/</guid>
       <description>Google Chrome supports running multiple profiles.
 In newer versions of Google Chrome, you’ll be able to enable profiles by navigating to chrome://flags and enabling Multiple Profiles.</description>
     </item>
     
     <item>
       <title>System.Data.OracleClient and Windows 7… love at first sight!</title>
-      <link>http://www.ipreferjim.com/site/2011/08/system-data-oracleclient-and-windows-7-love-at-first-sight/</link>
+      <link>https://www.ipreferjim.com/site/2011/08/system-data-oracleclient-and-windows-7-love-at-first-sight/</link>
       <pubDate>Sun, 14 Aug 2011 03:52:56 +0000</pubDate>
       
-      <guid>http://www.ipreferjim.com/site/2011/08/system-data-oracleclient-and-windows-7-love-at-first-sight/</guid>
+      <guid>https://www.ipreferjim.com/site/2011/08/system-data-oracleclient-and-windows-7-love-at-first-sight/</guid>
       <description>&lt;p&gt;&lt;strong&gt;&lt;/sarcasm&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;I spent nearly two days trying to resolve this issue. My new desktop at work is running Windows 7 (64-bit) and some of our applications are still using System.Data.OracleClient as an adapter instead of Oracle’s own ODP.NET. Microsoft’s driver interops with Oracle’s own client installed on the developer machine (oci.dll). We need to continue running our web applications under 32-bit IIS, which is where the problem lies.&lt;/p&gt;
 &lt;p&gt;FYI… &lt;a href=&#34;http://msdn.microsoft.com/en-us/library/77d8yct7.aspx&#34; title=&#34;Oracle and ADO.NET&#34; target=&#34;_blank&#34;&gt;According to Microsoft&lt;/a&gt;:&lt;/p&gt;
@@ -113,39 +113,39 @@ In newer versions of Google Chrome, you’ll be able to enable profiles by navig
     
     <item>
       <title>Linux tip: Alias ‘cd’ in bash shell</title>
-      <link>http://www.ipreferjim.com/site/2011/07/linux-tip-alias-cd-in-bash-shell/</link>
+      <link>https://www.ipreferjim.com/site/2011/07/linux-tip-alias-cd-in-bash-shell/</link>
       <pubDate>Sun, 24 Jul 2011 00:01:42 +0000</pubDate>
       
-      <guid>http://www.ipreferjim.com/site/2011/07/linux-tip-alias-cd-in-bash-shell/</guid>
+      <guid>https://www.ipreferjim.com/site/2011/07/linux-tip-alias-cd-in-bash-shell/</guid>
       <description>A while ago, I stumbled across an excellent article at O’Reilly with tips for your bash shell.
 I wanted to expand on the “pushd/popd” section a little.</description>
     </item>
     
     <item>
       <title>Linking to a Google Doc .doc as .pdf</title>
-      <link>http://www.ipreferjim.com/site/2011/02/linking-to-a-google-doc-doc-as-pdf/</link>
+      <link>https://www.ipreferjim.com/site/2011/02/linking-to-a-google-doc-doc-as-pdf/</link>
       <pubDate>Tue, 08 Feb 2011 03:38:19 +0000</pubDate>
       
-      <guid>http://www.ipreferjim.com/site/2011/02/linking-to-a-google-doc-doc-as-pdf/</guid>
+      <guid>https://www.ipreferjim.com/site/2011/02/linking-to-a-google-doc-doc-as-pdf/</guid>
       <description>I recently decided to update my resume, which forced me to revisit an issue I originally faced when posting my resume to my site: I am writing it as a doc file in Google Docs but I want to link to it as a PDF and have my updates visible immediately.</description>
     </item>
     
     <item>
       <title>Syncing between Motorola Droid and Banshee or Rhythmbox in Ubuntu</title>
-      <link>http://www.ipreferjim.com/site/2010/11/syncing-between-motorola-droid-and-banshee-or-rhythmbox-in-ubuntu/</link>
+      <link>https://www.ipreferjim.com/site/2010/11/syncing-between-motorola-droid-and-banshee-or-rhythmbox-in-ubuntu/</link>
       <pubDate>Sat, 27 Nov 2010 20:29:28 +0000</pubDate>
       
-      <guid>http://www.ipreferjim.com/site/2010/11/syncing-between-motorola-droid-and-banshee-or-rhythmbox-in-ubuntu/</guid>
+      <guid>https://www.ipreferjim.com/site/2010/11/syncing-between-motorola-droid-and-banshee-or-rhythmbox-in-ubuntu/</guid>
       <description>&lt;p&gt;I like to download those cheap albums on AmazonMP3 that are like “The 99 Darkest Classical Pieces” or whatever. The AmazonMP3 download, however, puts these mp3s in folders according to the artist instead of Various Artists or by album name. Because the Droid’s music player reads music based on the folder structure and not on the id3 tags, this means I have about 30 or 40 different entries for the same album. It’s annoying, to say the least.&lt;/p&gt;
 &lt;p&gt;I recently decided to use Rhythmbox to pull all of the music from the Droid and then copy it back over to see if it would automatically put the mp3s in the correct folders. To my surprise,&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Tip for Writers and Novelists: Use Subversion to track changes in your work!</title>
-      <link>http://www.ipreferjim.com/site/2010/11/tip-for-writers-and-novelists-use-subversion-to-track-changes-in-your-work/</link>
+      <link>https://www.ipreferjim.com/site/2010/11/tip-for-writers-and-novelists-use-subversion-to-track-changes-in-your-work/</link>
       <pubDate>Tue, 16 Nov 2010 04:26:06 +0000</pubDate>
       
-      <guid>http://www.ipreferjim.com/site/2010/11/tip-for-writers-and-novelists-use-subversion-to-track-changes-in-your-work/</guid>
+      <guid>https://www.ipreferjim.com/site/2010/11/tip-for-writers-and-novelists-use-subversion-to-track-changes-in-your-work/</guid>
       <description>&lt;p&gt;As a developer, I take some things like version control for granted.&lt;/p&gt;
 &lt;p&gt;Recently, I suggested version control to my wife to make it easier for her to compare her current revisions with earlier revisions.  Currently, when she wants to make a new revision, she creates a new file with a different filename.  This doesn’t give her to Word comparing or change tracking.  So, if she deleted a paragraph two, three, or twenty revisions ago, she could easily go back to a draft containing the paragraph and retrieve the text or compare against the current revision.  It would even be possible to check out the earlier revision!&lt;/p&gt;
 &lt;p&gt;On top of change tracking, a subversion repository offers a complete backup of documents.  This would be excellent for someone who is worried about losing their documents.  For instance, you can create a subversion repository on an external hard drive and you’ll never lose anything earlier than your last check-in.  Granted, you have to adopt the version control process, but the benefits greatly outweigh the possible headaches of having no sort of version control or revision history.&lt;/p&gt;
@@ -156,10 +156,10 @@ I wanted to expand on the “pushd/popd” section a little.</description>
     
     <item>
       <title>System76 Ubuntu NetBook and Tethering on Verizon Droid (Android)</title>
-      <link>http://www.ipreferjim.com/site/2010/11/system76-ubuntu-netbook-and-tethering-on-verizon-droid-android/</link>
+      <link>https://www.ipreferjim.com/site/2010/11/system76-ubuntu-netbook-and-tethering-on-verizon-droid-android/</link>
       <pubDate>Wed, 10 Nov 2010 05:49:38 +0000</pubDate>
       
-      <guid>http://www.ipreferjim.com/site/2010/11/system76-ubuntu-netbook-and-tethering-on-verizon-droid-android/</guid>
+      <guid>https://www.ipreferjim.com/site/2010/11/system76-ubuntu-netbook-and-tethering-on-verizon-droid-android/</guid>
       <description>&lt;p&gt;One of the first things I wanted to do when I got my netbook was to setup tethering.  However, I don’t want to pay $30 more a month just to view the same pages I’d otherwise be viewing on my phone (i.e. Facebook, Twitter, Google News/Gmail).  The answer to this is an application called EasyTether.  It’s currently only $10 on the Android Market.  &lt;a href=&#34;market://search?q=pname:com.mstream.easytether_beta&#34; title=&#34;Click here to download EasyTether&#34;&gt;Click here to download EasyTether&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;The setup guide in EasyTether will walk you through getting the application configured on your phone and connecting that to your computer.  However, some people may have Linux-based NetBooks and not have the technical knowledge to write a simple script to startup ‘easytether’ in a console.  I’d like to provide those steps.  Please read on if you’re interested!&lt;/p&gt;
 &lt;p&gt;**Note: You *MUST* have your sudo password to proceed.&lt;/p&gt;</description>
@@ -167,66 +167,66 @@ I wanted to expand on the “pushd/popd” section a little.</description>
     
     <item>
       <title>System.ComponentModel.DataAnnotations for ASP.NET Web Forms</title>
-      <link>http://www.ipreferjim.com/site/2010/05/system-componentmodel-dataannotations-for-asp-net-web-forms/</link>
+      <link>https://www.ipreferjim.com/site/2010/05/system-componentmodel-dataannotations-for-asp-net-web-forms/</link>
       <pubDate>Thu, 27 May 2010 01:50:19 +0000</pubDate>
       
-      <guid>http://www.ipreferjim.com/site/2010/05/system-componentmodel-dataannotations-for-asp-net-web-forms/</guid>
+      <guid>https://www.ipreferjim.com/site/2010/05/system-componentmodel-dataannotations-for-asp-net-web-forms/</guid>
       <description>Although I’m primarily an ASP.NET Web Forms developer, I regularly dabble in new and interesting technologies. I’ve toyed with other Microsoft technologies such as ASP.</description>
     </item>
     
     <item>
       <title>NHibernate.Criterion Extensions workaround</title>
-      <link>http://www.ipreferjim.com/site/2010/05/nhibernate-criterion-extensions-workaround/</link>
+      <link>https://www.ipreferjim.com/site/2010/05/nhibernate-criterion-extensions-workaround/</link>
       <pubDate>Mon, 03 May 2010 22:30:50 +0000</pubDate>
       
-      <guid>http://www.ipreferjim.com/site/2010/05/nhibernate-criterion-extensions-workaround/</guid>
+      <guid>https://www.ipreferjim.com/site/2010/05/nhibernate-criterion-extensions-workaround/</guid>
       <description>I’ve been working with Fluent NHibernate for the past month or so, and I realized while writing an NHibernate query that the NHibernate Criterion’s Restrictions class isn’t very refactor-friendly.</description>
     </item>
     
     <item>
       <title>CopyCat Rails’ Time Extensions</title>
-      <link>http://www.ipreferjim.com/site/2010/05/copycat-activesupport-time-extensions/</link>
+      <link>https://www.ipreferjim.com/site/2010/05/copycat-activesupport-time-extensions/</link>
       <pubDate>Mon, 03 May 2010 21:22:47 +0000</pubDate>
       
-      <guid>http://www.ipreferjim.com/site/2010/05/copycat-activesupport-time-extensions/</guid>
+      <guid>https://www.ipreferjim.com/site/2010/05/copycat-activesupport-time-extensions/</guid>
       <description>I’ve become a fan of Ruby’s simple syntax. My favorite thing is the ActiveSupport’s Numeric Time Extensions. I’m starting a library of useful extensions, and I’m going to be adding a number of shortcuts to mock these extensions.</description>
     </item>
     
     <item>
       <title>DRY! GenericComparer&lt;TType&gt; for sorting Generic Lists</title>
-      <link>http://www.ipreferjim.com/site/2010/04/dry-genericcomparer-for-sorting-generic-lists/</link>
+      <link>https://www.ipreferjim.com/site/2010/04/dry-genericcomparer-for-sorting-generic-lists/</link>
       <pubDate>Thu, 22 Apr 2010 15:28:40 +0000</pubDate>
       
-      <guid>http://www.ipreferjim.com/site/2010/04/dry-genericcomparer-for-sorting-generic-lists/</guid>
+      <guid>https://www.ipreferjim.com/site/2010/04/dry-genericcomparer-for-sorting-generic-lists/</guid>
       <description>I’m a pretty firm believer in the Ruby/Ruby on Rails idea of DRY (“Don’t Repeat Yourself”).
 That said, I get pretty tired of writing comparers for sorting lists and generic lists.</description>
     </item>
     
     <item>
       <title>Quickly create a Dictionary using Linq to Objects</title>
-      <link>http://www.ipreferjim.com/site/2010/02/quickly-create-a-dictionary-using-linq-to-objects/</link>
+      <link>https://www.ipreferjim.com/site/2010/02/quickly-create-a-dictionary-using-linq-to-objects/</link>
       <pubDate>Wed, 10 Feb 2010 15:43:00 +0000</pubDate>
       
-      <guid>http://www.ipreferjim.com/site/2010/02/quickly-create-a-dictionary-using-linq-to-objects/</guid>
+      <guid>https://www.ipreferjim.com/site/2010/02/quickly-create-a-dictionary-using-linq-to-objects/</guid>
       <description>When working with collections or lists, sometimes you just need to get a simple dictionary.
 There are a number of ways to do this, but the ToDictionary method seems promising.</description>
     </item>
     
     <item>
       <title>Displaying multiple fields in a Dropdownlist’s DataTextField</title>
-      <link>http://www.ipreferjim.com/site/2009/04/displaying-multiple-fields-in-a-dropdownlists-datatextfield/</link>
+      <link>https://www.ipreferjim.com/site/2009/04/displaying-multiple-fields-in-a-dropdownlists-datatextfield/</link>
       <pubDate>Tue, 14 Apr 2009 20:19:00 +0000</pubDate>
       
-      <guid>http://www.ipreferjim.com/site/2009/04/displaying-multiple-fields-in-a-dropdownlists-datatextfield/</guid>
+      <guid>https://www.ipreferjim.com/site/2009/04/displaying-multiple-fields-in-a-dropdownlists-datatextfield/</guid>
       <description>I’ve encountered this problem on occasion, where I want to display more than one field in a dropdownlist’s DataTextField property. In the past, I’ve overcome this problem by rewriting a SQL statement, or adding another column in the database itself to accomodate my needs.</description>
     </item>
     
     <item>
       <title>T-SQL Multi-Table Delete</title>
-      <link>http://www.ipreferjim.com/site/2009/04/t-sql-multi-table-delete/</link>
+      <link>https://www.ipreferjim.com/site/2009/04/t-sql-multi-table-delete/</link>
       <pubDate>Wed, 01 Apr 2009 17:56:00 +0000</pubDate>
       
-      <guid>http://www.ipreferjim.com/site/2009/04/t-sql-multi-table-delete/</guid>
+      <guid>https://www.ipreferjim.com/site/2009/04/t-sql-multi-table-delete/</guid>
       <description>I was trying to run a DELETE query on multiple tables and I kept getting this error:
 The DELETE statement conflicted with the REFERENCE constraint I’m not that great with SQL, but I can get by.</description>
     </item>
