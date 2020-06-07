@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>MySQL on I Prefer Jim</title>
+    <link>http://www.ipreferjim.com/site/tags/mysql/</link>
+    <description>Recent content in MySQL on I Prefer Jim</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 12 Jun 2011 15:29:31 +0000</lastBuildDate>
+    
+	<atom:link href="http://www.ipreferjim.com/site/tags/mysql/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Can’t login to MySQL as root :(</title>
+      <link>http://www.ipreferjim.com/site/2011/06/cant-login-to-mysql-as-root/</link>
+      <pubDate>Sun, 12 Jun 2011 15:29:31 +0000</pubDate>
+      
+      <guid>http://www.ipreferjim.com/site/2011/06/cant-login-to-mysql-as-root/</guid>
+      <description>I was having issues logging into MySQL as root the other day. It took a while to figure things out. Ultimately, I had to follow the steps on two separate posts: http://rimuhosting.</description>
+    </item>
+    
+  </channel>
+</rss>

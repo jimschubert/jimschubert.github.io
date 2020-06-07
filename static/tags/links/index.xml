@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>links on I Prefer Jim</title>
+    <link>http://www.ipreferjim.com/site/tags/links/</link>
+    <description>Recent content in links on I Prefer Jim</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 18 May 2010 16:13:40 +0000</lastBuildDate>
+    
+	<atom:link href="http://www.ipreferjim.com/site/tags/links/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Font-Face generator</title>
+      <link>http://www.ipreferjim.com/site/2010/05/font-face-generator/</link>
+      <pubDate>Tue, 18 May 2010 16:13:40 +0000</pubDate>
+      
+      <guid>http://www.ipreferjim.com/site/2010/05/font-face-generator/</guid>
+      <description>[][1]@font-face Kit Generator User Interface CSS3 allows you to create custom font-faces so a user will see fonts exactly as you’d like them to be seen, without forcing the developer/designer to export all custom fonts as graphics.</description>
+    </item>
+    
+    <item>
+      <title>IHttpModule Gotchas @dominicpettifer.co.uk</title>
+      <link>http://www.ipreferjim.com/site/2010/03/ihttpmodule-gotchas-dominicpettifer-co-uk/</link>
+      <pubDate>Sat, 13 Mar 2010 05:21:03 +0000</pubDate>
+      
+      <guid>http://www.ipreferjim.com/site/2010/03/ihttpmodule-gotchas-dominicpettifer-co-uk/</guid>
+      <description>I came across this blog post about the Init() method of an HttpModule being called more than once. The solution is simple: create a boolean flag to indicate whether or not the app is started and an empty object to lock.</description>
+    </item>
+    
+  </channel>
+</rss>

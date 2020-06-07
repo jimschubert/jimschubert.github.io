@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>perl on I Prefer Jim</title>
+    <link>http://www.ipreferjim.com/site/tags/perl/</link>
+    <description>Recent content in perl on I Prefer Jim</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 04 Feb 2012 00:20:04 +0000</lastBuildDate>
+    
+	<atom:link href="http://www.ipreferjim.com/site/tags/perl/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>words.pl: slogan word generator</title>
+      <link>http://www.ipreferjim.com/site/2012/02/words-pl-slogan-word-generator/</link>
+      <pubDate>Sat, 04 Feb 2012 00:20:04 +0000</pubDate>
+      
+      <guid>http://www.ipreferjim.com/site/2012/02/words-pl-slogan-word-generator/</guid>
+      <description>About a year ago, I was really into playing this game online where you were given a single sentence and you had to use the letters in that sentence to make up as many words as possible.</description>
+    </item>
+    
+    <item>
+      <title>Installing PAR::Packer (in Windows or Linux)</title>
+      <link>http://www.ipreferjim.com/site/2011/07/installing-parpacker-in-windows/</link>
+      <pubDate>Wed, 20 Jul 2011 21:10:00 +0000</pubDate>
+      
+      <guid>http://www.ipreferjim.com/site/2011/07/installing-parpacker-in-windows/</guid>
+      <description>&lt;p&gt;I’m a frequent Ubuntu Linux user. I don’t use Windows much, unless I’m at work. Today, I wrote a small script to parse Apache access logs and thought, “This would be a really cool utility to share with others.” Granted, it’s pretty basic and there are most likely hundreds of other utilities out there, so I’ve decided to use it as an example to installing PAR:Packer under Windows to compile perl scripts into a Windows executable.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Download and install &lt;a href=&#34;http://strawberryperl.com/&#34; title=&#34;Download Strawberry Perl&#34; target=&#34;_blank&#34;&gt;Strawberry Perl&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Install &lt;strong&gt;cpanm&lt;/strong&gt; to more easily install CPAN modules. In a command prompt, run: ```bash
+cpan -i App::cpanminu&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;
+  3. Then install **PAR::Packer** for _compiling_ the Perl script. Run: ```bash
+cpanm -n PAR::Packe
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Continue reading for an example!&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Getting started with Catalyst Framework (install)</title>
+      <link>http://www.ipreferjim.com/site/2011/06/getting-started-with-catalyst-framework-install/</link>
+      <pubDate>Fri, 24 Jun 2011 18:47:00 +0000</pubDate>
+      
+      <guid>http://www.ipreferjim.com/site/2011/06/getting-started-with-catalyst-framework-install/</guid>
+      <description>I’ve been a fan of Ruby on Rails for a while. I’ve not been able to find a hosting solution that keeps on the bleeding edge of Rails development.</description>
+    </item>
+    
+  </channel>
+</rss>

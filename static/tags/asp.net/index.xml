@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ASP.NET on I Prefer Jim</title>
+    <link>http://www.ipreferjim.com/site/tags/asp.net/</link>
+    <description>Recent content in ASP.NET on I Prefer Jim</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 23 Nov 2015 18:57:11 +0000</lastBuildDate>
+    
+	<atom:link href="http://www.ipreferjim.com/site/tags/asp.net/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Gulp dotnet tasks</title>
+      <link>http://www.ipreferjim.com/site/2015/11/gulp-dotnet-tasks/</link>
+      <pubDate>Mon, 23 Nov 2015 18:57:11 +0000</pubDate>
+      
+      <guid>http://www.ipreferjim.com/site/2015/11/gulp-dotnet-tasks/</guid>
+      <description>Not sure if this will help anyway, but running dnu and dnx tasks (soon to be aggregated under a single ‘dotnet’) is really easy.</description>
+    </item>
+    
+    <item>
+      <title>Review: Microsoft .NET – Architecting Applications for the Enterprise, 2nd Edition</title>
+      <link>http://www.ipreferjim.com/site/2015/03/review-microsoft-net-architecting-applications-for-the-enterprise-2nd-edition/</link>
+      <pubDate>Fri, 13 Mar 2015 16:53:05 +0000</pubDate>
+      
+      <guid>http://www.ipreferjim.com/site/2015/03/review-microsoft-net-architecting-applications-for-the-enterprise-2nd-edition/</guid>
+      <description>I’ve recently finished reading Microsoft .NET – Architecting Applications for the Enterprise, 2nd Edition by Dino Esposito and Andrea Saltarello. This book caught my attention for two reasons.</description>
+    </item>
+    
+    <item>
+      <title>Software Abstractions take Skill.</title>
+      <link>http://www.ipreferjim.com/site/2014/12/software-abstractions-take-skill/</link>
+      <pubDate>Tue, 09 Dec 2014 04:53:16 +0000</pubDate>
+      
+      <guid>http://www.ipreferjim.com/site/2014/12/software-abstractions-take-skill/</guid>
+      <description>I recently read Adaptive Code via C# and posted a review on Amazon:
+ This book is a new favorite of mine.</description>
+    </item>
+    
+    <item>
+      <title>ASP.NET, AppDomains, and shadow-copying</title>
+      <link>http://www.ipreferjim.com/site/2012/04/asp-net-appdomains-and-shadow-copying/</link>
+      <pubDate>Sun, 29 Apr 2012 22:05:28 +0000</pubDate>
+      
+      <guid>http://www.ipreferjim.com/site/2012/04/asp-net-appdomains-and-shadow-copying/</guid>
+      <description>&lt;p&gt;I answered a &lt;a href=&#34;http://stackoverflow.com/a/4394472/151445&#34; title=&#34;Does my ASP.NET application stop executing if I overwrite the DLLs?&#34; target=&#34;_blank&#34;&gt;question on StackOverflow&lt;/a&gt; nearly two years ago, and I’m surprised at how few votes it has received, despite comments such as:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;+1 for teaching me something new today thanks. -kobe&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Being one of my favorite answers, I thought I should discuss it on my blog a little more in-depth than just &lt;a href=&#34;http://www.ipreferjim.com/2011/07/what-happens-when-i-overwrite-a-dll-asp-net/&#34; title=&#34;Previous post&#34; target=&#34;_blank&#34;&gt;posting the SO answer&lt;/a&gt;. I’d like to briefly discuss what ASP.NET really is (in the context of IIS), why AppDomains are needed, and lastly what shadow-copying does for an application. There is no code associated with this post, and it is driven more by contemplation than by a specific resolution to a problem. So, I apologize in advance if it seems disjointed at times.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>ASP.NET BuildResultCompiledAssembly error</title>
+      <link>http://www.ipreferjim.com/site/2011/12/asp-net-buildresultcompiledassembly-error/</link>
+      <pubDate>Wed, 07 Dec 2011 15:23:38 +0000</pubDate>
+      
+      <guid>http://www.ipreferjim.com/site/2011/12/asp-net-buildresultcompiledassembly-error/</guid>
+      <description>Unable to cast object of type ‘System.Web.Compilation.BuildResultCompiledAssembly’ to type ‘System.Web.Compilation.BuildResultCompiledGlobalAsaxType’.
+This has been reported as a bug.
+But there is no solution.</description>
+    </item>
+    
+    <item>
+      <title>DataAnnotations, MVC 3, and Unobtrusive Validations</title>
+      <link>http://www.ipreferjim.com/site/2011/08/dataannotations-mvc3-unobtrusive-validations/</link>
+      <pubDate>Mon, 15 Aug 2011 01:00:14 +0000</pubDate>
+      
+      <guid>http://www.ipreferjim.com/site/2011/08/dataannotations-mvc3-unobtrusive-validations/</guid>
+      <description>&lt;p&gt;DataAnnotations are a pretty cool introduction to .NET 3.5+. It is very useful in ASP.NET MVC 3, and I’ve written a somewhat &lt;a href=&#34;http://www.ipreferjim.com/2010/05/system-componentmodel-dataannotations-for-asp-net-web-forms/&#34; title=&#34;System.ComponentModel.DataAnnotations for ASP.NET Web Forms&#34; target=&#34;_blank&#34;&gt;naive attempt&lt;/a&gt; to use this functionality in ASP.NET Web Forms which some people have found very useful.&lt;/p&gt;
+&lt;p&gt;I’d like to dig a little more in depth…&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>What happens when I overwrite a DLL (asp.net)?</title>
+      <link>http://www.ipreferjim.com/site/2011/07/what-happens-when-i-overwrite-a-dll-asp-net/</link>
+      <pubDate>Sat, 09 Jul 2011 00:46:00 +0000</pubDate>
+      
+      <guid>http://www.ipreferjim.com/site/2011/07/what-happens-when-i-overwrite-a-dll-asp-net/</guid>
+      <description>&lt;p&gt;I post on &lt;a href=&#34;http://stackoverflow.com/&#34; title=&#34;Stack Overflow&#34; target=&#34;_blank&#34;&gt;Stack Overflow&lt;/a&gt; a lot. Sometimes, there are really interesting questions like one I answered last year. I had forgotten about it until this week when the answer was accepted. I thought I’d share it on my blog.&lt;/p&gt;
+&lt;p&gt;The original post is &lt;a href=&#34;http://stackoverflow.com/questions/4394410/does-my-asp-net-application-stop-executing-if-i-overwrite-the-dlls/4394472#4394472&#34; title=&#34;Does my ASP.NET application stop executing if I overwrite the DLLs?&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;. Read on for redundancy.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Using DataAnnotation attributes to validate Membership password</title>
+      <link>http://www.ipreferjim.com/site/2010/06/using-dataannotation-attributes-to-validate-membership-password/</link>
+      <pubDate>Fri, 11 Jun 2010 19:14:59 +0000</pubDate>
+      
+      <guid>http://www.ipreferjim.com/site/2010/06/using-dataannotation-attributes-to-validate-membership-password/</guid>
+      <description>As a follow-up to my post on DataAnnotations in ASP.NET Web Forms, I’d like to demonstrate yet another custom attribute. Although ASP.</description>
+    </item>
+    
+    <item>
+      <title>System.ComponentModel.DataAnnotations for ASP.NET Web Forms</title>
+      <link>http://www.ipreferjim.com/site/2010/05/system-componentmodel-dataannotations-for-asp-net-web-forms/</link>
+      <pubDate>Thu, 27 May 2010 01:50:19 +0000</pubDate>
+      
+      <guid>http://www.ipreferjim.com/site/2010/05/system-componentmodel-dataannotations-for-asp-net-web-forms/</guid>
+      <description>Although I’m primarily an ASP.NET Web Forms developer, I regularly dabble in new and interesting technologies. I’ve toyed with other Microsoft technologies such as ASP.</description>
+    </item>
+    
+    <item>
+      <title>Finding a user’s local time from UTC offset</title>
+      <link>http://www.ipreferjim.com/site/2010/05/finding-a-users-local-time-from-utc-offset/</link>
+      <pubDate>Tue, 04 May 2010 19:47:43 +0000</pubDate>
+      
+      <guid>http://www.ipreferjim.com/site/2010/05/finding-a-users-local-time-from-utc-offset/</guid>
+      <description>I answered a question over at StackOverflow, and I really liked the answer, so I thought I would share this nifty extension method:</description>
+    </item>
+    
+    <item>
+      <title>NHibernate.Criterion Extensions workaround</title>
+      <link>http://www.ipreferjim.com/site/2010/05/nhibernate-criterion-extensions-workaround/</link>
+      <pubDate>Mon, 03 May 2010 22:30:50 +0000</pubDate>
+      
+      <guid>http://www.ipreferjim.com/site/2010/05/nhibernate-criterion-extensions-workaround/</guid>
+      <description>I’ve been working with Fluent NHibernate for the past month or so, and I realized while writing an NHibernate query that the NHibernate Criterion’s Restrictions class isn’t very refactor-friendly.</description>
+    </item>
+    
+    <item>
+      <title>IHttpModule Gotchas @dominicpettifer.co.uk</title>
+      <link>http://www.ipreferjim.com/site/2010/03/ihttpmodule-gotchas-dominicpettifer-co-uk/</link>
+      <pubDate>Sat, 13 Mar 2010 05:21:03 +0000</pubDate>
+      
+      <guid>http://www.ipreferjim.com/site/2010/03/ihttpmodule-gotchas-dominicpettifer-co-uk/</guid>
+      <description>I came across this blog post about the Init() method of an HttpModule being called more than once. The solution is simple: create a boolean flag to indicate whether or not the app is started and an empty object to lock.</description>
+    </item>
+    
+    <item>
+      <title>log4net configuration in .NET 3.5</title>
+      <link>http://www.ipreferjim.com/site/2010/03/log4net-configuration-in-net-3-5/</link>
+      <pubDate>Mon, 01 Mar 2010 23:17:33 +0000</pubDate>
+      
+      <guid>http://www.ipreferjim.com/site/2010/03/log4net-configuration-in-net-3-5/</guid>
+      <description>Step 1 Add Reference
+Right click on the “References” folder and choose add reference. Browse to the location of log4net and add it to the project.</description>
+    </item>
+    
+    <item>
+      <title>Basics: Posting data to a remote server via .NET</title>
+      <link>http://www.ipreferjim.com/site/2010/02/posting-data-to-a-remove-server-via-net/</link>
+      <pubDate>Sat, 20 Feb 2010 01:57:02 +0000</pubDate>
+      
+      <guid>http://www.ipreferjim.com/site/2010/02/posting-data-to-a-remove-server-via-net/</guid>
+      <description>Class for Remote Posting:
+public class RemotePost { #region Fields and Properties  private string _url; private string _postData; private byte[] _data; /// &amp;lt;summary&amp;gt;  /// URL to which the Post is sent  /// &amp;lt;/summary&amp;gt;  public string Url { get { if (!</description>
+    </item>
+    
+    <item>
+      <title>Quickly create a Dictionary using Linq to Objects</title>
+      <link>http://www.ipreferjim.com/site/2010/02/quickly-create-a-dictionary-using-linq-to-objects/</link>
+      <pubDate>Wed, 10 Feb 2010 15:43:00 +0000</pubDate>
+      
+      <guid>http://www.ipreferjim.com/site/2010/02/quickly-create-a-dictionary-using-linq-to-objects/</guid>
+      <description>When working with collections or lists, sometimes you just need to get a simple dictionary.
+There are a number of ways to do this, but the ToDictionary method seems promising.</description>
+    </item>
+    
+    <item>
+      <title>UpdatePanel won’t AsycPostback for anything.</title>
+      <link>http://www.ipreferjim.com/site/2009/12/updatepanel-wont-asycpostback-for-anything/</link>
+      <pubDate>Tue, 22 Dec 2009 21:52:00 +0000</pubDate>
+      
+      <guid>http://www.ipreferjim.com/site/2009/12/updatepanel-wont-asycpostback-for-anything/</guid>
+      <description>I spent a lot of time today and Friday trying to get my UpdatePanel to be handled properly. No matter what I did, my asynchronous triggers were only posting back.</description>
+    </item>
+    
+    <item>
+      <title>jQuery check/uncheck all Checkboxes in ASP.NET</title>
+      <link>http://www.ipreferjim.com/site/2009/12/jquery-checkuncheck-all-checkboxes-in-asp-net/</link>
+      <pubDate>Thu, 17 Dec 2009 16:18:00 +0000</pubDate>
+      
+      <guid>http://www.ipreferjim.com/site/2009/12/jquery-checkuncheck-all-checkboxes-in-asp-net/</guid>
+      <description>For some odd reason, ASP.NET GridView wraps html elements in a span element. When you apply a CssClass to the asp:CheckBox for instance, you will have a span with that class and inside you’ll have an input with type=checkbox.</description>
+    </item>
+    
+    <item>
+      <title>Storing Generics in ASP.NET Profile object</title>
+      <link>http://www.ipreferjim.com/site/2009/04/storing-generics-in-asp-net-profile-object/</link>
+      <pubDate>Sat, 25 Apr 2009 19:34:00 +0000</pubDate>
+      
+      <guid>http://www.ipreferjim.com/site/2009/04/storing-generics-in-asp-net-profile-object/</guid>
+      <description>Sometimes, I’ll come across a problem that I research for an hour or two. When I find the solution, I think “Wow, that should have been the first thing I tried!</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    
+
+
+    <head>
+    <link href="https://gmpg.org/xfn/11" rel="profile">
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="Cache-Control" content="public" />
+<!-- Enable responsiveness on mobile devices -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="generator" content="Hugo 0.72.0" />
+
+    
+    
+    
+
+<title>Software Abstractions take Skill. • I Prefer Jim</title>
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Software Abstractions take Skill."/>
+<meta name="twitter:description" content="I recently read Adaptive Code via C# and posted a review on Amazon:
+ This book is a new favorite of mine."/>
+
+<meta property="og:title" content="Software Abstractions take Skill." />
+<meta property="og:description" content="I recently read Adaptive Code via C# and posted a review on Amazon:
+ This book is a new favorite of mine." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://www.ipreferjim.com/site/2014/12/software-abstractions-take-skill/" />
+<meta property="article:published_time" content="2014-12-09T04:53:16+00:00" />
+<meta property="article:modified_time" content="2014-12-09T04:53:16+00:00" /><meta property="og:site_name" content="I Prefer Jim" />
+
+
+    
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/site/scss/hyde-hyde.1d734ca591261200417c9d5de423a667cc5271b6576cc2ea477fce0dd8c628d0.css" integrity="sha256-HXNMpZEmEgBBfJ1d5COmZ8xScbZXbMLqR3/ODdjGKNA=">
+
+
+<link rel="stylesheet" href="/site/scss/print.2744dcbf8a0b2e74f8a50e4b34e5f441be7cf93cc7de27029121c6a09f9e77bc.css" integrity="sha256-J0Tcv4oLLnT4pQ5LNOX0Qb58&#43;TzH3icCkSHGoJ&#43;ed7w=" media="print">
+
+
+
+
+<link rel="stylesheet" href="/site/scss/hugo-toc.11a9185f83b7761946f8d16ae214f4d959edaf003337338e55935920cc7852d7.css" integrity="sha256-EakYX4O3dhlG&#43;NFq4hT02VntrwAzNzOOVZNZIMx4Utc=">
+
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- Icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+    <link rel="shortcut icon" href="/favicon.png">
+    
+    
+
+</head>
+
+
+    <body class=" ">
+    
+<div class="sidebar">
+  <div class="container ">
+    <div class="sidebar-about">
+      <span class="site__title">
+        <a href="http://www.ipreferjim.com/site/">I Prefer Jim</a>
+      </span>
+      
+      
+        <div class="author-image">
+          <img src="https://www.gravatar.com/avatar/466dc28e15028c7353552022d2de1f9e?s=240&d=mp" class="img--circle img--headshot element--center" alt="gravatar">
+        </div>
+      
+      <p class="site__description">
+        
+      </p>
+    </div>
+    <div class="collapsible-menu">
+      <input type="checkbox" id="menuToggle">
+      <label for="menuToggle">I Prefer Jim</label>
+      <div class="menu-content">
+        <div>
+	<ul class="sidebar-nav">
+		 
+		 
+			 
+				<li>
+					<a href="/site/posts/">
+						<span>Posts</span>
+					</a>
+				</li>
+			 
+		 
+			 
+				<li>
+					<a href="/site/tags/">
+						<span>Tags</span>
+					</a>
+				</li>
+			 
+		 
+			 
+				<li>
+					<a href="/site/categories/">
+						<span>Categories</span>
+					</a>
+				</li>
+			 
+		 
+			 
+				<li>
+					<a href="/site/books/">
+						<span>Books</span>
+					</a>
+				</li>
+			 
+		
+	</ul>
+</div>
+
+        <section class="social">
+	
+	<a href="https://twitter.com/jimschubert" rel="me"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a>
+	
+	
+	
+	<a href="https://github.com/jimschubert" rel="me"><i class="fab fa-github fa-lg" aria-hidden="true"></i></a>
+	
+	
+	
+	
+	
+	
+	
+	<a href="https://linkedin.com/in/jamesschubert" rel="me"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a>
+	
+	
+	<a href="https://stackoverflow.com/users/151445" rel="me"><i class="fab fa-stack-overflow fa-lg" aria-hidden="true"></i></a>
+	
+	
+	
+	
+	
+	
+	
+	
+</section>
+
+      </div>
+    </div>
+    
+<div class="copyright">
+  &copy; 2020 Jim Schubert
+  
+    <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>
+  
+</div>
+
+
+<div class="builtwith">
+Built with <a href="https://gohugo.io">Hugo</a> ❤️ <a href="https://github.com/htr3n/hyde-hyde">hyde-hyde</a>.
+</div>
+
+
+  </div>
+</div>
+
+        <div class="content container">
+            
+    
+<article>
+  <header>
+    <h1>Software Abstractions take Skill.</h1>
+    
+    
+<div class="post__meta">
+    
+    
+      <i class="fas fa-calendar-alt"></i> Dec 9, 2014
+    
+    
+    
+      
+      
+          in
+          
+          
+              <a class="badge badge-category" href="/site/categories/blog">BLOG</a>
+              •
+          
+              <a class="badge badge-category" href="/site/categories/reviews">REVIEWS</a>
+              
+          
+      
+    
+    
+    
+      
+      
+          <br/>
+           <i class="fas fa-tags"></i>
+          
+          <a class="badge badge-tag" href="/site/tags/.net">.net</a>
+           
+      
+          <a class="badge badge-tag" href="/site/tags/asp.net">asp.net</a>
+           
+      
+          <a class="badge badge-tag" href="/site/tags/asp.net-mvc">asp.net mvc</a>
+           
+      
+          <a class="badge badge-tag" href="/site/tags/c">c#</a>
+           
+      
+          <a class="badge badge-tag" href="/site/tags/review">review</a>
+           
+      
+          <a class="badge badge-tag" href="/site/tags/reviews">reviews</a>
+          
+      
+    
+    
+    <br/>
+    <i class="fas fa-clock"></i> 6 min read
+</div>
+
+
+  </header>
+  
+  
+  
+  
+  <div class="post">
+    <p>I recently read <a href="http://www.informit.com/store/adaptive-code-via-c-sharp-agile-coding-with-design-9780735683204">Adaptive Code via C#</a> and <a href="http://www.amazon.com/review/R2BUH8WL4FVLMF/ref=cm_cr_pr_perm/?ie=UTF8&#038;ASIN=0735683204" title="Read my review of Adaptive Code via C# on Amazon" target="_blank">posted a review on Amazon</a>:</p>
+<blockquote>
+<p>This book is a new favorite of mine. I’ve always prided myself on writing clean and concise code. I’ve always been fond of SOLID principles. I wanted to read this book to keep my understanding of SOLID principles fresh. It also covers design patterns, although be aware that it’s not an in-depth design patterns book.</p>
+<p>The book is broken into three sections. The first section is an introduction to Scrum and SOLID. Before I had even finished the first section, I was already recommending this book to colleagues. This leading content isn’t necessarily targeted toward developers. I think many managers or team leaders could benefit from reading the basics of Scrum and understanding the terminology for SOLID programming.</p>
+<p>I already had a pretty solid (sorry for that) understanding of SOLID principles, so I felt like the second section was more of a refresher. In that vein, I think it’d be hard for me to definitively say how easily digestible this section will be for beginners. I think it will greatly help intermediate or expert engineers to gain a new understanding of software architecture. The book’s audience is meant to be intermediate and expert engineers, but I think beginners could get the content. It’s so well written and clearly explained that I think anyone who might struggle a little with the concepts presented in the book could easily substitute any gaps in understanding with Wikipedia or blogs. Though, I honestly felt like there were no gaps. This section may be boring for non-developers, although I know project managers, program managers, and directors that would find this section interesting. The biggest thing to keep in mind is that SOLID principles are not rules; they’re guidelines.</p>
+<p>I thought the last section was excellent. It is split into three chapters in which you’re presented with somewhat realistic dialog (‘fortnight’) that follows a small team through the first two sprints for a chat application. I’ve read a few books on Agile and Scrum methodologies and this section was probably the most fun to read on the topic. It could just be that it’s written as a script with code examples, but it was refreshing and easy to follow.</p>
+<p>This book does a great job at explaining technical debt. While reading the book, I realized nobody at my current job has ever said the term ‘technical debt’. I asked around and found that it was a new term to most. The concept of technical debt is one thing I know I had problems understanding as a beginner. As developers become more mature, they begin to understand that the field is usually roughly equal parts business and technology. It’s really important to understand these ‘trade-offs’ and the last section demonstrates pretty well how technical debt occurs.</p>
+<p>If you’re on the fence about purchasing this book, you should buy it. It’s a quick read and an understanding of the subject matter will improve your software. I’ve never regretted purchasing a Microsoft Press book.</p>
+</blockquote>
+<p>I gave a short presentation at work recently about SOLID principles, so I was stoked to have a chance to read this book. One of the biggest takeaways I hope anyone has from this book is the ability to abstract software in useful ways.</p>
+<p>I recently solved an issue using techniques such as those presented in this book. Specifically, this solution included the Open/Closed Principle, Dependency Injection, and Single Responsibility Principle as well as the Decorator pattern. The issue was simple, one I’m sure many people have encountered in their time with C#; a dataset’s DataRow does not inherent from IDataRecord in the same way something like SqlDataReader does.</p>
+<p>Suppose you have a domain model of some kind that you need <a href="http://www.wikiwand.com/en/Object-relational_mapping" title="Wikipedia article on ORMs at Wikiwand.com" target="_blank">‘mapped’</a> from your database into a single object.</p>
+<p>Here’s a demonstration of the problem. I use a <a href="http://www.wikiwand.com/en/Comma-separated_values#/Example" title="Comma-separated values Wikipedia article at Wikiwand.com" target="_blank">csv of cars</a> from Wikipedia and instead of mapping to a domain object, I write out to the console.</p>
+<p>First, an example using a DataReader:</p>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">using</span> <span class="p">(</span><span class="kt">var</span> <span class="n">connection</span> <span class="p">=</span> <span class="k">new</span> <span class="n">OdbcConnection</span><span class="p">(</span><span class="n">connectionString</span><span class="p">))</span>
+<span class="p">{</span>
+    <span class="n">connection</span><span class="p">.</span><span class="n">Open</span><span class="p">();</span>
+    <span class="k">using</span> <span class="p">(</span><span class="kt">var</span> <span class="n">cmd</span> <span class="p">=</span> <span class="n">connection</span><span class="p">.</span><span class="n">CreateCommand</span><span class="p">())</span>
+    <span class="p">{</span>
+        <span class="n">cmd</span><span class="p">.</span><span class="n">CommandText</span> <span class="p">=</span> <span class="s">&#34;select * from Cars.csv&#34;</span><span class="p">;</span>
+
+        <span class="k">using</span> <span class="p">(</span><span class="kt">var</span> <span class="n">reader</span> <span class="p">=</span> <span class="n">cmd</span><span class="p">.</span><span class="n">ExecuteReader</span><span class="p">())</span>
+        <span class="k">while</span> <span class="p">(</span><span class="n">reader</span><span class="p">.</span><span class="n">Read</span><span class="p">())</span>
+        <span class="p">{</span>
+            <span class="n">OverloadedDumpRow</span><span class="p">(</span><span class="n">reader</span><span class="p">);</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div><p>Now, an example using a DataRow:</p>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">using</span> <span class="p">(</span><span class="kt">var</span> <span class="n">connection</span> <span class="p">=</span> <span class="k">new</span> <span class="n">OdbcConnection</span><span class="p">(</span><span class="n">connectionString</span><span class="p">))</span>
+<span class="p">{</span>
+    <span class="n">connection</span><span class="p">.</span><span class="n">Open</span><span class="p">();</span>
+
+    <span class="kt">var</span> <span class="n">adapter</span> <span class="p">=</span> <span class="k">new</span> <span class="n">OdbcDataAdapter</span><span class="p">(</span><span class="s">&#34;SELECT * FROM Cars.csv&#34;</span><span class="p">,</span> <span class="n">connection</span><span class="p">);</span>
+
+    <span class="n">DataSet</span> <span class="n">ds</span> <span class="p">=</span> <span class="k">new</span> <span class="n">DataSet</span><span class="p">(</span><span class="s">&#34;Temp&#34;</span><span class="p">);</span>
+    <span class="n">adapter</span><span class="p">.</span><span class="n">Fill</span><span class="p">(</span><span class="n">ds</span><span class="p">);</span>
+
+    <span class="k">foreach</span> <span class="p">(</span><span class="n">DataRow</span> <span class="n">row</span> <span class="k">in</span> <span class="n">ds</span><span class="p">.</span><span class="n">Tables</span><span class="p">[</span><span class="m">0</span><span class="p">].</span><span class="n">Rows</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="n">OverloadedDumpRow</span><span class="p">(</span><span class="n">row</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div><p>Aside from the implementation of data retrieval, <code>OverloadedDumpRow</code> should look exactly the same for both examples:</p>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&#34;A {0} {1} {2}&#34;</span><span class="p">,</span> 
+    <span class="n">row</span><span class="p">[</span><span class="s">&#34;Year&#34;</span><span class="p">],</span> <span class="n">row</span><span class="p">[</span><span class="s">&#34;Make&#34;</span><span class="p">],</span> <span class="n">row</span><span class="p">[</span><span class="s">&#34;Model&#34;</span><span class="p">]);</span>
+</code></pre></div><p>The problem is that, since these two implementations don’t share a common base type of any sort (DataRow derives from nothing). This isn’t really an issue in a small example like this, but if you have a complex domain and you want to return data from your database and parse that data consistently. Think about what you’d have to do for each and every domain model just to parse resultsets from IDataRecord <em>and</em> DataRow. How do you determine whether or not you’ll even *need* both implementations? To be DRY, you’d need to pull your data from the following methods into variables or directly into your target domain object:</p>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">static</span> <span class="k">void</span> <span class="n">OverloadedDumpRow</span><span class="p">(</span><span class="n">IDataRecord</span> <span class="n">row</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&#34;A {0} {1} {2}&#34;</span><span class="p">,</span>
+                    <span class="n">row</span><span class="p">[</span><span class="s">&#34;Year&#34;</span><span class="p">],</span> <span class="n">row</span><span class="p">[</span><span class="s">&#34;Make&#34;</span><span class="p">],</span> <span class="n">row</span><span class="p">[</span><span class="s">&#34;Model&#34;</span><span class="p">]);</span>
+<span class="p">}</span>
+
+<span class="k">static</span> <span class="k">void</span> <span class="n">OverloadedDumpRow</span><span class="p">(</span><span class="n">DataRow</span> <span class="n">row</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&#34;A {0} {1} {2}&#34;</span><span class="p">,</span>
+                    <span class="n">row</span><span class="p">[</span><span class="s">&#34;Year&#34;</span><span class="p">],</span> <span class="n">row</span><span class="p">[</span><span class="s">&#34;Make&#34;</span><span class="p">],</span> <span class="n">row</span><span class="p">[</span><span class="s">&#34;Model&#34;</span><span class="p">]);</span>
+<span class="p">}</span>
+</code></pre></div><p>Obviously, this isn’t reusable. What we’d need is an interface. Something like this:</p>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public</span> <span class="k">interface</span> <span class="n">IStringIndexed</span>
+<span class="p">{</span>
+  <span class="kt">object</span> <span class="k">this</span><span class="p">[</span><span class="kt">string</span> <span class="n">key</span><span class="p">]</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div><p>Then, we could implement the redundant methods above in a single method:</p>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">static</span> <span class="k">void</span> <span class="n">DumpRow</span><span class="p">(</span><span class="n">IStringIndexed</span> <span class="n">record</span><span class="p">)</span>
+<span class="p">{</span>
+  <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&#34;A {0} {1} {2}&#34;</span><span class="p">,</span>
+    <span class="n">record</span><span class="p">[</span><span class="s">&#34;Year&#34;</span><span class="p">],</span> <span class="n">record</span><span class="p">[</span><span class="s">&#34;Make&#34;</span><span class="p">],</span> <span class="n">record</span><span class="p">[</span><span class="s">&#34;Model&#34;</span><span class="p">]);</span>
+<span class="p">}</span>
+</code></pre></div><p>To get from IDataRecord and DataRow to this target interface, you’ll need an <a href="http://www.wikiwand.com/en/Adapter_pattern" title="Adapter pattern Wikipedia article on Wikiwand.com" target="_blank">adapter</a>. An adapter decorates a target type and exposes some new interface for that type. This can be a little confusing in our case because IDataRecord and DataRow have the same <em>functionality</em> (returning an object by string index), but they don’t have a consistent <em>interface</em> allowing us to write abstractions on top of these two types.</p>
+<p>Our simple interface follows the single responsibility principle (implementations can only get an object by key) as well as the open/closed principle (you can now write extension methods against IStringIndexed).</p>
+<p>Writing an adapter to use the interface from above is ridiculously easy. Here’s one of them:</p>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">internal</span> <span class="k">class</span> <span class="nc">DataRowStringIndexedWrapper</span> <span class="p">:</span> <span class="n">IStringIndexed</span>
+<span class="p">{</span>
+    <span class="k">private</span> <span class="k">readonly</span> <span class="n">DataRow</span> <span class="n">_row</span><span class="p">;</span>
+
+    <span class="k">public</span> <span class="n">DataRowStringIndexedWrapper</span><span class="p">(</span><span class="n">DataRow</span> <span class="n">row</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="n">_row</span> <span class="p">=</span> <span class="n">row</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="cp">#region IStringIndexed Members
+</span><span class="cp"></span>
+    <span class="kt">object</span> <span class="n">IStringIndexed</span><span class="p">.</span><span class="k">this</span><span class="p">[</span><span class="kt">string</span> <span class="n">key</span><span class="p">]</span>
+    <span class="p">{</span>
+        <span class="k">get</span> <span class="p">{</span> <span class="k">return</span> <span class="n">_row</span><span class="p">[</span><span class="n">key</span><span class="p">];</span> <span class="p">}</span>
+    <span class="p">}</span>
+
+    <span class="cp">#endregion
+</span><span class="cp"></span><span class="p">}</span>
+</code></pre></div><p>You would wrap an IDataRecord in exactly the same way.</p>
+<p>Here are the two updated examples (notice both of these dump the record to console using <em>the same method</em>):</p>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">using</span> <span class="p">(</span><span class="kt">var</span> <span class="n">connection</span> <span class="p">=</span> <span class="k">new</span> <span class="n">OdbcConnection</span><span class="p">(</span><span class="n">connectionString</span><span class="p">))</span>
+<span class="p">{</span>
+    <span class="n">connection</span><span class="p">.</span><span class="n">Open</span><span class="p">();</span>
+    <span class="k">using</span> <span class="p">(</span><span class="kt">var</span> <span class="n">cmd</span> <span class="p">=</span> <span class="n">connection</span><span class="p">.</span><span class="n">CreateCommand</span><span class="p">())</span>
+    <span class="p">{</span>
+        <span class="n">cmd</span><span class="p">.</span><span class="n">CommandText</span> <span class="p">=</span> <span class="s">&#34;select * from Cars.csv&#34;</span><span class="p">;</span>
+
+        <span class="k">using</span> <span class="p">(</span><span class="kt">var</span> <span class="n">reader</span> <span class="p">=</span> <span class="n">cmd</span><span class="p">.</span><span class="n">ExecuteReader</span><span class="p">())</span>
+        <span class="k">while</span> <span class="p">(</span><span class="n">reader</span><span class="p">.</span><span class="n">Read</span><span class="p">())</span>
+        <span class="p">{</span>
+            <span class="n">DumpRow</span><span class="p">(</span><span class="k">new</span> <span class="n">DataRecordStringIndexedWrapper</span><span class="p">(</span><span class="n">reader</span><span class="p">));</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="k">using</span> <span class="p">(</span><span class="kt">var</span> <span class="n">connection</span> <span class="p">=</span> <span class="k">new</span> <span class="n">OdbcConnection</span><span class="p">(</span><span class="n">connectionString</span><span class="p">))</span>
+<span class="p">{</span>
+    <span class="n">connection</span><span class="p">.</span><span class="n">Open</span><span class="p">();</span>
+
+    <span class="kt">var</span> <span class="n">adapter</span> <span class="p">=</span> <span class="k">new</span> <span class="n">OdbcDataAdapter</span><span class="p">(</span><span class="s">&#34;SELECT * FROM Cars.csv&#34;</span><span class="p">,</span> <span class="n">connection</span><span class="p">);</span>
+
+    <span class="n">DataSet</span> <span class="n">ds</span> <span class="p">=</span> <span class="k">new</span> <span class="n">DataSet</span><span class="p">(</span><span class="s">&#34;Temp&#34;</span><span class="p">);</span>
+    <span class="n">adapter</span><span class="p">.</span><span class="n">Fill</span><span class="p">(</span><span class="n">ds</span><span class="p">);</span>
+
+    <span class="k">foreach</span> <span class="p">(</span><span class="n">DataRow</span> <span class="n">row</span> <span class="k">in</span> <span class="n">ds</span><span class="p">.</span><span class="n">Tables</span><span class="p">[</span><span class="m">0</span><span class="p">].</span><span class="n">Rows</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="n">DumpRow</span><span class="p">(</span><span class="k">new</span> <span class="n">DataRowStringIndexedWrapper</span><span class="p">(</span><span class="n">row</span><span class="p">));</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div><p>This is the power of following SOLID principles and studying design patterns. This example isn’t taken from the book, but you’ll learn these skills and more in the book.</p>
+<h2 id="code">Code</h2>
+<p>A console application of this example is <a href="https://github.com/jimschubert/blogs/tree/master/2014-12-08/SolidExample" title="Sample code for this blog post on github" target="_blank">available on github</a>.</p>
+<p>You can purchase Adaptive Code via C# from <a href="http://www.informit.com/store/adaptive-code-via-c-sharp-agile-coding-with-design-9780735683204">informIT</a> or <a href="http://www.amazon.com/gp/product/0735683204/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=0735683204&amp;linkCode=as2&amp;tag=ipreferjimcom-20&amp;linkId=A2FRHUXKMSW2TSHA">Amazon</a><img src="https://ir-na.amazon-adsystem.com/e/ir?t=ipreferjimcom-20&#038;l=as2&#038;o=1&#038;a=0735683204" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />.</p>
+
+  </div>
+  
+
+<div class="navigation navigation-single">
+    
+    <a href="/site/2014/11/decorating-directives-with-isolate-scope-in-angular-1-3/" class="navigation-prev">
+      <i aria-hidden="true" class="fa fa-chevron-left"></i>
+      <span class="navigation-tittle">Decorating directives with isolate scope in Angular 1.3</span>
+    </a>
+    
+    
+    <a href="/site/2015/01/io-js-1-0-1-unstable-is-out-es6/" class="navigation-next">
+      <span class="navigation-tittle">io.js 1.0.1 (unstable) is out. ES6!</span>
+      <i aria-hidden="true" class="fa fa-chevron-right"></i>
+    </a>
+    
+</div>
+
+
+  
+
+
+<div class="post__related">
+    
+    <h2>Related Articles</h2>
+    <ul class="related-posts">
+        
+<li>
+  <span class="list__title--small">
+    <a href="/site/2011/08/dataannotations-mvc3-unobtrusive-validations/" >DataAnnotations, MVC 3, and Unobtrusive Validations</a>
+      
+      <time class="pull-right hidden-tablet">Aug 15, 2011</time>
+      
+  </span>
+</li>
+
+<li>
+  <span class="list__title--small">
+    <a href="/site/2010/05/system-componentmodel-dataannotations-for-asp-net-web-forms/" >System.ComponentModel.DataAnnotations for ASP.NET Web Forms</a>
+      
+      <time class="pull-right hidden-tablet">May 27, 2010</time>
+      
+  </span>
+</li>
+
+<li>
+  <span class="list__title--small">
+    <a href="/site/2010/06/using-dataannotation-attributes-to-validate-membership-password/" >Using DataAnnotation attributes to validate Membership password</a>
+      
+      <time class="pull-right hidden-tablet">Jun 11, 2010</time>
+      
+  </span>
+</li>
+
+<li>
+  <span class="list__title--small">
+    <a href="/site/2010/05/finding-a-users-local-time-from-utc-offset/" >Finding a user’s local time from UTC offset</a>
+      
+      <time class="pull-right hidden-tablet">May 4, 2010</time>
+      
+  </span>
+</li>
+
+<li>
+  <span class="list__title--small">
+    <a href="/site/2010/05/nhibernate-criterion-extensions-workaround/" >NHibernate.Criterion Extensions workaround</a>
+      
+      <time class="pull-right hidden-tablet">May 3, 2010</time>
+      
+  </span>
+</li>
+
+
+    </ul>
+</div>
+
+
+
+  
+    
+
+
+</article>
+
+
+        </div>
+        
+    
+
+<script defer src="https://use.fontawesome.com/releases/v5.11.2/js/all.js" integrity="sha384-b3ua1l97aVGAPEIe48b4TC60WUQbQaGi2jqAWM90y0OZXZeyaTCWtBTKtjW2GXG1" crossorigin="anonymous"></script>
+
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+        
+    <script type="text/javascript">
+        
+        hljs.initHighlightingOnLoad();
+    </script>
+    
+
+
+
+
+
+    
+
+
+
+    </body>
+</html>

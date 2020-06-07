@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Google APIs on I Prefer Jim</title>
+    <link>http://www.ipreferjim.com/site/tags/google-apis/</link>
+    <description>Recent content in Google APIs on I Prefer Jim</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 13 Nov 2010 19:56:14 +0000</lastBuildDate>
+    
+	<atom:link href="http://www.ipreferjim.com/site/tags/google-apis/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Select Actions Update (Google Chrome Extension)</title>
+      <link>http://www.ipreferjim.com/site/2010/11/select-actions-update-google-chrome-extension/</link>
+      <pubDate>Sat, 13 Nov 2010 19:56:14 +0000</pubDate>
+      
+      <guid>http://www.ipreferjim.com/site/2010/11/select-actions-update-google-chrome-extension/</guid>
+      <description>Last night, I published a major update to the Select Actions Google Chrome Extension. This update removes some “scary” permissions which claimed the extension had access to all websites.</description>
+    </item>
+    
+    <item>
+      <title>Google Maps v3 marker.set_map deprecated</title>
+      <link>http://www.ipreferjim.com/site/2010/02/google-maps-v3-marker-set_map-deprecated/</link>
+      <pubDate>Mon, 01 Mar 2010 02:34:09 +0000</pubDate>
+      
+      <guid>http://www.ipreferjim.com/site/2010/02/google-maps-v3-marker-set_map-deprecated/</guid>
+      <description>After the 8.8 earthquake outside of Chile this past weekend, I posted my Quake Tracker to twitter/facebook so people could easily visualize where the quake occurred.</description>
+    </item>
+    
+    <item>
+      <title>Google Chrome Extension: New Tab Redirect! STEP BY STEP</title>
+      <link>http://www.ipreferjim.com/site/2010/02/google-chrome-extension-new-tab-redirect-step-by-step/</link>
+      <pubDate>Sat, 13 Feb 2010 22:45:00 +0000</pubDate>
+      
+      <guid>http://www.ipreferjim.com/site/2010/02/google-chrome-extension-new-tab-redirect-step-by-step/</guid>
+      <description>If you’ve reached this this page in an attempt to find instructions for uninstalling the extension here they are:
+ Navigate to chrome://extensions Click ‘Uninstall’ below ‘New Tab Redirect!</description>
+    </item>
+    
+    <item>
+      <title>Google Chrome Extension: New Tab Redirect!</title>
+      <link>http://www.ipreferjim.com/site/2009/12/google-chrome-extension-new-tab-redirect/</link>
+      <pubDate>Sun, 20 Dec 2009 22:08:00 +0000</pubDate>
+      
+      <guid>http://www.ipreferjim.com/site/2009/12/google-chrome-extension-new-tab-redirect/</guid>
+      <description>Thanks to the blizzard this weekend, I’ve been alone and stuck inside long enough to write an extension for Google Chrome.</description>
+    </item>
+    
+    <item>
+      <title>Quake Tracker using Google Maps API v3 and XML/Atom feed</title>
+      <link>http://www.ipreferjim.com/site/2009/06/quake-tracker-using-google-maps-api-v3-and-xmlatom-feed/</link>
+      <pubDate>Wed, 17 Jun 2009 22:38:00 +0000</pubDate>
+      
+      <guid>http://www.ipreferjim.com/site/2009/06/quake-tracker-using-google-maps-api-v3-and-xmlatom-feed/</guid>
+      <description>http://www.ipreferjim.com/maps/quakes.html
+For this, I used the following:
+ Google Maps API v3 (http://code.google.com/apis/maps/documentation/v3/) jQuery v1.3.2 (http://jquery.com/)  First, you will need to include the google maps api in your header:</description>
+    </item>
+    
+  </channel>
+</rss>
