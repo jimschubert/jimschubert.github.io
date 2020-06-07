@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>log4net on I Prefer Jim</title>
+    <link>http://www.ipreferjim.com/site/tags/log4net/</link>
+    <description>Recent content in log4net on I Prefer Jim</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 01 Mar 2010 23:17:33 +0000</lastBuildDate>
+    
+	<atom:link href="http://www.ipreferjim.com/site/tags/log4net/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>log4net configuration in .NET 3.5</title>
+      <link>http://www.ipreferjim.com/site/2010/03/log4net-configuration-in-net-3-5/</link>
+      <pubDate>Mon, 01 Mar 2010 23:17:33 +0000</pubDate>
+      
+      <guid>http://www.ipreferjim.com/site/2010/03/log4net-configuration-in-net-3-5/</guid>
+      <description>Step 1 Add Reference
+Right click on the “References” folder and choose add reference. Browse to the location of log4net and add it to the project.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>eBooks on I Prefer Jim</title>
+    <link>http://www.ipreferjim.com/site/tags/ebooks/</link>
+    <description>Recent content in eBooks on I Prefer Jim</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 31 Oct 2014 03:54:15 +0000</lastBuildDate>
+    
+	<atom:link href="http://www.ipreferjim.com/site/tags/ebooks/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Your First App: Node.js is complete!</title>
+      <link>http://www.ipreferjim.com/site/2014/10/your-first-app-node-js-is-complete/</link>
+      <pubDate>Fri, 31 Oct 2014 03:54:15 +0000</pubDate>
+      
+      <guid>http://www.ipreferjim.com/site/2014/10/your-first-app-node-js-is-complete/</guid>
+      <description>I’m stoked to announce that I’ve finished writing my first self-published book, Your First App: node.js.
+The book is a full-stack application development tutorial using what is commonly known as the ‘MEAN’ stack, but with a heavier focus on the backend technologies: node.</description>
+    </item>
+    
+    <item>
+      <title>Your first app: Node.js (update)</title>
+      <link>http://www.ipreferjim.com/site/2014/08/your-first-app-node-js-update/</link>
+      <pubDate>Sun, 31 Aug 2014 18:24:10 +0000</pubDate>
+      
+      <guid>http://www.ipreferjim.com/site/2014/08/your-first-app-node-js-update/</guid>
+      <description>I am currently writing a book called Your first app: Node.js. I am self-publishing this book through leanpub.com. You can check it out here.</description>
+    </item>
+    
+    <item>
+      <title>Mastering Node: Addons and FunctionTemplate (uuid.node)</title>
+      <link>http://www.ipreferjim.com/site/2012/02/mastering-node-addons-and-functiontemplate-uuid-node/</link>
+      <pubDate>Tue, 07 Feb 2012 02:41:18 +0000</pubDate>
+      
+      <guid>http://www.ipreferjim.com/site/2012/02/mastering-node-addons-and-functiontemplate-uuid-node/</guid>
+      <description>&lt;p&gt;Last night, I pushed an addition to my fork of Mastering Node. I decided to add a bit to the &lt;em&gt;Addons&lt;/em&gt; chapter. The first example in this chapter only shows how to add a function to a natively-compiled module (i.e. an addon). This example shows you how to start a module which can be used in the following way:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span class=&#34;kd&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;Uuid&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;require&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;./uuid.node&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;).&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;Uuid&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;span class=&#34;kd&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;uuid&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;new&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;Uuid&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;();&lt;/span&gt;
+&lt;span class=&#34;kd&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;myId&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;uuid&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;generate&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;();&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The project files referenced in the following text can be downloaded from the repo: &lt;a href=&#34;https://github.com/jimschubert/masteringnode&#34; title=&#34;jimschubert/masteringnode&#34; target=&#34;_blank&#34;&gt;jimschubert/masteringnode&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;functionTemplate&#34;&gt;FunctionTemplate&lt;/h2&gt;
+&lt;p&gt;In v8, a FunctionTemplate is used to create the equivalent to:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span class=&#34;kd&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;template&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;kd&#34;&gt;function&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt; 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The function at this point is an object and not an &lt;em&gt;instance&lt;/em&gt; of the function.&lt;/p&gt;
+&lt;p&gt;As an example, we will use the linux package &lt;em&gt;uuid&lt;/em&gt; to generate a uuid. We will define the header for this addon as:&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>[node.js] Mastering Node excerpt: Addons</title>
+      <link>http://www.ipreferjim.com/site/2011/04/node-js-mastering-node-excerpt-addons/</link>
+      <pubDate>Sat, 09 Apr 2011 05:24:29 +0000</pubDate>
+      
+      <guid>http://www.ipreferjim.com/site/2011/04/node-js-mastering-node-excerpt-addons/</guid>
+      <description>&lt;h2 id=&#34;addons&#34;&gt;Addons&lt;/h2&gt;
+&lt;p&gt;The node documentation for addons is self-admittedly pretty weak as of v0.4.0.&lt;/p&gt;
+&lt;p&gt;This chapter doesn’t aim to be a replacement for the official documentation. Instead, we’d hope this can expand on some of the basics a little more than a simple “Hello, World!” and drive you as a developer more on the path toward mastering node through its source code.&lt;/p&gt;
+&lt;p&gt;In fact, for now, we’re only going to cover some shortcuts for creating properties on an object, functions, and interacting with function prototypes. This doesn’t reach the evented level of node’s awesomeness, but you should be able to look at examples in node’s source and the documention for &lt;em&gt;libev&lt;/em&gt; and &lt;em&gt;libeio&lt;/em&gt; to find answers.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Pre-requisites&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Some C/C++ knowledge&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;V8 JavaScript&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Internal Node libraries&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;http://cvs.schmorp.de/libev/ev.html&#34; target=&#34;_blank&#34;&gt;libev&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;libeio&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;hello.node&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Our first example is the very same one from node’s docs. We’re going to include it for those who haven’t read through the docs and have instead trusted in the knowledge of this ebook’s authors (thanks, by the way).&lt;/p&gt;
+&lt;p&gt;A node addon begins with a source file containing a single entry point:&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Free Software Architecture eBooks on MSDN</title>
+      <link>http://www.ipreferjim.com/site/2010/01/free-software-architecture-ebooks-on-msdn/</link>
+      <pubDate>Wed, 06 Jan 2010 17:50:00 +0000</pubDate>
+      
+      <guid>http://www.ipreferjim.com/site/2010/01/free-software-architecture-ebooks-on-msdn/</guid>
+      <description>Microsoft Application Architecture Guide, 2nd Edition      Enterprise Solution Patterns Using Microsoft .NET      Data Access Architecture Guide      Found via http://apparchguide.</description>
+    </item>
+    
+    <item>
+      <title>Free Subversion Book by O’Reilly</title>
+      <link>http://www.ipreferjim.com/site/2009/11/free-subversion-book-by-oreilly/</link>
+      <pubDate>Mon, 02 Nov 2009 00:33:00 +0000</pubDate>
+      
+      <guid>http://www.ipreferjim.com/site/2009/11/free-subversion-book-by-oreilly/</guid>
+      <description>O’Reilly Media has released a free subversion book, located at http://svnbook.red-bean.com/
+   It&amp;#8217;s downloadable as a PDF, single-page HTML and multi-page HTML.</description>
+    </item>
+    
+  </channel>
+</rss>

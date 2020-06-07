@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    
+
+
+    <head>
+    <link href="https://gmpg.org/xfn/11" rel="profile">
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="Cache-Control" content="public" />
+<!-- Enable responsiveness on mobile devices -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="generator" content="Hugo 0.72.0" />
+
+    
+    
+    
+
+<title>[node.js] Mastering Node excerpt: Addons • I Prefer Jim</title>
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="[node.js] Mastering Node excerpt: Addons"/>
+<meta name="twitter:description" content="Addons
+The node documentation for addons is self-admittedly pretty weak as of v0.4.0.
+This chapter doesn’t aim to be a replacement for the official documentation. Instead, we’d hope this can expand on some of the basics a little more than a simple “Hello, World!” and drive you as a developer more on the path toward mastering node through its source code.
+In fact, for now, we’re only going to cover some shortcuts for creating properties on an object, functions, and interacting with function prototypes. This doesn’t reach the evented level of node’s awesomeness, but you should be able to look at examples in node’s source and the documention for libev and libeio to find answers.
+Pre-requisites
+
+
+Some C/C&#43;&#43; knowledge
+
+
+V8 JavaScript
+
+
+Internal Node libraries
+
+
+libev
+
+
+libeio
+
+
+hello.node
+Our first example is the very same one from node’s docs. We’re going to include it for those who haven’t read through the docs and have instead trusted in the knowledge of this ebook’s authors (thanks, by the way).
+A node addon begins with a source file containing a single entry point:"/>
+
+<meta property="og:title" content="[node.js] Mastering Node excerpt: Addons" />
+<meta property="og:description" content="Addons
+The node documentation for addons is self-admittedly pretty weak as of v0.4.0.
+This chapter doesn’t aim to be a replacement for the official documentation. Instead, we’d hope this can expand on some of the basics a little more than a simple “Hello, World!” and drive you as a developer more on the path toward mastering node through its source code.
+In fact, for now, we’re only going to cover some shortcuts for creating properties on an object, functions, and interacting with function prototypes. This doesn’t reach the evented level of node’s awesomeness, but you should be able to look at examples in node’s source and the documention for libev and libeio to find answers.
+Pre-requisites
+
+
+Some C/C&#43;&#43; knowledge
+
+
+V8 JavaScript
+
+
+Internal Node libraries
+
+
+libev
+
+
+libeio
+
+
+hello.node
+Our first example is the very same one from node’s docs. We’re going to include it for those who haven’t read through the docs and have instead trusted in the knowledge of this ebook’s authors (thanks, by the way).
+A node addon begins with a source file containing a single entry point:" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://www.ipreferjim.com/site/2011/04/node-js-mastering-node-excerpt-addons/" />
+<meta property="article:published_time" content="2011-04-09T05:24:29+00:00" />
+<meta property="article:modified_time" content="2011-04-09T05:24:29+00:00" /><meta property="og:site_name" content="I Prefer Jim" />
+
+
+    
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/site/scss/hyde-hyde.1d734ca591261200417c9d5de423a667cc5271b6576cc2ea477fce0dd8c628d0.css" integrity="sha256-HXNMpZEmEgBBfJ1d5COmZ8xScbZXbMLqR3/ODdjGKNA=">
+
+
+<link rel="stylesheet" href="/site/scss/print.2744dcbf8a0b2e74f8a50e4b34e5f441be7cf93cc7de27029121c6a09f9e77bc.css" integrity="sha256-J0Tcv4oLLnT4pQ5LNOX0Qb58&#43;TzH3icCkSHGoJ&#43;ed7w=" media="print">
+
+
+
+
+<link rel="stylesheet" href="/site/scss/hugo-toc.11a9185f83b7761946f8d16ae214f4d959edaf003337338e55935920cc7852d7.css" integrity="sha256-EakYX4O3dhlG&#43;NFq4hT02VntrwAzNzOOVZNZIMx4Utc=">
+
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- Icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+    <link rel="shortcut icon" href="/favicon.png">
+    
+    
+
+</head>
+
+
+    <body class=" ">
+    
+<div class="sidebar">
+  <div class="container ">
+    <div class="sidebar-about">
+      <span class="site__title">
+        <a href="http://www.ipreferjim.com/site/">I Prefer Jim</a>
+      </span>
+      
+      
+        <div class="author-image">
+          <img src="https://www.gravatar.com/avatar/466dc28e15028c7353552022d2de1f9e?s=240&d=mp" class="img--circle img--headshot element--center" alt="gravatar">
+        </div>
+      
+      <p class="site__description">
+        
+      </p>
+    </div>
+    <div class="collapsible-menu">
+      <input type="checkbox" id="menuToggle">
+      <label for="menuToggle">I Prefer Jim</label>
+      <div class="menu-content">
+        <div>
+	<ul class="sidebar-nav">
+		 
+		 
+			 
+				<li>
+					<a href="/site/posts/">
+						<span>Posts</span>
+					</a>
+				</li>
+			 
+		 
+			 
+				<li>
+					<a href="/site/tags/">
+						<span>Tags</span>
+					</a>
+				</li>
+			 
+		 
+			 
+				<li>
+					<a href="/site/categories/">
+						<span>Categories</span>
+					</a>
+				</li>
+			 
+		 
+			 
+				<li>
+					<a href="/site/books/">
+						<span>Books</span>
+					</a>
+				</li>
+			 
+		
+	</ul>
+</div>
+
+        <section class="social">
+	
+	<a href="https://twitter.com/jimschubert" rel="me"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a>
+	
+	
+	
+	<a href="https://github.com/jimschubert" rel="me"><i class="fab fa-github fa-lg" aria-hidden="true"></i></a>
+	
+	
+	
+	
+	
+	
+	
+	<a href="https://linkedin.com/in/jamesschubert" rel="me"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a>
+	
+	
+	<a href="https://stackoverflow.com/users/151445" rel="me"><i class="fab fa-stack-overflow fa-lg" aria-hidden="true"></i></a>
+	
+	
+	
+	
+	
+	
+	
+	
+</section>
+
+      </div>
+    </div>
+    
+<div class="copyright">
+  &copy; 2020 Jim Schubert
+  
+    <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>
+  
+</div>
+
+
+<div class="builtwith">
+Built with <a href="https://gohugo.io">Hugo</a> ❤️ <a href="https://github.com/htr3n/hyde-hyde">hyde-hyde</a>.
+</div>
+
+
+  </div>
+</div>
+
+        <div class="content container">
+            
+    
+<article>
+  <header>
+    <h1>[node.js] Mastering Node excerpt: Addons</h1>
+    
+    
+<div class="post__meta">
+    
+    
+      <i class="fas fa-calendar-alt"></i> Apr 9, 2011
+    
+    
+    
+      
+      
+          in
+          
+          
+              <a class="badge badge-category" href="/site/categories/blog">BLOG</a>
+              
+          
+      
+    
+    
+    
+      
+      
+          <br/>
+           <i class="fas fa-tags"></i>
+          
+          <a class="badge badge-tag" href="/site/tags/ebooks">ebooks</a>
+           
+      
+          <a class="badge badge-tag" href="/site/tags/javascript">javascript</a>
+           
+      
+          <a class="badge badge-tag" href="/site/tags/nodejs">nodejs</a>
+          
+      
+    
+    
+    <br/>
+    <i class="fas fa-clock"></i> 5 min read
+</div>
+
+
+  </header>
+  
+  
+  
+  
+  <div class="post">
+    <h2 id="addons">Addons</h2>
+<p>The node documentation for addons is self-admittedly pretty weak as of v0.4.0.</p>
+<p>This chapter doesn’t aim to be a replacement for the official documentation. Instead, we’d hope this can expand on some of the basics a little more than a simple “Hello, World!” and drive you as a developer more on the path toward mastering node through its source code.</p>
+<p>In fact, for now, we’re only going to cover some shortcuts for creating properties on an object, functions, and interacting with function prototypes. This doesn’t reach the evented level of node’s awesomeness, but you should be able to look at examples in node’s source and the documention for <em>libev</em> and <em>libeio</em> to find answers.</p>
+<p><strong>Pre-requisites</strong></p>
+<ul>
+<li>
+<p>Some C/C++ knowledge</p>
+</li>
+<li>
+<p>V8 JavaScript</p>
+</li>
+<li>
+<p>Internal Node libraries</p>
+</li>
+<li>
+<p><a href="http://cvs.schmorp.de/libev/ev.html" target="_blank">libev</a></p>
+</li>
+<li>
+<p>libeio</p>
+</li>
+</ul>
+<p><strong>hello.node</strong></p>
+<p>Our first example is the very same one from node’s docs. We’re going to include it for those who haven’t read through the docs and have instead trusted in the knowledge of this ebook’s authors (thanks, by the way).</p>
+<p>A node addon begins with a source file containing a single entry point:</p>
+<div class="highlight"><pre class="chroma"><code class="language-cpp" data-lang="cpp"><span class="c1">// addons/hello/hello.cc
+</span><span class="c1"></span>    <span class="cp">#include</span> <span class="cpf">&lt;v8.h&gt;</span><span class="cp">
+</span><span class="cp"></span>
+    <span class="k">using</span> <span class="k">namespace</span> <span class="n">v8</span><span class="p">;</span>
+
+    <span class="k">extern</span> <span class="s">&#34;C&#34;</span> <span class="kt">void</span>
+    <span class="n">init</span> <span class="p">(</span><span class="n">Handle</span><span class="o">&lt;</span><span class="n">Object</span><span class="o">&gt;</span> <span class="n">target</span><span class="p">)</span>
+    <span class="p">{</span>
+      <span class="n">HandleScope</span> <span class="n">scope</span><span class="p">;</span>
+      <span class="n">target</span><span class="o">-&gt;</span><span class="n">Set</span><span class="p">(</span><span class="n">String</span><span class="o">::</span><span class="n">New</span><span class="p">(</span><span class="s">&#34;hello&#34;</span><span class="p">),</span> <span class="n">String</span><span class="o">::</span><span class="n">New</span><span class="p">(</span><span class="s">&#34;world&#34;</span><span class="p">));</span>
+    <span class="p">}</span>
+</code></pre></div><p>This is a C/C++ file which begins by including the <em>v8.h</em> header. It then uses the <em>v8</em> namespace to make the code a little cleaner. Finally, the entry point accepts a single parameter, <em>Handle<Object> target</em>. If you don’t use the <em>v8</em> namespace as we’ve done here, your parameter will read <em>v8::Handle<a href="v8::Object">v8::Object</a> target</em>. As you can see, <em>Object</em> is a <em>v8</em> class. This is actually the same object we would otherwise refer to using <em>exports</em> in a regular node source file.</p>
+<p>Within the <em>init</em> method, we do two things. First, we create a scope. Again, this is the same as is done with the <em>exports</em> object in a JavaScript file. Then we set a property on the <em>target</em> called <em>hello</em> which returns the string “world”.</p>
+<p>If you were to perform the same actions as this source file (ignoring the scope part) in a node REPL console, it would look like:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ node
+    &gt; var <span class="nv">target</span> <span class="o">=</span> <span class="o">{}</span><span class="p">;</span>
+    &gt; target.hello <span class="o">=</span> <span class="s2">&#34;world&#34;</span><span class="p">;</span>
+    <span class="s1">&#39;world&#39;</span>
+</code></pre></div><p><strong>Building hello.node</strong></p>
+<p>Building a node addon requires <a href="http://code.google.com/p/waf" target="_blank">WAF</a>. <em>node-waf</em> should be installed if you’ve installed node.js from source or distro.</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="o">//</span> <span class="n">addons</span><span class="o">/</span><span class="n">hello</span><span class="o">/</span><span class="n">wscript</span>
+    <span class="n">srcdir</span> <span class="o">=</span> <span class="s1">&#39;.&#39;</span>
+    <span class="n">blddir</span> <span class="o">=</span> <span class="s1">&#39;build&#39;</span>
+    <span class="n">VERSION</span> <span class="o">=</span> <span class="s1">&#39;0.0.1&#39;</span>
+
+    <span class="k">def</span> <span class="nf">set_options</span><span class="p">(</span><span class="n">opt</span><span class="p">):</span>
+      <span class="n">opt</span><span class="o">.</span><span class="n">tool_options</span><span class="p">(</span><span class="s1">&#39;compiler_cxx&#39;</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">configure</span><span class="p">(</span><span class="n">conf</span><span class="p">):</span>
+      <span class="n">conf</span><span class="o">.</span><span class="n">check_tool</span><span class="p">(</span><span class="s1">&#39;compiler_cxx&#39;</span><span class="p">)</span>
+      <span class="n">conf</span><span class="o">.</span><span class="n">check_tool</span><span class="p">(</span><span class="s1">&#39;node_addon&#39;</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">build</span><span class="p">(</span><span class="n">bld</span><span class="p">):</span>
+      <span class="n">obj</span> <span class="o">=</span> <span class="n">bld</span><span class="o">.</span><span class="n">new_task_gen</span><span class="p">(</span><span class="s1">&#39;cxx&#39;</span><span class="p">,</span> <span class="s1">&#39;shlib&#39;</span><span class="p">,</span> <span class="s1">&#39;node_addon&#39;</span><span class="p">)</span>
+      <span class="n">obj</span><span class="o">.</span><span class="n">target</span> <span class="o">=</span> <span class="s1">&#39;hello&#39;</span>
+      <span class="n">obj</span><span class="o">.</span><span class="n">source</span> <span class="o">=</span> <span class="s1">&#39;hello.cc&#39;</span> 
+</code></pre></div><p>This file is relatively simple, there are two tasks: <em>configure</em> and <em>build</em>. To run this script:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ <span class="nb">cd</span> src/addons/hello/wscript <span class="o">&amp;&amp;</span> node-waf configure build
+</code></pre></div><p>Notice how you have to run node-waf from the directory of the <em>wscript</em> build script. Afterward, your built addon will be located at <em>./build/default/hello.node</em>. You can load and play with the addon when you’re finished.</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ <span class="nb">cd</span> build/default <span class="o">&amp;&amp;</span> node
+    &gt; var <span class="nv">hello</span> <span class="o">=</span> require<span class="o">(</span><span class="s1">&#39;./hello.node&#39;</span><span class="o">)</span><span class="p">;</span>
+    &gt; hello
+    <span class="o">{</span> hello: <span class="s1">&#39;world&#39;</span> <span class="o">}</span>
+    &gt; 
+</code></pre></div><p><strong>Basic Functions</strong></p>
+<p>The world of functions begins with an object that will resemble the following object:</p>
+<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="p">{</span> <span class="nx">version</span><span class="o">:</span> <span class="s1">&#39;0.1&#39;</span><span class="p">,</span> <span class="nx">echo</span><span class="o">:</span> <span class="p">[</span><span class="nb">Function</span><span class="p">]</span> <span class="p">}</span>
+</code></pre></div><p>As you can imagine, node is already coding functions in the same way as you would for an addon. Luckily, <em>node.h</em> provides a helper definition for setting a function to a callback, or method defined within your source file. If you open <em>node.h</em> and look at line 33, you’ll see:</p>
+<div class="highlight"><pre class="chroma"><code class="language-cpp" data-lang="cpp"><span class="c1">// [node repo]/src/node.h
+</span><span class="c1"></span>    <span class="cp">#define NODE_SET_METHOD(obj, name, callback)                              \
+</span><span class="cp">      obj-&gt;Set(v8::String::NewSymbol(name),                                   \
+</span><span class="cp">               v8::FunctionTemplate::New(callback)-&gt;GetFunction())
+</span><span class="cp"></span>
+</code></pre></div><p>Let’s reuse this bit of code. One thing to note here is that since node is already defining how to set a method on a target object, changes to this functionality in v8 will most likely be reflected in this macro. Because the addon compilation process links node anyway, including the header here shouldn’t be an issue. Plus, reusing the macro ensures that we’re creating functions in the same way as the rest of the framework.</p>
+<p>The following example will compile our desired object mentioned earlier.</p>
+<div class="highlight"><pre class="chroma"><code class="language-cpp" data-lang="cpp"><span class="c1">// addons/functions/v0.1/func.cc
+</span><span class="c1"></span>    <span class="cp">#include</span> <span class="cpf">&lt;v8.h&gt;</span><span class="cp">
+</span><span class="cp"></span>    <span class="cp">#include</span> <span class="cpf">&lt;node.h&gt;</span><span class="cp">
+</span><span class="cp"></span>
+    <span class="k">using</span> <span class="k">namespace</span> <span class="n">v8</span><span class="p">;</span>  
+
+    <span class="k">static</span> <span class="n">Handle</span><span class="o">&lt;</span><span class="n">Value</span><span class="o">&gt;</span> <span class="n">Echo</span><span class="p">(</span><span class="k">const</span> <span class="n">Arguments</span><span class="o">&amp;</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+      <span class="n">HandleScope</span> <span class="n">scope</span><span class="p">;</span>
+
+      <span class="k">if</span> <span class="p">(</span><span class="n">args</span><span class="p">.</span><span class="n">Length</span><span class="p">()</span> <span class="o">&lt;</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="nf">ThrowException</span><span class="p">(</span><span class="n">Exception</span><span class="o">::</span><span class="n">TypeError</span><span class="p">(</span><span class="n">String</span><span class="o">::</span><span class="n">New</span><span class="p">(</span><span class="s">&#34;Bad argument&#34;</span><span class="p">)));</span>
+      <span class="p">}</span>
+      <span class="k">return</span> <span class="n">scope</span><span class="p">.</span><span class="n">Close</span><span class="p">(</span><span class="n">args</span><span class="p">[</span><span class="mi">0</span><span class="p">]);</span>
+    <span class="p">}</span>
+
+    <span class="k">extern</span> <span class="s">&#34;C&#34;</span> <span class="kt">void</span>
+    <span class="n">init</span> <span class="p">(</span><span class="n">Handle</span><span class="o">&lt;</span><span class="n">Object</span><span class="o">&gt;</span> <span class="n">target</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="n">HandleScope</span> <span class="n">scope</span><span class="p">;</span>
+        
+        <span class="n">target</span><span class="o">-&gt;</span><span class="n">Set</span><span class="p">(</span><span class="n">String</span><span class="o">::</span><span class="n">New</span><span class="p">(</span><span class="s">&#34;version&#34;</span><span class="p">),</span> <span class="n">String</span><span class="o">::</span><span class="n">New</span><span class="p">(</span><span class="s">&#34;0.1&#34;</span><span class="p">));</span>
+        
+        <span class="n">NODE_SET_METHOD</span><span class="p">(</span><span class="n">target</span><span class="p">,</span> <span class="s">&#34;echo&#34;</span><span class="p">,</span> <span class="n">Echo</span><span class="p">);</span>
+    <span class="p">}</span>
+
+</code></pre></div><p>This example differs in a couple of ways from the <em>Hello, World!</em> example. First, it includes the <em>node.h</em> header containing the <em>NODE_SET_METHOD</em> macro. Second, this contains a callback which is providing the functionality of our function.</p>
+<p>Just as you would expect in a JavaScript function, the entrance and exit points of the function define a <em>scope</em> in which the <em>context</em> of the function executes (i.e. ‘this’). Our function will throw an error if it doesn’t receive the proper number of arguments, then returns the first argument regardless of how many others are passed.</p>
+<p>The <em>WAF</em> script used to build this file is nearly identical to the one used for the <em>Hello, World!</em> example.</p>
+<p>Now, build the source and toy with it. Here’s a dump of my console, run from <em>./src/addons/functions/v0.1</em>.</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ node-waf configure build <span class="o">&amp;&amp;</span> <span class="nb">cd</span> build/default <span class="o">&amp;&amp;</span> node
+    Checking <span class="k">for</span> program g++ or c++          : /usr/bin/g++ 
+    Checking <span class="k">for</span> program cpp                 : /usr/bin/cpp 
+    Checking <span class="k">for</span> program ar                  : /usr/bin/ar 
+    Checking <span class="k">for</span> program ranlib              : /usr/bin/ranlib 
+    Checking <span class="k">for</span> g++                         : ok  
+    Checking <span class="k">for</span> node path                   : ok /home/jim/.node_libraries 
+    Checking <span class="k">for</span> node prefix                 : ok /usr/local 
+    <span class="s1">&#39;configure&#39;</span> finished successfully <span class="o">(</span>0.164s<span class="o">)</span>
+    Waf: Entering directory <span class="sb">`</span>/media/16GB/projects/masteringnode/src/addons/functions/v0.1/build<span class="s1">&#39;
+</span><span class="s1">    [1/2] cxx: func.cc -&gt; build/default/func_1.o
+</span><span class="s1">    Waf: Leaving directory `/media/16GB/projects/masteringnode/src/addons/functions/v0.1/build&#39;</span>
+    <span class="s1">&#39;build&#39;</span> finished successfully <span class="o">(</span>0.587s<span class="o">)</span>
+    &gt; var <span class="nv">func</span> <span class="o">=</span> require<span class="o">(</span><span class="s1">&#39;./func&#39;</span><span class="o">)</span><span class="p">;</span>
+    &gt; func
+    <span class="o">{</span> version: <span class="s1">&#39;0.1&#39;</span>, echo: <span class="o">[</span>Function<span class="o">]</span> <span class="o">}</span>
+    &gt; func.echo
+    <span class="o">[</span>Function<span class="o">]</span>
+    &gt; func.echo<span class="o">()</span>
+    TypeError: Bad argument
+        at <span class="o">[</span>object Context<span class="o">]</span>:1:6
+        at Interface.&lt;anonymous&gt; <span class="o">(</span>repl.js:144:22<span class="o">)</span>
+        at Interface.emit <span class="o">(</span>events.js:42:17<span class="o">)</span>
+        at Interface._onLine <span class="o">(</span>readline.js:132:10<span class="o">)</span>
+        at Interface._line <span class="o">(</span>readline.js:387:8<span class="o">)</span>
+        at Interface._ttyWrite <span class="o">(</span>readline.js:564:14<span class="o">)</span>
+        at ReadStream.&lt;anonymous&gt; <span class="o">(</span>readline.js:52:12<span class="o">)</span>
+        at ReadStream.emit <span class="o">(</span>events.js:59:20<span class="o">)</span>
+        at ReadStream._emitKey <span class="o">(</span>tty_posix.js:280:10<span class="o">)</span>
+        at ReadStream.onData <span class="o">(</span>tty_posix.js:43:12<span class="o">)</span>
+    &gt; func.echo<span class="o">(</span>1<span class="o">)</span>
+    <span class="m">1</span>
+    &gt; func.echo<span class="o">(</span><span class="s2">&#34;asdf&#34;</span>, 20<span class="o">)</span>
+    <span class="s1">&#39;asdf&#39;</span>
+    &gt; func.echo<span class="o">(</span><span class="k">function</span><span class="o">()</span> <span class="o">{</span> <span class="k">return</span> 1<span class="p">;</span> <span class="o">}</span>, 222<span class="o">)</span>
+    <span class="o">[</span>Function<span class="o">]</span>
+    &gt; func.echo<span class="o">(</span><span class="k">function</span><span class="o">()</span> <span class="o">{</span> <span class="k">return</span> 1<span class="p">;</span> <span class="o">}</span>, 222<span class="o">)()</span>
+    <span class="m">1</span>
+    
+</code></pre></div><p>Notice the construct of the last line is <em>func.echo()()</em>. which executes the function that is passed as the first argument.</p>
+  </div>
+  
+
+<div class="navigation navigation-single">
+    
+    <a href="/site/2011/03/mastering-node/" class="navigation-prev">
+      <i aria-hidden="true" class="fa fa-chevron-left"></i>
+      <span class="navigation-tittle">Mastering Node</span>
+    </a>
+    
+    
+    <a href="/site/2011/05/my-review-of-inside-the-microsoft-build-engine/" class="navigation-next">
+      <span class="navigation-tittle">My Review of Inside the Microsoft® Build Engine</span>
+      <i aria-hidden="true" class="fa fa-chevron-right"></i>
+    </a>
+    
+</div>
+
+
+  
+
+
+<div class="post__related">
+    
+    <h2>Related Articles</h2>
+    <ul class="related-posts">
+        
+<li>
+  <span class="list__title--small">
+    <a href="/site/2011/03/mastering-node/" >Mastering Node</a>
+      
+      <time class="pull-right hidden-tablet">Mar 17, 2011</time>
+      
+  </span>
+</li>
+
+<li>
+  <span class="list__title--small">
+    <a href="/site/2011/02/jquery-pocket-reference-by-david-flanagan/" >jQuery Pocket Reference by David Flanagan</a>
+      
+      <time class="pull-right hidden-tablet">Feb 8, 2011</time>
+      
+  </span>
+</li>
+
+<li>
+  <span class="list__title--small">
+    <a href="/site/2010/11/select-actions-update-google-chrome-extension/" >Select Actions Update (Google Chrome Extension)</a>
+      
+      <time class="pull-right hidden-tablet">Nov 13, 2010</time>
+      
+  </span>
+</li>
+
+<li>
+  <span class="list__title--small">
+    <a href="/site/2010/09/what-is-javascript/" >What is JavaScript?</a>
+      
+      <time class="pull-right hidden-tablet">Sep 28, 2010</time>
+      
+  </span>
+</li>
+
+<li>
+  <span class="list__title--small">
+    <a href="/site/2010/06/fairly-accurate-javascript-browser-detection/" >Fairly Accurate JavaScript Browser Detection</a>
+      
+      <time class="pull-right hidden-tablet">Jun 12, 2010</time>
+      
+  </span>
+</li>
+
+
+    </ul>
+</div>
+
+
+
+  
+    
+
+
+</article>
+
+
+        </div>
+        
+    
+
+<script defer src="https://use.fontawesome.com/releases/v5.11.2/js/all.js" integrity="sha384-b3ua1l97aVGAPEIe48b4TC60WUQbQaGi2jqAWM90y0OZXZeyaTCWtBTKtjW2GXG1" crossorigin="anonymous"></script>
+
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+        
+    <script type="text/javascript">
+        
+        hljs.initHighlightingOnLoad();
+    </script>
+    
+
+
+
+
+
+    
+
+
+
+    </body>
+</html>

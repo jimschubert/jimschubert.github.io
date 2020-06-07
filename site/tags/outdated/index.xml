@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>outdated on I Prefer Jim</title>
+    <link>http://www.ipreferjim.com/site/tags/outdated/</link>
+    <description>Recent content in outdated on I Prefer Jim</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 08 Feb 2011 03:38:19 +0000</lastBuildDate>
+    
+	<atom:link href="http://www.ipreferjim.com/site/tags/outdated/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Linking to a Google Doc .doc as .pdf</title>
+      <link>http://www.ipreferjim.com/site/2011/02/linking-to-a-google-doc-doc-as-pdf/</link>
+      <pubDate>Tue, 08 Feb 2011 03:38:19 +0000</pubDate>
+      
+      <guid>http://www.ipreferjim.com/site/2011/02/linking-to-a-google-doc-doc-as-pdf/</guid>
+      <description>I recently decided to update my resume, which forced me to revisit an issue I originally faced when posting my resume to my site: I am writing it as a doc file in Google Docs but I want to link to it as a PDF and have my updates visible immediately.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    
+
+
+    <head>
+    <link href="https://gmpg.org/xfn/11" rel="profile">
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="Cache-Control" content="public" />
+<!-- Enable responsiveness on mobile devices -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="generator" content="Hugo 0.72.0" />
+
+    
+    
+    
+
+<title>Coding against a composed docker environment • I Prefer Jim</title>
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Coding against a composed docker environment"/>
+<meta name="twitter:description" content="Microservices are pretty big these days. Unfortunately, they add complexity to development, deployment, and maintenance.
+For instance, how do you code against multiple dependencies locally?"/>
+
+<meta property="og:title" content="Coding against a composed docker environment" />
+<meta property="og:description" content="Microservices are pretty big these days. Unfortunately, they add complexity to development, deployment, and maintenance.
+For instance, how do you code against multiple dependencies locally?" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://www.ipreferjim.com/site/2016/11/coding-against-a-composed-docker-environment/" />
+<meta property="article:published_time" content="2016-11-02T04:03:59+00:00" />
+<meta property="article:modified_time" content="2016-11-02T04:03:59+00:00" /><meta property="og:site_name" content="I Prefer Jim" />
+
+
+    
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/site/scss/hyde-hyde.1d734ca591261200417c9d5de423a667cc5271b6576cc2ea477fce0dd8c628d0.css" integrity="sha256-HXNMpZEmEgBBfJ1d5COmZ8xScbZXbMLqR3/ODdjGKNA=">
+
+
+<link rel="stylesheet" href="/site/scss/print.2744dcbf8a0b2e74f8a50e4b34e5f441be7cf93cc7de27029121c6a09f9e77bc.css" integrity="sha256-J0Tcv4oLLnT4pQ5LNOX0Qb58&#43;TzH3icCkSHGoJ&#43;ed7w=" media="print">
+
+
+
+
+<link rel="stylesheet" href="/site/scss/hugo-toc.11a9185f83b7761946f8d16ae214f4d959edaf003337338e55935920cc7852d7.css" integrity="sha256-EakYX4O3dhlG&#43;NFq4hT02VntrwAzNzOOVZNZIMx4Utc=">
+
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- Icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+    <link rel="shortcut icon" href="/favicon.png">
+    
+    
+
+</head>
+
+
+    <body class=" ">
+    
+<div class="sidebar">
+  <div class="container ">
+    <div class="sidebar-about">
+      <span class="site__title">
+        <a href="http://www.ipreferjim.com/site/">I Prefer Jim</a>
+      </span>
+      
+      
+        <div class="author-image">
+          <img src="https://www.gravatar.com/avatar/466dc28e15028c7353552022d2de1f9e?s=240&d=mp" class="img--circle img--headshot element--center" alt="gravatar">
+        </div>
+      
+      <p class="site__description">
+        
+      </p>
+    </div>
+    <div class="collapsible-menu">
+      <input type="checkbox" id="menuToggle">
+      <label for="menuToggle">I Prefer Jim</label>
+      <div class="menu-content">
+        <div>
+	<ul class="sidebar-nav">
+		 
+		 
+			 
+				<li>
+					<a href="/site/posts/">
+						<span>Posts</span>
+					</a>
+				</li>
+			 
+		 
+			 
+				<li>
+					<a href="/site/tags/">
+						<span>Tags</span>
+					</a>
+				</li>
+			 
+		 
+			 
+				<li>
+					<a href="/site/categories/">
+						<span>Categories</span>
+					</a>
+				</li>
+			 
+		 
+			 
+				<li>
+					<a href="/site/books/">
+						<span>Books</span>
+					</a>
+				</li>
+			 
+		
+	</ul>
+</div>
+
+        <section class="social">
+	
+	<a href="https://twitter.com/jimschubert" rel="me"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a>
+	
+	
+	
+	<a href="https://github.com/jimschubert" rel="me"><i class="fab fa-github fa-lg" aria-hidden="true"></i></a>
+	
+	
+	
+	
+	
+	
+	
+	<a href="https://linkedin.com/in/jamesschubert" rel="me"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a>
+	
+	
+	<a href="https://stackoverflow.com/users/151445" rel="me"><i class="fab fa-stack-overflow fa-lg" aria-hidden="true"></i></a>
+	
+	
+	
+	
+	
+	
+	
+	
+</section>
+
+      </div>
+    </div>
+    
+<div class="copyright">
+  &copy; 2020 Jim Schubert
+  
+    <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>
+  
+</div>
+
+
+<div class="builtwith">
+Built with <a href="https://gohugo.io">Hugo</a> ❤️ <a href="https://github.com/htr3n/hyde-hyde">hyde-hyde</a>.
+</div>
+
+
+  </div>
+</div>
+
+        <div class="content container">
+            
+    
+<article>
+  <header>
+    <h1>Coding against a composed docker environment</h1>
+    
+    
+<div class="post__meta">
+    
+    
+      <i class="fas fa-calendar-alt"></i> Nov 2, 2016
+    
+    
+    
+      
+      
+          in
+          
+          
+              <a class="badge badge-category" href="/site/categories/blog">BLOG</a>
+              
+          
+      
+    
+    
+    
+      
+      
+          <br/>
+           <i class="fas fa-tags"></i>
+          
+          <a class="badge badge-tag" href="/site/tags/docker">docker</a>
+           
+      
+          <a class="badge badge-tag" href="/site/tags/examples">examples</a>
+           
+      
+          <a class="badge badge-tag" href="/site/tags/github">github</a>
+           
+      
+          <a class="badge badge-tag" href="/site/tags/scala">scala</a>
+          
+      
+    
+    
+    <br/>
+    <i class="fas fa-clock"></i> 5 min read
+</div>
+
+
+  </header>
+  
+  
+  
+  
+  <div class="post">
+    <p>Microservices are pretty big these days. Unfortunately, they add complexity to development, deployment, and maintenance.</p>
+<p>For instance, how do you code against multiple dependencies locally? What if your architecture gets larger and includes things like service discovery via consul, a database, long-lived TCP connections with a backend service? It would be a pain to spin all of those dependencies up locally, and it would be costly to run them all in <em>the cloud</em> for development. It is absolutely possible for your architecture to be <em>too large</em> to follow this pattern– fair warning.</p>
+<p>It’s easy to put together a virtual network using <a href="https://docs.docker.com/compose/" target="_blank">Docker Compose</a> which collects microservices into a single environment. Docker also makes it easy to do containerized <em>development</em>. I feel like this is a huge trend, and we’ll probably see IDEs or other tooling spring up to support this.</p>
+<p>This isn’t a tutorial about Docker. If you’re not familiar with Docker, walk through <a href="https://docs.docker.com/engine/tutorials/" target="_blank">some tutorials</a> first. This is a quick example of connecting a development container to an existing docker network.</p>
+<p>The example is taken from an example in <a href="https://github.com/jimschubert/sbt-scala" target="_blank">jimschubert/sbt-scala</a>, the repo for my <a href="https://hub.docker.com/r/jimschubert/sbt-scala/" target="_blank">SBT/Scala docker image</a>.</p>
+<h2 id="qotd-serviceclient-example">QOTD Service/Client Example</h2>
+<p>This example will create a composed environment consisting of two <a href="https://www.wikiwand.com/en/QOTD">Quote of the Day (QOTD)</a> services. These services will exist on the same network, exposing port 17 only within the network. The client is the hypothetical piece under development which queries the QOTD from one (or both) services using only the internal host and port.</p>
+<p>The QOTD service code is very simple, requiring only nmap-ncat and fortune (in alpine linux):</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="cp">#!/bin/sh
+</span><span class="cp"></span><span class="nb">exec</span> ncat -l <span class="m">17</span> --keep-open --send-only --exec <span class="s2">&#34;/foo.sh&#34;</span>
+</code></pre></div><p>The script that generates the QOTD is also simple:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="cp">#!/bin/sh
+</span><span class="cp"></span><span class="nb">echo</span> <span class="nv">$HOSTNAME</span>: <span class="k">$(</span>/usr/bin/fortune<span class="k">)</span>
+</code></pre></div><p>Check out the full <a href="https://github.com/jimschubert/sbt-scala/blob/master/examples/composed/fortune/Dockerfile" target="_blank">Dockerfile</a>. Remember, this post is more about the service/client communication within a docker composed network.</p>
+<p>The key here is in how docker-compose.yml is defined:</p>
+<pre><code>version: '2'
+services:
+  fortune1:
+    image: fortune
+    hostname: fortune1
+    mem_limit: 64MB
+    expose:
+     - &quot;17&quot;
+    networks:
+      - fortune
+  fortune2:
+    image: fortune
+    hostname: fortune2
+    mem_limit: 64MB
+    expose:
+     - &quot;17&quot;
+    networks:
+      - fortune
+networks:
+  fortune:
+    driver: bridge
+</code></pre><p>Each service is assigned to an internal network called <strong>fortune</strong>. This is how the development container will associate with these services. To run the services, you’d just build the Dockerfile which runs each service and execute</p>
+<pre><code>docker-compose u
+</code></pre><p>Do that in one terminal, then open another terminal for the next part.</p>
+<h2 id="client">Client</h2>
+<p>The client is written in Scala. For simplicity, it is a command line tool which queries one or more hosts (on port 17) provided as an argument to the script. For kicks, consider how the following code (that is, querying against fortune1:17 and fortune2:17 from a single client) could be done without docker on a development machine.</p>
+<p>Save this somewhere as <em>src/Example.scala</em>:</p>
+<div class="highlight"><pre class="chroma"><code class="language-scala" data-lang="scala"><span class="k">import</span> <span class="nn">java.net._</span>
+<span class="k">import</span> <span class="nn">java.io._</span>
+<span class="k">import</span> <span class="nn">scala.io._</span>
+
+<span class="k">object</span> <span class="nc">Example</span> <span class="o">{</span> 
+    <span class="k">def</span> <span class="n">qotd</span><span class="o">(</span><span class="n">server</span><span class="k">:</span> <span class="kt">String</span><span class="o">)</span><span class="k">:</span> <span class="kt">Unit</span> <span class="o">=</span> <span class="o">{</span>
+        <span class="k">val</span> <span class="n">s</span> <span class="k">=</span> <span class="k">new</span> <span class="nc">Socket</span><span class="o">(</span><span class="nc">InetAddress</span><span class="o">.</span><span class="n">getByName</span><span class="o">(</span><span class="n">server</span><span class="o">),</span> <span class="mi">17</span><span class="o">)</span>
+        <span class="k">val</span> <span class="n">in</span> <span class="k">=</span> <span class="k">new</span> <span class="nc">BufferedSource</span><span class="o">(</span><span class="n">s</span><span class="o">.</span><span class="n">getInputStream</span><span class="o">()).</span><span class="n">getLines</span><span class="o">()</span>
+        <span class="n">println</span><span class="o">(</span><span class="n">in</span><span class="o">.</span><span class="n">next</span><span class="o">())</span>
+        <span class="n">s</span><span class="o">.</span><span class="n">close</span><span class="o">()</span>
+    <span class="o">}</span>
+    
+    <span class="k">def</span> <span class="n">main</span><span class="o">(</span><span class="n">args</span><span class="k">:</span> <span class="kt">Array</span><span class="o">[</span><span class="kt">String</span><span class="o">])</span><span class="k">:</span> <span class="kt">Unit</span> <span class="o">=</span> <span class="n">args</span><span class="o">.</span><span class="n">foreach</span><span class="o">(</span><span class="n">qotd</span><span class="o">)</span> 
+<span class="o">}</span>
+</code></pre></div><p>If there’s a suitable public image available, you don’t need a Dockerfile for this code. Here’s how you can do local development against the above client:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">docker run -it --net<span class="o">=</span>fortune_fortune -v <span class="k">$(</span><span class="nb">pwd</span><span class="k">)</span>/src:/src --workdir<span class="o">=</span>/src jimschubert/sbt-scala:latest
+</code></pre></div><p>The <strong>docker run -it … jimschubert/sbt-scala:latest</strong> parts above just execute an interactive shell in an alpine linux container that I maintain for SBT/Scala development.</p>
+<p><strong>–net=fortune_fortune</strong> joins this container to the network created by the docker-compose.yml. The network is created automatically when you bring up the environment with docker-compose up. It’s in the format project_network where project is pulled from the directory name, COMPOSE_PROJECT_NAME environment variable or the optional docker-compose</p>
+<pre><code>-p, --project-name NAM
+</code></pre><p>switch. If you’re not running against the code from github, you can run</p>
+<pre><code>docker network lis
+</code></pre><p>to get the generated network name.</p>
+<p><strong>-v $(pwd)/src:/src</strong> mounts the src directory relative to where you’ve run the command to the <em>/src</em> directory within the container.</p>
+<p><strong>–workdir=/src</strong> is here for convenience, so you’re starting in the right folder in the container.</p>
+<p>Once run the full command and you’re in the container, you can execute the client directly:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">scala Example.scala fortune1 fortune2 fortune1
+</code></pre></div><p>Go ahead and add a <strong>println(server)</strong> to the top of the qotd method in Example.scala and run the command again. No need for restarting the container!</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>This post demonstrates how to do containerized development of a simple client. There are multiple instances of the QOTD service (port 17) consumed by the client running on a single development machine.</p>
+<p>The ports of these services can’t be exposed to port 17 on the host machine because this would result in a port conflict. It doesn’t make a lot of sense to remap port 17 to some other port on the host because port 17 is an explicitly defined port for QOTD. There may be issues if you do attempt to remap the port, like what if you choose a port that is randomly acquired by some other application?</p>
+<p>Running the client in a container allows us to access the services as they would exist in the wild. Mapping the src directory from the host to the container allows us to quickly iterate on code without restarting the container. This is important, especially if you’re using a much larger base image than alpine.</p>
+<p>If you’re doing Scala development, a recommended next step would be to use the <a href="https://github.com/spray/sbt-revolver" target="_blank">spray/revolver</a> plugin. Once setup, you would just start an sbt REPL and run <strong>~re-start</strong>. Any local code changes are automatically detected and the plugin restarts the JVM process running your application.</p>
+
+  </div>
+  
+
+<div class="navigation navigation-single">
+    
+    <a href="/site/2016/10/finding-wakelocks-in-android-7-using-googles-battery-historian/" class="navigation-prev">
+      <i aria-hidden="true" class="fa fa-chevron-left"></i>
+      <span class="navigation-tittle">Finding Wakelocks in Android 7 using Google’s Battery Historian</span>
+    </a>
+    
+    
+    <a href="/site/2017/03/prototyping-a-flagsbitmasks-implementation-in-kotlin-1-1-1/" class="navigation-next">
+      <span class="navigation-tittle">Prototyping a Flags/Bitmasks implementation in Kotlin 1.1.1</span>
+      <i aria-hidden="true" class="fa fa-chevron-right"></i>
+    </a>
+    
+</div>
+
+
+  
+
+
+<div class="post__related">
+    
+    <h2>Related Articles</h2>
+    <ul class="related-posts">
+        
+<li>
+  <span class="list__title--small">
+    <a href="/site/2016/05/ignoring-files-with-swagger-codegen/" >Ignoring files with Swagger Codegen</a>
+      
+      <time class="pull-right hidden-tablet">May 23, 2016</time>
+      
+  </span>
+</li>
+
+<li>
+  <span class="list__title--small">
+    <a href="/site/2015/03/create-configurable-angular-services-using-providers/" >Create configurable Angular services using providers</a>
+      
+      <time class="pull-right hidden-tablet">Mar 15, 2015</time>
+      
+  </span>
+</li>
+
+<li>
+  <span class="list__title--small">
+    <a href="/site/2015/03/your-ides-font-matters-fantasque-sans-mono/" >Your IDE’s font matters: Fantasque Sans Mono</a>
+      
+      <time class="pull-right hidden-tablet">Mar 8, 2015</time>
+      
+  </span>
+</li>
+
+<li>
+  <span class="list__title--small">
+    <a href="/site/2014/11/decorating-directives-with-isolate-scope-in-angular-1-3/" >Decorating directives with isolate scope in Angular 1.3</a>
+      
+      <time class="pull-right hidden-tablet">Nov 20, 2014</time>
+      
+  </span>
+</li>
+
+<li>
+  <span class="list__title--small">
+    <a href="/site/2014/11/manually-debugging-angular-scope/" >Manually debugging Angular scope</a>
+      
+      <time class="pull-right hidden-tablet">Nov 17, 2014</time>
+      
+  </span>
+</li>
+
+
+    </ul>
+</div>
+
+
+
+  
+    
+
+
+</article>
+
+
+        </div>
+        
+    
+
+<script defer src="https://use.fontawesome.com/releases/v5.11.2/js/all.js" integrity="sha384-b3ua1l97aVGAPEIe48b4TC60WUQbQaGi2jqAWM90y0OZXZeyaTCWtBTKtjW2GXG1" crossorigin="anonymous"></script>
+
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+        
+    <script type="text/javascript">
+        
+        hljs.initHighlightingOnLoad();
+    </script>
+    
+
+
+
+
+
+    
+
+
+
+    </body>
+</html>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>bootstrap on I Prefer Jim</title>
+    <link>http://www.ipreferjim.com/site/tags/bootstrap/</link>
+    <description>Recent content in bootstrap on I Prefer Jim</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 30 Jun 2013 02:08:26 +0000</lastBuildDate>
+    
+	<atom:link href="http://www.ipreferjim.com/site/tags/bootstrap/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Karma error: RangeError: Maximum call stack size exceeded</title>
+      <link>http://www.ipreferjim.com/site/2013/06/karma-error-rangeerror-maximum-call-stack-size-exceeded/</link>
+      <pubDate>Sun, 30 Jun 2013 02:08:26 +0000</pubDate>
+      
+      <guid>http://www.ipreferjim.com/site/2013/06/karma-error-rangeerror-maximum-call-stack-size-exceeded/</guid>
+      <description>I’ve been working on a bootstrap application for express.js, angular.js, and bootstrap. The idea being that I can provide a boilerplate for quick prototyping of applications.</description>
+    </item>
+    
+  </channel>
+</rss>

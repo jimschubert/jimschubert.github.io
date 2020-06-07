@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Architecture on I Prefer Jim</title>
+    <link>http://www.ipreferjim.com/site/tags/architecture/</link>
+    <description>Recent content in Architecture on I Prefer Jim</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 13 Mar 2015 16:53:05 +0000</lastBuildDate>
+    
+	<atom:link href="http://www.ipreferjim.com/site/tags/architecture/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Review: Microsoft .NET – Architecting Applications for the Enterprise, 2nd Edition</title>
+      <link>http://www.ipreferjim.com/site/2015/03/review-microsoft-net-architecting-applications-for-the-enterprise-2nd-edition/</link>
+      <pubDate>Fri, 13 Mar 2015 16:53:05 +0000</pubDate>
+      
+      <guid>http://www.ipreferjim.com/site/2015/03/review-microsoft-net-architecting-applications-for-the-enterprise-2nd-edition/</guid>
+      <description>I’ve recently finished reading Microsoft .NET – Architecting Applications for the Enterprise, 2nd Edition by Dino Esposito and Andrea Saltarello. This book caught my attention for two reasons.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>wix on I Prefer Jim</title>
+    <link>http://www.ipreferjim.com/site/tags/wix/</link>
+    <description>Recent content in wix on I Prefer Jim</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 12 Mar 2015 01:26:32 +0000</lastBuildDate>
+    
+	<atom:link href="http://www.ipreferjim.com/site/tags/wix/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Tips for debugging a WiX MSI</title>
+      <link>http://www.ipreferjim.com/site/2015/03/tips-for-debugging-a-wix-msi/</link>
+      <pubDate>Thu, 12 Mar 2015 01:26:32 +0000</pubDate>
+      
+      <guid>http://www.ipreferjim.com/site/2015/03/tips-for-debugging-a-wix-msi/</guid>
+      <description>WiX is an excellent technology that simplifies the creation of MSI files using an XML abstraction on top of the Windows Installer APIs.</description>
+    </item>
+    
+    <item>
+      <title>“Unable to update the dependencies of the project”</title>
+      <link>http://www.ipreferjim.com/site/2013/01/unable-to-update-the-dependencies-of-the-project/</link>
+      <pubDate>Fri, 04 Jan 2013 16:40:43 +0000</pubDate>
+      
+      <guid>http://www.ipreferjim.com/site/2013/01/unable-to-update-the-dependencies-of-the-project/</guid>
+      <description>I’ve recently had to switch from Visual Studio 2012 back to Visual Studio 2010 to do maintenance on another project. This project is currently stuck in Visual Studio 2010 until I have time to convert the old setup projects to WiX.</description>
+    </item>
+    
+    <item>
+      <title>WiX Installer Update</title>
+      <link>http://www.ipreferjim.com/site/2008/12/wix-installer-update/</link>
+      <pubDate>Sat, 20 Dec 2008 02:42:00 +0000</pubDate>
+      
+      <guid>http://www.ipreferjim.com/site/2008/12/wix-installer-update/</guid>
+      <description>One thing that has caused me quite a few problems with my WiX installer was optionally displaying a dialog to enter SQL information when the database is installed.</description>
+    </item>
+    
+    <item>
+      <title>WiX: First impressions.</title>
+      <link>http://www.ipreferjim.com/site/2008/12/wix-first-impressions/</link>
+      <pubDate>Tue, 16 Dec 2008 00:04:00 +0000</pubDate>
+      
+      <guid>http://www.ipreferjim.com/site/2008/12/wix-first-impressions/</guid>
+      <description>After working with WiX today, I realized that it’s not perfect. But, it isn’t horrible. Maybe my issues are from following “tutorials” that are written for WiX 2.</description>
+    </item>
+    
+  </channel>
+</rss>

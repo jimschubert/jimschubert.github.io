@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>.NET on I Prefer Jim</title>
+    <link>http://www.ipreferjim.com/site/tags/.net/</link>
+    <description>Recent content in .NET on I Prefer Jim</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 23 Nov 2015 18:57:11 +0000</lastBuildDate>
+    
+	<atom:link href="http://www.ipreferjim.com/site/tags/.net/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Gulp dotnet tasks</title>
+      <link>http://www.ipreferjim.com/site/2015/11/gulp-dotnet-tasks/</link>
+      <pubDate>Mon, 23 Nov 2015 18:57:11 +0000</pubDate>
+      
+      <guid>http://www.ipreferjim.com/site/2015/11/gulp-dotnet-tasks/</guid>
+      <description>Not sure if this will help anyway, but running dnu and dnx tasks (soon to be aggregated under a single ‘dotnet’) is really easy.</description>
+    </item>
+    
+    <item>
+      <title>Review: Microsoft .NET – Architecting Applications for the Enterprise, 2nd Edition</title>
+      <link>http://www.ipreferjim.com/site/2015/03/review-microsoft-net-architecting-applications-for-the-enterprise-2nd-edition/</link>
+      <pubDate>Fri, 13 Mar 2015 16:53:05 +0000</pubDate>
+      
+      <guid>http://www.ipreferjim.com/site/2015/03/review-microsoft-net-architecting-applications-for-the-enterprise-2nd-edition/</guid>
+      <description>I’ve recently finished reading Microsoft .NET – Architecting Applications for the Enterprise, 2nd Edition by Dino Esposito and Andrea Saltarello. This book caught my attention for two reasons.</description>
+    </item>
+    
+    <item>
+      <title>Tips for debugging a WiX MSI</title>
+      <link>http://www.ipreferjim.com/site/2015/03/tips-for-debugging-a-wix-msi/</link>
+      <pubDate>Thu, 12 Mar 2015 01:26:32 +0000</pubDate>
+      
+      <guid>http://www.ipreferjim.com/site/2015/03/tips-for-debugging-a-wix-msi/</guid>
+      <description>WiX is an excellent technology that simplifies the creation of MSI files using an XML abstraction on top of the Windows Installer APIs.</description>
+    </item>
+    
+    <item>
+      <title>NDepend is unbelievably rich in features</title>
+      <link>http://www.ipreferjim.com/site/2015/02/ndepend-is-unbelievably-rich-in-features/</link>
+      <pubDate>Sun, 22 Feb 2015 16:52:59 +0000</pubDate>
+      
+      <guid>http://www.ipreferjim.com/site/2015/02/ndepend-is-unbelievably-rich-in-features/</guid>
+      <description>&lt;p&gt;I’ve recently begun evaluating &lt;a title=&#34;Visit NDepend.com&#34; href=&#34;http://www.ndepend.com/&#34; target=&#34;_blank&#34;&gt;NDepend 5.4.1&lt;/a&gt;. During the installation process, I’ll admit I was a little underwhelmed. After the Visual Studio plugin loaded, I became overwhelmed. After digging into the many features, I don’t know how or why teams operate without such tools. Let me explain…&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Software Abstractions take Skill.</title>
+      <link>http://www.ipreferjim.com/site/2014/12/software-abstractions-take-skill/</link>
+      <pubDate>Tue, 09 Dec 2014 04:53:16 +0000</pubDate>
+      
+      <guid>http://www.ipreferjim.com/site/2014/12/software-abstractions-take-skill/</guid>
+      <description>I recently read Adaptive Code via C# and posted a review on Amazon:
+ This book is a new favorite of mine.</description>
+    </item>
+    
+    <item>
+      <title>SOLID Principles Presentation</title>
+      <link>http://www.ipreferjim.com/site/2014/11/solid-principles-presentation/</link>
+      <pubDate>Wed, 12 Nov 2014 23:00:28 +0000</pubDate>
+      
+      <guid>http://www.ipreferjim.com/site/2014/11/solid-principles-presentation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Data at the root level is invalid. Line 1, position 1.</title>
+      <link>http://www.ipreferjim.com/site/2014/09/data-at-the-root-level-is-invalid-line-1-position-1/</link>
+      <pubDate>Sat, 06 Sep 2014 15:58:21 +0000</pubDate>
+      
+      <guid>http://www.ipreferjim.com/site/2014/09/data-at-the-root-level-is-invalid-line-1-position-1/</guid>
+      <description>Recently, I encountered a really weird problem with an XML document. I was trying to load a document from a string:</description>
+    </item>
+    
+    <item>
+      <title>C# Null-Coalescing (??) operator</title>
+      <link>http://www.ipreferjim.com/site/2012/03/c-null-coalescing-operator/</link>
+      <pubDate>Mon, 19 Mar 2012 01:39:38 +0000</pubDate>
+      
+      <guid>http://www.ipreferjim.com/site/2012/03/c-null-coalescing-operator/</guid>
+      <description>The null-coalescing operator (??) is one of my favorites, and I see so few developers using it.
+MSDN defines the null-coalescing operator as</description>
+    </item>
+    
+    <item>
+      <title>Visual Studio and Interface property stubs</title>
+      <link>http://www.ipreferjim.com/site/2011/11/visual-studio-and-interface-property-stubs/</link>
+      <pubDate>Sat, 12 Nov 2011 23:53:38 +0000</pubDate>
+      
+      <guid>http://www.ipreferjim.com/site/2011/11/visual-studio-and-interface-property-stubs/</guid>
+      <description>Last year, I posted a question on StackOverflow asking if it was possible to replace the property stubs for interface refactoring</description>
+    </item>
+    
+    <item>
+      <title>DataAnnotations, MVC 3, and Unobtrusive Validations</title>
+      <link>http://www.ipreferjim.com/site/2011/08/dataannotations-mvc3-unobtrusive-validations/</link>
+      <pubDate>Mon, 15 Aug 2011 01:00:14 +0000</pubDate>
+      
+      <guid>http://www.ipreferjim.com/site/2011/08/dataannotations-mvc3-unobtrusive-validations/</guid>
+      <description>&lt;p&gt;DataAnnotations are a pretty cool introduction to .NET 3.5+. It is very useful in ASP.NET MVC 3, and I’ve written a somewhat &lt;a href=&#34;http://www.ipreferjim.com/2010/05/system-componentmodel-dataannotations-for-asp-net-web-forms/&#34; title=&#34;System.ComponentModel.DataAnnotations for ASP.NET Web Forms&#34; target=&#34;_blank&#34;&gt;naive attempt&lt;/a&gt; to use this functionality in ASP.NET Web Forms which some people have found very useful.&lt;/p&gt;
+&lt;p&gt;I’d like to dig a little more in depth…&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Bitwise Operations: Examples</title>
+      <link>http://www.ipreferjim.com/site/2011/07/bitwise-operations-examples/</link>
+      <pubDate>Tue, 19 Jul 2011 22:57:08 +0000</pubDate>
+      
+      <guid>http://www.ipreferjim.com/site/2011/07/bitwise-operations-examples/</guid>
+      <description>One post that I’ve always loved on stackoverflow is this post by Hugoware which contains some useful extension methods for bitwise operations.</description>
+    </item>
+    
+    <item>
+      <title>Bitwise operations and Flags (C#)</title>
+      <link>http://www.ipreferjim.com/site/2010/07/bitwise-operations-and-flags/</link>
+      <pubDate>Sat, 31 Jul 2010 15:57:51 +0000</pubDate>
+      
+      <guid>http://www.ipreferjim.com/site/2010/07/bitwise-operations-and-flags/</guid>
+      <description>&lt;p&gt;I haven’t written anything in a while, so I thought I would finally write about the subject of bitwise operations and the FlagsAttribute.&lt;/p&gt;
+&lt;p&gt;I mentioned this to one of the developers on my team, and he said that he somewhat understood bit operations but he had never found a reason to use them.&lt;/p&gt;
+&lt;p&gt;Here is the code I will use to discuss the operations&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-csharp&#34; data-lang=&#34;csharp&#34;&gt;&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;a&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;57754&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;b&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;18782&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+			
+&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;aXORb&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;a&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;^&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;b&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;aORb&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;a&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;b&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;aANDb&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;a&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;&amp;amp;&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;b&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;aNOT&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;~&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;a&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;bNOT&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;~&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;b&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+			
+&lt;span class=&#34;kt&#34;&gt;string&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;spacer&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34;---------------------------------------------&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;span class=&#34;n&#34;&gt;Console&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;WriteLine&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;{0} ({1}) a&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;GetBitString&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;a&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;),&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;a&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;ToString&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;());&lt;/span&gt;
+&lt;span class=&#34;n&#34;&gt;Console&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;WriteLine&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;{0} ({1}) b&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;GetBitString&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;b&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;),&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;b&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;ToString&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;());&lt;/span&gt;
+&lt;span class=&#34;n&#34;&gt;Console&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;WriteLine&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;{0} ({1}) a ^ b&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;GetBitString&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;aXORb&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;),&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;aXORb&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
+&lt;span class=&#34;n&#34;&gt;Console&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;WriteLine&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;spacer&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;	
+&lt;span class=&#34;n&#34;&gt;Console&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;WriteLine&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;{0} ({1}) a&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;GetBitString&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;a&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;),&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;a&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;ToString&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;());&lt;/span&gt;
+&lt;span class=&#34;n&#34;&gt;Console&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;WriteLine&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;{0} ({1}) b&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;GetBitString&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;b&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;),&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;b&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;ToString&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;());&lt;/span&gt;
+&lt;span class=&#34;n&#34;&gt;Console&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;WriteLine&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;{0} ({1}) a | b&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;GetBitString&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;aORb&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;),&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;aORb&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
+&lt;span class=&#34;n&#34;&gt;Console&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;WriteLine&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;spacer&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;	
+&lt;span class=&#34;n&#34;&gt;Console&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;WriteLine&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;{0} ({1}) a&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;GetBitString&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;a&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;),&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;a&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;ToString&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;());&lt;/span&gt;
+&lt;span class=&#34;n&#34;&gt;Console&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;WriteLine&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;{0} ({1}) b&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;GetBitString&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;b&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;),&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;b&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;ToString&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;());&lt;/span&gt;
+&lt;span class=&#34;n&#34;&gt;Console&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;WriteLine&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;{0} ({1}) a &amp;amp; b&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;GetBitString&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;aANDb&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;),&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;aANDb&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
+&lt;span class=&#34;n&#34;&gt;Console&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;WriteLine&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;spacer&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;	
+&lt;span class=&#34;n&#34;&gt;Console&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;WriteLine&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;{0} ({1}) a&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;GetBitString&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;a&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;),&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;a&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;ToString&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;());&lt;/span&gt;
+&lt;span class=&#34;n&#34;&gt;Console&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;WriteLine&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;{0} ({1}) ~a&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;GetBitString&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;aNOT&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;),&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;aNOT&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
+&lt;span class=&#34;n&#34;&gt;Console&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;WriteLine&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;{0} ({1}) ~(~a)&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;GetBitString&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(~&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;aNOT&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;),&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;~&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;aNOT&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
+&lt;span class=&#34;n&#34;&gt;Console&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;WriteLine&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;spacer&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;	
+&lt;span class=&#34;n&#34;&gt;Console&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;WriteLine&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;{0} ({1}) b&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;GetBitString&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;b&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;),&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;b&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;ToString&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;());&lt;/span&gt;
+&lt;span class=&#34;n&#34;&gt;Console&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;WriteLine&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;{0} ({1}) ~b&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;GetBitString&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;bNOT&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;),&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;bNOT&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
+&lt;span class=&#34;n&#34;&gt;Console&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;WriteLine&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;{0} ({1}) ~(~b)&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;GetBitString&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(~&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;bNOT&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;),&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;~&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;bNOT&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
+			
+&lt;span class=&#34;n&#34;&gt;Console&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;ReadLine&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;();&lt;/span&gt;
+
+&lt;span class=&#34;c1&#34;&gt;// And, the GetBitString method
+&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;static&lt;/span&gt; &lt;span class=&#34;kt&#34;&gt;string&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;GetBitString&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;input&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;){&lt;/span&gt;
+	&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;sizeInt&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+	&lt;span class=&#34;c1&#34;&gt;// Number of bits is bytes * 8
+&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;	&lt;span class=&#34;c1&#34;&gt;// I specifically chose 16-bit values to reduce the amount displayed
+&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;	&lt;span class=&#34;k&#34;&gt;unsafe&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;sizeInt&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;sizeof&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;ushort&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;8&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+	
+	&lt;span class=&#34;kt&#34;&gt;string&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;output&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;String&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Empty&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+	&lt;span class=&#34;k&#34;&gt;for&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(;&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;sizeInt&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;&amp;gt;=&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;sizeInt&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;--)&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+		&lt;span class=&#34;n&#34;&gt;output&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;+=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;input&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;sizeInt&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;&amp;amp;&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+		&lt;span class=&#34;k&#34;&gt;if&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;sizeInt&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;%&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;4&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;==&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;output&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;+=&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34; &amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+	&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+	
+	&lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;output&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;XOR ( ^ )&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;From MSDN:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Binary ^ operators are predefined for the integral types and bool. For integral types, ^ computes the bitwise exclusive-OR of its operands. For bool operands, ^ computes the logical exclusive-or of its operands; that is, the result is true if and only if exactly one of its operands is true.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;I think of XOR as a “one-toggle”. The logic can be seen as (format is [first] : [second] –&amp;gt; [result] ):&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;0 : 1 --&amp;gt; 1
+1 : 1 --&amp;gt; 0
+1 : 0 --&amp;gt; 1
+0 : 0 --&amp;gt; 0
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;As you can see,&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Learning WCF: IIS 7 won’t start service from web project</title>
+      <link>http://www.ipreferjim.com/site/2010/06/learning-wcf-iis-7-wont-start-service-from-web-project/</link>
+      <pubDate>Sun, 27 Jun 2010 04:01:16 +0000</pubDate>
+      
+      <guid>http://www.ipreferjim.com/site/2010/06/learning-wcf-iis-7-wont-start-service-from-web-project/</guid>
+      <description>I’m following along with code in Learning WCF, attempting to quickly become an expert at building WCF Services from scratch. In Chapter 1, there is a project called IISHostedService.</description>
+    </item>
+    
+    <item>
+      <title>Using DataAnnotation attributes to validate Membership password</title>
+      <link>http://www.ipreferjim.com/site/2010/06/using-dataannotation-attributes-to-validate-membership-password/</link>
+      <pubDate>Fri, 11 Jun 2010 19:14:59 +0000</pubDate>
+      
+      <guid>http://www.ipreferjim.com/site/2010/06/using-dataannotation-attributes-to-validate-membership-password/</guid>
+      <description>As a follow-up to my post on DataAnnotations in ASP.NET Web Forms, I’d like to demonstrate yet another custom attribute. Although ASP.</description>
+    </item>
+    
+    <item>
+      <title>System.ComponentModel.DataAnnotations for ASP.NET Web Forms</title>
+      <link>http://www.ipreferjim.com/site/2010/05/system-componentmodel-dataannotations-for-asp-net-web-forms/</link>
+      <pubDate>Thu, 27 May 2010 01:50:19 +0000</pubDate>
+      
+      <guid>http://www.ipreferjim.com/site/2010/05/system-componentmodel-dataannotations-for-asp-net-web-forms/</guid>
+      <description>Although I’m primarily an ASP.NET Web Forms developer, I regularly dabble in new and interesting technologies. I’ve toyed with other Microsoft technologies such as ASP.</description>
+    </item>
+    
+    <item>
+      <title>Finding a user’s local time from UTC offset</title>
+      <link>http://www.ipreferjim.com/site/2010/05/finding-a-users-local-time-from-utc-offset/</link>
+      <pubDate>Tue, 04 May 2010 19:47:43 +0000</pubDate>
+      
+      <guid>http://www.ipreferjim.com/site/2010/05/finding-a-users-local-time-from-utc-offset/</guid>
+      <description>I answered a question over at StackOverflow, and I really liked the answer, so I thought I would share this nifty extension method:</description>
+    </item>
+    
+    <item>
+      <title>NHibernate.Criterion Extensions workaround</title>
+      <link>http://www.ipreferjim.com/site/2010/05/nhibernate-criterion-extensions-workaround/</link>
+      <pubDate>Mon, 03 May 2010 22:30:50 +0000</pubDate>
+      
+      <guid>http://www.ipreferjim.com/site/2010/05/nhibernate-criterion-extensions-workaround/</guid>
+      <description>I’ve been working with Fluent NHibernate for the past month or so, and I realized while writing an NHibernate query that the NHibernate Criterion’s Restrictions class isn’t very refactor-friendly.</description>
+    </item>
+    
+    <item>
+      <title>Explaining advanced features of C# 3.0</title>
+      <link>http://www.ipreferjim.com/site/2010/02/explaining-advanced-features-of-c-3-0/</link>
+      <pubDate>Mon, 15 Feb 2010 23:07:30 +0000</pubDate>
+      
+      <guid>http://www.ipreferjim.com/site/2010/02/explaining-advanced-features-of-c-3-0/</guid>
+      <description>C# 3.0 Func delegates and Expressions In this post, I’ll attempt to clarify the meaning of Func delegates and Expressions.</description>
+    </item>
+    
+    <item>
+      <title>Extending IDataReader</title>
+      <link>http://www.ipreferjim.com/site/2009/12/extending-idatareader/</link>
+      <pubDate>Wed, 16 Dec 2009 18:01:00 +0000</pubDate>
+      
+      <guid>http://www.ipreferjim.com/site/2009/12/extending-idatareader/</guid>
+      <description>I like to access my DataReader objects via column name. Unfortunately, IDataReader supports getting items via integer indexer.
+To overcome this *obstacle*, I’ve written an extension method I’d like to share.</description>
+    </item>
+    
+    <item>
+      <title>Converting from VS2003 to VS2008</title>
+      <link>http://www.ipreferjim.com/site/2009/11/converting-from-vs2003-to-vs2008/</link>
+      <pubDate>Tue, 03 Nov 2009 15:56:00 +0000</pubDate>
+      
+      <guid>http://www.ipreferjim.com/site/2009/11/converting-from-vs2003-to-vs2008/</guid>
+      <description>http://datacogs.com/datablogs/archive/2005/01/28/209.aspx
+Recently, I converted a project from VS2003 to VS2008. The conversion deleted a file which wasn’t needed in VS2008. When I tried to “rollback” the source from source control to run in VS2003, it wouldn’t run.</description>
+    </item>
+    
+    <item>
+      <title>.NET development</title>
+      <link>http://www.ipreferjim.com/site/2008/12/net-development/</link>
+      <pubDate>Sat, 13 Dec 2008 15:55:00 +0000</pubDate>
+      
+      <guid>http://www.ipreferjim.com/site/2008/12/net-development/</guid>
+      <description>I consider myself a .NET developer. I don’t consider myself good at it. There are always things to learn, and new facets of development that I didn’t realize existed.</description>
+    </item>
+    
+  </channel>
+</rss>

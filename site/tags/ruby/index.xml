@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ruby on I Prefer Jim</title>
+    <link>http://www.ipreferjim.com/site/tags/ruby/</link>
+    <description>Recent content in Ruby on I Prefer Jim</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 08 Jun 2013 18:10:13 +0000</lastBuildDate>
+    
+	<atom:link href="http://www.ipreferjim.com/site/tags/ruby/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Computer Science Programming Basics In Ruby</title>
+      <link>http://www.ipreferjim.com/site/2013/06/computer-science-programming-basics-in-ruby/</link>
+      <pubDate>Sat, 08 Jun 2013 18:10:13 +0000</pubDate>
+      
+      <guid>http://www.ipreferjim.com/site/2013/06/computer-science-programming-basics-in-ruby/</guid>
+      <description>Computer Science Programming Basics In Ruby
+Originally submitted at O’Reilly
+  Product: Computer Science Programming Basics in Ruby by oreilly   Submitted at: O&amp;#8217;Reilly  Great intro to basics!</description>
+    </item>
+    
+    <item>
+      <title>Rails 3 &#43; RSpec &#43; Rake tasks are missing</title>
+      <link>http://www.ipreferjim.com/site/2011/02/rails-3-rspec-rake-tasks-are-missing/</link>
+      <pubDate>Sun, 06 Feb 2011 18:01:38 +0000</pubDate>
+      
+      <guid>http://www.ipreferjim.com/site/2011/02/rails-3-rspec-rake-tasks-are-missing/</guid>
+      <description>Recently, I installed Rails 3 using rvm. I wanted to follow quickly through Rails 3 in Action so I could see the differences between Rails 2.</description>
+    </item>
+    
+    <item>
+      <title>CopyCat Rails’ Time Extensions</title>
+      <link>http://www.ipreferjim.com/site/2010/05/copycat-activesupport-time-extensions/</link>
+      <pubDate>Mon, 03 May 2010 21:22:47 +0000</pubDate>
+      
+      <guid>http://www.ipreferjim.com/site/2010/05/copycat-activesupport-time-extensions/</guid>
+      <description>I’ve become a fan of Ruby’s simple syntax. My favorite thing is the ActiveSupport’s Numeric Time Extensions. I’m starting a library of useful extensions, and I’m going to be adding a number of shortcuts to mock these extensions.</description>
+    </item>
+    
+    <item>
+      <title>Ruby and Python in your script tags!</title>
+      <link>http://www.ipreferjim.com/site/2009/08/ruby-and-python-in-your-script-tags/</link>
+      <pubDate>Fri, 14 Aug 2009 05:37:00 +0000</pubDate>
+      
+      <guid>http://www.ipreferjim.com/site/2009/08/ruby-and-python-in-your-script-tags/</guid>
+      <description>I came across this weeks ago, and I’m surprised I never posted it. This is a javascript ‘framework’ to add ruby and python languages in your script tags.</description>
+    </item>
+    
+    <item>
+      <title>Example Ruby code</title>
+      <link>http://www.ipreferjim.com/site/2009/05/example-ruby-code/</link>
+      <pubDate>Mon, 18 May 2009 04:43:00 +0000</pubDate>
+      
+      <guid>http://www.ipreferjim.com/site/2009/05/example-ruby-code/</guid>
+      <description>I decided to do some of those Facebook puzzles in Ruby. I won’t post everything I do, because I would consider that cheating (after all, you can win prizes!</description>
+    </item>
+    
+    <item>
+      <title>Ruby on Rails, Aptana Studio</title>
+      <link>http://www.ipreferjim.com/site/2009/05/ruby-on-rails-aptana-studio/</link>
+      <pubDate>Sat, 09 May 2009 22:06:00 +0000</pubDate>
+      
+      <guid>http://www.ipreferjim.com/site/2009/05/ruby-on-rails-aptana-studio/</guid>
+      <description>This weekend, I decided to give Ruby on Rails a go, considering I just finished school and I’ll have plenty of free time to explore.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Python on I Prefer Jim</title>
+    <link>http://www.ipreferjim.com/site/tags/python/</link>
+    <description>Recent content in Python on I Prefer Jim</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 27 Jul 2013 22:34:26 +0000</lastBuildDate>
+    
+	<atom:link href="http://www.ipreferjim.com/site/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>My review of Python Cookbook, 3rd Edition by O’Reilly Digital Media</title>
+      <link>http://www.ipreferjim.com/site/2013/07/my-review-of-python-cookbook-3rd-edition-by-oreilly-digital-media/</link>
+      <pubDate>Sat, 27 Jul 2013 22:34:26 +0000</pubDate>
+      
+      <guid>http://www.ipreferjim.com/site/2013/07/my-review-of-python-cookbook-3rd-edition-by-oreilly-digital-media/</guid>
+      <description>Product: Python Cookbook, 3rd Edition by O’Reilly Digital Media
+Submitted at: O’Reilly
+Fantastic Cookbook
+by JimSchubert from Seattle WA on 7/27/2013</description>
+    </item>
+    
+    <item>
+      <title>Python 3.0 handles Dictionary differently</title>
+      <link>http://www.ipreferjim.com/site/2009/08/python-3-0-handles-dictionary-differently/</link>
+      <pubDate>Fri, 28 Aug 2009 20:26:00 +0000</pubDate>
+      
+      <guid>http://www.ipreferjim.com/site/2009/08/python-3-0-handles-dictionary-differently/</guid>
+      <description>I read through Python 3.0 from Developer’s Library about 2 months ago. I decided to skim through another introductory level book used at MIT so I could try keeping Python 2.</description>
+    </item>
+    
+    <item>
+      <title>Ruby and Python in your script tags!</title>
+      <link>http://www.ipreferjim.com/site/2009/08/ruby-and-python-in-your-script-tags/</link>
+      <pubDate>Fri, 14 Aug 2009 05:37:00 +0000</pubDate>
+      
+      <guid>http://www.ipreferjim.com/site/2009/08/ruby-and-python-in-your-script-tags/</guid>
+      <description>I came across this weeks ago, and I’m surprised I never posted it. This is a javascript ‘framework’ to add ruby and python languages in your script tags.</description>
+    </item>
+    
+  </channel>
+</rss>
