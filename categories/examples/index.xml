@@ -2,99 +2,99 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Examples on I Prefer Jim</title>
-    <link>https://www.ipreferjim.com/site/categories/examples/</link>
+    <link>https://www.ipreferjim.com/categories/examples/</link>
     <description>Recent content in Examples on I Prefer Jim</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sat, 08 Mar 2014 02:41:53 +0000</lastBuildDate>
     
-	<atom:link href="https://www.ipreferjim.com/site/categories/examples/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.ipreferjim.com/categories/examples/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Release: New Tab Redirect 3.0</title>
-      <link>https://www.ipreferjim.com/site/2014/03/release-new-tab-redirect-3-0/</link>
+      <link>https://www.ipreferjim.com/2014/03/release-new-tab-redirect-3-0/</link>
       <pubDate>Sat, 08 Mar 2014 02:41:53 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2014/03/release-new-tab-redirect-3-0/</guid>
+      <guid>https://www.ipreferjim.com/2014/03/release-new-tab-redirect-3-0/</guid>
       <description>On Wednesday, I began the rollout of New Tab Redirect 3.0 with some bug fixes and a huge new feature: a built in ‘Apps’ page.</description>
     </item>
     
     <item>
       <title>log4net configuration in .NET 3.5</title>
-      <link>https://www.ipreferjim.com/site/2010/03/log4net-configuration-in-net-3-5/</link>
+      <link>https://www.ipreferjim.com/2010/03/log4net-configuration-in-net-3-5/</link>
       <pubDate>Mon, 01 Mar 2010 23:17:33 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2010/03/log4net-configuration-in-net-3-5/</guid>
+      <guid>https://www.ipreferjim.com/2010/03/log4net-configuration-in-net-3-5/</guid>
       <description>Step 1 Add Reference
 Right click on the “References” folder and choose add reference. Browse to the location of log4net and add it to the project.</description>
     </item>
     
     <item>
       <title>Google Chrome Extension: New Tab Redirect! STEP BY STEP</title>
-      <link>https://www.ipreferjim.com/site/2010/02/google-chrome-extension-new-tab-redirect-step-by-step/</link>
+      <link>https://www.ipreferjim.com/2010/02/google-chrome-extension-new-tab-redirect-step-by-step/</link>
       <pubDate>Sat, 13 Feb 2010 22:45:00 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2010/02/google-chrome-extension-new-tab-redirect-step-by-step/</guid>
+      <guid>https://www.ipreferjim.com/2010/02/google-chrome-extension-new-tab-redirect-step-by-step/</guid>
       <description>If you’ve reached this this page in an attempt to find instructions for uninstalling the extension here they are:
  Navigate to chrome://extensions Click ‘Uninstall’ below ‘New Tab Redirect!</description>
     </item>
     
     <item>
       <title>My Development Blog</title>
-      <link>https://www.ipreferjim.com/site/2010/01/my-development-blog/</link>
+      <link>https://www.ipreferjim.com/2010/01/my-development-blog/</link>
       <pubDate>Mon, 18 Jan 2010 05:29:49 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2010/01/my-development-blog/</guid>
+      <guid>https://www.ipreferjim.com/2010/01/my-development-blog/</guid>
       <description>When I began my internship with Agility Healthcare Solutions (now part of GE Healthcare), I thought it would be beneficial to keep a blog of my activities.</description>
     </item>
     
     <item>
       <title>Quake Tracker</title>
-      <link>https://www.ipreferjim.com/site/2010/01/quake-tracker/</link>
+      <link>https://www.ipreferjim.com/2010/01/quake-tracker/</link>
       <pubDate>Mon, 18 Jan 2010 05:28:25 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2010/01/quake-tracker/</guid>
+      <guid>https://www.ipreferjim.com/2010/01/quake-tracker/</guid>
       <description>The Project
 I love Google products! Again, I am a huge fan of Google products, so I decided to explore the APIs and tools which Google offers.</description>
     </item>
     
     <item>
       <title>Calculator (Java/GWT)</title>
-      <link>https://www.ipreferjim.com/site/2010/01/calculator-javagwt/</link>
+      <link>https://www.ipreferjim.com/2010/01/calculator-javagwt/</link>
       <pubDate>Mon, 18 Jan 2010 05:26:19 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2010/01/calculator-javagwt/</guid>
+      <guid>https://www.ipreferjim.com/2010/01/calculator-javagwt/</guid>
       <description>The Project
 My continuing goal in application development is to learn new technologies and explore my possibilities. I am a huge fan of Google products, so I decided to explore the APIs and tools which Google offers.</description>
     </item>
     
     <item>
       <title>Meta Tag Generator</title>
-      <link>https://www.ipreferjim.com/site/2010/01/meta-tag-generator/</link>
+      <link>https://www.ipreferjim.com/2010/01/meta-tag-generator/</link>
       <pubDate>Mon, 18 Jan 2010 05:23:31 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2010/01/meta-tag-generator/</guid>
+      <guid>https://www.ipreferjim.com/2010/01/meta-tag-generator/</guid>
       <description>The Project
 My wife and her friend are starting a copy writing business. I wrote this tool to help with SEO.</description>
     </item>
     
     <item>
       <title>INFO 465 – Projects in IS</title>
-      <link>https://www.ipreferjim.com/site/2010/01/info-465-projects-in-is/</link>
+      <link>https://www.ipreferjim.com/2010/01/info-465-projects-in-is/</link>
       <pubDate>Mon, 18 Jan 2010 05:21:26 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2010/01/info-465-projects-in-is/</guid>
+      <guid>https://www.ipreferjim.com/2010/01/info-465-projects-in-is/</guid>
       <description>The class:
 “The student’s behavioral and technical skills developed in listed prerequisite courses are challenged by participating in a team systems development project.</description>
     </item>
     
     <item>
       <title>INFO 451 – ASP.NET</title>
-      <link>https://www.ipreferjim.com/site/2010/01/info-451-asp-net/</link>
+      <link>https://www.ipreferjim.com/2010/01/info-451-asp-net/</link>
       <pubDate>Mon, 18 Jan 2010 05:09:06 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2010/01/info-451-asp-net/</guid>
+      <guid>https://www.ipreferjim.com/2010/01/info-451-asp-net/</guid>
       <description>The class:
 INFO 451 – ASP.NET sought to teach advanced e-commerce practices using ASP.NET and C#.
 The assignment:
@@ -103,10 +103,10 @@ This was a semester-long group assignment, aimed at honing the skills of each in
     
     <item>
       <title>INFO 300 – Hardware &amp; Software</title>
-      <link>https://www.ipreferjim.com/site/2010/01/info-300-hardware-software/</link>
+      <link>https://www.ipreferjim.com/2010/01/info-300-hardware-software/</link>
       <pubDate>Mon, 18 Jan 2010 02:03:07 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2010/01/info-300-hardware-software/</guid>
+      <guid>https://www.ipreferjim.com/2010/01/info-300-hardware-software/</guid>
       <description>The class:
 Principles of computer hardware and software architecture, organization and operation. Introduction to data structures.
 The assignment:

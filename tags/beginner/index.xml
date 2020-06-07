@@ -2,40 +2,40 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>beginner on I Prefer Jim</title>
-    <link>https://www.ipreferjim.com/site/tags/beginner/</link>
+    <link>https://www.ipreferjim.com/tags/beginner/</link>
     <description>Recent content in beginner on I Prefer Jim</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Tue, 07 Apr 2015 00:27:48 +0000</lastBuildDate>
     
-	<atom:link href="https://www.ipreferjim.com/site/tags/beginner/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.ipreferjim.com/tags/beginner/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Review “Learning 2D Game Development with Unity: A Hands-On Guide to Game Creation”</title>
-      <link>https://www.ipreferjim.com/site/2015/04/review-learning-2d-game-development-with-unity-a-hands-on-guide-to-game-creation/</link>
+      <link>https://www.ipreferjim.com/2015/04/review-learning-2d-game-development-with-unity-a-hands-on-guide-to-game-creation/</link>
       <pubDate>Tue, 07 Apr 2015 00:27:48 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2015/04/review-learning-2d-game-development-with-unity-a-hands-on-guide-to-game-creation/</guid>
+      <guid>https://www.ipreferjim.com/2015/04/review-learning-2d-game-development-with-unity-a-hands-on-guide-to-game-creation/</guid>
       <description>I’ve just finished reading Learning 2D Game Development with Unity: A Hands-On Guide to Game Creation, and I really enjoyed it despite many issues with the actual text (I’ll try to cover everything here).</description>
     </item>
     
     <item>
       <title>Your First App: Node.js is complete!</title>
-      <link>https://www.ipreferjim.com/site/2014/10/your-first-app-node-js-is-complete/</link>
+      <link>https://www.ipreferjim.com/2014/10/your-first-app-node-js-is-complete/</link>
       <pubDate>Fri, 31 Oct 2014 03:54:15 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2014/10/your-first-app-node-js-is-complete/</guid>
+      <guid>https://www.ipreferjim.com/2014/10/your-first-app-node-js-is-complete/</guid>
       <description>I’m stoked to announce that I’ve finished writing my first self-published book, Your First App: node.js.
 The book is a full-stack application development tutorial using what is commonly known as the ‘MEAN’ stack, but with a heavier focus on the backend technologies: node.</description>
     </item>
     
     <item>
       <title>What is node.js?</title>
-      <link>https://www.ipreferjim.com/site/2013/08/what-is-node-js/</link>
+      <link>https://www.ipreferjim.com/2013/08/what-is-node-js/</link>
       <pubDate>Fri, 02 Aug 2013 18:29:00 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2013/08/what-is-node-js/</guid>
+      <guid>https://www.ipreferjim.com/2013/08/what-is-node-js/</guid>
       <description>I’ve recently decided to write a book about node.js. I don’t feel like a lot of books out there (on any technology) cover real-world scenarios.</description>
     </item>
     

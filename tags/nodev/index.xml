@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>nodev on I Prefer Jim</title>
-    <link>https://www.ipreferjim.com/site/tags/nodev/</link>
+    <link>https://www.ipreferjim.com/tags/nodev/</link>
     <description>Recent content in nodev on I Prefer Jim</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Tue, 16 Nov 2010 04:26:06 +0000</lastBuildDate>
     
-	<atom:link href="https://www.ipreferjim.com/site/tags/nodev/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.ipreferjim.com/tags/nodev/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Tip for Writers and Novelists: Use Subversion to track changes in your work!</title>
-      <link>https://www.ipreferjim.com/site/2010/11/tip-for-writers-and-novelists-use-subversion-to-track-changes-in-your-work/</link>
+      <link>https://www.ipreferjim.com/2010/11/tip-for-writers-and-novelists-use-subversion-to-track-changes-in-your-work/</link>
       <pubDate>Tue, 16 Nov 2010 04:26:06 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2010/11/tip-for-writers-and-novelists-use-subversion-to-track-changes-in-your-work/</guid>
+      <guid>https://www.ipreferjim.com/2010/11/tip-for-writers-and-novelists-use-subversion-to-track-changes-in-your-work/</guid>
       <description>&lt;p&gt;As a developer, I take some things like version control for granted.&lt;/p&gt;
 &lt;p&gt;Recently, I suggested version control to my wife to make it easier for her to compare her current revisions with earlier revisions.  Currently, when she wants to make a new revision, she creates a new file with a different filename.  This doesn’t give her to Word comparing or change tracking.  So, if she deleted a paragraph two, three, or twenty revisions ago, she could easily go back to a draft containing the paragraph and retrieve the text or compare against the current revision.  It would even be possible to check out the earlier revision!&lt;/p&gt;
 &lt;p&gt;On top of change tracking, a subversion repository offers a complete backup of documents.  This would be excellent for someone who is worried about losing their documents.  For instance, you can create a subversion repository on an external hard drive and you’ll never lose anything earlier than your last check-in.  Granted, you have to adopt the version control process, but the benefits greatly outweigh the possible headaches of having no sort of version control or revision history.&lt;/p&gt;

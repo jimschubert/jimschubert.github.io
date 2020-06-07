@@ -2,112 +2,112 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>nodejs on I Prefer Jim</title>
-    <link>https://www.ipreferjim.com/site/tags/nodejs/</link>
+    <link>https://www.ipreferjim.com/tags/nodejs/</link>
     <description>Recent content in nodejs on I Prefer Jim</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Thu, 15 Jan 2015 02:51:41 +0000</lastBuildDate>
     
-	<atom:link href="https://www.ipreferjim.com/site/tags/nodejs/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.ipreferjim.com/tags/nodejs/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>io.js 1.0.1 (unstable) is out. ES6!</title>
-      <link>https://www.ipreferjim.com/site/2015/01/io-js-1-0-1-unstable-is-out-es6/</link>
+      <link>https://www.ipreferjim.com/2015/01/io-js-1-0-1-unstable-is-out-es6/</link>
       <pubDate>Thu, 15 Jan 2015 02:51:41 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2015/01/io-js-1-0-1-unstable-is-out-es6/</guid>
+      <guid>https://www.ipreferjim.com/2015/01/io-js-1-0-1-unstable-is-out-es6/</guid>
       <description>A team of developers, including some core node.js developers, forked node.js a while ago into a project called io.js. They’ve just released version 1.</description>
     </item>
     
     <item>
       <title>Your First App: Node.js is complete!</title>
-      <link>https://www.ipreferjim.com/site/2014/10/your-first-app-node-js-is-complete/</link>
+      <link>https://www.ipreferjim.com/2014/10/your-first-app-node-js-is-complete/</link>
       <pubDate>Fri, 31 Oct 2014 03:54:15 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2014/10/your-first-app-node-js-is-complete/</guid>
+      <guid>https://www.ipreferjim.com/2014/10/your-first-app-node-js-is-complete/</guid>
       <description>I’m stoked to announce that I’ve finished writing my first self-published book, Your First App: node.js.
 The book is a full-stack application development tutorial using what is commonly known as the ‘MEAN’ stack, but with a heavier focus on the backend technologies: node.</description>
     </item>
     
     <item>
       <title>Your first app: Node.js (update)</title>
-      <link>https://www.ipreferjim.com/site/2014/08/your-first-app-node-js-update/</link>
+      <link>https://www.ipreferjim.com/2014/08/your-first-app-node-js-update/</link>
       <pubDate>Sun, 31 Aug 2014 18:24:10 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2014/08/your-first-app-node-js-update/</guid>
+      <guid>https://www.ipreferjim.com/2014/08/your-first-app-node-js-update/</guid>
       <description>I am currently writing a book called Your first app: Node.js. I am self-publishing this book through leanpub.com. You can check it out here.</description>
     </item>
     
     <item>
       <title>What is node.js?</title>
-      <link>https://www.ipreferjim.com/site/2013/08/what-is-node-js/</link>
+      <link>https://www.ipreferjim.com/2013/08/what-is-node-js/</link>
       <pubDate>Fri, 02 Aug 2013 18:29:00 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2013/08/what-is-node-js/</guid>
+      <guid>https://www.ipreferjim.com/2013/08/what-is-node-js/</guid>
       <description>I’ve recently decided to write a book about node.js. I don’t feel like a lot of books out there (on any technology) cover real-world scenarios.</description>
     </item>
     
     <item>
       <title>Karma error: RangeError: Maximum call stack size exceeded</title>
-      <link>https://www.ipreferjim.com/site/2013/06/karma-error-rangeerror-maximum-call-stack-size-exceeded/</link>
+      <link>https://www.ipreferjim.com/2013/06/karma-error-rangeerror-maximum-call-stack-size-exceeded/</link>
       <pubDate>Sun, 30 Jun 2013 02:08:26 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2013/06/karma-error-rangeerror-maximum-call-stack-size-exceeded/</guid>
+      <guid>https://www.ipreferjim.com/2013/06/karma-error-rangeerror-maximum-call-stack-size-exceeded/</guid>
       <description>I’ve been working on a bootstrap application for express.js, angular.js, and bootstrap. The idea being that I can provide a boilerplate for quick prototyping of applications.</description>
     </item>
     
     <item>
       <title>git prepare-commit-msg with node.js</title>
-      <link>https://www.ipreferjim.com/site/2013/04/git-prepare-commit-msg-with-node-js/</link>
+      <link>https://www.ipreferjim.com/2013/04/git-prepare-commit-msg-with-node-js/</link>
       <pubDate>Sun, 07 Apr 2013 20:55:56 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2013/04/git-prepare-commit-msg-with-node-js/</guid>
+      <guid>https://www.ipreferjim.com/2013/04/git-prepare-commit-msg-with-node-js/</guid>
       <description>I think people often overlook using node.js as a scripting tool like ruby or python. If you search the web for examples of customized git hooks, you’ll probably have visited git-scm.</description>
     </item>
     
     <item>
       <title>Why I don’t recommend the Step module [node.js, npm]</title>
-      <link>https://www.ipreferjim.com/site/2013/03/why-i-dont-recommend-the-step-module/</link>
+      <link>https://www.ipreferjim.com/2013/03/why-i-dont-recommend-the-step-module/</link>
       <pubDate>Sun, 17 Mar 2013 07:27:50 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2013/03/why-i-dont-recommend-the-step-module/</guid>
+      <guid>https://www.ipreferjim.com/2013/03/why-i-dont-recommend-the-step-module/</guid>
       <description>I prefer asyc to step. The async module has a cleaner interface, more options, and utilities. It’s a little beefier in size, but those things are beside the point.</description>
     </item>
     
     <item>
       <title>CommonJS Modules, node’s require() and private members</title>
-      <link>https://www.ipreferjim.com/site/2013/03/commonjs-modules-nodes-require-and-private-members/</link>
+      <link>https://www.ipreferjim.com/2013/03/commonjs-modules-nodes-require-and-private-members/</link>
       <pubDate>Sat, 02 Mar 2013 23:47:07 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2013/03/commonjs-modules-nodes-require-and-private-members/</guid>
+      <guid>https://www.ipreferjim.com/2013/03/commonjs-modules-nodes-require-and-private-members/</guid>
       <description>CommonJS Modules, node’s require() and private members Interestingly, node.js module documentation doesn’t even mention CommonJS or the specification proposal it implements.</description>
     </item>
     
     <item>
       <title>Generating sprites with HTML5 canvas (node-canvas)</title>
-      <link>https://www.ipreferjim.com/site/2012/10/generating-sprites-with-html5-canvas-node-canvas/</link>
+      <link>https://www.ipreferjim.com/2012/10/generating-sprites-with-html5-canvas-node-canvas/</link>
       <pubDate>Sun, 14 Oct 2012 22:31:01 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2012/10/generating-sprites-with-html5-canvas-node-canvas/</guid>
+      <guid>https://www.ipreferjim.com/2012/10/generating-sprites-with-html5-canvas-node-canvas/</guid>
       <description>About a week ago, I posted about drawing simple shapes in HTML5. HTML5’s Canvas isn’t only useful on the client side.</description>
     </item>
     
     <item>
       <title>[node.js] Simple Logging in tweeter.js</title>
-      <link>https://www.ipreferjim.com/site/2012/04/node-js-simple-logging-in-tweeter-js/</link>
+      <link>https://www.ipreferjim.com/2012/04/node-js-simple-logging-in-tweeter-js/</link>
       <pubDate>Mon, 30 Apr 2012 22:28:21 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2012/04/node-js-simple-logging-in-tweeter-js/</guid>
+      <guid>https://www.ipreferjim.com/2012/04/node-js-simple-logging-in-tweeter-js/</guid>
       <description>tweeter.js is a simple OAuth implementation I started working on for a node.js application I had envisioned. The library works, as in it runs through the whole OAuth dance and allows the client to make API calls.</description>
     </item>
     
     <item>
       <title>Mastering Node: Addons and FunctionTemplate (uuid.node)</title>
-      <link>https://www.ipreferjim.com/site/2012/02/mastering-node-addons-and-functiontemplate-uuid-node/</link>
+      <link>https://www.ipreferjim.com/2012/02/mastering-node-addons-and-functiontemplate-uuid-node/</link>
       <pubDate>Tue, 07 Feb 2012 02:41:18 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2012/02/mastering-node-addons-and-functiontemplate-uuid-node/</guid>
+      <guid>https://www.ipreferjim.com/2012/02/mastering-node-addons-and-functiontemplate-uuid-node/</guid>
       <description>&lt;p&gt;Last night, I pushed an addition to my fork of Mastering Node. I decided to add a bit to the &lt;em&gt;Addons&lt;/em&gt; chapter. The first example in this chapter only shows how to add a function to a natively-compiled module (i.e. an addon). This example shows you how to start a module which can be used in the following way:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span class=&#34;kd&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;Uuid&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;require&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;./uuid.node&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;).&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;Uuid&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
 &lt;span class=&#34;kd&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;uuid&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;new&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;Uuid&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;();&lt;/span&gt;
@@ -123,39 +123,39 @@ The book is a full-stack application development tutorial using what is commonly
     
     <item>
       <title>Install nodejs under ChromeOS (CR-48)</title>
-      <link>https://www.ipreferjim.com/site/2011/12/install-nodejs-under-chromeos-cr-48/</link>
+      <link>https://www.ipreferjim.com/2011/12/install-nodejs-under-chromeos-cr-48/</link>
       <pubDate>Fri, 23 Dec 2011 04:35:53 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2011/12/install-nodejs-under-chromeos-cr-48/</guid>
+      <guid>https://www.ipreferjim.com/2011/12/install-nodejs-under-chromeos-cr-48/</guid>
       <description>Why would I want to do this?
 I’m a software developer. I love javascript. I love node.js. I love the direction Google is taking web development, user interaction, and the web in general.</description>
     </item>
     
     <item>
       <title>Makefile setup for minifying .js files in an expressjs application</title>
-      <link>https://www.ipreferjim.com/site/2011/09/makefile-setup-for-minifying-js-files-in-an-expressjs-application/</link>
+      <link>https://www.ipreferjim.com/2011/09/makefile-setup-for-minifying-js-files-in-an-expressjs-application/</link>
       <pubDate>Thu, 29 Sep 2011 02:17:44 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2011/09/makefile-setup-for-minifying-js-files-in-an-expressjs-application/</guid>
+      <guid>https://www.ipreferjim.com/2011/09/makefile-setup-for-minifying-js-files-in-an-expressjs-application/</guid>
       <description>There’s not really any reason to uglify or minify your JavaScript files on a per-request basis or on a pre-cache basis.</description>
     </item>
     
     <item>
       <title>[node.js] Getting started with nodeunit</title>
-      <link>https://www.ipreferjim.com/site/2011/08/node-js-getting-started-with-nodeunit/</link>
+      <link>https://www.ipreferjim.com/2011/08/node-js-getting-started-with-nodeunit/</link>
       <pubDate>Wed, 17 Aug 2011 22:08:44 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2011/08/node-js-getting-started-with-nodeunit/</guid>
+      <guid>https://www.ipreferjim.com/2011/08/node-js-getting-started-with-nodeunit/</guid>
       <description>The following code is part of the testing chapter I previously worked on in my fork of Mastering Node.
 Throughout this post, you’ll see references to files from a relative directory.</description>
     </item>
     
     <item>
       <title>[node.js] Mastering Node excerpt: Addons</title>
-      <link>https://www.ipreferjim.com/site/2011/04/node-js-mastering-node-excerpt-addons/</link>
+      <link>https://www.ipreferjim.com/2011/04/node-js-mastering-node-excerpt-addons/</link>
       <pubDate>Sat, 09 Apr 2011 05:24:29 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2011/04/node-js-mastering-node-excerpt-addons/</guid>
+      <guid>https://www.ipreferjim.com/2011/04/node-js-mastering-node-excerpt-addons/</guid>
       <description>&lt;h2 id=&#34;addons&#34;&gt;Addons&lt;/h2&gt;
 &lt;p&gt;The node documentation for addons is self-admittedly pretty weak as of v0.4.0.&lt;/p&gt;
 &lt;p&gt;This chapter doesn’t aim to be a replacement for the official documentation. Instead, we’d hope this can expand on some of the basics a little more than a simple “Hello, World!” and drive you as a developer more on the path toward mastering node through its source code.&lt;/p&gt;
@@ -185,10 +185,10 @@ Throughout this post, you’ll see references to files from a relative directory
     
     <item>
       <title>Mastering Node</title>
-      <link>https://www.ipreferjim.com/site/2011/03/mastering-node/</link>
+      <link>https://www.ipreferjim.com/2011/03/mastering-node/</link>
       <pubDate>Thu, 17 Mar 2011 03:27:54 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2011/03/mastering-node/</guid>
+      <guid>https://www.ipreferjim.com/2011/03/mastering-node/</guid>
       <description>I’ve forked a project at github called “Mastering Node”.
 https://github.com/jimschubert/masteringnode
 I’ve wanted to familiarize myself with node.js for some time, and this seems to be the best way.</description>

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ide on I Prefer Jim</title>
-    <link>https://www.ipreferjim.com/site/tags/ide/</link>
+    <link>https://www.ipreferjim.com/tags/ide/</link>
     <description>Recent content in ide on I Prefer Jim</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Mon, 10 Jun 2013 05:03:17 +0000</lastBuildDate>
     
-	<atom:link href="https://www.ipreferjim.com/site/tags/ide/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.ipreferjim.com/tags/ide/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Android Studio and Library Projects</title>
-      <link>https://www.ipreferjim.com/site/2013/06/android-studio-and-library-projects/</link>
+      <link>https://www.ipreferjim.com/2013/06/android-studio-and-library-projects/</link>
       <pubDate>Mon, 10 Jun 2013 05:03:17 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2013/06/android-studio-and-library-projects/</guid>
+      <guid>https://www.ipreferjim.com/2013/06/android-studio-and-library-projects/</guid>
       <description>This is basically a quick brain-dump post. I have previously attempted to get into Android application development, but with only 8-10 hours of “free” time per month, it was difficult to get traction with an app before the goog machine overhauled everything.</description>
     </item>
     

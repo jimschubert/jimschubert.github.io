@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>configuration on I Prefer Jim</title>
-    <link>https://www.ipreferjim.com/site/tags/configuration/</link>
+    <link>https://www.ipreferjim.com/tags/configuration/</link>
     <description>Recent content in configuration on I Prefer Jim</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sat, 09 Jul 2011 00:46:00 +0000</lastBuildDate>
     
-	<atom:link href="https://www.ipreferjim.com/site/tags/configuration/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.ipreferjim.com/tags/configuration/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>What happens when I overwrite a DLL (asp.net)?</title>
-      <link>https://www.ipreferjim.com/site/2011/07/what-happens-when-i-overwrite-a-dll-asp-net/</link>
+      <link>https://www.ipreferjim.com/2011/07/what-happens-when-i-overwrite-a-dll-asp-net/</link>
       <pubDate>Sat, 09 Jul 2011 00:46:00 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2011/07/what-happens-when-i-overwrite-a-dll-asp-net/</guid>
+      <guid>https://www.ipreferjim.com/2011/07/what-happens-when-i-overwrite-a-dll-asp-net/</guid>
       <description>&lt;p&gt;I post on &lt;a href=&#34;http://stackoverflow.com/&#34; title=&#34;Stack Overflow&#34; target=&#34;_blank&#34;&gt;Stack Overflow&lt;/a&gt; a lot. Sometimes, there are really interesting questions like one I answered last year. I had forgotten about it until this week when the answer was accepted. I thought I’d share it on my blog.&lt;/p&gt;
 &lt;p&gt;The original post is &lt;a href=&#34;http://stackoverflow.com/questions/4394410/does-my-asp-net-application-stop-executing-if-i-overwrite-the-dlls/4394472#4394472&#34; title=&#34;Does my ASP.NET application stop executing if I overwrite the DLLs?&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;. Read on for redundancy.&lt;/p&gt;</description>
     </item>

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>mobile on I Prefer Jim</title>
-    <link>https://www.ipreferjim.com/site/tags/mobile/</link>
+    <link>https://www.ipreferjim.com/tags/mobile/</link>
     <description>Recent content in mobile on I Prefer Jim</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Thu, 21 Nov 2013 20:48:13 +0000</lastBuildDate>
     
-	<atom:link href="https://www.ipreferjim.com/site/tags/mobile/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.ipreferjim.com/tags/mobile/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Tizen SDK 2.2.1 on Ubuntu 13.10</title>
-      <link>https://www.ipreferjim.com/site/2013/11/tizen-sdk-2-2-1-on-ubuntu-13-10/</link>
+      <link>https://www.ipreferjim.com/2013/11/tizen-sdk-2-2-1-on-ubuntu-13-10/</link>
       <pubDate>Thu, 21 Nov 2013 20:48:13 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2013/11/tizen-sdk-2-2-1-on-ubuntu-13-10/</guid>
+      <guid>https://www.ipreferjim.com/2013/11/tizen-sdk-2-2-1-on-ubuntu-13-10/</guid>
       <description>I’ve registered for the Tizen Seattle Devlab &amp;amp; Hack which takes place on December 6-7 2013. To prepare, I downloaded and installed the Tizen SDK.</description>
     </item>
     

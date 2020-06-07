@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Reflection on I Prefer Jim</title>
-    <link>https://www.ipreferjim.com/site/tags/reflection/</link>
+    <link>https://www.ipreferjim.com/tags/reflection/</link>
     <description>Recent content in Reflection on I Prefer Jim</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sat, 07 Jul 2012 23:33:27 +0000</lastBuildDate>
     
-	<atom:link href="https://www.ipreferjim.com/site/tags/reflection/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.ipreferjim.com/tags/reflection/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Proxy Objects</title>
-      <link>https://www.ipreferjim.com/site/2012/07/proxy-objects/</link>
+      <link>https://www.ipreferjim.com/2012/07/proxy-objects/</link>
       <pubDate>Sat, 07 Jul 2012 23:33:27 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2012/07/proxy-objects/</guid>
+      <guid>https://www.ipreferjim.com/2012/07/proxy-objects/</guid>
       <description>&lt;p&gt;I started to familiarize myself with proxy objects a couple of years ago when I started used Fluent NHibernate on a pretty large project. NHibernate itself proxies objects to allow the framework to do its magic. Proxies are a fantastic thing. I spoke with a friend of mine today about some advanced coding techniques including proxy objects and IoC, which made me want to write a little about some of those topics.&lt;/p&gt;
 &lt;p&gt;From &lt;a href=&#34;http://en.wikipedia.org/wiki/Proxy_pattern&#34; title=&#34;Proxy pattern on Wikipedia&#34; target=&#34;_blank&#34;&gt;Wikipedia&lt;/a&gt;:&lt;/p&gt;
 &lt;blockquote&gt;
@@ -32,10 +32,10 @@
     
     <item>
       <title>[c#] Instantiating an object with a private constructor</title>
-      <link>https://www.ipreferjim.com/site/2011/08/c-instantiating-an-object-with-a-private-constructor/</link>
+      <link>https://www.ipreferjim.com/2011/08/c-instantiating-an-object-with-a-private-constructor/</link>
       <pubDate>Sat, 27 Aug 2011 18:26:43 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2011/08/c-instantiating-an-object-with-a-private-constructor/</guid>
+      <guid>https://www.ipreferjim.com/2011/08/c-instantiating-an-object-with-a-private-constructor/</guid>
       <description>Not too long ago, I needed to modify a type available in the the BCL which didn’t have a public constructor or any method for creating an instance of the object.</description>
     </item>
     

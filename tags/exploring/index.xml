@@ -2,57 +2,57 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Exploring on I Prefer Jim</title>
-    <link>https://www.ipreferjim.com/site/tags/exploring/</link>
+    <link>https://www.ipreferjim.com/tags/exploring/</link>
     <description>Recent content in Exploring on I Prefer Jim</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Mon, 03 Oct 2016 15:51:28 +0000</lastBuildDate>
     
-	<atom:link href="https://www.ipreferjim.com/site/tags/exploring/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.ipreferjim.com/tags/exploring/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Finding Wakelocks in Android 7 using Google’s Battery Historian</title>
-      <link>https://www.ipreferjim.com/site/2016/10/finding-wakelocks-in-android-7-using-googles-battery-historian/</link>
+      <link>https://www.ipreferjim.com/2016/10/finding-wakelocks-in-android-7-using-googles-battery-historian/</link>
       <pubDate>Mon, 03 Oct 2016 15:51:28 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2016/10/finding-wakelocks-in-android-7-using-googles-battery-historian/</guid>
+      <guid>https://www.ipreferjim.com/2016/10/finding-wakelocks-in-android-7-using-googles-battery-historian/</guid>
       <description>One of my favorite apps prior to my upgrade to Android 7 (Nougat) was GSam Battery Monitor (the paid version is fully worth it).</description>
     </item>
     
     <item>
       <title>Your IDE’s font matters: Fantasque Sans Mono</title>
-      <link>https://www.ipreferjim.com/site/2015/03/your-ides-font-matters-fantasque-sans-mono/</link>
+      <link>https://www.ipreferjim.com/2015/03/your-ides-font-matters-fantasque-sans-mono/</link>
       <pubDate>Sun, 08 Mar 2015 18:12:19 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2015/03/your-ides-font-matters-fantasque-sans-mono/</guid>
+      <guid>https://www.ipreferjim.com/2015/03/your-ides-font-matters-fantasque-sans-mono/</guid>
       <description>A good development environment is crucial to your productivity, there’s no question about it. The phrase ‘good development environment’ is subjective.</description>
     </item>
     
     <item>
       <title>SOLID Principles Presentation</title>
-      <link>https://www.ipreferjim.com/site/2014/11/solid-principles-presentation/</link>
+      <link>https://www.ipreferjim.com/2014/11/solid-principles-presentation/</link>
       <pubDate>Wed, 12 Nov 2014 23:00:28 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2014/11/solid-principles-presentation/</guid>
+      <guid>https://www.ipreferjim.com/2014/11/solid-principles-presentation/</guid>
       <description></description>
     </item>
     
     <item>
       <title>What is JavaScript?</title>
-      <link>https://www.ipreferjim.com/site/2010/09/what-is-javascript/</link>
+      <link>https://www.ipreferjim.com/2010/09/what-is-javascript/</link>
       <pubDate>Tue, 28 Sep 2010 02:47:43 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2010/09/what-is-javascript/</guid>
+      <guid>https://www.ipreferjim.com/2010/09/what-is-javascript/</guid>
       <description>I haven’t updated my site in a while because my wife and I have been very busy moving from the DC-Metro area to Seattle, WA.</description>
     </item>
     
     <item>
       <title>Bitwise operations and Flags (C#)</title>
-      <link>https://www.ipreferjim.com/site/2010/07/bitwise-operations-and-flags/</link>
+      <link>https://www.ipreferjim.com/2010/07/bitwise-operations-and-flags/</link>
       <pubDate>Sat, 31 Jul 2010 15:57:51 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2010/07/bitwise-operations-and-flags/</guid>
+      <guid>https://www.ipreferjim.com/2010/07/bitwise-operations-and-flags/</guid>
       <description>&lt;p&gt;I haven’t written anything in a while, so I thought I would finally write about the subject of bitwise operations and the FlagsAttribute.&lt;/p&gt;
 &lt;p&gt;I mentioned this to one of the developers on my team, and he said that he somewhat understood bit operations but he had never found a reason to use them.&lt;/p&gt;
 &lt;p&gt;Here is the code I will use to discuss the operations&lt;/p&gt;
@@ -118,28 +118,28 @@
     
     <item>
       <title>String Concatenation in .NET – what really goes on?</title>
-      <link>https://www.ipreferjim.com/site/2010/03/string-concatenation-in-net-what-really-goes-on/</link>
+      <link>https://www.ipreferjim.com/2010/03/string-concatenation-in-net-what-really-goes-on/</link>
       <pubDate>Sun, 21 Mar 2010 23:04:48 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2010/03/string-concatenation-in-net-what-really-goes-on/</guid>
+      <guid>https://www.ipreferjim.com/2010/03/string-concatenation-in-net-what-really-goes-on/</guid>
       <description>There are a number of ways to concatenate a string in C# and other .NET languages. Is there a *best* way?</description>
     </item>
     
     <item>
       <title>Programming to Interfaces or Objects?</title>
-      <link>https://www.ipreferjim.com/site/2010/03/programming-to-interfaces-or-objects/</link>
+      <link>https://www.ipreferjim.com/2010/03/programming-to-interfaces-or-objects/</link>
       <pubDate>Sun, 21 Mar 2010 04:46:31 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2010/03/programming-to-interfaces-or-objects/</guid>
+      <guid>https://www.ipreferjim.com/2010/03/programming-to-interfaces-or-objects/</guid>
       <description>The other day, I was asked to add some functionality to code that regularly instantiates objects as interfaces, and I was wondering what exactly is the point?</description>
     </item>
     
     <item>
       <title>Explaining advanced features of C# 3.0</title>
-      <link>https://www.ipreferjim.com/site/2010/02/explaining-advanced-features-of-c-3-0/</link>
+      <link>https://www.ipreferjim.com/2010/02/explaining-advanced-features-of-c-3-0/</link>
       <pubDate>Mon, 15 Feb 2010 23:07:30 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2010/02/explaining-advanced-features-of-c-3-0/</guid>
+      <guid>https://www.ipreferjim.com/2010/02/explaining-advanced-features-of-c-3-0/</guid>
       <description>C# 3.0 Func delegates and Expressions In this post, I’ll attempt to clarify the meaning of Func delegates and Expressions.</description>
     </item>
     

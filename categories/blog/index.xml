@@ -2,538 +2,538 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blog on I Prefer Jim</title>
-    <link>https://www.ipreferjim.com/site/categories/blog/</link>
+    <link>https://www.ipreferjim.com/categories/blog/</link>
     <description>Recent content in Blog on I Prefer Jim</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Tue, 06 Jun 2017 14:50:51 +0000</lastBuildDate>
     
-	<atom:link href="https://www.ipreferjim.com/site/categories/blog/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.ipreferjim.com/categories/blog/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>iggy: ignore file processor for jvm</title>
-      <link>https://www.ipreferjim.com/site/2017/06/iggy-ignore-file-processor-for-jvm/</link>
+      <link>https://www.ipreferjim.com/2017/06/iggy-ignore-file-processor-for-jvm/</link>
       <pubDate>Tue, 06 Jun 2017 14:50:51 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2017/06/iggy-ignore-file-processor-for-jvm/</guid>
+      <guid>https://www.ipreferjim.com/2017/06/iggy-ignore-file-processor-for-jvm/</guid>
       <description>As a core team member for Swagger Codegen, one of the major features I’ve added in the last year was support for .</description>
     </item>
     
     <item>
       <title>Prototyping a Flags/Bitmasks implementation in Kotlin 1.1.1</title>
-      <link>https://www.ipreferjim.com/site/2017/03/prototyping-a-flagsbitmasks-implementation-in-kotlin-1-1-1/</link>
+      <link>https://www.ipreferjim.com/2017/03/prototyping-a-flagsbitmasks-implementation-in-kotlin-1-1-1/</link>
       <pubDate>Tue, 21 Mar 2017 21:55:34 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2017/03/prototyping-a-flagsbitmasks-implementation-in-kotlin-1-1-1/</guid>
+      <guid>https://www.ipreferjim.com/2017/03/prototyping-a-flagsbitmasks-implementation-in-kotlin-1-1-1/</guid>
       <description>One of my more favorite features of C# is the use of FlagsAttribute. If you’re not familiar with the concept, [Flags] allows you to treat an integral enum type as a bitmask.</description>
     </item>
     
     <item>
       <title>Coding against a composed docker environment</title>
-      <link>https://www.ipreferjim.com/site/2016/11/coding-against-a-composed-docker-environment/</link>
+      <link>https://www.ipreferjim.com/2016/11/coding-against-a-composed-docker-environment/</link>
       <pubDate>Wed, 02 Nov 2016 04:03:59 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2016/11/coding-against-a-composed-docker-environment/</guid>
+      <guid>https://www.ipreferjim.com/2016/11/coding-against-a-composed-docker-environment/</guid>
       <description>Microservices are pretty big these days. Unfortunately, they add complexity to development, deployment, and maintenance.
 For instance, how do you code against multiple dependencies locally?</description>
     </item>
     
     <item>
       <title>Finding Wakelocks in Android 7 using Google’s Battery Historian</title>
-      <link>https://www.ipreferjim.com/site/2016/10/finding-wakelocks-in-android-7-using-googles-battery-historian/</link>
+      <link>https://www.ipreferjim.com/2016/10/finding-wakelocks-in-android-7-using-googles-battery-historian/</link>
       <pubDate>Mon, 03 Oct 2016 15:51:28 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2016/10/finding-wakelocks-in-android-7-using-googles-battery-historian/</guid>
+      <guid>https://www.ipreferjim.com/2016/10/finding-wakelocks-in-android-7-using-googles-battery-historian/</guid>
       <description>One of my favorite apps prior to my upgrade to Android 7 (Nougat) was GSam Battery Monitor (the paid version is fully worth it).</description>
     </item>
     
     <item>
       <title>Dijkstra reflections</title>
-      <link>https://www.ipreferjim.com/site/2016/05/1341/</link>
+      <link>https://www.ipreferjim.com/2016/05/1341/</link>
       <pubDate>Tue, 24 May 2016 17:00:38 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2016/05/1341/</guid>
+      <guid>https://www.ipreferjim.com/2016/05/1341/</guid>
       <description>The computing scientist’s main challenge is not to get confused by the complexities of his own making.
   – E.</description>
     </item>
     
     <item>
       <title>Ignoring files with Swagger Codegen</title>
-      <link>https://www.ipreferjim.com/site/2016/05/ignoring-files-with-swagger-codegen/</link>
+      <link>https://www.ipreferjim.com/2016/05/ignoring-files-with-swagger-codegen/</link>
       <pubDate>Mon, 23 May 2016 00:04:24 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2016/05/ignoring-files-with-swagger-codegen/</guid>
+      <guid>https://www.ipreferjim.com/2016/05/ignoring-files-with-swagger-codegen/</guid>
       <description>I’m proud to announce that I’m now a member of the Swagger Codegen Core team.
 I’ve previously refactored the C# client, the maven plugin, added an ASP.</description>
     </item>
     
     <item>
       <title>Bash function: recent</title>
-      <link>https://www.ipreferjim.com/site/2016/05/bash-function-recent/</link>
+      <link>https://www.ipreferjim.com/2016/05/bash-function-recent/</link>
       <pubDate>Sun, 08 May 2016 15:10:52 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2016/05/bash-function-recent/</guid>
+      <guid>https://www.ipreferjim.com/2016/05/bash-function-recent/</guid>
       <description>#!/bin/env bash  # Display recently changed files recursively below the current directory # recent [minutes] # minutes: The number of minutes to display.</description>
     </item>
     
     <item>
       <title>Docker Kitematic (Beta) and iTerm2 3.0 Beta</title>
-      <link>https://www.ipreferjim.com/site/2016/04/docker-kitematic-beta-and-iterm2-3-0-beta/</link>
+      <link>https://www.ipreferjim.com/2016/04/docker-kitematic-beta-and-iterm2-3-0-beta/</link>
       <pubDate>Wed, 06 Apr 2016 13:11:24 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2016/04/docker-kitematic-beta-and-iterm2-3-0-beta/</guid>
+      <guid>https://www.ipreferjim.com/2016/04/docker-kitematic-beta-and-iterm2-3-0-beta/</guid>
       <description>I guess using everything in beta can cause issues, but whatever.
 Kitematic has an ‘Exec’ option for containers which opens a terminal connected to that container.</description>
     </item>
     
     <item>
       <title>ES6 Template Strings without Indent via tags</title>
-      <link>https://www.ipreferjim.com/site/2015/12/es6-template-strings-without-indent-via-tags/</link>
+      <link>https://www.ipreferjim.com/2015/12/es6-template-strings-without-indent-via-tags/</link>
       <pubDate>Wed, 16 Dec 2015 17:30:40 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2015/12/es6-template-strings-without-indent-via-tags/</guid>
+      <guid>https://www.ipreferjim.com/2015/12/es6-template-strings-without-indent-via-tags/</guid>
       <description>ES6 is pretty cool. One new feature is template strings which allow for multiline interpolated strings.
 For example, from MDN:</description>
     </item>
     
     <item>
       <title>Gulp dotnet tasks</title>
-      <link>https://www.ipreferjim.com/site/2015/11/gulp-dotnet-tasks/</link>
+      <link>https://www.ipreferjim.com/2015/11/gulp-dotnet-tasks/</link>
       <pubDate>Mon, 23 Nov 2015 18:57:11 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2015/11/gulp-dotnet-tasks/</guid>
+      <guid>https://www.ipreferjim.com/2015/11/gulp-dotnet-tasks/</guid>
       <description>Not sure if this will help anyway, but running dnu and dnx tasks (soon to be aggregated under a single ‘dotnet’) is really easy.</description>
     </item>
     
     <item>
       <title>Google Now, the new NSA</title>
-      <link>https://www.ipreferjim.com/site/2015/10/google-now-the-new-nsa/</link>
+      <link>https://www.ipreferjim.com/2015/10/google-now-the-new-nsa/</link>
       <pubDate>Sat, 24 Oct 2015 20:10:24 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2015/10/google-now-the-new-nsa/</guid>
+      <guid>https://www.ipreferjim.com/2015/10/google-now-the-new-nsa/</guid>
       <description>I’m going to make a bold claim here, but I don’t care. Google Now is essentially a mechanism to spy on people and I think everyone should disable the feature immediately.</description>
     </item>
     
     <item>
       <title>Google kinda sucks these days</title>
-      <link>https://www.ipreferjim.com/site/p1303/</link>
+      <link>https://www.ipreferjim.com/p1303/</link>
       <pubDate>Sun, 13 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/p1303/</guid>
+      <guid>https://www.ipreferjim.com/p1303/</guid>
       <description>I’ve noticed a lot of new quality coming from Google lately.
 @GooglePlay I have nothing but problems with Books web interface.</description>
     </item>
     
     <item>
       <title>Packtpub.com Free Learning</title>
-      <link>https://www.ipreferjim.com/site/2015/06/packtpub-com-free-learning/</link>
+      <link>https://www.ipreferjim.com/2015/06/packtpub-com-free-learning/</link>
       <pubDate>Wed, 03 Jun 2015 03:09:38 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2015/06/packtpub-com-free-learning/</guid>
+      <guid>https://www.ipreferjim.com/2015/06/packtpub-com-free-learning/</guid>
       <description>Over at Packtpub.com, they’re offering a free book every day as part of a free learning initiative.
 They’ve had some good books in the past for free (R Starter, Node Web Development, Mastering NInject for Dependency Management).</description>
     </item>
     
     <item>
       <title>[javascript] Be sure to read documentation carefully…</title>
-      <link>https://www.ipreferjim.com/site/2015/05/javascript-be-sure-to-read-documentation-carefully/</link>
+      <link>https://www.ipreferjim.com/2015/05/javascript-be-sure-to-read-documentation-carefully/</link>
       <pubDate>Sun, 10 May 2015 02:28:38 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2015/05/javascript-be-sure-to-read-documentation-carefully/</guid>
+      <guid>https://www.ipreferjim.com/2015/05/javascript-be-sure-to-read-documentation-carefully/</guid>
       <description>I have a love-hate relationship with JavaScript. I love the language, but I hate the idiosyncrasies. And like many others, I use MDN pretty regularly to verify function signatures, browser support, or to find example code or shims.</description>
     </item>
     
     <item>
       <title>Review “Learning 2D Game Development with Unity: A Hands-On Guide to Game Creation”</title>
-      <link>https://www.ipreferjim.com/site/2015/04/review-learning-2d-game-development-with-unity-a-hands-on-guide-to-game-creation/</link>
+      <link>https://www.ipreferjim.com/2015/04/review-learning-2d-game-development-with-unity-a-hands-on-guide-to-game-creation/</link>
       <pubDate>Tue, 07 Apr 2015 00:27:48 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2015/04/review-learning-2d-game-development-with-unity-a-hands-on-guide-to-game-creation/</guid>
+      <guid>https://www.ipreferjim.com/2015/04/review-learning-2d-game-development-with-unity-a-hands-on-guide-to-game-creation/</guid>
       <description>I’ve just finished reading Learning 2D Game Development with Unity: A Hands-On Guide to Game Creation, and I really enjoyed it despite many issues with the actual text (I’ll try to cover everything here).</description>
     </item>
     
     <item>
       <title>iTerm2 Toolbelt</title>
-      <link>https://www.ipreferjim.com/site/2015/04/iterm2-toolbelt/</link>
+      <link>https://www.ipreferjim.com/2015/04/iterm2-toolbelt/</link>
       <pubDate>Sun, 05 Apr 2015 18:02:18 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2015/04/iterm2-toolbelt/</guid>
+      <guid>https://www.ipreferjim.com/2015/04/iterm2-toolbelt/</guid>
       <description>I’ve been using iTerm2 for 2 or 3 years now, and I’ve only just now noticed the ‘toolbelt’ option in the window menu.</description>
     </item>
     
     <item>
       <title>Review: Swift for the Really Impatient</title>
-      <link>https://www.ipreferjim.com/site/2015/03/review-swift-for-the-really-impatient/</link>
+      <link>https://www.ipreferjim.com/2015/03/review-swift-for-the-really-impatient/</link>
       <pubDate>Sat, 21 Mar 2015 19:32:05 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2015/03/review-swift-for-the-really-impatient/</guid>
+      <guid>https://www.ipreferjim.com/2015/03/review-swift-for-the-really-impatient/</guid>
       <description>I’ve recently finished reading Swift for the Really Impatient. It was a really good book; I’d give it 4 out of 5 stars.</description>
     </item>
     
     <item>
       <title>Create configurable Angular services using providers</title>
-      <link>https://www.ipreferjim.com/site/2015/03/create-configurable-angular-services-using-providers/</link>
+      <link>https://www.ipreferjim.com/2015/03/create-configurable-angular-services-using-providers/</link>
       <pubDate>Sun, 15 Mar 2015 03:01:00 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2015/03/create-configurable-angular-services-using-providers/</guid>
+      <guid>https://www.ipreferjim.com/2015/03/create-configurable-angular-services-using-providers/</guid>
       <description>With Angular 2 on its way, it seems like a lot of developers are now afraid of Angular 1.x. I have nothing bad to say about Angular.</description>
     </item>
     
     <item>
       <title>Review: Microsoft .NET – Architecting Applications for the Enterprise, 2nd Edition</title>
-      <link>https://www.ipreferjim.com/site/2015/03/review-microsoft-net-architecting-applications-for-the-enterprise-2nd-edition/</link>
+      <link>https://www.ipreferjim.com/2015/03/review-microsoft-net-architecting-applications-for-the-enterprise-2nd-edition/</link>
       <pubDate>Fri, 13 Mar 2015 16:53:05 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2015/03/review-microsoft-net-architecting-applications-for-the-enterprise-2nd-edition/</guid>
+      <guid>https://www.ipreferjim.com/2015/03/review-microsoft-net-architecting-applications-for-the-enterprise-2nd-edition/</guid>
       <description>I’ve recently finished reading Microsoft .NET – Architecting Applications for the Enterprise, 2nd Edition by Dino Esposito and Andrea Saltarello. This book caught my attention for two reasons.</description>
     </item>
     
     <item>
       <title>Tips for debugging a WiX MSI</title>
-      <link>https://www.ipreferjim.com/site/2015/03/tips-for-debugging-a-wix-msi/</link>
+      <link>https://www.ipreferjim.com/2015/03/tips-for-debugging-a-wix-msi/</link>
       <pubDate>Thu, 12 Mar 2015 01:26:32 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2015/03/tips-for-debugging-a-wix-msi/</guid>
+      <guid>https://www.ipreferjim.com/2015/03/tips-for-debugging-a-wix-msi/</guid>
       <description>WiX is an excellent technology that simplifies the creation of MSI files using an XML abstraction on top of the Windows Installer APIs.</description>
     </item>
     
     <item>
       <title>Your IDE’s font matters: Fantasque Sans Mono</title>
-      <link>https://www.ipreferjim.com/site/2015/03/your-ides-font-matters-fantasque-sans-mono/</link>
+      <link>https://www.ipreferjim.com/2015/03/your-ides-font-matters-fantasque-sans-mono/</link>
       <pubDate>Sun, 08 Mar 2015 18:12:19 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2015/03/your-ides-font-matters-fantasque-sans-mono/</guid>
+      <guid>https://www.ipreferjim.com/2015/03/your-ides-font-matters-fantasque-sans-mono/</guid>
       <description>A good development environment is crucial to your productivity, there’s no question about it. The phrase ‘good development environment’ is subjective.</description>
     </item>
     
     <item>
       <title>NDepend is unbelievably rich in features</title>
-      <link>https://www.ipreferjim.com/site/2015/02/ndepend-is-unbelievably-rich-in-features/</link>
+      <link>https://www.ipreferjim.com/2015/02/ndepend-is-unbelievably-rich-in-features/</link>
       <pubDate>Sun, 22 Feb 2015 16:52:59 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2015/02/ndepend-is-unbelievably-rich-in-features/</guid>
+      <guid>https://www.ipreferjim.com/2015/02/ndepend-is-unbelievably-rich-in-features/</guid>
       <description>&lt;p&gt;I’ve recently begun evaluating &lt;a title=&#34;Visit NDepend.com&#34; href=&#34;http://www.ndepend.com/&#34; target=&#34;_blank&#34;&gt;NDepend 5.4.1&lt;/a&gt;. During the installation process, I’ll admit I was a little underwhelmed. After the Visual Studio plugin loaded, I became overwhelmed. After digging into the many features, I don’t know how or why teams operate without such tools. Let me explain…&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Review: From Mathematics to Generic Programming</title>
-      <link>https://www.ipreferjim.com/site/2015/01/review-from-mathematics-to-generic-programming/</link>
+      <link>https://www.ipreferjim.com/2015/01/review-from-mathematics-to-generic-programming/</link>
       <pubDate>Thu, 15 Jan 2015 17:51:28 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2015/01/review-from-mathematics-to-generic-programming/</guid>
+      <guid>https://www.ipreferjim.com/2015/01/review-from-mathematics-to-generic-programming/</guid>
       <description>From Mathematics to Generic Programming (Product Page)   &amp;nbsp;  (This is a repost of my Amazon review) I’ve been out of college for a while.</description>
     </item>
     
     <item>
       <title>io.js 1.0.1 (unstable) is out. ES6!</title>
-      <link>https://www.ipreferjim.com/site/2015/01/io-js-1-0-1-unstable-is-out-es6/</link>
+      <link>https://www.ipreferjim.com/2015/01/io-js-1-0-1-unstable-is-out-es6/</link>
       <pubDate>Thu, 15 Jan 2015 02:51:41 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2015/01/io-js-1-0-1-unstable-is-out-es6/</guid>
+      <guid>https://www.ipreferjim.com/2015/01/io-js-1-0-1-unstable-is-out-es6/</guid>
       <description>A team of developers, including some core node.js developers, forked node.js a while ago into a project called io.js. They’ve just released version 1.</description>
     </item>
     
     <item>
       <title>Software Abstractions take Skill.</title>
-      <link>https://www.ipreferjim.com/site/2014/12/software-abstractions-take-skill/</link>
+      <link>https://www.ipreferjim.com/2014/12/software-abstractions-take-skill/</link>
       <pubDate>Tue, 09 Dec 2014 04:53:16 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2014/12/software-abstractions-take-skill/</guid>
+      <guid>https://www.ipreferjim.com/2014/12/software-abstractions-take-skill/</guid>
       <description>I recently read Adaptive Code via C# and posted a review on Amazon:
  This book is a new favorite of mine.</description>
     </item>
     
     <item>
       <title>Decorating directives with isolate scope in Angular 1.3</title>
-      <link>https://www.ipreferjim.com/site/2014/11/decorating-directives-with-isolate-scope-in-angular-1-3/</link>
+      <link>https://www.ipreferjim.com/2014/11/decorating-directives-with-isolate-scope-in-angular-1-3/</link>
       <pubDate>Thu, 20 Nov 2014 18:29:28 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2014/11/decorating-directives-with-isolate-scope-in-angular-1-3/</guid>
+      <guid>https://www.ipreferjim.com/2014/11/decorating-directives-with-isolate-scope-in-angular-1-3/</guid>
       <description>A question from reddit excited my interest. Angular 1.3 apparently has broken the ability to decorate isolate scopes.
 I tried version of Angular between the 1.</description>
     </item>
     
     <item>
       <title>Manually debugging Angular scope</title>
-      <link>https://www.ipreferjim.com/site/2014/11/manually-debugging-angular-scope/</link>
+      <link>https://www.ipreferjim.com/2014/11/manually-debugging-angular-scope/</link>
       <pubDate>Mon, 17 Nov 2014 04:49:58 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2014/11/manually-debugging-angular-scope/</guid>
+      <guid>https://www.ipreferjim.com/2014/11/manually-debugging-angular-scope/</guid>
       <description>While a utility like Angular Batarang is invaluable, you’ll sometimes want to quickly and effectively inspect what exists on a given scope.</description>
     </item>
     
     <item>
       <title>Your interview questions probably suck</title>
-      <link>https://www.ipreferjim.com/site/2014/11/your-interview-questions-probably-suck/</link>
+      <link>https://www.ipreferjim.com/2014/11/your-interview-questions-probably-suck/</link>
       <pubDate>Fri, 14 Nov 2014 17:59:53 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2014/11/your-interview-questions-probably-suck/</guid>
+      <guid>https://www.ipreferjim.com/2014/11/your-interview-questions-probably-suck/</guid>
       <description>I have interviewed somewhere between 200 and 300 people in my professional career. I’ve learned a lot from the process. In fact, I am planning to write a short book containing some of this “knowledge” about interviewing.</description>
     </item>
     
     <item>
       <title>SOLID Principles Presentation</title>
-      <link>https://www.ipreferjim.com/site/2014/11/solid-principles-presentation/</link>
+      <link>https://www.ipreferjim.com/2014/11/solid-principles-presentation/</link>
       <pubDate>Wed, 12 Nov 2014 23:00:28 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2014/11/solid-principles-presentation/</guid>
+      <guid>https://www.ipreferjim.com/2014/11/solid-principles-presentation/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Your First App: Node.js is complete!</title>
-      <link>https://www.ipreferjim.com/site/2014/10/your-first-app-node-js-is-complete/</link>
+      <link>https://www.ipreferjim.com/2014/10/your-first-app-node-js-is-complete/</link>
       <pubDate>Fri, 31 Oct 2014 03:54:15 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2014/10/your-first-app-node-js-is-complete/</guid>
+      <guid>https://www.ipreferjim.com/2014/10/your-first-app-node-js-is-complete/</guid>
       <description>I’m stoked to announce that I’ve finished writing my first self-published book, Your First App: node.js.
 The book is a full-stack application development tutorial using what is commonly known as the ‘MEAN’ stack, but with a heavier focus on the backend technologies: node.</description>
     </item>
     
     <item>
       <title>Your First App: Node.js ~95% Complete!</title>
-      <link>https://www.ipreferjim.com/site/2014/10/your-first-app-node-js-95-complete/</link>
+      <link>https://www.ipreferjim.com/2014/10/your-first-app-node-js-95-complete/</link>
       <pubDate>Sat, 18 Oct 2014 17:09:01 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2014/10/your-first-app-node-js-95-complete/</guid>
+      <guid>https://www.ipreferjim.com/2014/10/your-first-app-node-js-95-complete/</guid>
       <description> My book, Your first app: node.js. First draft ~95% complete [Leanpub PDF/iPad/Kindle] &amp;#8211; http://t.co/xYrMarSQYr #dev #JavaScript #js #nodejs  &amp;mdash; Jim Schubert (@jimschubert) October 18, 2014 </description>
     </item>
     
     <item>
       <title>Recommended Reading 2014</title>
-      <link>https://www.ipreferjim.com/site/p1167/</link>
+      <link>https://www.ipreferjim.com/p1167/</link>
       <pubDate>Sat, 04 Oct 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/p1167/</guid>
+      <guid>https://www.ipreferjim.com/p1167/</guid>
       <description>A coworker recently asked me about how to approach his reading list. This gave me the idea to write about books I’ve thoroughly enjoyed over the past two or three years and rank these in a preference order.</description>
     </item>
     
     <item>
       <title>Data at the root level is invalid. Line 1, position 1.</title>
-      <link>https://www.ipreferjim.com/site/2014/09/data-at-the-root-level-is-invalid-line-1-position-1/</link>
+      <link>https://www.ipreferjim.com/2014/09/data-at-the-root-level-is-invalid-line-1-position-1/</link>
       <pubDate>Sat, 06 Sep 2014 15:58:21 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2014/09/data-at-the-root-level-is-invalid-line-1-position-1/</guid>
+      <guid>https://www.ipreferjim.com/2014/09/data-at-the-root-level-is-invalid-line-1-position-1/</guid>
       <description>Recently, I encountered a really weird problem with an XML document. I was trying to load a document from a string:</description>
     </item>
     
     <item>
       <title>Your first app: Node.js (update)</title>
-      <link>https://www.ipreferjim.com/site/2014/08/your-first-app-node-js-update/</link>
+      <link>https://www.ipreferjim.com/2014/08/your-first-app-node-js-update/</link>
       <pubDate>Sun, 31 Aug 2014 18:24:10 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2014/08/your-first-app-node-js-update/</guid>
+      <guid>https://www.ipreferjim.com/2014/08/your-first-app-node-js-update/</guid>
       <description>I am currently writing a book called Your first app: Node.js. I am self-publishing this book through leanpub.com. You can check it out here.</description>
     </item>
     
     <item>
       <title>Hard link in OS X</title>
-      <link>https://www.ipreferjim.com/site/2014/08/hard-link-in-os-x/</link>
+      <link>https://www.ipreferjim.com/2014/08/hard-link-in-os-x/</link>
       <pubDate>Thu, 14 Aug 2014 01:51:57 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2014/08/hard-link-in-os-x/</guid>
+      <guid>https://www.ipreferjim.com/2014/08/hard-link-in-os-x/</guid>
       <description>Under linux, I used mount --bind olddir newdir to link a source code directory from a git repository in my Dropbox folder to another public git repository.</description>
     </item>
     
     <item>
       <title>System76 notebooks… are they worth the money?</title>
-      <link>https://www.ipreferjim.com/site/2014/08/system76-notebooks-are-they-worth-the-money/</link>
+      <link>https://www.ipreferjim.com/2014/08/system76-notebooks-are-they-worth-the-money/</link>
       <pubDate>Sun, 10 Aug 2014 15:39:06 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2014/08/system76-notebooks-are-they-worth-the-money/</guid>
+      <guid>https://www.ipreferjim.com/2014/08/system76-notebooks-are-they-worth-the-money/</guid>
       <description>On June 19 2012, I purchased a 15″ Pangolin Performance with the following configuration:
  Ubuntu 12.04 LTS 64 bit 15.</description>
     </item>
     
     <item>
       <title>Reformat README.md (or other text files) to fixed width</title>
-      <link>https://www.ipreferjim.com/site/2014/06/reformat-readme-md-or-other-text-files-to-fixed-width/</link>
+      <link>https://www.ipreferjim.com/2014/06/reformat-readme-md-or-other-text-files-to-fixed-width/</link>
       <pubDate>Sun, 15 Jun 2014 15:38:52 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2014/06/reformat-readme-md-or-other-text-files-to-fixed-width/</guid>
+      <guid>https://www.ipreferjim.com/2014/06/reformat-readme-md-or-other-text-files-to-fixed-width/</guid>
       <description> Fixed width README.md? Sure.&amp;#10;&amp;#10;fold README.md -w 80 -s  README.md  &amp;mdash; Jim Schubert (@jimschubert) June 15, 2014 </description>
     </item>
     
     <item>
       <title>HostGator’s upgrade to PHP 5.4</title>
-      <link>https://www.ipreferjim.com/site/2014/04/hostgators-upgrade-to-php-5-4/</link>
+      <link>https://www.ipreferjim.com/2014/04/hostgators-upgrade-to-php-5-4/</link>
       <pubDate>Wed, 23 Apr 2014 15:15:44 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2014/04/hostgators-upgrade-to-php-5-4/</guid>
+      <guid>https://www.ipreferjim.com/2014/04/hostgators-upgrade-to-php-5-4/</guid>
       <description>Recently, HostGator sent around some emails saying they were forcing a PHP upgrade to 5.4 in the coming weeks. The steps provided by HostGator are basically:</description>
     </item>
     
     <item>
       <title>Install Balsamiq, Ubuntu 14.04</title>
-      <link>https://www.ipreferjim.com/site/2014/04/install-balsamiq-ubuntu-14-04/</link>
+      <link>https://www.ipreferjim.com/2014/04/install-balsamiq-ubuntu-14-04/</link>
       <pubDate>Sun, 06 Apr 2014 15:21:58 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2014/04/install-balsamiq-ubuntu-14-04/</guid>
+      <guid>https://www.ipreferjim.com/2014/04/install-balsamiq-ubuntu-14-04/</guid>
       <description>Balsamiq for Desktop requires Adobe AIR, which is no longer supported.
 Here are the steps I took to get AIR and Balsamiq to install.</description>
     </item>
     
     <item>
       <title>Release: New Tab Redirect 3.0</title>
-      <link>https://www.ipreferjim.com/site/2014/03/release-new-tab-redirect-3-0/</link>
+      <link>https://www.ipreferjim.com/2014/03/release-new-tab-redirect-3-0/</link>
       <pubDate>Sat, 08 Mar 2014 02:41:53 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2014/03/release-new-tab-redirect-3-0/</guid>
+      <guid>https://www.ipreferjim.com/2014/03/release-new-tab-redirect-3-0/</guid>
       <description>On Wednesday, I began the rollout of New Tab Redirect 3.0 with some bug fixes and a huge new feature: a built in ‘Apps’ page.</description>
     </item>
     
     <item>
       <title>prepare-commit-msg showing branch name</title>
-      <link>https://www.ipreferjim.com/site/2014/02/prepare-commit-msg-showing-branch-name/</link>
+      <link>https://www.ipreferjim.com/2014/02/prepare-commit-msg-showing-branch-name/</link>
       <pubDate>Tue, 18 Feb 2014 16:09:35 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2014/02/prepare-commit-msg-showing-branch-name/</guid>
+      <guid>https://www.ipreferjim.com/2014/02/prepare-commit-msg-showing-branch-name/</guid>
       <description>It’s been a while since my last post because my wife and I had a baby boy, Jack, on 11/12/13. I thought it was about time to share something simple yet effective that I use every day, a prepare-commit-msg git hook.</description>
     </item>
     
     <item>
       <title>Disable scrollbar overlays in Ubuntu 13.10</title>
-      <link>https://www.ipreferjim.com/site/2013/11/disable-scrollbar-overlays-in-ubuntu-13-10/</link>
+      <link>https://www.ipreferjim.com/2013/11/disable-scrollbar-overlays-in-ubuntu-13-10/</link>
       <pubDate>Sat, 23 Nov 2013 21:45:01 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2013/11/disable-scrollbar-overlays-in-ubuntu-13-10/</guid>
+      <guid>https://www.ipreferjim.com/2013/11/disable-scrollbar-overlays-in-ubuntu-13-10/</guid>
       <description>Working with Tizen IDE, I noticed the overlay doesn’t actually display for the scrollbar in Ubuntu 13.10. This isn’t so bad for vertical scrolling because I use the touchpad to scroll.</description>
     </item>
     
     <item>
       <title>Tizen SDK 2.2.1 on Ubuntu 13.10</title>
-      <link>https://www.ipreferjim.com/site/2013/11/tizen-sdk-2-2-1-on-ubuntu-13-10/</link>
+      <link>https://www.ipreferjim.com/2013/11/tizen-sdk-2-2-1-on-ubuntu-13-10/</link>
       <pubDate>Thu, 21 Nov 2013 20:48:13 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2013/11/tizen-sdk-2-2-1-on-ubuntu-13-10/</guid>
+      <guid>https://www.ipreferjim.com/2013/11/tizen-sdk-2-2-1-on-ubuntu-13-10/</guid>
       <description>I’ve registered for the Tizen Seattle Devlab &amp;amp; Hack which takes place on December 6-7 2013. To prepare, I downloaded and installed the Tizen SDK.</description>
     </item>
     
     <item>
       <title>What is node.js?</title>
-      <link>https://www.ipreferjim.com/site/2013/08/what-is-node-js/</link>
+      <link>https://www.ipreferjim.com/2013/08/what-is-node-js/</link>
       <pubDate>Fri, 02 Aug 2013 18:29:00 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2013/08/what-is-node-js/</guid>
+      <guid>https://www.ipreferjim.com/2013/08/what-is-node-js/</guid>
       <description>I’ve recently decided to write a book about node.js. I don’t feel like a lot of books out there (on any technology) cover real-world scenarios.</description>
     </item>
     
     <item>
       <title>Karma error: RangeError: Maximum call stack size exceeded</title>
-      <link>https://www.ipreferjim.com/site/2013/06/karma-error-rangeerror-maximum-call-stack-size-exceeded/</link>
+      <link>https://www.ipreferjim.com/2013/06/karma-error-rangeerror-maximum-call-stack-size-exceeded/</link>
       <pubDate>Sun, 30 Jun 2013 02:08:26 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2013/06/karma-error-rangeerror-maximum-call-stack-size-exceeded/</guid>
+      <guid>https://www.ipreferjim.com/2013/06/karma-error-rangeerror-maximum-call-stack-size-exceeded/</guid>
       <description>I’ve been working on a bootstrap application for express.js, angular.js, and bootstrap. The idea being that I can provide a boilerplate for quick prototyping of applications.</description>
     </item>
     
     <item>
       <title>Android Studio and Library Projects</title>
-      <link>https://www.ipreferjim.com/site/2013/06/android-studio-and-library-projects/</link>
+      <link>https://www.ipreferjim.com/2013/06/android-studio-and-library-projects/</link>
       <pubDate>Mon, 10 Jun 2013 05:03:17 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2013/06/android-studio-and-library-projects/</guid>
+      <guid>https://www.ipreferjim.com/2013/06/android-studio-and-library-projects/</guid>
       <description>This is basically a quick brain-dump post. I have previously attempted to get into Android application development, but with only 8-10 hours of “free” time per month, it was difficult to get traction with an app before the goog machine overhauled everything.</description>
     </item>
     
     <item>
       <title>git prepare-commit-msg with node.js</title>
-      <link>https://www.ipreferjim.com/site/2013/04/git-prepare-commit-msg-with-node-js/</link>
+      <link>https://www.ipreferjim.com/2013/04/git-prepare-commit-msg-with-node-js/</link>
       <pubDate>Sun, 07 Apr 2013 20:55:56 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2013/04/git-prepare-commit-msg-with-node-js/</guid>
+      <guid>https://www.ipreferjim.com/2013/04/git-prepare-commit-msg-with-node-js/</guid>
       <description>I think people often overlook using node.js as a scripting tool like ruby or python. If you search the web for examples of customized git hooks, you’ll probably have visited git-scm.</description>
     </item>
     
     <item>
       <title>Why I don’t recommend the Step module [node.js, npm]</title>
-      <link>https://www.ipreferjim.com/site/2013/03/why-i-dont-recommend-the-step-module/</link>
+      <link>https://www.ipreferjim.com/2013/03/why-i-dont-recommend-the-step-module/</link>
       <pubDate>Sun, 17 Mar 2013 07:27:50 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2013/03/why-i-dont-recommend-the-step-module/</guid>
+      <guid>https://www.ipreferjim.com/2013/03/why-i-dont-recommend-the-step-module/</guid>
       <description>I prefer asyc to step. The async module has a cleaner interface, more options, and utilities. It’s a little beefier in size, but those things are beside the point.</description>
     </item>
     
     <item>
       <title>CommonJS Modules, node’s require() and private members</title>
-      <link>https://www.ipreferjim.com/site/2013/03/commonjs-modules-nodes-require-and-private-members/</link>
+      <link>https://www.ipreferjim.com/2013/03/commonjs-modules-nodes-require-and-private-members/</link>
       <pubDate>Sat, 02 Mar 2013 23:47:07 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2013/03/commonjs-modules-nodes-require-and-private-members/</guid>
+      <guid>https://www.ipreferjim.com/2013/03/commonjs-modules-nodes-require-and-private-members/</guid>
       <description>CommonJS Modules, node’s require() and private members Interestingly, node.js module documentation doesn’t even mention CommonJS or the specification proposal it implements.</description>
     </item>
     
     <item>
       <title>“Unable to update the dependencies of the project”</title>
-      <link>https://www.ipreferjim.com/site/2013/01/unable-to-update-the-dependencies-of-the-project/</link>
+      <link>https://www.ipreferjim.com/2013/01/unable-to-update-the-dependencies-of-the-project/</link>
       <pubDate>Fri, 04 Jan 2013 16:40:43 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2013/01/unable-to-update-the-dependencies-of-the-project/</guid>
+      <guid>https://www.ipreferjim.com/2013/01/unable-to-update-the-dependencies-of-the-project/</guid>
       <description>I’ve recently had to switch from Visual Studio 2012 back to Visual Studio 2010 to do maintenance on another project. This project is currently stuck in Visual Studio 2010 until I have time to convert the old setup projects to WiX.</description>
     </item>
     
     <item>
       <title>[Android] on{X} – automate your life</title>
-      <link>https://www.ipreferjim.com/site/2012/10/android-onx-automate-your-life/</link>
+      <link>https://www.ipreferjim.com/2012/10/android-onx-automate-your-life/</link>
       <pubDate>Mon, 22 Oct 2012 22:59:07 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2012/10/android-onx-automate-your-life/</guid>
+      <guid>https://www.ipreferjim.com/2012/10/android-onx-automate-your-life/</guid>
       <description>Lately, I’ve been obsessing over Microsoft. A couple of months ago, I would have told you that Windows 8 was a terrible move on Microsoft’s part.</description>
     </item>
     
     <item>
       <title>Generating sprites with HTML5 canvas (node-canvas)</title>
-      <link>https://www.ipreferjim.com/site/2012/10/generating-sprites-with-html5-canvas-node-canvas/</link>
+      <link>https://www.ipreferjim.com/2012/10/generating-sprites-with-html5-canvas-node-canvas/</link>
       <pubDate>Sun, 14 Oct 2012 22:31:01 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2012/10/generating-sprites-with-html5-canvas-node-canvas/</guid>
+      <guid>https://www.ipreferjim.com/2012/10/generating-sprites-with-html5-canvas-node-canvas/</guid>
       <description>About a week ago, I posted about drawing simple shapes in HTML5. HTML5’s Canvas isn’t only useful on the client side.</description>
     </item>
     
     <item>
       <title>Getting started with jQuery plugins</title>
-      <link>https://www.ipreferjim.com/site/2012/10/getting-started-with-jquery-plugins/</link>
+      <link>https://www.ipreferjim.com/2012/10/getting-started-with-jquery-plugins/</link>
       <pubDate>Sun, 14 Oct 2012 01:57:52 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2012/10/getting-started-with-jquery-plugins/</guid>
+      <guid>https://www.ipreferjim.com/2012/10/getting-started-with-jquery-plugins/</guid>
       <description>jQuery plugins aren’t that difficult to write, but some folks seem to have a hard time understanding how to get started, so I thought I would write a quick blog post about that.</description>
     </item>
     
     <item>
       <title>Drawing a custom HTML5 shape</title>
-      <link>https://www.ipreferjim.com/site/2012/10/drawing-a-custom-html5-shape/</link>
+      <link>https://www.ipreferjim.com/2012/10/drawing-a-custom-html5-shape/</link>
       <pubDate>Thu, 04 Oct 2012 16:48:28 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2012/10/drawing-a-custom-html5-shape/</guid>
+      <guid>https://www.ipreferjim.com/2012/10/drawing-a-custom-html5-shape/</guid>
       <description>HTML5 is fun. I’ve meant to post about it more than I have in the past (which is 0 posts). I recently got the urge, so I want to show how to draw a heart and a star on HTML5 canvas.</description>
     </item>
     
     <item>
       <title>My Review of Hilary Mason: Advanced Machine Learning</title>
-      <link>https://www.ipreferjim.com/site/2012/09/my-review-of-hilary-mason-advanced-machine-learning/</link>
+      <link>https://www.ipreferjim.com/2012/09/my-review-of-hilary-mason-advanced-machine-learning/</link>
       <pubDate>Sat, 22 Sep 2012 19:49:34 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2012/09/my-review-of-hilary-mason-advanced-machine-learning/</guid>
+      <guid>https://www.ipreferjim.com/2012/09/my-review-of-hilary-mason-advanced-machine-learning/</guid>
       <description>Originally submitted at O&amp;#8217;Reilly &amp;lt;div&amp;gt; &amp;lt;img src=&amp;quot;https://images.powerreviews.com/images_products/06/58/18430068_100.jpg&amp;quot; class=&amp;quot;photo&amp;quot; align=&amp;quot;left&amp;quot; style=&amp;quot;margin: 0 0.5em 0 0&amp;quot; /&amp;gt;&amp;lt;/p&amp;gt; &amp;lt;p style=&amp;quot;margin-top:0&amp;quot;&amp;gt; Hilary Mason: Advanced Machine Learning &amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;p&amp;gt; &amp;lt;a href=&amp;quot;http://shop.</description>
     </item>
     
     <item>
       <title>bash function: md.view</title>
-      <link>https://www.ipreferjim.com/site/2012/09/bash-function-md-view/</link>
+      <link>https://www.ipreferjim.com/2012/09/bash-function-md-view/</link>
       <pubDate>Sat, 15 Sep 2012 17:00:23 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2012/09/bash-function-md-view/</guid>
+      <guid>https://www.ipreferjim.com/2012/09/bash-function-md-view/</guid>
       <description>One of my favorite bash functions is md.view, which is available in my dotfiles repository.
 # test markdown files, probably a better way to test for programs.</description>
     </item>
     
     <item>
       <title>Internal Server Error in .NET 4, “Calling LoadLibraryEx on ISAPI filter”</title>
-      <link>https://www.ipreferjim.com/site/2012/08/internal-server-error-in-net-4-calling-loadlibraryex-on-isapi-filter/</link>
+      <link>https://www.ipreferjim.com/2012/08/internal-server-error-in-net-4-calling-loadlibraryex-on-isapi-filter/</link>
       <pubDate>Thu, 16 Aug 2012 00:30:04 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2012/08/internal-server-error-in-net-4-calling-loadlibraryex-on-isapi-filter/</guid>
+      <guid>https://www.ipreferjim.com/2012/08/internal-server-error-in-net-4-calling-loadlibraryex-on-isapi-filter/</guid>
       <description>I encountered an odd issue today.
 I received an Internal Server Error for a .NET 4 application:
 Calling LoadLibraryEx on ISAPI filter &amp;quot;C:\Windows\Microsoft.</description>
@@ -541,28 +541,28 @@ Calling LoadLibraryEx on ISAPI filter &amp;quot;C:\Windows\Microsoft.</descripti
     
     <item>
       <title>ServiceStack’s Markdown Razor Engine. Wow.</title>
-      <link>https://www.ipreferjim.com/site/2012/07/servicestacks-markdown-razor-engine-wow/</link>
+      <link>https://www.ipreferjim.com/2012/07/servicestacks-markdown-razor-engine-wow/</link>
       <pubDate>Sun, 15 Jul 2012 16:08:38 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2012/07/servicestacks-markdown-razor-engine-wow/</guid>
+      <guid>https://www.ipreferjim.com/2012/07/servicestacks-markdown-razor-engine-wow/</guid>
       <description>ServiceStack is a pretty sweet-looking alternative to WCF. It provides strongly-typed, well-designed, REST/RCP+SOAP services for .NET and Mono. Check out the README in the repository to see how ridiculously easy it is to setup a service.</description>
     </item>
     
     <item>
       <title>‘Upgrading’ couchdb on Ubuntu 12.04</title>
-      <link>https://www.ipreferjim.com/site/2012/07/upgrading-couchdb-on-ubuntu-12-04/</link>
+      <link>https://www.ipreferjim.com/2012/07/upgrading-couchdb-on-ubuntu-12-04/</link>
       <pubDate>Sat, 14 Jul 2012 19:37:43 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2012/07/upgrading-couchdb-on-ubuntu-12-04/</guid>
+      <guid>https://www.ipreferjim.com/2012/07/upgrading-couchdb-on-ubuntu-12-04/</guid>
       <description>If you’ve installed couchdb from the Ubuntu repositories, you’re likely running 1.0.1. If you decide to build and install couchdb from source, you may have some issues with the server starting after a reboot.</description>
     </item>
     
     <item>
       <title>Proxy Objects</title>
-      <link>https://www.ipreferjim.com/site/2012/07/proxy-objects/</link>
+      <link>https://www.ipreferjim.com/2012/07/proxy-objects/</link>
       <pubDate>Sat, 07 Jul 2012 23:33:27 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2012/07/proxy-objects/</guid>
+      <guid>https://www.ipreferjim.com/2012/07/proxy-objects/</guid>
       <description>&lt;p&gt;I started to familiarize myself with proxy objects a couple of years ago when I started used Fluent NHibernate on a pretty large project. NHibernate itself proxies objects to allow the framework to do its magic. Proxies are a fantastic thing. I spoke with a friend of mine today about some advanced coding techniques including proxy objects and IoC, which made me want to write a little about some of those topics.&lt;/p&gt;
 &lt;p&gt;From &lt;a href=&#34;http://en.wikipedia.org/wiki/Proxy_pattern&#34; title=&#34;Proxy pattern on Wikipedia&#34; target=&#34;_blank&#34;&gt;Wikipedia&lt;/a&gt;:&lt;/p&gt;
 &lt;blockquote&gt;
@@ -578,28 +578,28 @@ Calling LoadLibraryEx on ISAPI filter &amp;quot;C:\Windows\Microsoft.</descripti
     
     <item>
       <title>Debug.WriteLine</title>
-      <link>https://www.ipreferjim.com/site/2012/06/debug-writeline/</link>
+      <link>https://www.ipreferjim.com/2012/06/debug-writeline/</link>
       <pubDate>Fri, 15 Jun 2012 22:21:34 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2012/06/debug-writeline/</guid>
+      <guid>https://www.ipreferjim.com/2012/06/debug-writeline/</guid>
       <description>I answered a question on StackOverflow last week which made me remember a few years ago when I also wondered, “Where does Debug.</description>
     </item>
     
     <item>
       <title>[node.js] Simple Logging in tweeter.js</title>
-      <link>https://www.ipreferjim.com/site/2012/04/node-js-simple-logging-in-tweeter-js/</link>
+      <link>https://www.ipreferjim.com/2012/04/node-js-simple-logging-in-tweeter-js/</link>
       <pubDate>Mon, 30 Apr 2012 22:28:21 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2012/04/node-js-simple-logging-in-tweeter-js/</guid>
+      <guid>https://www.ipreferjim.com/2012/04/node-js-simple-logging-in-tweeter-js/</guid>
       <description>tweeter.js is a simple OAuth implementation I started working on for a node.js application I had envisioned. The library works, as in it runs through the whole OAuth dance and allows the client to make API calls.</description>
     </item>
     
     <item>
       <title>ASP.NET, AppDomains, and shadow-copying</title>
-      <link>https://www.ipreferjim.com/site/2012/04/asp-net-appdomains-and-shadow-copying/</link>
+      <link>https://www.ipreferjim.com/2012/04/asp-net-appdomains-and-shadow-copying/</link>
       <pubDate>Sun, 29 Apr 2012 22:05:28 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2012/04/asp-net-appdomains-and-shadow-copying/</guid>
+      <guid>https://www.ipreferjim.com/2012/04/asp-net-appdomains-and-shadow-copying/</guid>
       <description>&lt;p&gt;I answered a &lt;a href=&#34;http://stackoverflow.com/a/4394472/151445&#34; title=&#34;Does my ASP.NET application stop executing if I overwrite the DLLs?&#34; target=&#34;_blank&#34;&gt;question on StackOverflow&lt;/a&gt; nearly two years ago, and I’m surprised at how few votes it has received, despite comments such as:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;+1 for teaching me something new today thanks. -kobe&lt;/p&gt;
@@ -609,57 +609,57 @@ Calling LoadLibraryEx on ISAPI filter &amp;quot;C:\Windows\Microsoft.</descripti
     
     <item>
       <title>Allowing only a single instance of a .NET application</title>
-      <link>https://www.ipreferjim.com/site/2012/04/allowing-only-a-single-instance-of-a-net-application/</link>
+      <link>https://www.ipreferjim.com/2012/04/allowing-only-a-single-instance-of-a-net-application/</link>
       <pubDate>Mon, 23 Apr 2012 23:13:32 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2012/04/allowing-only-a-single-instance-of-a-net-application/</guid>
+      <guid>https://www.ipreferjim.com/2012/04/allowing-only-a-single-instance-of-a-net-application/</guid>
       <description>In the past, whenever I constrained an application to having only a single instance running at any given time, I naively walked a list of running processes to find a process with the same name as the currently-running process.</description>
     </item>
     
     <item>
       <title>C&#43;&#43; Global _CRT_SECURE_NO_WARNINGS</title>
-      <link>https://www.ipreferjim.com/site/2012/04/c-global-_crt_secure_no_warnings/</link>
+      <link>https://www.ipreferjim.com/2012/04/c-global-_crt_secure_no_warnings/</link>
       <pubDate>Mon, 16 Apr 2012 20:43:09 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2012/04/c-global-_crt_secure_no_warnings/</guid>
+      <guid>https://www.ipreferjim.com/2012/04/c-global-_crt_secure_no_warnings/</guid>
       <description>I became extremely annoyed by thousands of these messages while running MSBuild:
 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(105) : see declaration of &#39;strcpy&#39; SomeFile.</description>
     </item>
     
     <item>
       <title>Ubuntu: Open With… Wireshark</title>
-      <link>https://www.ipreferjim.com/site/2012/03/ubuntu-open-with-wireshark/</link>
+      <link>https://www.ipreferjim.com/2012/03/ubuntu-open-with-wireshark/</link>
       <pubDate>Fri, 23 Mar 2012 15:50:51 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2012/03/ubuntu-open-with-wireshark/</guid>
+      <guid>https://www.ipreferjim.com/2012/03/ubuntu-open-with-wireshark/</guid>
       <description>Reading through Practical Packet Analysis, I ran local captures to follow along until Chapter 5. Instead of trying to simulate an improperly-dissected packet, I downloaded the captures which accompany the book.</description>
     </item>
     
     <item>
       <title>C# Null-Coalescing (??) operator</title>
-      <link>https://www.ipreferjim.com/site/2012/03/c-null-coalescing-operator/</link>
+      <link>https://www.ipreferjim.com/2012/03/c-null-coalescing-operator/</link>
       <pubDate>Mon, 19 Mar 2012 01:39:38 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2012/03/c-null-coalescing-operator/</guid>
+      <guid>https://www.ipreferjim.com/2012/03/c-null-coalescing-operator/</guid>
       <description>The null-coalescing operator (??) is one of my favorites, and I see so few developers using it.
 MSDN defines the null-coalescing operator as</description>
     </item>
     
     <item>
       <title>git push: fatal: unable to read SHA1</title>
-      <link>https://www.ipreferjim.com/site/2012/02/git-push-fatal-unable-to-read-sha1/</link>
+      <link>https://www.ipreferjim.com/2012/02/git-push-fatal-unable-to-read-sha1/</link>
       <pubDate>Tue, 21 Feb 2012 01:46:00 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2012/02/git-push-fatal-unable-to-read-sha1/</guid>
+      <guid>https://www.ipreferjim.com/2012/02/git-push-fatal-unable-to-read-sha1/</guid>
       <description>Today, I was faced with an interesting error in a git repository. I am backing up a lot of old projects from during and after college into a private git repo.</description>
     </item>
     
     <item>
       <title>Mastering Node: Addons and FunctionTemplate (uuid.node)</title>
-      <link>https://www.ipreferjim.com/site/2012/02/mastering-node-addons-and-functiontemplate-uuid-node/</link>
+      <link>https://www.ipreferjim.com/2012/02/mastering-node-addons-and-functiontemplate-uuid-node/</link>
       <pubDate>Tue, 07 Feb 2012 02:41:18 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2012/02/mastering-node-addons-and-functiontemplate-uuid-node/</guid>
+      <guid>https://www.ipreferjim.com/2012/02/mastering-node-addons-and-functiontemplate-uuid-node/</guid>
       <description>&lt;p&gt;Last night, I pushed an addition to my fork of Mastering Node. I decided to add a bit to the &lt;em&gt;Addons&lt;/em&gt; chapter. The first example in this chapter only shows how to add a function to a natively-compiled module (i.e. an addon). This example shows you how to start a module which can be used in the following way:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span class=&#34;kd&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;Uuid&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;require&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;./uuid.node&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;).&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;Uuid&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
 &lt;span class=&#34;kd&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;uuid&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;new&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;Uuid&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;();&lt;/span&gt;
@@ -675,38 +675,38 @@ MSDN defines the null-coalescing operator as</description>
     
     <item>
       <title>words.pl: slogan word generator</title>
-      <link>https://www.ipreferjim.com/site/2012/02/words-pl-slogan-word-generator/</link>
+      <link>https://www.ipreferjim.com/2012/02/words-pl-slogan-word-generator/</link>
       <pubDate>Sat, 04 Feb 2012 00:20:04 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2012/02/words-pl-slogan-word-generator/</guid>
+      <guid>https://www.ipreferjim.com/2012/02/words-pl-slogan-word-generator/</guid>
       <description>About a year ago, I was really into playing this game online where you were given a single sentence and you had to use the letters in that sentence to make up as many words as possible.</description>
     </item>
     
     <item>
       <title>dotfiles backup using GitHub</title>
-      <link>https://www.ipreferjim.com/site/2012/01/dotfiles-backup-using-github/</link>
+      <link>https://www.ipreferjim.com/2012/01/dotfiles-backup-using-github/</link>
       <pubDate>Thu, 19 Jan 2012 01:58:12 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2012/01/dotfiles-backup-using-github/</guid>
+      <guid>https://www.ipreferjim.com/2012/01/dotfiles-backup-using-github/</guid>
       <description>I was recently looking for a solution to backup my configuration files (bash, vim, etc) using GitHub. After some looking around, I’ve compiled a pretty nice project for myself.</description>
     </item>
     
     <item>
       <title>Install nodejs under ChromeOS (CR-48)</title>
-      <link>https://www.ipreferjim.com/site/2011/12/install-nodejs-under-chromeos-cr-48/</link>
+      <link>https://www.ipreferjim.com/2011/12/install-nodejs-under-chromeos-cr-48/</link>
       <pubDate>Fri, 23 Dec 2011 04:35:53 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2011/12/install-nodejs-under-chromeos-cr-48/</guid>
+      <guid>https://www.ipreferjim.com/2011/12/install-nodejs-under-chromeos-cr-48/</guid>
       <description>Why would I want to do this?
 I’m a software developer. I love javascript. I love node.js. I love the direction Google is taking web development, user interaction, and the web in general.</description>
     </item>
     
     <item>
       <title>ASP.NET BuildResultCompiledAssembly error</title>
-      <link>https://www.ipreferjim.com/site/2011/12/asp-net-buildresultcompiledassembly-error/</link>
+      <link>https://www.ipreferjim.com/2011/12/asp-net-buildresultcompiledassembly-error/</link>
       <pubDate>Wed, 07 Dec 2011 15:23:38 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2011/12/asp-net-buildresultcompiledassembly-error/</guid>
+      <guid>https://www.ipreferjim.com/2011/12/asp-net-buildresultcompiledassembly-error/</guid>
       <description>Unable to cast object of type ‘System.Web.Compilation.BuildResultCompiledAssembly’ to type ‘System.Web.Compilation.BuildResultCompiledGlobalAsaxType’.
 This has been reported as a bug.
 But there is no solution.</description>
@@ -714,56 +714,56 @@ But there is no solution.</description>
     
     <item>
       <title>Visual Studio and Interface property stubs</title>
-      <link>https://www.ipreferjim.com/site/2011/11/visual-studio-and-interface-property-stubs/</link>
+      <link>https://www.ipreferjim.com/2011/11/visual-studio-and-interface-property-stubs/</link>
       <pubDate>Sat, 12 Nov 2011 23:53:38 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2011/11/visual-studio-and-interface-property-stubs/</guid>
+      <guid>https://www.ipreferjim.com/2011/11/visual-studio-and-interface-property-stubs/</guid>
       <description>Last year, I posted a question on StackOverflow asking if it was possible to replace the property stubs for interface refactoring</description>
     </item>
     
     <item>
       <title>jQuery plugin: fixed table header</title>
-      <link>https://www.ipreferjim.com/site/2011/10/jquery-plugin-fixed-table-header/</link>
+      <link>https://www.ipreferjim.com/2011/10/jquery-plugin-fixed-table-header/</link>
       <pubDate>Mon, 31 Oct 2011 12:27:57 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2011/10/jquery-plugin-fixed-table-header/</guid>
+      <guid>https://www.ipreferjim.com/2011/10/jquery-plugin-fixed-table-header/</guid>
       <description>Here’s a plugin that I wrote a while ago for fixing a table’s header row on scroll.
 This code is also available as a gist.</description>
     </item>
     
     <item>
       <title>Mercurial and Git in one repository</title>
-      <link>https://www.ipreferjim.com/site/2011/10/mercurial-and-git-in-one-repository/</link>
+      <link>https://www.ipreferjim.com/2011/10/mercurial-and-git-in-one-repository/</link>
       <pubDate>Sat, 29 Oct 2011 22:07:53 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2011/10/mercurial-and-git-in-one-repository/</guid>
+      <guid>https://www.ipreferjim.com/2011/10/mercurial-and-git-in-one-repository/</guid>
       <description>I have a personal project hosted at bitbucket using Mercurial as the version control system. Since I started that project, I’ve been using GitHub for everything.</description>
     </item>
     
     <item>
       <title>Makefile setup for minifying .js files in an expressjs application</title>
-      <link>https://www.ipreferjim.com/site/2011/09/makefile-setup-for-minifying-js-files-in-an-expressjs-application/</link>
+      <link>https://www.ipreferjim.com/2011/09/makefile-setup-for-minifying-js-files-in-an-expressjs-application/</link>
       <pubDate>Thu, 29 Sep 2011 02:17:44 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2011/09/makefile-setup-for-minifying-js-files-in-an-expressjs-application/</guid>
+      <guid>https://www.ipreferjim.com/2011/09/makefile-setup-for-minifying-js-files-in-an-expressjs-application/</guid>
       <description>There’s not really any reason to uglify or minify your JavaScript files on a per-request basis or on a pre-cache basis.</description>
     </item>
     
     <item>
       <title>propv.snippet for creating Automatic virtual properties in C#</title>
-      <link>https://www.ipreferjim.com/site/2011/09/propv-snippet/</link>
+      <link>https://www.ipreferjim.com/2011/09/propv-snippet/</link>
       <pubDate>Fri, 23 Sep 2011 13:21:34 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2011/09/propv-snippet/</guid>
+      <guid>https://www.ipreferjim.com/2011/09/propv-snippet/</guid>
       <description>I’m all about saving time. I have a huge collection of helpful snippets. Here’s one that automatically creates a virtual property, which is really helpful if you use Castle’s DynamicProxy (NHibernate uses this).</description>
     </item>
     
     <item>
       <title>Editing JavaScript in vim</title>
-      <link>https://www.ipreferjim.com/site/2011/09/editing-javascript-in-vim/</link>
+      <link>https://www.ipreferjim.com/2011/09/editing-javascript-in-vim/</link>
       <pubDate>Mon, 05 Sep 2011 04:02:50 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2011/09/editing-javascript-in-vim/</guid>
+      <guid>https://www.ipreferjim.com/2011/09/editing-javascript-in-vim/</guid>
       <description>I primarily use vim as my editor of choice for JavaScript.
 I have a fairly simple .vimrc:
 syntax on &amp;#34; enabled syntax highlighting :set number &amp;#34; line numbers :set ai &amp;#34; autoindent :set tabstop=4 &amp;#34; sets tabs to 4 characters :set shiftwidth=4 :set expandtab :set softtabstop=4 &amp;#34; makes the spaces feel like real tabs &amp;#34; CSS (tabs = 2, lines = 79) autocmd FileType css set omnifunc=csscomplete#CompleteCSS autocmd FileType css set sw=2 autocmd FileType css set ts=2 autocmd FileType css set sts=2 &amp;#34; JavaScript (tabs = 4, lines = 79) autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS autocmd FileType javascript set sw=4 autocmd FileType javascript set ts=4 autocmd FileType javascript set sts=4 &amp;#34; autocmd FileType javascript set tw=79 autocmd FileType jade set omnifunc=jadecomplete#CompleteJade autocmd FileType jade set sw=2 autocmd FileType jade set ts=2 autocmd FileType jade set sts=2 &amp;#34; Highlight current line only in insert mode autocmd InsertLeave * set nocursorline autocmd InsertEnter * set cursorline &amp;#34; Makefiles require TAB instead of whitespace autocmd FileType make setlocal noexpandtab &amp;#34; Highlight cursor highlight CursorLine ctermbg=8 cterm=NONE I also use the JavaScript syntax/indents found here:</description>
@@ -771,87 +771,87 @@ syntax on &amp;#34; enabled syntax highlighting :set number &amp;#34; line numbe
     
     <item>
       <title>testy C# Test Method Snippet</title>
-      <link>https://www.ipreferjim.com/site/2011/08/testy-c-test-method-snippet/</link>
+      <link>https://www.ipreferjim.com/2011/08/testy-c-test-method-snippet/</link>
       <pubDate>Tue, 30 Aug 2011 13:06:47 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2011/08/testy-c-test-method-snippet/</guid>
+      <guid>https://www.ipreferjim.com/2011/08/testy-c-test-method-snippet/</guid>
       <description>This is a pretty trivial snippet, but I use it quite a lot.
 Save this file as testy.snippet in your [Visual Studio]\VC#\Snippets\1033\Test directory.</description>
     </item>
     
     <item>
       <title>Origin of the term “bug”</title>
-      <link>https://www.ipreferjim.com/site/2011/08/origin-of-the-term-bug/</link>
+      <link>https://www.ipreferjim.com/2011/08/origin-of-the-term-bug/</link>
       <pubDate>Sat, 27 Aug 2011 19:23:45 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2011/08/origin-of-the-term-bug/</guid>
+      <guid>https://www.ipreferjim.com/2011/08/origin-of-the-term-bug/</guid>
       <description>Grace Murray Hopper was a Navy officer who was instrumental in the development of COBOL, one of the first programming languages to use the English language to write code instead of assembly or machine language.</description>
     </item>
     
     <item>
       <title>[c#] Instantiating an object with a private constructor</title>
-      <link>https://www.ipreferjim.com/site/2011/08/c-instantiating-an-object-with-a-private-constructor/</link>
+      <link>https://www.ipreferjim.com/2011/08/c-instantiating-an-object-with-a-private-constructor/</link>
       <pubDate>Sat, 27 Aug 2011 18:26:43 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2011/08/c-instantiating-an-object-with-a-private-constructor/</guid>
+      <guid>https://www.ipreferjim.com/2011/08/c-instantiating-an-object-with-a-private-constructor/</guid>
       <description>Not too long ago, I needed to modify a type available in the the BCL which didn’t have a public constructor or any method for creating an instance of the object.</description>
     </item>
     
     <item>
       <title>[js] Closures versus Functional Scoping</title>
-      <link>https://www.ipreferjim.com/site/2011/08/js-closures-versus-functional-scoping/</link>
+      <link>https://www.ipreferjim.com/2011/08/js-closures-versus-functional-scoping/</link>
       <pubDate>Sat, 27 Aug 2011 03:47:40 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2011/08/js-closures-versus-functional-scoping/</guid>
+      <guid>https://www.ipreferjim.com/2011/08/js-closures-versus-functional-scoping/</guid>
       <description>I was recently asked a very simple JavaScript question: what is a closure?
 Of course, I answered it (correctly, might I add) as “it means capturing a variable inside a function”.</description>
     </item>
     
     <item>
       <title>[node.js] Getting started with nodeunit</title>
-      <link>https://www.ipreferjim.com/site/2011/08/node-js-getting-started-with-nodeunit/</link>
+      <link>https://www.ipreferjim.com/2011/08/node-js-getting-started-with-nodeunit/</link>
       <pubDate>Wed, 17 Aug 2011 22:08:44 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2011/08/node-js-getting-started-with-nodeunit/</guid>
+      <guid>https://www.ipreferjim.com/2011/08/node-js-getting-started-with-nodeunit/</guid>
       <description>The following code is part of the testing chapter I previously worked on in my fork of Mastering Node.
 Throughout this post, you’ll see references to files from a relative directory.</description>
     </item>
     
     <item>
       <title>Posting complex models to ASP.NET MVC</title>
-      <link>https://www.ipreferjim.com/site/2011/08/posting-complex-models-to-asp-net-mvc/</link>
+      <link>https://www.ipreferjim.com/2011/08/posting-complex-models-to-asp-net-mvc/</link>
       <pubDate>Tue, 16 Aug 2011 12:43:24 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2011/08/posting-complex-models-to-asp-net-mvc/</guid>
+      <guid>https://www.ipreferjim.com/2011/08/posting-complex-models-to-asp-net-mvc/</guid>
       <description>Nick Riggs wrote a nice little jQuery plugin called postify that I have found extremely handy on many occasions. The code builds posted data into a format which is more understandable to the default ModelBinder in ASP.</description>
     </item>
     
     <item>
       <title>DataAnnotations, MVC 3, and Unobtrusive Validations</title>
-      <link>https://www.ipreferjim.com/site/2011/08/dataannotations-mvc3-unobtrusive-validations/</link>
+      <link>https://www.ipreferjim.com/2011/08/dataannotations-mvc3-unobtrusive-validations/</link>
       <pubDate>Mon, 15 Aug 2011 01:00:14 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2011/08/dataannotations-mvc3-unobtrusive-validations/</guid>
+      <guid>https://www.ipreferjim.com/2011/08/dataannotations-mvc3-unobtrusive-validations/</guid>
       <description>&lt;p&gt;DataAnnotations are a pretty cool introduction to .NET 3.5+. It is very useful in ASP.NET MVC 3, and I’ve written a somewhat &lt;a href=&#34;http://www.ipreferjim.com/2010/05/system-componentmodel-dataannotations-for-asp-net-web-forms/&#34; title=&#34;System.ComponentModel.DataAnnotations for ASP.NET Web Forms&#34; target=&#34;_blank&#34;&gt;naive attempt&lt;/a&gt; to use this functionality in ASP.NET Web Forms which some people have found very useful.&lt;/p&gt;
 &lt;p&gt;I’d like to dig a little more in depth…&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Running additional Google Chrome profiles in Linux</title>
-      <link>https://www.ipreferjim.com/site/2011/08/running-additional-google-chrome-profiles-in-linux/</link>
+      <link>https://www.ipreferjim.com/2011/08/running-additional-google-chrome-profiles-in-linux/</link>
       <pubDate>Sun, 14 Aug 2011 17:21:58 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2011/08/running-additional-google-chrome-profiles-in-linux/</guid>
+      <guid>https://www.ipreferjim.com/2011/08/running-additional-google-chrome-profiles-in-linux/</guid>
       <description>Google Chrome supports running multiple profiles.
 In newer versions of Google Chrome, you’ll be able to enable profiles by navigating to chrome://flags and enabling Multiple Profiles.</description>
     </item>
     
     <item>
       <title>System.Data.OracleClient and Windows 7… love at first sight!</title>
-      <link>https://www.ipreferjim.com/site/2011/08/system-data-oracleclient-and-windows-7-love-at-first-sight/</link>
+      <link>https://www.ipreferjim.com/2011/08/system-data-oracleclient-and-windows-7-love-at-first-sight/</link>
       <pubDate>Sun, 14 Aug 2011 03:52:56 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2011/08/system-data-oracleclient-and-windows-7-love-at-first-sight/</guid>
+      <guid>https://www.ipreferjim.com/2011/08/system-data-oracleclient-and-windows-7-love-at-first-sight/</guid>
       <description>&lt;p&gt;&lt;strong&gt;&lt;/sarcasm&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;I spent nearly two days trying to resolve this issue. My new desktop at work is running Windows 7 (64-bit) and some of our applications are still using System.Data.OracleClient as an adapter instead of Oracle’s own ODP.NET. Microsoft’s driver interops with Oracle’s own client installed on the developer machine (oci.dll). We need to continue running our web applications under 32-bit IIS, which is where the problem lies.&lt;/p&gt;
 &lt;p&gt;FYI… &lt;a href=&#34;http://msdn.microsoft.com/en-us/library/77d8yct7.aspx&#34; title=&#34;Oracle and ADO.NET&#34; target=&#34;_blank&#34;&gt;According to Microsoft&lt;/a&gt;:&lt;/p&gt;
@@ -865,39 +865,39 @@ In newer versions of Google Chrome, you’ll be able to enable profiles by navig
     
     <item>
       <title>Fixed issues with RSS feed.</title>
-      <link>https://www.ipreferjim.com/site/2011/08/fixed-issues-with-rss-feed/</link>
+      <link>https://www.ipreferjim.com/2011/08/fixed-issues-with-rss-feed/</link>
       <pubDate>Thu, 11 Aug 2011 02:53:54 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2011/08/fixed-issues-with-rss-feed/</guid>
+      <guid>https://www.ipreferjim.com/2011/08/fixed-issues-with-rss-feed/</guid>
       <description>My apologies to any of my subscribers who may have had issues over the past month with my syndication feed.</description>
     </item>
     
     <item>
       <title>jquery.empuzzle @github</title>
-      <link>https://www.ipreferjim.com/site/2011/08/jquery-empuzzle-github/</link>
+      <link>https://www.ipreferjim.com/2011/08/jquery-empuzzle-github/</link>
       <pubDate>Mon, 08 Aug 2011 02:37:28 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2011/08/jquery-empuzzle-github/</guid>
+      <guid>https://www.ipreferjim.com/2011/08/jquery-empuzzle-github/</guid>
       <description>For the past few days, I’ve been writing this plugin called jquery.empuzzle. It was inspired by ‘Jigsy’ at cityposh.com.
 It is a basic N-puzzle</description>
     </item>
     
     <item>
       <title>Linux tip: Alias ‘cd’ in bash shell</title>
-      <link>https://www.ipreferjim.com/site/2011/07/linux-tip-alias-cd-in-bash-shell/</link>
+      <link>https://www.ipreferjim.com/2011/07/linux-tip-alias-cd-in-bash-shell/</link>
       <pubDate>Sun, 24 Jul 2011 00:01:42 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2011/07/linux-tip-alias-cd-in-bash-shell/</guid>
+      <guid>https://www.ipreferjim.com/2011/07/linux-tip-alias-cd-in-bash-shell/</guid>
       <description>A while ago, I stumbled across an excellent article at O’Reilly with tips for your bash shell.
 I wanted to expand on the “pushd/popd” section a little.</description>
     </item>
     
     <item>
       <title>Installing PAR::Packer (in Windows or Linux)</title>
-      <link>https://www.ipreferjim.com/site/2011/07/installing-parpacker-in-windows/</link>
+      <link>https://www.ipreferjim.com/2011/07/installing-parpacker-in-windows/</link>
       <pubDate>Wed, 20 Jul 2011 21:10:00 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2011/07/installing-parpacker-in-windows/</guid>
+      <guid>https://www.ipreferjim.com/2011/07/installing-parpacker-in-windows/</guid>
       <description>&lt;p&gt;I’m a frequent Ubuntu Linux user. I don’t use Windows much, unless I’m at work. Today, I wrote a small script to parse Apache access logs and thought, “This would be a really cool utility to share with others.” Granted, it’s pretty basic and there are most likely hundreds of other utilities out there, so I’ve decided to use it as an example to installing PAR:Packer under Windows to compile perl scripts into a Windows executable.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Download and install &lt;a href=&#34;http://strawberryperl.com/&#34; title=&#34;Download Strawberry Perl&#34; target=&#34;_blank&#34;&gt;Strawberry Perl&lt;/a&gt;&lt;/li&gt;
@@ -912,47 +912,47 @@ cpanm -n PAR::Packe
     
     <item>
       <title>Bitwise Operations: Examples</title>
-      <link>https://www.ipreferjim.com/site/2011/07/bitwise-operations-examples/</link>
+      <link>https://www.ipreferjim.com/2011/07/bitwise-operations-examples/</link>
       <pubDate>Tue, 19 Jul 2011 22:57:08 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2011/07/bitwise-operations-examples/</guid>
+      <guid>https://www.ipreferjim.com/2011/07/bitwise-operations-examples/</guid>
       <description>One post that I’ve always loved on stackoverflow is this post by Hugoware which contains some useful extension methods for bitwise operations.</description>
     </item>
     
     <item>
       <title>Hostgator: ssh warns ‘too many authentication failures’</title>
-      <link>https://www.ipreferjim.com/site/2011/07/hostgator-ssh-warns-too-many-authentication-failures/</link>
+      <link>https://www.ipreferjim.com/2011/07/hostgator-ssh-warns-too-many-authentication-failures/</link>
       <pubDate>Sun, 17 Jul 2011 18:21:00 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2011/07/hostgator-ssh-warns-too-many-authentication-failures/</guid>
+      <guid>https://www.ipreferjim.com/2011/07/hostgator-ssh-warns-too-many-authentication-failures/</guid>
       <description>I requested for HostGator to provide ssh access. Since then, I haven’t used it. I attempted to ssh into the server today and received the message ‘too many authentication failures’.</description>
     </item>
     
     <item>
       <title>What happens when I overwrite a DLL (asp.net)?</title>
-      <link>https://www.ipreferjim.com/site/2011/07/what-happens-when-i-overwrite-a-dll-asp-net/</link>
+      <link>https://www.ipreferjim.com/2011/07/what-happens-when-i-overwrite-a-dll-asp-net/</link>
       <pubDate>Sat, 09 Jul 2011 00:46:00 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2011/07/what-happens-when-i-overwrite-a-dll-asp-net/</guid>
+      <guid>https://www.ipreferjim.com/2011/07/what-happens-when-i-overwrite-a-dll-asp-net/</guid>
       <description>&lt;p&gt;I post on &lt;a href=&#34;http://stackoverflow.com/&#34; title=&#34;Stack Overflow&#34; target=&#34;_blank&#34;&gt;Stack Overflow&lt;/a&gt; a lot. Sometimes, there are really interesting questions like one I answered last year. I had forgotten about it until this week when the answer was accepted. I thought I’d share it on my blog.&lt;/p&gt;
 &lt;p&gt;The original post is &lt;a href=&#34;http://stackoverflow.com/questions/4394410/does-my-asp-net-application-stop-executing-if-i-overwrite-the-dlls/4394472#4394472&#34; title=&#34;Does my ASP.NET application stop executing if I overwrite the DLLs?&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;. Read on for redundancy.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Getting started with Catalyst Framework (install)</title>
-      <link>https://www.ipreferjim.com/site/2011/06/getting-started-with-catalyst-framework-install/</link>
+      <link>https://www.ipreferjim.com/2011/06/getting-started-with-catalyst-framework-install/</link>
       <pubDate>Fri, 24 Jun 2011 18:47:00 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2011/06/getting-started-with-catalyst-framework-install/</guid>
+      <guid>https://www.ipreferjim.com/2011/06/getting-started-with-catalyst-framework-install/</guid>
       <description>I’ve been a fan of Ruby on Rails for a while. I’ve not been able to find a hosting solution that keeps on the bleeding edge of Rails development.</description>
     </item>
     
     <item>
       <title>Loading newer versions of jQuery and jQuery UI (noConflict)</title>
-      <link>https://www.ipreferjim.com/site/2011/06/loading-newer-versions-of-jquery-and-jquery-ui-noconflict/</link>
+      <link>https://www.ipreferjim.com/2011/06/loading-newer-versions-of-jquery-and-jquery-ui-noconflict/</link>
       <pubDate>Sat, 18 Jun 2011 00:22:00 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2011/06/loading-newer-versions-of-jquery-and-jquery-ui-noconflict/</guid>
+      <guid>https://www.ipreferjim.com/2011/06/loading-newer-versions-of-jquery-and-jquery-ui-noconflict/</guid>
       <description>&lt;p&gt;Here’s an interesting problem:&lt;/p&gt;
 &lt;p&gt;You have an ASP.NET Web Forms application which references jQuery 1.3.x and would require a lot of testing to upgrade to a newer version of jQuery. You’re adding functionality to this application, and you really want to use jQuery 1.5 or jQuery 1.6 going forward with new development. &lt;strong&gt;But…&lt;/strong&gt;, jQuery 1.3.x is referenced in the master page. Also, you want to load jQuery UI 1.8.x targeting the newer version of jQuery.&lt;/p&gt;
 &lt;p&gt;…&lt;/p&gt;</description>
@@ -960,57 +960,57 @@ cpanm -n PAR::Packe
     
     <item>
       <title>How to move WordPress without breaking web links</title>
-      <link>https://www.ipreferjim.com/site/2011/06/how-to-move-wordpress-without-breaking-existing-links-around-the-web/</link>
+      <link>https://www.ipreferjim.com/2011/06/how-to-move-wordpress-without-breaking-existing-links-around-the-web/</link>
       <pubDate>Fri, 17 Jun 2011 11:15:00 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2011/06/how-to-move-wordpress-without-breaking-existing-links-around-the-web/</guid>
+      <guid>https://www.ipreferjim.com/2011/06/how-to-move-wordpress-without-breaking-existing-links-around-the-web/</guid>
       <description>WordPress allows you to specify your blog url as, for example, www.ipreferjim.com/site. It also allows you to run the blog from the base of your domain, e.</description>
     </item>
     
     <item>
       <title>Godaddy URL Rewrite Fix for directory without trailing slash</title>
-      <link>https://www.ipreferjim.com/site/2011/06/godaddy-url-rewrite-fix-for-directory-without-trailing-slash/</link>
+      <link>https://www.ipreferjim.com/2011/06/godaddy-url-rewrite-fix-for-directory-without-trailing-slash/</link>
       <pubDate>Tue, 14 Jun 2011 22:16:00 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2011/06/godaddy-url-rewrite-fix-for-directory-without-trailing-slash/</guid>
+      <guid>https://www.ipreferjim.com/2011/06/godaddy-url-rewrite-fix-for-directory-without-trailing-slash/</guid>
       <description>Not too long ago, I upgraded my godaddy.com hosting account from the linux basic to windows deluxe plans. I did this because I have multiple domains I’d like to host with a single company.</description>
     </item>
     
     <item>
       <title>Can’t login to MySQL as root :(</title>
-      <link>https://www.ipreferjim.com/site/2011/06/cant-login-to-mysql-as-root/</link>
+      <link>https://www.ipreferjim.com/2011/06/cant-login-to-mysql-as-root/</link>
       <pubDate>Sun, 12 Jun 2011 15:29:31 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2011/06/cant-login-to-mysql-as-root/</guid>
+      <guid>https://www.ipreferjim.com/2011/06/cant-login-to-mysql-as-root/</guid>
       <description>I was having issues logging into MySQL as root the other day. It took a while to figure things out. Ultimately, I had to follow the steps on two separate posts: http://rimuhosting.</description>
     </item>
     
     <item>
       <title>Quake tracker is now officially open-source</title>
-      <link>https://www.ipreferjim.com/site/2011/06/quake-tracker-is-now-officially-open-source/</link>
+      <link>https://www.ipreferjim.com/2011/06/quake-tracker-is-now-officially-open-source/</link>
       <pubDate>Tue, 07 Jun 2011 02:38:16 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2011/06/quake-tracker-is-now-officially-open-source/</guid>
+      <guid>https://www.ipreferjim.com/2011/06/quake-tracker-is-now-officially-open-source/</guid>
       <description>Go here, fork it.
 https://github.com/jimschubert/quaketracker</description>
     </item>
     
     <item>
       <title>Note about Copyrights</title>
-      <link>https://www.ipreferjim.com/site/2011/06/note-about-copyrights/</link>
+      <link>https://www.ipreferjim.com/2011/06/note-about-copyrights/</link>
       <pubDate>Sat, 04 Jun 2011 11:43:00 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2011/06/note-about-copyrights/</guid>
+      <guid>https://www.ipreferjim.com/2011/06/note-about-copyrights/</guid>
       <description>You wouldn’t think this would be necessary, but it seems that it is.
 All work on my site and in my projects is copyrighted.</description>
     </item>
     
     <item>
       <title>[node.js] Mastering Node excerpt: Addons</title>
-      <link>https://www.ipreferjim.com/site/2011/04/node-js-mastering-node-excerpt-addons/</link>
+      <link>https://www.ipreferjim.com/2011/04/node-js-mastering-node-excerpt-addons/</link>
       <pubDate>Sat, 09 Apr 2011 05:24:29 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2011/04/node-js-mastering-node-excerpt-addons/</guid>
+      <guid>https://www.ipreferjim.com/2011/04/node-js-mastering-node-excerpt-addons/</guid>
       <description>&lt;h2 id=&#34;addons&#34;&gt;Addons&lt;/h2&gt;
 &lt;p&gt;The node documentation for addons is self-admittedly pretty weak as of v0.4.0.&lt;/p&gt;
 &lt;p&gt;This chapter doesn’t aim to be a replacement for the official documentation. Instead, we’d hope this can expand on some of the basics a little more than a simple “Hello, World!” and drive you as a developer more on the path toward mastering node through its source code.&lt;/p&gt;
@@ -1040,10 +1040,10 @@ All work on my site and in my projects is copyrighted.</description>
     
     <item>
       <title>Mastering Node</title>
-      <link>https://www.ipreferjim.com/site/2011/03/mastering-node/</link>
+      <link>https://www.ipreferjim.com/2011/03/mastering-node/</link>
       <pubDate>Thu, 17 Mar 2011 03:27:54 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2011/03/mastering-node/</guid>
+      <guid>https://www.ipreferjim.com/2011/03/mastering-node/</guid>
       <description>I’ve forked a project at github called “Mastering Node”.
 https://github.com/jimschubert/masteringnode
 I’ve wanted to familiarize myself with node.js for some time, and this seems to be the best way.</description>
@@ -1051,57 +1051,57 @@ I’ve wanted to familiarize myself with node.js for some time, and this seems t
     
     <item>
       <title>Review: jQuery Pocket Reference by David Flanagan</title>
-      <link>https://www.ipreferjim.com/site/2011/02/review-of-jquery-pocket-reference/</link>
+      <link>https://www.ipreferjim.com/2011/02/review-of-jquery-pocket-reference/</link>
       <pubDate>Tue, 08 Feb 2011 06:17:23 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2011/02/review-of-jquery-pocket-reference/</guid>
+      <guid>https://www.ipreferjim.com/2011/02/review-of-jquery-pocket-reference/</guid>
       <description>Originally submitted at O&amp;#8217;Reilly &amp;lt;div&amp;gt; &amp;lt;img src=&amp;quot;https://images.powerreviews.com/images_products/08/56/10412302_100.jpg&amp;quot; class=&amp;quot;photo&amp;quot; align=&amp;quot;left&amp;quot; style=&amp;quot;margin: 0 0.5em 0 0&amp;quot; /&amp;gt;&amp;lt;/p&amp;gt; &amp;lt;p style=&amp;quot;margin-top:0&amp;quot;&amp;gt; &amp;lt;p&amp;gt; jQuery is the &amp;quot;write less, do more&amp;quot; JavaScript library.</description>
     </item>
     
     <item>
       <title>jQuery Pocket Reference by David Flanagan</title>
-      <link>https://www.ipreferjim.com/site/2011/02/jquery-pocket-reference-by-david-flanagan/</link>
+      <link>https://www.ipreferjim.com/2011/02/jquery-pocket-reference-by-david-flanagan/</link>
       <pubDate>Tue, 08 Feb 2011 05:51:34 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2011/02/jquery-pocket-reference-by-david-flanagan/</guid>
+      <guid>https://www.ipreferjim.com/2011/02/jquery-pocket-reference-by-david-flanagan/</guid>
       <description>jQuery Pocket Reference by David Flanagan
 I’ve enjoyed previous books by David Flanagan and decided to read jQuery Pocket Reference. I thought I would quickly skim through the chapters because I considered myself fairly proficient in jQuery.</description>
     </item>
     
     <item>
       <title>Linking to a Google Doc .doc as .pdf</title>
-      <link>https://www.ipreferjim.com/site/2011/02/linking-to-a-google-doc-doc-as-pdf/</link>
+      <link>https://www.ipreferjim.com/2011/02/linking-to-a-google-doc-doc-as-pdf/</link>
       <pubDate>Tue, 08 Feb 2011 03:38:19 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2011/02/linking-to-a-google-doc-doc-as-pdf/</guid>
+      <guid>https://www.ipreferjim.com/2011/02/linking-to-a-google-doc-doc-as-pdf/</guid>
       <description>I recently decided to update my resume, which forced me to revisit an issue I originally faced when posting my resume to my site: I am writing it as a doc file in Google Docs but I want to link to it as a PDF and have my updates visible immediately.</description>
     </item>
     
     <item>
       <title>Rails 3 &#43; RSpec &#43; Rake tasks are missing</title>
-      <link>https://www.ipreferjim.com/site/2011/02/rails-3-rspec-rake-tasks-are-missing/</link>
+      <link>https://www.ipreferjim.com/2011/02/rails-3-rspec-rake-tasks-are-missing/</link>
       <pubDate>Sun, 06 Feb 2011 18:01:38 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2011/02/rails-3-rspec-rake-tasks-are-missing/</guid>
+      <guid>https://www.ipreferjim.com/2011/02/rails-3-rspec-rake-tasks-are-missing/</guid>
       <description>Recently, I installed Rails 3 using rvm. I wanted to follow quickly through Rails 3 in Action so I could see the differences between Rails 2.</description>
     </item>
     
     <item>
       <title>Syncing between Motorola Droid and Banshee or Rhythmbox in Ubuntu</title>
-      <link>https://www.ipreferjim.com/site/2010/11/syncing-between-motorola-droid-and-banshee-or-rhythmbox-in-ubuntu/</link>
+      <link>https://www.ipreferjim.com/2010/11/syncing-between-motorola-droid-and-banshee-or-rhythmbox-in-ubuntu/</link>
       <pubDate>Sat, 27 Nov 2010 20:29:28 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2010/11/syncing-between-motorola-droid-and-banshee-or-rhythmbox-in-ubuntu/</guid>
+      <guid>https://www.ipreferjim.com/2010/11/syncing-between-motorola-droid-and-banshee-or-rhythmbox-in-ubuntu/</guid>
       <description>&lt;p&gt;I like to download those cheap albums on AmazonMP3 that are like “The 99 Darkest Classical Pieces” or whatever. The AmazonMP3 download, however, puts these mp3s in folders according to the artist instead of Various Artists or by album name. Because the Droid’s music player reads music based on the folder structure and not on the id3 tags, this means I have about 30 or 40 different entries for the same album. It’s annoying, to say the least.&lt;/p&gt;
 &lt;p&gt;I recently decided to use Rhythmbox to pull all of the music from the Droid and then copy it back over to see if it would automatically put the mp3s in the correct folders. To my surprise,&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Tip for Writers and Novelists: Use Subversion to track changes in your work!</title>
-      <link>https://www.ipreferjim.com/site/2010/11/tip-for-writers-and-novelists-use-subversion-to-track-changes-in-your-work/</link>
+      <link>https://www.ipreferjim.com/2010/11/tip-for-writers-and-novelists-use-subversion-to-track-changes-in-your-work/</link>
       <pubDate>Tue, 16 Nov 2010 04:26:06 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2010/11/tip-for-writers-and-novelists-use-subversion-to-track-changes-in-your-work/</guid>
+      <guid>https://www.ipreferjim.com/2010/11/tip-for-writers-and-novelists-use-subversion-to-track-changes-in-your-work/</guid>
       <description>&lt;p&gt;As a developer, I take some things like version control for granted.&lt;/p&gt;
 &lt;p&gt;Recently, I suggested version control to my wife to make it easier for her to compare her current revisions with earlier revisions.  Currently, when she wants to make a new revision, she creates a new file with a different filename.  This doesn’t give her to Word comparing or change tracking.  So, if she deleted a paragraph two, three, or twenty revisions ago, she could easily go back to a draft containing the paragraph and retrieve the text or compare against the current revision.  It would even be possible to check out the earlier revision!&lt;/p&gt;
 &lt;p&gt;On top of change tracking, a subversion repository offers a complete backup of documents.  This would be excellent for someone who is worried about losing their documents.  For instance, you can create a subversion repository on an external hard drive and you’ll never lose anything earlier than your last check-in.  Granted, you have to adopt the version control process, but the benefits greatly outweigh the possible headaches of having no sort of version control or revision history.&lt;/p&gt;
@@ -1112,19 +1112,19 @@ I’ve enjoyed previous books by David Flanagan and decided to read jQuery Pocke
     
     <item>
       <title>Select Actions Update (Google Chrome Extension)</title>
-      <link>https://www.ipreferjim.com/site/2010/11/select-actions-update-google-chrome-extension/</link>
+      <link>https://www.ipreferjim.com/2010/11/select-actions-update-google-chrome-extension/</link>
       <pubDate>Sat, 13 Nov 2010 19:56:14 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2010/11/select-actions-update-google-chrome-extension/</guid>
+      <guid>https://www.ipreferjim.com/2010/11/select-actions-update-google-chrome-extension/</guid>
       <description>Last night, I published a major update to the Select Actions Google Chrome Extension. This update removes some “scary” permissions which claimed the extension had access to all websites.</description>
     </item>
     
     <item>
       <title>System76 Ubuntu NetBook and Tethering on Verizon Droid (Android)</title>
-      <link>https://www.ipreferjim.com/site/2010/11/system76-ubuntu-netbook-and-tethering-on-verizon-droid-android/</link>
+      <link>https://www.ipreferjim.com/2010/11/system76-ubuntu-netbook-and-tethering-on-verizon-droid-android/</link>
       <pubDate>Wed, 10 Nov 2010 05:49:38 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2010/11/system76-ubuntu-netbook-and-tethering-on-verizon-droid-android/</guid>
+      <guid>https://www.ipreferjim.com/2010/11/system76-ubuntu-netbook-and-tethering-on-verizon-droid-android/</guid>
       <description>&lt;p&gt;One of the first things I wanted to do when I got my netbook was to setup tethering.  However, I don’t want to pay $30 more a month just to view the same pages I’d otherwise be viewing on my phone (i.e. Facebook, Twitter, Google News/Gmail).  The answer to this is an application called EasyTether.  It’s currently only $10 on the Android Market.  &lt;a href=&#34;market://search?q=pname:com.mstream.easytether_beta&#34; title=&#34;Click here to download EasyTether&#34;&gt;Click here to download EasyTether&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;The setup guide in EasyTether will walk you through getting the application configured on your phone and connecting that to your computer.  However, some people may have Linux-based NetBooks and not have the technical knowledge to write a simple script to startup ‘easytether’ in a console.  I’d like to provide those steps.  Please read on if you’re interested!&lt;/p&gt;
 &lt;p&gt;**Note: You *MUST* have your sudo password to proceed.&lt;/p&gt;</description>
@@ -1132,10 +1132,10 @@ I’ve enjoyed previous books by David Flanagan and decided to read jQuery Pocke
     
     <item>
       <title>System76 Starling 3 Netbook Review</title>
-      <link>https://www.ipreferjim.com/site/p327/</link>
+      <link>https://www.ipreferjim.com/p327/</link>
       <pubDate>Sat, 06 Nov 2010 00:00:00 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/p327/</guid>
+      <guid>https://www.ipreferjim.com/p327/</guid>
       <description>&lt;p&gt;Recently, I began a position which allows me to ride the bus to and from work, giving me a lot of free time to read or develop. My home laptop is a 15.4″ widescreen which is a little too much to tote around on the bus, so I decided to purchase a netbook. After a few months of researching, I found one that I really wanted.&lt;/p&gt;
 &lt;p&gt;I had never even heard of System76 until one day when I saw a man close to my age on the bus using one. You know how you can somewhat tell when someone is using Linux (intense look, typing quickly, half-smiling like they have a secret)? This interested me, so when I got home and googled System76 I was happy to see that my assumption of the man using a Linux netbook was correct.&lt;/p&gt;
 &lt;h2 id=&#34;system76-starling&#34;&gt;System76 Starling&lt;/h2&gt;
@@ -1153,19 +1153,19 @@ I’ve enjoyed previous books by David Flanagan and decided to read jQuery Pocke
     
     <item>
       <title>What is JavaScript?</title>
-      <link>https://www.ipreferjim.com/site/2010/09/what-is-javascript/</link>
+      <link>https://www.ipreferjim.com/2010/09/what-is-javascript/</link>
       <pubDate>Tue, 28 Sep 2010 02:47:43 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2010/09/what-is-javascript/</guid>
+      <guid>https://www.ipreferjim.com/2010/09/what-is-javascript/</guid>
       <description>I haven’t updated my site in a while because my wife and I have been very busy moving from the DC-Metro area to Seattle, WA.</description>
     </item>
     
     <item>
       <title>Bitwise operations and Flags (C#)</title>
-      <link>https://www.ipreferjim.com/site/2010/07/bitwise-operations-and-flags/</link>
+      <link>https://www.ipreferjim.com/2010/07/bitwise-operations-and-flags/</link>
       <pubDate>Sat, 31 Jul 2010 15:57:51 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2010/07/bitwise-operations-and-flags/</guid>
+      <guid>https://www.ipreferjim.com/2010/07/bitwise-operations-and-flags/</guid>
       <description>&lt;p&gt;I haven’t written anything in a while, so I thought I would finally write about the subject of bitwise operations and the FlagsAttribute.&lt;/p&gt;
 &lt;p&gt;I mentioned this to one of the developers on my team, and he said that he somewhat understood bit operations but he had never found a reason to use them.&lt;/p&gt;
 &lt;p&gt;Here is the code I will use to discuss the operations&lt;/p&gt;
@@ -1231,348 +1231,348 @@ I’ve enjoyed previous books by David Flanagan and decided to read jQuery Pocke
     
     <item>
       <title>Learning WCF: IIS 7 won’t start service from web project</title>
-      <link>https://www.ipreferjim.com/site/2010/06/learning-wcf-iis-7-wont-start-service-from-web-project/</link>
+      <link>https://www.ipreferjim.com/2010/06/learning-wcf-iis-7-wont-start-service-from-web-project/</link>
       <pubDate>Sun, 27 Jun 2010 04:01:16 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2010/06/learning-wcf-iis-7-wont-start-service-from-web-project/</guid>
+      <guid>https://www.ipreferjim.com/2010/06/learning-wcf-iis-7-wont-start-service-from-web-project/</guid>
       <description>I’m following along with code in Learning WCF, attempting to quickly become an expert at building WCF Services from scratch. In Chapter 1, there is a project called IISHostedService.</description>
     </item>
     
     <item>
       <title>Fairly Accurate JavaScript Browser Detection</title>
-      <link>https://www.ipreferjim.com/site/2010/06/fairly-accurate-javascript-browser-detection/</link>
+      <link>https://www.ipreferjim.com/2010/06/fairly-accurate-javascript-browser-detection/</link>
       <pubDate>Sat, 12 Jun 2010 13:53:19 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2010/06/fairly-accurate-javascript-browser-detection/</guid>
+      <guid>https://www.ipreferjim.com/2010/06/fairly-accurate-javascript-browser-detection/</guid>
       <description>I use jQuery for almost everything I do in JavaScript. The only real problem is that jQuery’s browser name and version detection doesn’t provide exactly what I want.</description>
     </item>
     
     <item>
       <title>Using DataAnnotation attributes to validate Membership password</title>
-      <link>https://www.ipreferjim.com/site/2010/06/using-dataannotation-attributes-to-validate-membership-password/</link>
+      <link>https://www.ipreferjim.com/2010/06/using-dataannotation-attributes-to-validate-membership-password/</link>
       <pubDate>Fri, 11 Jun 2010 19:14:59 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2010/06/using-dataannotation-attributes-to-validate-membership-password/</guid>
+      <guid>https://www.ipreferjim.com/2010/06/using-dataannotation-attributes-to-validate-membership-password/</guid>
       <description>As a follow-up to my post on DataAnnotations in ASP.NET Web Forms, I’d like to demonstrate yet another custom attribute. Although ASP.</description>
     </item>
     
     <item>
       <title>JavaScript color picker</title>
-      <link>https://www.ipreferjim.com/site/2010/05/javascript-color-picker/</link>
+      <link>https://www.ipreferjim.com/2010/05/javascript-color-picker/</link>
       <pubDate>Mon, 31 May 2010 18:00:43 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2010/05/javascript-color-picker/</guid>
+      <guid>https://www.ipreferjim.com/2010/05/javascript-color-picker/</guid>
       <description>I’m anxiously awaiting the implementation in Google Chrome for HTML5’s color chooser:
 &amp;lt;input type=&amp;quot;color&amp;quot; /&amp;amp;gt In the meantime, I found a nice little javascript color chooser at http://jscolor.</description>
     </item>
     
     <item>
       <title>System.ComponentModel.DataAnnotations for ASP.NET Web Forms</title>
-      <link>https://www.ipreferjim.com/site/2010/05/system-componentmodel-dataannotations-for-asp-net-web-forms/</link>
+      <link>https://www.ipreferjim.com/2010/05/system-componentmodel-dataannotations-for-asp-net-web-forms/</link>
       <pubDate>Thu, 27 May 2010 01:50:19 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2010/05/system-componentmodel-dataannotations-for-asp-net-web-forms/</guid>
+      <guid>https://www.ipreferjim.com/2010/05/system-componentmodel-dataannotations-for-asp-net-web-forms/</guid>
       <description>Although I’m primarily an ASP.NET Web Forms developer, I regularly dabble in new and interesting technologies. I’ve toyed with other Microsoft technologies such as ASP.</description>
     </item>
     
     <item>
       <title>Font-Face generator</title>
-      <link>https://www.ipreferjim.com/site/2010/05/font-face-generator/</link>
+      <link>https://www.ipreferjim.com/2010/05/font-face-generator/</link>
       <pubDate>Tue, 18 May 2010 16:13:40 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2010/05/font-face-generator/</guid>
+      <guid>https://www.ipreferjim.com/2010/05/font-face-generator/</guid>
       <description>[][1]@font-face Kit Generator User Interface CSS3 allows you to create custom font-faces so a user will see fonts exactly as you’d like them to be seen, without forcing the developer/designer to export all custom fonts as graphics.</description>
     </item>
     
     <item>
       <title>Finding a user’s local time from UTC offset</title>
-      <link>https://www.ipreferjim.com/site/2010/05/finding-a-users-local-time-from-utc-offset/</link>
+      <link>https://www.ipreferjim.com/2010/05/finding-a-users-local-time-from-utc-offset/</link>
       <pubDate>Tue, 04 May 2010 19:47:43 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2010/05/finding-a-users-local-time-from-utc-offset/</guid>
+      <guid>https://www.ipreferjim.com/2010/05/finding-a-users-local-time-from-utc-offset/</guid>
       <description>I answered a question over at StackOverflow, and I really liked the answer, so I thought I would share this nifty extension method:</description>
     </item>
     
     <item>
       <title>NHibernate.Criterion Extensions workaround</title>
-      <link>https://www.ipreferjim.com/site/2010/05/nhibernate-criterion-extensions-workaround/</link>
+      <link>https://www.ipreferjim.com/2010/05/nhibernate-criterion-extensions-workaround/</link>
       <pubDate>Mon, 03 May 2010 22:30:50 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2010/05/nhibernate-criterion-extensions-workaround/</guid>
+      <guid>https://www.ipreferjim.com/2010/05/nhibernate-criterion-extensions-workaround/</guid>
       <description>I’ve been working with Fluent NHibernate for the past month or so, and I realized while writing an NHibernate query that the NHibernate Criterion’s Restrictions class isn’t very refactor-friendly.</description>
     </item>
     
     <item>
       <title>CopyCat Rails’ Time Extensions</title>
-      <link>https://www.ipreferjim.com/site/2010/05/copycat-activesupport-time-extensions/</link>
+      <link>https://www.ipreferjim.com/2010/05/copycat-activesupport-time-extensions/</link>
       <pubDate>Mon, 03 May 2010 21:22:47 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2010/05/copycat-activesupport-time-extensions/</guid>
+      <guid>https://www.ipreferjim.com/2010/05/copycat-activesupport-time-extensions/</guid>
       <description>I’ve become a fan of Ruby’s simple syntax. My favorite thing is the ActiveSupport’s Numeric Time Extensions. I’m starting a library of useful extensions, and I’m going to be adding a number of shortcuts to mock these extensions.</description>
     </item>
     
     <item>
       <title>DRY! GenericComparer&lt;TType&gt; for sorting Generic Lists</title>
-      <link>https://www.ipreferjim.com/site/2010/04/dry-genericcomparer-for-sorting-generic-lists/</link>
+      <link>https://www.ipreferjim.com/2010/04/dry-genericcomparer-for-sorting-generic-lists/</link>
       <pubDate>Thu, 22 Apr 2010 15:28:40 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2010/04/dry-genericcomparer-for-sorting-generic-lists/</guid>
+      <guid>https://www.ipreferjim.com/2010/04/dry-genericcomparer-for-sorting-generic-lists/</guid>
       <description>I’m a pretty firm believer in the Ruby/Ruby on Rails idea of DRY (“Don’t Repeat Yourself”).
 That said, I get pretty tired of writing comparers for sorting lists and generic lists.</description>
     </item>
     
     <item>
       <title>Oracle Exception: Could not load file or assembly ‘Oracle.DataAccess, Version=2.111.7.20…</title>
-      <link>https://www.ipreferjim.com/site/2010/04/oracle-exception-could-not-load-file-or-assembly-oracle-dataaccess-version2-111-7-20/</link>
+      <link>https://www.ipreferjim.com/2010/04/oracle-exception-could-not-load-file-or-assembly-oracle-dataaccess-version2-111-7-20/</link>
       <pubDate>Fri, 09 Apr 2010 19:34:24 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2010/04/oracle-exception-could-not-load-file-or-assembly-oracle-dataaccess-version2-111-7-20/</guid>
+      <guid>https://www.ipreferjim.com/2010/04/oracle-exception-could-not-load-file-or-assembly-oracle-dataaccess-version2-111-7-20/</guid>
       <description>Last week, I was having performance issues with my workstation. I was told to remove unused files and applications. I had previously installed ODAC 11g for the Oracle Data Providers.</description>
     </item>
     
     <item>
       <title>String Concatenation in .NET – what really goes on?</title>
-      <link>https://www.ipreferjim.com/site/2010/03/string-concatenation-in-net-what-really-goes-on/</link>
+      <link>https://www.ipreferjim.com/2010/03/string-concatenation-in-net-what-really-goes-on/</link>
       <pubDate>Sun, 21 Mar 2010 23:04:48 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2010/03/string-concatenation-in-net-what-really-goes-on/</guid>
+      <guid>https://www.ipreferjim.com/2010/03/string-concatenation-in-net-what-really-goes-on/</guid>
       <description>There are a number of ways to concatenate a string in C# and other .NET languages. Is there a *best* way?</description>
     </item>
     
     <item>
       <title>Programming to Interfaces or Objects?</title>
-      <link>https://www.ipreferjim.com/site/2010/03/programming-to-interfaces-or-objects/</link>
+      <link>https://www.ipreferjim.com/2010/03/programming-to-interfaces-or-objects/</link>
       <pubDate>Sun, 21 Mar 2010 04:46:31 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2010/03/programming-to-interfaces-or-objects/</guid>
+      <guid>https://www.ipreferjim.com/2010/03/programming-to-interfaces-or-objects/</guid>
       <description>The other day, I was asked to add some functionality to code that regularly instantiates objects as interfaces, and I was wondering what exactly is the point?</description>
     </item>
     
     <item>
       <title>Fluent NHibernate error: Unable to cast object of type ‘Oracle.DataAccess.Client.OracleConnection’ to type ‘System.Data.Common.DbConnection’.</title>
-      <link>https://www.ipreferjim.com/site/2010/03/fluent-nhibernate-error-unable-to-cast-object-of-type-oracle-dataaccess-client-oracleconnection-to-type-system-data-common-dbconnection/</link>
+      <link>https://www.ipreferjim.com/2010/03/fluent-nhibernate-error-unable-to-cast-object-of-type-oracle-dataaccess-client-oracleconnection-to-type-system-data-common-dbconnection/</link>
       <pubDate>Sat, 20 Mar 2010 16:41:35 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2010/03/fluent-nhibernate-error-unable-to-cast-object-of-type-oracle-dataaccess-client-oracleconnection-to-type-system-data-common-dbconnection/</guid>
+      <guid>https://www.ipreferjim.com/2010/03/fluent-nhibernate-error-unable-to-cast-object-of-type-oracle-dataaccess-client-oracleconnection-to-type-system-data-common-dbconnection/</guid>
       <description>After developing an application in Fluent NHibernate, I’ve received the following Error and Stack Trace:
 Unable to cast object of type &#39;Oracle.</description>
     </item>
     
     <item>
       <title>IHttpModule Gotchas @dominicpettifer.co.uk</title>
-      <link>https://www.ipreferjim.com/site/2010/03/ihttpmodule-gotchas-dominicpettifer-co-uk/</link>
+      <link>https://www.ipreferjim.com/2010/03/ihttpmodule-gotchas-dominicpettifer-co-uk/</link>
       <pubDate>Sat, 13 Mar 2010 05:21:03 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2010/03/ihttpmodule-gotchas-dominicpettifer-co-uk/</guid>
+      <guid>https://www.ipreferjim.com/2010/03/ihttpmodule-gotchas-dominicpettifer-co-uk/</guid>
       <description>I came across this blog post about the Init() method of an HttpModule being called more than once. The solution is simple: create a boolean flag to indicate whether or not the app is started and an empty object to lock.</description>
     </item>
     
     <item>
       <title>ArgumentOutOfRangeException : Index was out of range. Fluent NHibernate commit</title>
-      <link>https://www.ipreferjim.com/site/2010/03/argumentoutofrangeexception-index-was-out-of-range-fluent-nhibernate-commit/</link>
+      <link>https://www.ipreferjim.com/2010/03/argumentoutofrangeexception-index-was-out-of-range-fluent-nhibernate-commit/</link>
       <pubDate>Wed, 03 Mar 2010 17:54:29 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2010/03/argumentoutofrangeexception-index-was-out-of-range-fluent-nhibernate-commit/</guid>
+      <guid>https://www.ipreferjim.com/2010/03/argumentoutofrangeexception-index-was-out-of-range-fluent-nhibernate-commit/</guid>
       <description>I came across the error
 ArgumentOutOfRangeException : Index was out of range while trying to perform a commit on a single entity with 4 nested entities and 3 properties.</description>
     </item>
     
     <item>
       <title>log4net configuration in .NET 3.5</title>
-      <link>https://www.ipreferjim.com/site/2010/03/log4net-configuration-in-net-3-5/</link>
+      <link>https://www.ipreferjim.com/2010/03/log4net-configuration-in-net-3-5/</link>
       <pubDate>Mon, 01 Mar 2010 23:17:33 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2010/03/log4net-configuration-in-net-3-5/</guid>
+      <guid>https://www.ipreferjim.com/2010/03/log4net-configuration-in-net-3-5/</guid>
       <description>Step 1 Add Reference
 Right click on the “References” folder and choose add reference. Browse to the location of log4net and add it to the project.</description>
     </item>
     
     <item>
       <title>Google Maps v3 marker.set_map deprecated</title>
-      <link>https://www.ipreferjim.com/site/2010/02/google-maps-v3-marker-set_map-deprecated/</link>
+      <link>https://www.ipreferjim.com/2010/02/google-maps-v3-marker-set_map-deprecated/</link>
       <pubDate>Mon, 01 Mar 2010 02:34:09 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2010/02/google-maps-v3-marker-set_map-deprecated/</guid>
+      <guid>https://www.ipreferjim.com/2010/02/google-maps-v3-marker-set_map-deprecated/</guid>
       <description>After the 8.8 earthquake outside of Chile this past weekend, I posted my Quake Tracker to twitter/facebook so people could easily visualize where the quake occurred.</description>
     </item>
     
     <item>
       <title>Basics: Posting data to a remote server via .NET</title>
-      <link>https://www.ipreferjim.com/site/2010/02/posting-data-to-a-remove-server-via-net/</link>
+      <link>https://www.ipreferjim.com/2010/02/posting-data-to-a-remove-server-via-net/</link>
       <pubDate>Sat, 20 Feb 2010 01:57:02 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2010/02/posting-data-to-a-remove-server-via-net/</guid>
+      <guid>https://www.ipreferjim.com/2010/02/posting-data-to-a-remove-server-via-net/</guid>
       <description>Class for Remote Posting:
 public class RemotePost { #region Fields and Properties  private string _url; private string _postData; private byte[] _data; /// &amp;lt;summary&amp;gt;  /// URL to which the Post is sent  /// &amp;lt;/summary&amp;gt;  public string Url { get { if (!</description>
     </item>
     
     <item>
       <title>Explaining advanced features of C# 3.0</title>
-      <link>https://www.ipreferjim.com/site/2010/02/explaining-advanced-features-of-c-3-0/</link>
+      <link>https://www.ipreferjim.com/2010/02/explaining-advanced-features-of-c-3-0/</link>
       <pubDate>Mon, 15 Feb 2010 23:07:30 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2010/02/explaining-advanced-features-of-c-3-0/</guid>
+      <guid>https://www.ipreferjim.com/2010/02/explaining-advanced-features-of-c-3-0/</guid>
       <description>C# 3.0 Func delegates and Expressions In this post, I’ll attempt to clarify the meaning of Func delegates and Expressions.</description>
     </item>
     
     <item>
       <title>Google Chrome Extension: New Tab Redirect! STEP BY STEP</title>
-      <link>https://www.ipreferjim.com/site/2010/02/google-chrome-extension-new-tab-redirect-step-by-step/</link>
+      <link>https://www.ipreferjim.com/2010/02/google-chrome-extension-new-tab-redirect-step-by-step/</link>
       <pubDate>Sat, 13 Feb 2010 22:45:00 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2010/02/google-chrome-extension-new-tab-redirect-step-by-step/</guid>
+      <guid>https://www.ipreferjim.com/2010/02/google-chrome-extension-new-tab-redirect-step-by-step/</guid>
       <description>If you’ve reached this this page in an attempt to find instructions for uninstalling the extension here they are:
  Navigate to chrome://extensions Click ‘Uninstall’ below ‘New Tab Redirect!</description>
     </item>
     
     <item>
       <title>Quickly create a Dictionary using Linq to Objects</title>
-      <link>https://www.ipreferjim.com/site/2010/02/quickly-create-a-dictionary-using-linq-to-objects/</link>
+      <link>https://www.ipreferjim.com/2010/02/quickly-create-a-dictionary-using-linq-to-objects/</link>
       <pubDate>Wed, 10 Feb 2010 15:43:00 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2010/02/quickly-create-a-dictionary-using-linq-to-objects/</guid>
+      <guid>https://www.ipreferjim.com/2010/02/quickly-create-a-dictionary-using-linq-to-objects/</guid>
       <description>When working with collections or lists, sometimes you just need to get a simple dictionary.
 There are a number of ways to do this, but the ToDictionary method seems promising.</description>
     </item>
     
     <item>
       <title>Fluent NHibernate Many-to-many mapping with auto-generated pk instead of composite key</title>
-      <link>https://www.ipreferjim.com/site/p107/</link>
+      <link>https://www.ipreferjim.com/p107/</link>
       <pubDate>Wed, 10 Feb 2010 02:26:27 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/p107/</guid>
+      <guid>https://www.ipreferjim.com/p107/</guid>
       <description>I’ve been using Fluent NHibernate for the past couple of weeks. This is my first project using NHibernate, and to lessen the configuration time, I decided to use Fluent NHibernate.</description>
     </item>
     
     <item>
       <title>Mixing Business Logic and the Presentation Layer… Why do people do it?</title>
-      <link>https://www.ipreferjim.com/site/2010/01/mixing-business-logic-and-the-presentation-layer-why-do-people-do-it/</link>
+      <link>https://www.ipreferjim.com/2010/01/mixing-business-logic-and-the-presentation-layer-why-do-people-do-it/</link>
       <pubDate>Sun, 24 Jan 2010 16:36:00 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2010/01/mixing-business-logic-and-the-presentation-layer-why-do-people-do-it/</guid>
+      <guid>https://www.ipreferjim.com/2010/01/mixing-business-logic-and-the-presentation-layer-why-do-people-do-it/</guid>
       <description>In .NET Application Architecture Guide, 2nd Edition, the writers explicitly say:
        Do not mix different types of components in the same logical layer.</description>
     </item>
     
     <item>
       <title>Free Software Architecture eBooks on MSDN</title>
-      <link>https://www.ipreferjim.com/site/2010/01/free-software-architecture-ebooks-on-msdn/</link>
+      <link>https://www.ipreferjim.com/2010/01/free-software-architecture-ebooks-on-msdn/</link>
       <pubDate>Wed, 06 Jan 2010 17:50:00 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2010/01/free-software-architecture-ebooks-on-msdn/</guid>
+      <guid>https://www.ipreferjim.com/2010/01/free-software-architecture-ebooks-on-msdn/</guid>
       <description>Microsoft Application Architecture Guide, 2nd Edition      Enterprise Solution Patterns Using Microsoft .NET      Data Access Architecture Guide      Found via http://apparchguide.</description>
     </item>
     
     <item>
       <title>UpdatePanel won’t AsycPostback for anything.</title>
-      <link>https://www.ipreferjim.com/site/2009/12/updatepanel-wont-asycpostback-for-anything/</link>
+      <link>https://www.ipreferjim.com/2009/12/updatepanel-wont-asycpostback-for-anything/</link>
       <pubDate>Tue, 22 Dec 2009 21:52:00 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2009/12/updatepanel-wont-asycpostback-for-anything/</guid>
+      <guid>https://www.ipreferjim.com/2009/12/updatepanel-wont-asycpostback-for-anything/</guid>
       <description>I spent a lot of time today and Friday trying to get my UpdatePanel to be handled properly. No matter what I did, my asynchronous triggers were only posting back.</description>
     </item>
     
     <item>
       <title>Google Chrome Extension: New Tab Redirect!</title>
-      <link>https://www.ipreferjim.com/site/2009/12/google-chrome-extension-new-tab-redirect/</link>
+      <link>https://www.ipreferjim.com/2009/12/google-chrome-extension-new-tab-redirect/</link>
       <pubDate>Sun, 20 Dec 2009 22:08:00 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2009/12/google-chrome-extension-new-tab-redirect/</guid>
+      <guid>https://www.ipreferjim.com/2009/12/google-chrome-extension-new-tab-redirect/</guid>
       <description>Thanks to the blizzard this weekend, I’ve been alone and stuck inside long enough to write an extension for Google Chrome.</description>
     </item>
     
     <item>
       <title>jQuery check/uncheck all Checkboxes in ASP.NET</title>
-      <link>https://www.ipreferjim.com/site/2009/12/jquery-checkuncheck-all-checkboxes-in-asp-net/</link>
+      <link>https://www.ipreferjim.com/2009/12/jquery-checkuncheck-all-checkboxes-in-asp-net/</link>
       <pubDate>Thu, 17 Dec 2009 16:18:00 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2009/12/jquery-checkuncheck-all-checkboxes-in-asp-net/</guid>
+      <guid>https://www.ipreferjim.com/2009/12/jquery-checkuncheck-all-checkboxes-in-asp-net/</guid>
       <description>For some odd reason, ASP.NET GridView wraps html elements in a span element. When you apply a CssClass to the asp:CheckBox for instance, you will have a span with that class and inside you’ll have an input with type=checkbox.</description>
     </item>
     
     <item>
       <title>Extending IDataReader</title>
-      <link>https://www.ipreferjim.com/site/2009/12/extending-idatareader/</link>
+      <link>https://www.ipreferjim.com/2009/12/extending-idatareader/</link>
       <pubDate>Wed, 16 Dec 2009 18:01:00 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2009/12/extending-idatareader/</guid>
+      <guid>https://www.ipreferjim.com/2009/12/extending-idatareader/</guid>
       <description>I like to access my DataReader objects via column name. Unfortunately, IDataReader supports getting items via integer indexer.
 To overcome this *obstacle*, I’ve written an extension method I’d like to share.</description>
     </item>
     
     <item>
       <title>Microsoft SQL Server’s Database Publishing Wizard BatchParser error</title>
-      <link>https://www.ipreferjim.com/site/2009/11/microsoft-sql-servers-database-publishing-wizard-batchparser-error/</link>
+      <link>https://www.ipreferjim.com/2009/11/microsoft-sql-servers-database-publishing-wizard-batchparser-error/</link>
       <pubDate>Thu, 05 Nov 2009 01:58:00 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2009/11/microsoft-sql-servers-database-publishing-wizard-batchparser-error/</guid>
+      <guid>https://www.ipreferjim.com/2009/11/microsoft-sql-servers-database-publishing-wizard-batchparser-error/</guid>
       <description>http://download.microsoft.com/download/4/4/D/44DBDE61-B385-4FC2-A67D-48053B8F9FAD/SQLServer2005_XMO_x64.msi
 Could not load file or assembly ‘Microsoft.SqlServer.BatchParser, Version=9.0.242.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91’ or one of its dependencies. The system cannot find the file specified.</description>
     </item>
     
     <item>
       <title>Converting from VS2003 to VS2008</title>
-      <link>https://www.ipreferjim.com/site/2009/11/converting-from-vs2003-to-vs2008/</link>
+      <link>https://www.ipreferjim.com/2009/11/converting-from-vs2003-to-vs2008/</link>
       <pubDate>Tue, 03 Nov 2009 15:56:00 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2009/11/converting-from-vs2003-to-vs2008/</guid>
+      <guid>https://www.ipreferjim.com/2009/11/converting-from-vs2003-to-vs2008/</guid>
       <description>http://datacogs.com/datablogs/archive/2005/01/28/209.aspx
 Recently, I converted a project from VS2003 to VS2008. The conversion deleted a file which wasn’t needed in VS2008. When I tried to “rollback” the source from source control to run in VS2003, it wouldn’t run.</description>
     </item>
     
     <item>
       <title>Free Subversion Book by O’Reilly</title>
-      <link>https://www.ipreferjim.com/site/2009/11/free-subversion-book-by-oreilly/</link>
+      <link>https://www.ipreferjim.com/2009/11/free-subversion-book-by-oreilly/</link>
       <pubDate>Mon, 02 Nov 2009 00:33:00 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2009/11/free-subversion-book-by-oreilly/</guid>
+      <guid>https://www.ipreferjim.com/2009/11/free-subversion-book-by-oreilly/</guid>
       <description>O’Reilly Media has released a free subversion book, located at http://svnbook.red-bean.com/
    It&amp;#8217;s downloadable as a PDF, single-page HTML and multi-page HTML.</description>
     </item>
     
     <item>
       <title>Python 3.0 handles Dictionary differently</title>
-      <link>https://www.ipreferjim.com/site/2009/08/python-3-0-handles-dictionary-differently/</link>
+      <link>https://www.ipreferjim.com/2009/08/python-3-0-handles-dictionary-differently/</link>
       <pubDate>Fri, 28 Aug 2009 20:26:00 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2009/08/python-3-0-handles-dictionary-differently/</guid>
+      <guid>https://www.ipreferjim.com/2009/08/python-3-0-handles-dictionary-differently/</guid>
       <description>I read through Python 3.0 from Developer’s Library about 2 months ago. I decided to skim through another introductory level book used at MIT so I could try keeping Python 2.</description>
     </item>
     
     <item>
       <title>Ruby and Python in your script tags!</title>
-      <link>https://www.ipreferjim.com/site/2009/08/ruby-and-python-in-your-script-tags/</link>
+      <link>https://www.ipreferjim.com/2009/08/ruby-and-python-in-your-script-tags/</link>
       <pubDate>Fri, 14 Aug 2009 05:37:00 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2009/08/ruby-and-python-in-your-script-tags/</guid>
+      <guid>https://www.ipreferjim.com/2009/08/ruby-and-python-in-your-script-tags/</guid>
       <description>I came across this weeks ago, and I’m surprised I never posted it. This is a javascript ‘framework’ to add ruby and python languages in your script tags.</description>
     </item>
     
     <item>
       <title>Keeping busy with ASP.NET MVC</title>
-      <link>https://www.ipreferjim.com/site/2009/08/keeping-busy-with-asp-net-mvc/</link>
+      <link>https://www.ipreferjim.com/2009/08/keeping-busy-with-asp-net-mvc/</link>
       <pubDate>Wed, 05 Aug 2009 05:21:00 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2009/08/keeping-busy-with-asp-net-mvc/</guid>
+      <guid>https://www.ipreferjim.com/2009/08/keeping-busy-with-asp-net-mvc/</guid>
       <description>I’m looking for a job in “the worst recession since the great depression” blah blah blah. It really sucks.
 To keep busy, I’ve been doing some ‘freelance’ work.</description>
     </item>
     
     <item>
       <title>Job Hunting</title>
-      <link>https://www.ipreferjim.com/site/2009/07/job-hunting/</link>
+      <link>https://www.ipreferjim.com/2009/07/job-hunting/</link>
       <pubDate>Wed, 08 Jul 2009 19:04:00 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2009/07/job-hunting/</guid>
+      <guid>https://www.ipreferjim.com/2009/07/job-hunting/</guid>
       <description>Now that I’ve graduated from VCU, it’s time to find a job. My wife and I started this year with plans to move out of state, but things came up and we’ve decided to stay in the area.</description>
     </item>
     
     <item>
       <title>Quake Tracker using Google Maps API v3 and XML/Atom feed</title>
-      <link>https://www.ipreferjim.com/site/2009/06/quake-tracker-using-google-maps-api-v3-and-xmlatom-feed/</link>
+      <link>https://www.ipreferjim.com/2009/06/quake-tracker-using-google-maps-api-v3-and-xmlatom-feed/</link>
       <pubDate>Wed, 17 Jun 2009 22:38:00 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2009/06/quake-tracker-using-google-maps-api-v3-and-xmlatom-feed/</guid>
+      <guid>https://www.ipreferjim.com/2009/06/quake-tracker-using-google-maps-api-v3-and-xmlatom-feed/</guid>
       <description>http://www.ipreferjim.com/maps/quakes.html
 For this, I used the following:
  Google Maps API v3 (http://code.google.com/apis/maps/documentation/v3/) jQuery v1.3.2 (http://jquery.com/)  First, you will need to include the google maps api in your header:</description>
@@ -1580,176 +1580,176 @@ For this, I used the following:
     
     <item>
       <title>JavaScript &amp; CSS Modal Loading DIV</title>
-      <link>https://www.ipreferjim.com/site/2009/06/javascript-css-modal-loading-div/</link>
+      <link>https://www.ipreferjim.com/2009/06/javascript-css-modal-loading-div/</link>
       <pubDate>Wed, 17 Jun 2009 01:21:00 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2009/06/javascript-css-modal-loading-div/</guid>
+      <guid>https://www.ipreferjim.com/2009/06/javascript-css-modal-loading-div/</guid>
       <description>Things I’ve used in this:
  Prototype Javascript (http://prototypejs.org/) Loading image (http://www.ajaxload.info/) Script &amp;amp; CSS  What I do here is build a DIV element and show it on the page while Prototype’s Ajax Request object is loading.</description>
     </item>
     
     <item>
       <title>Example Ruby code</title>
-      <link>https://www.ipreferjim.com/site/2009/05/example-ruby-code/</link>
+      <link>https://www.ipreferjim.com/2009/05/example-ruby-code/</link>
       <pubDate>Mon, 18 May 2009 04:43:00 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2009/05/example-ruby-code/</guid>
+      <guid>https://www.ipreferjim.com/2009/05/example-ruby-code/</guid>
       <description>I decided to do some of those Facebook puzzles in Ruby. I won’t post everything I do, because I would consider that cheating (after all, you can win prizes!</description>
     </item>
     
     <item>
       <title>Ruby on Rails, Aptana Studio</title>
-      <link>https://www.ipreferjim.com/site/2009/05/ruby-on-rails-aptana-studio/</link>
+      <link>https://www.ipreferjim.com/2009/05/ruby-on-rails-aptana-studio/</link>
       <pubDate>Sat, 09 May 2009 22:06:00 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2009/05/ruby-on-rails-aptana-studio/</guid>
+      <guid>https://www.ipreferjim.com/2009/05/ruby-on-rails-aptana-studio/</guid>
       <description>This weekend, I decided to give Ruby on Rails a go, considering I just finished school and I’ll have plenty of free time to explore.</description>
     </item>
     
     <item>
       <title>Useful Serialization Methods of LINQ to SQL objects</title>
-      <link>https://www.ipreferjim.com/site/2009/04/useful-serialization-methods-of-linq-to-sql-objects/</link>
+      <link>https://www.ipreferjim.com/2009/04/useful-serialization-methods-of-linq-to-sql-objects/</link>
       <pubDate>Fri, 01 May 2009 02:40:00 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2009/04/useful-serialization-methods-of-linq-to-sql-objects/</guid>
+      <guid>https://www.ipreferjim.com/2009/04/useful-serialization-methods-of-linq-to-sql-objects/</guid>
       <description>I am just going through a project for my senior “Projects in Information Systems” class, commenting most of the complex logic.</description>
     </item>
     
     <item>
       <title>Storing Generics in ASP.NET Profile object</title>
-      <link>https://www.ipreferjim.com/site/2009/04/storing-generics-in-asp-net-profile-object/</link>
+      <link>https://www.ipreferjim.com/2009/04/storing-generics-in-asp-net-profile-object/</link>
       <pubDate>Sat, 25 Apr 2009 19:34:00 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2009/04/storing-generics-in-asp-net-profile-object/</guid>
+      <guid>https://www.ipreferjim.com/2009/04/storing-generics-in-asp-net-profile-object/</guid>
       <description>Sometimes, I’ll come across a problem that I research for an hour or two. When I find the solution, I think “Wow, that should have been the first thing I tried!</description>
     </item>
     
     <item>
       <title>Displaying multiple fields in a Dropdownlist’s DataTextField</title>
-      <link>https://www.ipreferjim.com/site/2009/04/displaying-multiple-fields-in-a-dropdownlists-datatextfield/</link>
+      <link>https://www.ipreferjim.com/2009/04/displaying-multiple-fields-in-a-dropdownlists-datatextfield/</link>
       <pubDate>Tue, 14 Apr 2009 20:19:00 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2009/04/displaying-multiple-fields-in-a-dropdownlists-datatextfield/</guid>
+      <guid>https://www.ipreferjim.com/2009/04/displaying-multiple-fields-in-a-dropdownlists-datatextfield/</guid>
       <description>I’ve encountered this problem on occasion, where I want to display more than one field in a dropdownlist’s DataTextField property. In the past, I’ve overcome this problem by rewriting a SQL statement, or adding another column in the database itself to accomodate my needs.</description>
     </item>
     
     <item>
       <title>T-SQL Multi-Table Delete</title>
-      <link>https://www.ipreferjim.com/site/2009/04/t-sql-multi-table-delete/</link>
+      <link>https://www.ipreferjim.com/2009/04/t-sql-multi-table-delete/</link>
       <pubDate>Wed, 01 Apr 2009 17:56:00 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2009/04/t-sql-multi-table-delete/</guid>
+      <guid>https://www.ipreferjim.com/2009/04/t-sql-multi-table-delete/</guid>
       <description>I was trying to run a DELETE query on multiple tables and I kept getting this error:
 The DELETE statement conflicted with the REFERENCE constraint I’m not that great with SQL, but I can get by.</description>
     </item>
     
     <item>
       <title>LINQ: more like &#34;Luckily I Never Quit&#34;</title>
-      <link>https://www.ipreferjim.com/site/2009/03/linq-more-like-luckily-i-never-quit/</link>
+      <link>https://www.ipreferjim.com/2009/03/linq-more-like-luckily-i-never-quit/</link>
       <pubDate>Sat, 28 Mar 2009 17:07:00 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2009/03/linq-more-like-luckily-i-never-quit/</guid>
+      <guid>https://www.ipreferjim.com/2009/03/linq-more-like-luckily-i-never-quit/</guid>
       <description>I’ve been using LINQ quite a bit lately. As the blog title says: luckily, I never quit.
 There are a lot of things to get used to with LINQ.</description>
     </item>
     
     <item>
       <title>C&#43;&#43; Templated QuickSort Algorithm</title>
-      <link>https://www.ipreferjim.com/site/2009/03/c-templated-quicksort-algorithm/</link>
+      <link>https://www.ipreferjim.com/2009/03/c-templated-quicksort-algorithm/</link>
       <pubDate>Thu, 19 Mar 2009 13:17:00 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2009/03/c-templated-quicksort-algorithm/</guid>
+      <guid>https://www.ipreferjim.com/2009/03/c-templated-quicksort-algorithm/</guid>
       <description>It has been over a month since I posted. I’ve been really busy with all of my classes.
 So, instead of going too in depth with anything, I’m just going to share some code we’ve written.</description>
     </item>
     
     <item>
       <title>My beginnings in C&#43;&#43;</title>
-      <link>https://www.ipreferjim.com/site/2009/02/my-beginnings-in-c/</link>
+      <link>https://www.ipreferjim.com/2009/02/my-beginnings-in-c/</link>
       <pubDate>Tue, 03 Feb 2009 04:26:00 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2009/02/my-beginnings-in-c/</guid>
+      <guid>https://www.ipreferjim.com/2009/02/my-beginnings-in-c/</guid>
       <description>This semester (my final semester at VCU), I am taking INFO 450: Advanced Programming, which concentrates in C++. We’re learning both native and managed C++.</description>
     </item>
     
     <item>
       <title>C# Insertion Sorting algorithm</title>
-      <link>https://www.ipreferjim.com/site/2009/02/c-insertion-sorting-algorithm/</link>
+      <link>https://www.ipreferjim.com/2009/02/c-insertion-sorting-algorithm/</link>
       <pubDate>Mon, 02 Feb 2009 22:12:00 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2009/02/c-insertion-sorting-algorithm/</guid>
+      <guid>https://www.ipreferjim.com/2009/02/c-insertion-sorting-algorithm/</guid>
       <description>Here is a console application to test an Insertion Sorting algorithm adapted from chapter 2 of MIT’s Introduction to Algorithms. I thought this might come in handy for any beginners, as well as a fun way to test your computer’s performance.</description>
     </item>
     
     <item>
       <title>Silverlight 2.0, broken XAML Intellisense fix</title>
-      <link>https://www.ipreferjim.com/site/2009/01/silverlight-2-0-broken-xaml-intellisense-fix/</link>
+      <link>https://www.ipreferjim.com/2009/01/silverlight-2-0-broken-xaml-intellisense-fix/</link>
       <pubDate>Thu, 01 Jan 2009 19:13:00 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2009/01/silverlight-2-0-broken-xaml-intellisense-fix/</guid>
+      <guid>https://www.ipreferjim.com/2009/01/silverlight-2-0-broken-xaml-intellisense-fix/</guid>
       <description>I installed all the necessary files for Silverlight today. When I created a project, the xaml document didn’t have intellisense and opened as a text instead of XML-based document.</description>
     </item>
     
     <item>
       <title>Visual Studio 2010: Logging in</title>
-      <link>https://www.ipreferjim.com/site/2008/12/visual-studio-2010-logging-in/</link>
+      <link>https://www.ipreferjim.com/2008/12/visual-studio-2010-logging-in/</link>
       <pubDate>Sun, 28 Dec 2008 19:24:00 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2008/12/visual-studio-2010-logging-in/</guid>
+      <guid>https://www.ipreferjim.com/2008/12/visual-studio-2010-logging-in/</guid>
       <description>I downloaded Visual Studio 2010 CTP a week ago. I fiddled around with it for about 30 minutes, trying to login to the accounts provided by the preview.</description>
     </item>
     
     <item>
       <title>Visual Studio error, debugger can’t start</title>
-      <link>https://www.ipreferjim.com/site/2008/12/visual-studio-error-debugger-cant-start/</link>
+      <link>https://www.ipreferjim.com/2008/12/visual-studio-error-debugger-cant-start/</link>
       <pubDate>Mon, 22 Dec 2008 05:33:00 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2008/12/visual-studio-error-debugger-cant-start/</guid>
+      <guid>https://www.ipreferjim.com/2008/12/visual-studio-error-debugger-cant-start/</guid>
       <description>“The components for the 64-bit debugger are not registered. Please repair your Visual Studio 2008 Remote Debugger installation via ‘Add or Remove Programs’ in Control Panel”</description>
     </item>
     
     <item>
       <title>WiX Installer Update</title>
-      <link>https://www.ipreferjim.com/site/2008/12/wix-installer-update/</link>
+      <link>https://www.ipreferjim.com/2008/12/wix-installer-update/</link>
       <pubDate>Sat, 20 Dec 2008 02:42:00 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2008/12/wix-installer-update/</guid>
+      <guid>https://www.ipreferjim.com/2008/12/wix-installer-update/</guid>
       <description>One thing that has caused me quite a few problems with my WiX installer was optionally displaying a dialog to enter SQL information when the database is installed.</description>
     </item>
     
     <item>
       <title>WiX: First impressions.</title>
-      <link>https://www.ipreferjim.com/site/2008/12/wix-first-impressions/</link>
+      <link>https://www.ipreferjim.com/2008/12/wix-first-impressions/</link>
       <pubDate>Tue, 16 Dec 2008 00:04:00 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2008/12/wix-first-impressions/</guid>
+      <guid>https://www.ipreferjim.com/2008/12/wix-first-impressions/</guid>
       <description>After working with WiX today, I realized that it’s not perfect. But, it isn’t horrible. Maybe my issues are from following “tutorials” that are written for WiX 2.</description>
     </item>
     
     <item>
       <title>Windows Installer Dilemma</title>
-      <link>https://www.ipreferjim.com/site/2008/12/windows-installer-dilemma/</link>
+      <link>https://www.ipreferjim.com/2008/12/windows-installer-dilemma/</link>
       <pubDate>Sun, 14 Dec 2008 15:15:00 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2008/12/windows-installer-dilemma/</guid>
+      <guid>https://www.ipreferjim.com/2008/12/windows-installer-dilemma/</guid>
       <description>My current task is to create an installer. The dilemma: Visual Studio doesn’t provide a very robust Setup and Deployment project.</description>
     </item>
     
     <item>
       <title>.NET development</title>
-      <link>https://www.ipreferjim.com/site/2008/12/net-development/</link>
+      <link>https://www.ipreferjim.com/2008/12/net-development/</link>
       <pubDate>Sat, 13 Dec 2008 15:55:00 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2008/12/net-development/</guid>
+      <guid>https://www.ipreferjim.com/2008/12/net-development/</guid>
       <description>I consider myself a .NET developer. I don’t consider myself good at it. There are always things to learn, and new facets of development that I didn’t realize existed.</description>
     </item>
     
     <item>
       <title>C# Insertion Sorting alrgorithm.</title>
-      <link>https://www.ipreferjim.com/site/2008/02/c-insertion-sorting-alrgorithm/</link>
+      <link>https://www.ipreferjim.com/2008/02/c-insertion-sorting-alrgorithm/</link>
       <pubDate>Thu, 14 Feb 2008 02:39:12 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2008/02/c-insertion-sorting-alrgorithm/</guid>
+      <guid>https://www.ipreferjim.com/2008/02/c-insertion-sorting-alrgorithm/</guid>
       <description>using System; using System.Collections.Generic; using System.Linq; using System.Text; namespace InsertionSorting { class Program { static void Main(string[] args) { // int[] A = {5, 2, 4, 6, 1, 3};  int initializer = 100000; int[] A = new int[initializer]; for (int my = 0; my &amp;lt; A.</description>
     </item>
     

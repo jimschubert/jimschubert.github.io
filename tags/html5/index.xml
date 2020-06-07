@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>html5 on I Prefer Jim</title>
-    <link>https://www.ipreferjim.com/site/tags/html5/</link>
+    <link>https://www.ipreferjim.com/tags/html5/</link>
     <description>Recent content in html5 on I Prefer Jim</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sun, 14 Oct 2012 22:31:01 +0000</lastBuildDate>
     
-	<atom:link href="https://www.ipreferjim.com/site/tags/html5/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.ipreferjim.com/tags/html5/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Generating sprites with HTML5 canvas (node-canvas)</title>
-      <link>https://www.ipreferjim.com/site/2012/10/generating-sprites-with-html5-canvas-node-canvas/</link>
+      <link>https://www.ipreferjim.com/2012/10/generating-sprites-with-html5-canvas-node-canvas/</link>
       <pubDate>Sun, 14 Oct 2012 22:31:01 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2012/10/generating-sprites-with-html5-canvas-node-canvas/</guid>
+      <guid>https://www.ipreferjim.com/2012/10/generating-sprites-with-html5-canvas-node-canvas/</guid>
       <description>About a week ago, I posted about drawing simple shapes in HTML5. HTML5’s Canvas isn’t only useful on the client side.</description>
     </item>
     
     <item>
       <title>Drawing a custom HTML5 shape</title>
-      <link>https://www.ipreferjim.com/site/2012/10/drawing-a-custom-html5-shape/</link>
+      <link>https://www.ipreferjim.com/2012/10/drawing-a-custom-html5-shape/</link>
       <pubDate>Thu, 04 Oct 2012 16:48:28 +0000</pubDate>
       
-      <guid>https://www.ipreferjim.com/site/2012/10/drawing-a-custom-html5-shape/</guid>
+      <guid>https://www.ipreferjim.com/2012/10/drawing-a-custom-html5-shape/</guid>
       <description>HTML5 is fun. I’ve meant to post about it more than I have in the past (which is 0 posts). I recently got the urge, so I want to show how to draw a heart and a star on HTML5 canvas.</description>
     </item>
     
